@@ -47,8 +47,8 @@
 #
 # 0) Specify compiler and linker:
 
-CXX=/usr/bin/g++
-LINKER=/usr/bin/g++
+CXX=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
+LINKER=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
 #CXX=mpicxx
 #LINKER=mpicxx
 
@@ -76,8 +76,8 @@ USE_MPI =
 #    enhance performance.
 
 #IA32 with GCC: 
-#CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
-CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
+# CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
+# CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
 
 #
 # 4) MPI library:
