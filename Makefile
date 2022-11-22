@@ -78,6 +78,7 @@ USE_MPI =
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
 # CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
+CPP_OPT_FLAGS = -O3 -fsycl
 
 #
 # 4) MPI library:
@@ -90,18 +91,18 @@ USE_MPI =
 #MPI_LIB = -L/usr/MPICH/SDK.gcc/lib -lmpich
 
 #
-# 5) Build with OpenMP or not?
+# 5) Build with OpenMP?
 #    If you want to run the program with OpenMP, make sure USING_OMP is set
 #    to -DUSING_OMP
 
-# USE_OMP = 
-USE_OMP = -DUSING_OMP
+USE_OMP = 
+# USE_OMP = -DUSING_OMP
 
 #
 # 6) OpenMP Compiler argument
 #    GCC and Intel compilers require -fopenmp and -openmp, resp.  Other compilers may differ.
 
-OMP_FLAGS = -fopenmp
+# OMP_FLAGS = -fopenmp
 #OMP_FLAGS = -openmp
 
 #

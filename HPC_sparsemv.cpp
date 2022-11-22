@@ -75,11 +75,9 @@ int HPC_sparsemv( HPC_Sparse_Matrix *A,
   for (int i=0; i< nrow; i++)
     {
       double sum = 0.0;
-      const double * const cur_vals = 
-     (const double * const) A->ptr_to_vals_in_row[i];
+      const double* const cur_vals = (const double * const) A->ptr_to_vals_in_row[i];
 
-      const int    * const cur_inds = 
-     (const int    * const) A->ptr_to_inds_in_row[i];
+      const int* const cur_inds = (const int    * const) A->ptr_to_inds_in_row[i];
 
       const int cur_nnz = (const int) A->nnz_in_row[i];
 
@@ -89,3 +87,68 @@ int HPC_sparsemv( HPC_Sparse_Matrix *A,
     }
   return(0);
 }
+
+
+// EDITED CODE
+
+// #include <CL/sycl.hpp>
+
+
+// int HPC_sparsemv( HPC_Sparse_Matrix *A, 
+//     const double * const x, double * const y
+//     )
+// {
+
+//   sycl::default_selector selector;
+//   sycl::queue q(selector);
+//   const int nrow = (const int) A->local_nrow;
+//   const double** const ptr_to_vals_in_row = malloc_shared<const double*>(nrow,q);
+//   const int** const ptr_to_inds_in_row = malloc_shared<const int* >(nrow,q);
+//   const int* nnz_in_row = malloc_shared<int>(nrow,q);
+//   double* y_device =  malloc_shared<double>(nrow,q);
+//   double* x_device =  malloc_shared<double>(nrow,q);
+
+// q.submit([&](sycl::handler &h) {
+//   h.memcpy(ptr_to_vals_in_row, &A->ptr_to_vals_in_row, nrow * sizeof(double*));
+
+// });
+
+// q.wait();
+// q.submit([&](sycl::handler &h) {
+
+//   h.memcpy(x_device, &x, nrow * sizeof(double));
+
+// });
+
+// q.wait();
+// q.submit([&](sycl::handler &h) {
+
+
+//   h.memcpy(ptr_to_inds_in_row, &A->ptr_to_inds_in_row, nrow * sizeof(int*));
+
+// });
+
+// q.wait();
+// // q.submit([&](sycl::handler &h) {
+
+// //   h.memcpy((void *) nnz_in_row, &A->nnz_in_row, nrow * sizeof(int));
+// // });
+
+// // q.wait();
+// // q.submit([&](sycl::handler &h) {
+// //    h.parallel_for(sycl::range<1>(nrow), [=](sycl::id<1> i) {
+// //     // double sum = 0.0;
+// //     //  const double* const cur_vals = ptr_to_vals_in_row[i];
+// //     //  const int* const cur_inds = ptr_to_inds_in_row[i];
+// //     //  const int cur_nnz = nnz_in_row[i];
+// //     //  for (int j=0; j< cur_nnz; j++) {
+// //     //     sum += cur_vals[j]*x[cur_inds[j]];
+// //     //   }
+// //     //   y_device[i] = sum;
+// //      });
+// //   });
+// //  q.wait();
+//   return(0);
+// }
+
+
