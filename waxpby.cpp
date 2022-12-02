@@ -115,7 +115,7 @@ int waxpby (const int n, const double alpha, const double * const x,
 
   if (alpha==1.0) {
     q.submit([&](sycl::handler& h) {
-auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
+        auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
          auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
          auto w_acc = w_sycl.get_access<cl::sycl::access::mode::discard_write>(h);
        h.parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
