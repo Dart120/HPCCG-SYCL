@@ -53,90 +53,91 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include "ddot.hpp"
-#include <CL/sycl.hpp>
+// #include <CL/sycl.hpp>
 
-
-
-// int ddot (const int n, const double * const x, const double * const y, 
-// 	  double * const result, double & time_allreduce)
-// {  
-//   double local_result = 0.0;
-//   if (y==x)
-// #ifdef USING_OMP
-// #pragma omp parallel for reduction (+:local_result)
-// #endif
-//     for (int i=0; i<n; i++) local_result += x[i]*x[i];
-//   else
-// #ifdef USING_OMP
-// #pragma omp parallel for reduction (+:local_result)
-// #endif
-//     for (int i=0; i<n; i++) local_result += x[i]*y[i];
-
-// #ifdef USING_MPI
-//   // Use MPI's reduce function to collect all partial sums
-//   double t0 = mytimer();
-//   double global_result = 0.0;
-//   MPI_Allreduce(&local_result, &global_result, 1, MPI_DOUBLE, MPI_SUM, 
-//                 MPI_COMM_WORLD);
-//   *result = global_result;
-//   time_allreduce += mytimer() - t0;
-// #else
-//   *result = local_result;
-// #endif
-
-//   return(0);
-// }
-
-
-// *** EDITED CODE ***
 
 
 int ddot (const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
 {  
-  
   double local_result = 0.0;
-  sycl::default_selector selector;
-  auto R = sycl::range<1>(n);
-  sycl::queue q(selector);
-  size_t wgroup_size = 32;
-    auto part_size = wgroup_size * 2;
-    auto n_wgroups = (n + part_size - 1) / part_size;
-  {
-    
-  cl::sycl::buffer<double, 1> x_sycl(x, cl::sycl::range<1>(n));
-  cl::sycl::buffer<double, 1> y_sycl(y, cl::sycl::range<1>(n));
-  cl::sycl::buffer<double, 1> local_result_sycl(&local_result, cl::sycl::range<1>(1));
+  if (y==x)
+#ifdef USING_OMP
+#pragma omp parallel for reduction (+:local_result)
+#endif
+    for (int i=0; i<n; i++) local_result += x[i]*x[i];
+  else
+#ifdef USING_OMP
+#pragma omp parallel for reduction (+:local_result)
+#endif
+    for (int i=0; i<n; i++) local_result += x[i]*y[i];
 
-  // cl::sycl::buffer<double, 1> local_result_sycl(local_result, cl::sycl::range<1>(n));
-
-
-   if (y==x){
- q.submit([&](sycl::handler& h) {
-          auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
-          auto local_result_acc = local_result_sycl.get_access<cl::sycl::access::mode::read_write>(h);
-          auto sumr = sycl::ext::oneapi::reduction(local_result_acc, sycl::ext::oneapi::plus<>());
-          h.parallel_for(sycl::nd_range<1>{n_wgroups * wgroup_size, wgroup_size}, sumr, [=](sycl::nd_item<1> item, auto &sumr_arg) {
-             int i = item.get_global_id(0);
-              sumr_arg += x_acc[i] * x_acc[i];
-          }); 
- });
-   } else {
- q.submit([&](sycl::handler& h) {
-          auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
-          auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
-          auto local_result_acc = local_result_sycl.get_access<cl::sycl::access::mode::read_write>(h);
-          auto sumr = sycl::ext::oneapi::reduction(local_result_acc, sycl::ext::oneapi::plus<>());
-          h.parallel_for(sycl::nd_range<1>{n_wgroups * wgroup_size, wgroup_size}, sumr, [=](sycl::nd_item<1> item, auto &sumr_arg) {
-             int i = item.get_global_id(0);
-              sumr_arg += x_acc[i]*y_acc[i];
-          }); 
- });
-   }
- 
-  }
+#ifdef USING_MPI
+  // Use MPI's reduce function to collect all partial sums
+  double t0 = mytimer();
+  double global_result = 0.0;
+  MPI_Allreduce(&local_result, &global_result, 1, MPI_DOUBLE, MPI_SUM, 
+                MPI_COMM_WORLD);
+  *result = global_result;
+  time_allreduce += mytimer() - t0;
+#else
   *result = local_result;
-
+#endif
 
   return(0);
 }
+
+
+// *** EDITED CODE ***
+
+
+// int ddot (const int n, const double * const x, const double * const y, 
+// 	  double * const result, double & time_allreduce)
+// {  
+  
+//   double local_result = 0.0;
+//   // sycl::gpu_selector selector;
+//   sycl::default_selector selector;
+//   auto R = sycl::range<1>(n);
+//   sycl::queue q(selector);
+//   size_t wgroup_size = 32;
+//     auto part_size = wgroup_size * 2;
+//     auto n_wgroups = (n + part_size - 1) / part_size;
+//   {
+    
+//   cl::sycl::buffer<double, 1> x_sycl(x, cl::sycl::range<1>(n));
+//   cl::sycl::buffer<double, 1> y_sycl(y, cl::sycl::range<1>(n));
+//   cl::sycl::buffer<double, 1> local_result_sycl(&local_result, cl::sycl::range<1>(1));
+
+//   // cl::sycl::buffer<double, 1> local_result_sycl(local_result, cl::sycl::range<1>(n));
+
+
+//    if (y==x){
+//  q.submit([&](sycl::handler& h) {
+//           auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
+//           auto local_result_acc = local_result_sycl.get_access<cl::sycl::access::mode::read_write>(h);
+//           auto sumr = sycl::ext::oneapi::reduction(local_result_acc, sycl::ext::oneapi::plus<>());
+//           h.parallel_for(sycl::nd_range<1>{n_wgroups * wgroup_size, wgroup_size}, sumr, [=](sycl::nd_item<1> item, auto &sumr_arg) {
+//              int i = item.get_global_id(0);
+//               sumr_arg += x_acc[i] * x_acc[i];
+//           }); 
+//  });
+//    } else {
+//  q.submit([&](sycl::handler& h) {
+//           auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
+//           auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
+//           auto local_result_acc = local_result_sycl.get_access<cl::sycl::access::mode::read_write>(h);
+//           auto sumr = sycl::ext::oneapi::reduction(local_result_acc, sycl::ext::oneapi::plus<>());
+//           h.parallel_for(sycl::nd_range<1>{n_wgroups * wgroup_size, wgroup_size}, sumr, [=](sycl::nd_item<1> item, auto &sumr_arg) {
+//              int i = item.get_global_id(0);
+//               sumr_arg += x_acc[i]*y_acc[i];
+//           }); 
+//  });
+//    }
+ 
+//   }
+//   *result = local_result;
+
+
+//   return(0);
+// }

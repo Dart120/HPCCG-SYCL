@@ -1,0 +1,68 @@
+ERROR: Unable to locate a modulefile for 'module'
+ERROR: Unable to locate a modulefile for 'load'
+Loading compiler version 2022.0.2
+Loading tbb version 2021.5.1
+Loading compiler-rt version 2022.0.2
+Loading oclfpga version 2022.0.2
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+
+Loading intel-oneapi/2022.1.2/compiler
+  Loading requirement: tbb/latest compiler-rt/latest oclfpga/latest
+    compiler/latest
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp -O3 -fsycl -std=c++20       -c -o HPC_sparsemv.o HPC_sparsemv.cpp
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp -O3 -fsycl -std=c++20       -c -o waxpby.o waxpby.cpp
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp -O3 -fsycl -std=c++20       -c -o ddot.o ddot.cpp
+ddot.cpp:102:17: error: use of undeclared identifier 'selector'; did you mean 'select'?
+  sycl::queue q(selector);
+                ^~~~~~~~
+                select
+/usr/include/x86_64-linux-gnu/sys/select.h:101:12: note: 'select' declared here
+extern int select (int __nfds, fd_set *__restrict __readfds,
+           ^
+ddot.cpp:102:15: error: no matching constructor for initialization of 'sycl::queue'
+  sycl::queue q(selector);
+              ^ ~~~~~~~~
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:109:12: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'const sycl::property_list' for 1st argument
+  explicit queue(const property_list &PropList = {})
+           ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:117:3: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'const sycl::async_handler' (aka 'const function<void (cl::sycl::exception_list)>') for 1st argument
+  queue(const async_handler &AsyncHandler, const property_list &PropList = {})
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:125:3: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'const sycl::device_selector' for 1st argument
+  queue(const device_selector &DeviceSelector,
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:143:12: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'const sycl::device' for 1st argument
+  explicit queue(const device &SyclDevice, const property_list &PropList = {})
+           ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:207:3: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'const sycl::queue' for 1st argument
+  queue(const queue &RHS) = default;
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:209:3: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'sycl::queue' for 1st argument
+  queue(queue &&RHS) = default;
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:1045:3: note: candidate constructor not viable: no known conversion from 'int (int, fd_set *__restrict, fd_set *__restrict, fd_set *__restrict, struct timeval *__restrict)' to 'std::shared_ptr<detail::queue_impl>' for 1st argument
+  queue(std::shared_ptr<detail::queue_impl> impl) : impl(impl) {}
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:135:3: note: candidate constructor not viable: requires at least 2 arguments, but 1 was provided
+  queue(const device_selector &DeviceSelector,
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:152:12: note: candidate constructor not viable: requires at least 2 arguments, but 1 was provided
+  explicit queue(const device &SyclDevice, const async_handler &AsyncHandler,
+           ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:161:3: note: candidate constructor not viable: requires at least 2 arguments, but 1 was provided
+  queue(const context &SyclContext, const device_selector &DeviceSelector,
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:181:3: note: candidate constructor not viable: requires at least 2 arguments, but 1 was provided
+  queue(const context &SyclContext, const device &SyclDevice,
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:172:3: note: candidate constructor not viable: requires at least 3 arguments, but 1 was provided
+  queue(const context &SyclContext, const device_selector &DeviceSelector,
+  ^
+/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin-llvm/../include/sycl/CL/sycl/queue.hpp:191:3: note: candidate constructor not viable: requires at least 3 arguments, but 1 was provided
+  queue(const context &SyclContext, const device &SyclDevice,
+  ^
+2 errors generated.
+make: *** [<builtin>: ddot.o] Error 1
+Initial Residual = 3736.06
+/var/spool/slurmd/job235621/slurm_script: line 13: 1342388 Bus error               (core dumped) ./test_HPCCG 200 300 100

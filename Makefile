@@ -47,10 +47,10 @@
 #
 # 0) Specify compiler and linker:
 
-CXX=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
-LINKER=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
-#CXX=mpicxx
-#LINKER=mpicxx
+# CXX=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
+# LINKER=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
+CXX=gcc
+# LINKER=mpicxx
 
 
 # 1) Build with MPI or not?
@@ -77,8 +77,8 @@ USE_MPI =
 
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
-# CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
-CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
+CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
+# CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
 
 #
 # 4) MPI library:
@@ -95,14 +95,14 @@ CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
 #    If you want to run the program with OpenMP, make sure USING_OMP is set
 #    to -DUSING_OMP
 
-USE_OMP = 
-# USE_OMP = -DUSING_OMP
+# USE_OMP = 
+USE_OMP = -DUSING_OMP
 
 #
 # 6) OpenMP Compiler argument
 #    GCC and Intel compilers require -fopenmp and -openmp, resp.  Other compilers may differ.
 
-# OMP_FLAGS = -fopenmp
+OMP_FLAGS = -fopenmp
 #OMP_FLAGS = -openmp
 
 #
