@@ -88,7 +88,6 @@ int HPCCG(HPC_Sparse_Matrix * A,
   double * p = new double [ncol]; // In parallel case, A is rectangular
   double * Ap = new double [nrow];
 
-
   normr = 0.0;
   double rtrans = 0.0;
   double oldrtrans = 0.0;
@@ -109,25 +108,14 @@ int HPCCG(HPC_Sparse_Matrix * A,
 #ifdef USING_MPI
   TICK(); exchange_externals(A,p); TOCK(t5); 
 #endif
-  double * Ap_copy = new double [nrow];
-  // for (size_t i = 0; i < nrow; i++)
-  // {
-  //   Ap_copy[i] = Ap[i];
-  // }
-  // TICK();HPC_sparsemv_sycl(A, p, Ap);  TOCK(t3); // 2*nnz ops
-  HPC_sparsemv(A, p, Ap_copy);
-  // for (size_t i = 0; i < nrow; i++)
-  //     {
-  //       std::cout <<"row "<< i << std::endl;
-  //       std::cout <<' ' << (Ap_copy[i] == Ap[i] ? "good":"bad") << std::endl;
-  //     }
+  TICK(); HPC_sparsemv(A, p, Ap); TOCK(t3);
   TICK(); waxpby(nrow, 1.0, b, -1.0, Ap, r); TOCK(t2);
   TICK(); ddot(nrow, r, r, &rtrans, t4); TOCK(t1);
   normr = sqrt(rtrans);
 
   if (rank==0) cout << "Initial Residual = "<< normr << endl;
-  // *******************************************************************************************************
-for(int k=1; k<max_iter && normr > tolerance; k++ )
+
+  for(int k=1; k<max_iter && normr > tolerance; k++ )
     {
       if (k == 1)
 	{
@@ -148,49 +136,7 @@ for(int k=1; k<max_iter && normr > tolerance; k++ )
 #ifdef USING_MPI
       TICK(); exchange_externals(A,p); TOCK(t5); 
 #endif
-    //   std::cout <<"starting!!!" << std::endl;
-      
-    //   const double *const cur_vals = (const double *const)A->ptr_to_vals_in_row[0];
-
-		// const int *const cur_inds = (const int *const)A->ptr_to_inds_in_row[0];
-		// Number of non zeros
-		// const int cur_nnz = (const int)A->nnz_in_row[0];
-    // std::cout <<"number of vals in row" << std::endl;
-    //   for (size_t i = 0; i < nrow; i++)
-    //   {
-    //     std::cout << A->nnz_in_row[i] << std::endl;
-    //   }
-    //   std::cout <<"row_vals" << std::endl;
-    //   for (size_t i = 0; i < cur_nnz; i++)
-    //   {
-    //     std::cout <<cur_vals[i] << std::endl;
-    //   }
-    //   std::cout <<"row_ind" << std::endl;
-    //   for (size_t i = 0; i < cur_nnz; i++)
-    //   {
-    //     std::cout <<cur_inds[i] << std::endl;
-    //   }
-    //   std::cout <<"x" << std::endl;
-    //   for (size_t i = 0; i < nrow; i++)
-    //   {
-    //     std::cout <<p[i] << std::endl;
-    //   }
-    double * Ap_copy = new double [nrow];
-  for (size_t i = 0; i < nrow; i++)
-  {
-    Ap_copy[i] = Ap[i];
-  }
-  // std::cout <<"Mine "<< endl;
-  TICK();HPC_sparsemv_sycl(A, p, Ap);  TOCK(t3); // 2*nnz ops
-  std::cout <<"Theirs "<< endl;
-  HPC_sparsemv(A, p, Ap_copy);
-  for (size_t i = 0; i < nrow; i++)
-      {
-        std::cout <<"row "<< i << std::endl;
-        std::cout <<"Theirs " << Ap_copy[i] <<" Mine "<< Ap[i] << std::endl;
-      }
-    
-      exit(0);
+      TICK(); HPC_sparsemv(A, p, Ap); TOCK(t3); // 2*nnz ops
       double alpha = 0.0;
       TICK(); ddot(nrow, p, Ap, &alpha, t4); TOCK(t1); // 2*nrow ops
       alpha = rtrans/alpha;

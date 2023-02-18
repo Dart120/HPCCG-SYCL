@@ -32,7 +32,6 @@ struct HPC_Sparse_Matrix_STRUCT {
 
 typedef struct HPC_Sparse_Matrix_STRUCT HPC_Sparse_Matrix;
 
-
 std::vector<int> flatten_arrays(double **vals, int **idx, int *lengths, std::vector<double> *flat_vals, std::vector<int> *flat_idxs,int max_nnz,int nrow)
 {
 	
@@ -63,9 +62,6 @@ int HPC_sparsemv_old(HPC_Sparse_Matrix *A,
 
 	const int nrow = (const int)A->local_nrow;
 
-#ifdef USING_OMP
-#pragma omp parallel for
-#endif
 	// For each row
 	for (int i = 0; i < nrow; i++)
 	{
@@ -92,7 +88,7 @@ int HPC_sparsemv_old(HPC_Sparse_Matrix *A,
 // Can we put the vals in lists of buffers
 // How many do we need?
 // iterate through nrow and add them
-// TODO: MAKE A FAKE A X AND Y AND TEST WHY THIS DOESNT WORK
+// TODO: FROM MY TESTING THIS FUNCTION SEEMS TO WORK HOWEVER I THINK THE MATRIX IS STORED DIFFERENTLY FOR THE ACTUAL PROGRAM WHICH IS CAUSING THIS TO BREAK
 int HPC_sparsemv_new(HPC_Sparse_Matrix *A,
 				 const double *const x, double *const y)
 {
@@ -105,21 +101,9 @@ int HPC_sparsemv_new(HPC_Sparse_Matrix *A,
 	std::vector<int> cur_inds_flat;
 	
 	std::vector<int> wrap_indicies = flatten_arrays(A->ptr_to_vals_in_row, A->ptr_to_inds_in_row, A->nnz_in_row, &cur_vals_flat, &cur_inds_flat, max_nnz,nrow);
-  // std::cout << "wrap_indicies ";
-  // for (int value : wrap_indicies) {
-  //   std::cout << value << " ";
-  // }
-  // std::cout << "\nvals ";
-  // for (int value : cur_vals_flat) {
-  //   std::cout << value << " ";
-  // }
-  // std::cout << "\ninds ";
-  // for (int value : cur_inds_flat) {
-  //   std::cout << value << " ";
-  // }
 	sycl::default_selector selector;
 	sycl::queue q(selector);
-  std::cout <<' '<< max_nnz <<' '<< nrow << ' ' << endl;
+  
 	std::vector<double> temp_out(max_nnz * nrow, 0);
 
 	{
@@ -132,7 +116,7 @@ int HPC_sparsemv_new(HPC_Sparse_Matrix *A,
 		cl::sycl::buffer<double, 1> y_sycl(y, cl::sycl::range<1>(nrow));
 		q.submit([&](sycl::handler &h)
 		{
-			sycl::stream out(1024, 256, h);
+			
 			auto temp_out_acc = temp_out_sycl.get_access<cl::sycl::access::mode::write>(h);
 			auto cur_vals_acc = cur_vals_sycl.get_access<cl::sycl::access::mode::read>(h);
 			auto cur_inds_acc = cur_inds_sycl.get_access<cl::sycl::access::mode::read>(h);
@@ -142,58 +126,30 @@ int HPC_sparsemv_new(HPC_Sparse_Matrix *A,
 			cl::sycl::range<1> range = cur_vals_acc.get_range();
 			size_t length = range[0];
    
-      
-			// for each row
 			h.parallel_for(sycl::range<1>(length), [=](sycl::id<1> i)
 			{
-        
-	// 			// for val in row
-	// 			for (int j=0; j< cur_nnz; j++){
-	// //           // Sum = a non zero number in the row * the vector element at that same index
-	// 				sum += cur_vals_acc[j]*x_acc[cur_inds_acc[j]];
-	// 				counter
-	// 			}
-// wrap_indicies 0 1 2 3 4 
-// vals 1 2 3 4 5 
-// inds 0 1 0 2 2 
-        // out << "put into index " << wrap_indicies_acc[i] <<' ' <<  cur_vals_acc[i]  << " times by " <<  x_acc[cur_inds_acc[i]] << cl::sycl::endl; 
-  
-     
 				temp_out_acc[wrap_indicies_acc[i]] = cur_vals_acc[i]*x_acc[cur_inds_acc[i]];
-
 			});
 		}).wait();
-    // Results
-    std::cout << "\ntemp_out ";
 
-  for (int value : temp_out) {
-    std::cout << value << " ";
-  }
- std::cout << std::endl;
-
-		// final
 		{
     q.submit([&](sycl::handler &h)
 		{
        sycl::stream out(1024, 256, h);
   auto temp_out_acc = temp_out_sycl.get_access<cl::sycl::access::mode::write>(h);
 	auto y_acc = y_sycl.get_access<cl::sycl::access::mode::write>(h);
-  // cl::sycl::buffer<double, 1> local_result_sycl(local_result, cl::sycl::range<1>(n));
-
 	cl::sycl::range<1> range = temp_out_acc.get_range();
 	size_t length = range[0];
  
 	h.parallel_for(sycl::nd_range<1>(length, max_nnz), [=](sycl::nd_item<1> item) {
 		auto sg = item.get_sub_group();
 		int i = item.get_global_id(0);
-		int j = item.get_local_id(0);
+		auto j = item.get_local_id(0);
 		
 		
 		//# Add all elements in sub_group using sub_group algorithm
-		int result = sycl::reduce_over_group(sg, temp_out_acc[i], sycl::plus<>());
-    // out << " sg.get_local_id()[0]: " << sg.get_local_id()[0] << " i: " << i<< " j: " << j <<" result: "<<result << sycl::endl;
-		//# write sub_group sum in first location for each sub_group
-		
+		double result = sycl::reduce_over_group(sg, temp_out_acc[i], sycl::plus<>());
+		printf(" i: %d result: %f",i,result);
 		y_acc[i/max_nnz] = result;
 	
   });
@@ -206,7 +162,6 @@ int HPC_sparsemv_new(HPC_Sparse_Matrix *A,
 
 	return 0;
 }
-
 
 
 int main() {
