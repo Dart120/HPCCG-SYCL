@@ -114,8 +114,8 @@ int HPCCG(HPC_Sparse_Matrix * A,
   // {
   //   Ap_copy[i] = Ap[i];
   // }
-  // TICK();HPC_sparsemv_sycl(A, p, Ap);  TOCK(t3); // 2*nnz ops
-  HPC_sparsemv(A, p, Ap_copy);
+  TICK();HPC_sparsemv_sycl(A, p, Ap);  TOCK(t3); // 2*nnz ops
+  // HPC_sparsemv(A, p, Ap_copy);
   // for (size_t i = 0; i < nrow; i++)
   //     {
   //       std::cout <<"row "<< i << std::endl;
@@ -175,22 +175,22 @@ for(int k=1; k<max_iter && normr > tolerance; k++ )
     //   {
     //     std::cout <<p[i] << std::endl;
     //   }
-    double * Ap_copy = new double [nrow];
-  for (size_t i = 0; i < nrow; i++)
-  {
-    Ap_copy[i] = Ap[i];
-  }
+  //   double * Ap_copy = new double [nrow];
+  // for (size_t i = 0; i < nrow; i++)
+  // {
+  //   Ap_copy[i] = Ap[i];
+  // }
   // std::cout <<"Mine "<< endl;
   TICK();HPC_sparsemv_sycl(A, p, Ap);  TOCK(t3); // 2*nnz ops
-  std::cout <<"Theirs "<< endl;
-  HPC_sparsemv(A, p, Ap_copy);
-  for (size_t i = 0; i < nrow; i++)
-      {
-        std::cout <<"row "<< i << std::endl;
-        std::cout <<"Theirs " << Ap_copy[i] <<" Mine "<< Ap[i] << std::endl;
-      }
+  // std::cout <<"Theirs "<< endl;
+  // HPC_sparsemv(A, p, Ap_copy);
+  // for (size_t i = 0; i < nrow; i++)
+  //     {
+  //       std::cout <<"row "<< i << std::endl;
+  //       std::cout <<"Theirs " << Ap_copy[i] <<" Mine "<< Ap[i] << std::endl;
+  //     }
     
-      exit(0);
+      
       double alpha = 0.0;
       TICK(); ddot(nrow, p, Ap, &alpha, t4); TOCK(t1); // 2*nrow ops
       alpha = rtrans/alpha;
