@@ -99,6 +99,14 @@ USE_MPI =
 # USE_OMP = -DUSING_OMP
 
 #
+# 5) Build with SYCL?
+#    If you want to run the program with SYCL, make sure USING_SYCL is set
+#    to -DUSING_SYCL
+
+# USE_SYCL = 
+USE_SYCL = -DUSING_SYCL
+
+#
 # 6) OpenMP Compiler argument
 #    GCC and Intel compilers require -fopenmp and -openmp, resp.  Other compilers may differ.
 
@@ -117,7 +125,7 @@ TARGET = test_HPCCG
 
 ################### Derived Quantities (no modification required) ##############
 
-CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_MPI) $(MPI_INC)
+CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_INC)
 
 LIB_PATHS= $(SYS_LIB)
 

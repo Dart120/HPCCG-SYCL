@@ -61,38 +61,10 @@
 #include <CL/sycl.hpp>
 
 
+
+#ifdef USING_SYCL
+
 int waxpby (const int n, const double alpha, const double * const x, 
-	    const double beta, const double * const y, 
-		     double * const w)
-{  
-  if (alpha==1.0) {
-#ifdef USING_OMP
-#pragma omp parallel for
-#endif
-    for (int i=0; i<n; i++) w[i] = x[i] + beta * y[i];
-  }
-  else if(beta==1.0) {
-#ifdef USING_OMP
-#pragma omp parallel for
-#endif
-    for (int i=0; i<n; i++) w[i] = alpha * x[i] + y[i];
-  }
-  else {
-#ifdef USING_OMP
-#pragma omp parallel for
-#endif
-    for (int i=0; i<n; i++) w[i] = alpha * x[i] + beta * y[i];
-  }
-
-  return(0);
-}
-
-
-// ***EDITED CODE ***
-
-
-
-int waxpby_sycl (const int n, const double alpha, const double * const x, 
 	    const double beta, const double * const y, 
 		     double * const w)
 {  
@@ -112,7 +84,7 @@ int waxpby_sycl (const int n, const double alpha, const double * const x,
 
 
   if (alpha==1.0) {
-    
+
     q.submit([&](sycl::handler& h) {
         auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
          auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
@@ -146,3 +118,41 @@ auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
   }
   return(0);
 }
+
+
+
+#else
+
+
+
+
+
+
+int waxpby (const int n, const double alpha, const double * const x, 
+	    const double beta, const double * const y, 
+		     double * const w)
+{  
+  if (alpha==1.0) {
+#ifdef USING_OMP
+#pragma omp parallel for
+#endif
+    for (int i=0; i<n; i++) w[i] = x[i] + beta * y[i];
+  }
+  else if(beta==1.0) {
+#ifdef USING_OMP
+#pragma omp parallel for
+#endif
+    for (int i=0; i<n; i++) w[i] = alpha * x[i] + y[i];
+  }
+  else {
+#ifdef USING_OMP
+#pragma omp parallel for
+#endif
+    for (int i=0; i<n; i++) w[i] = alpha * x[i] + beta * y[i];
+  }
+
+  return(0);
+}
+
+
+#endif

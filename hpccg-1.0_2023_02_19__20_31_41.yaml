@@ -4,11 +4,11 @@ Parallelism:
   MPI not enabled: 
   OpenMP not enabled: 
 Dimensions: 
-  nx: 3
-  ny: 3
-  nz: 3
-Number of iterations: 28
-Final residual: nan
+  nx: 20
+  ny: 10
+  nz: 30
+Number of iterations: 149
+Final residual: 2.8498e-44
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
   Total   : 0
@@ -16,10 +16,10 @@ Time Summary:
   WAXPBY  : 0
   SPARSEMV: 0
 FLOPS Summary: 
-  Total   : 48384
-  DDOT    : 3024
-  WAXPBY  : 4536
-  SPARSEMV: 40824
+  Total   : 5.7216e+07
+  DDOT    : 3.576e+06
+  WAXPBY  : 5.364e+06
+  SPARSEMV: 4.8276e+07
 MFLOPS Summary: 
   Total   : inf
   DDOT    : inf

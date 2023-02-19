@@ -78,6 +78,7 @@ using std::endl;
 #ifdef USING_OMP
 #include <omp.h>
 #endif
+#include <CL/sycl.hpp>
 #include "generate_matrix.hpp"
 #include "read_HPC_row.hpp"
 #include "mytimer.hpp"
@@ -219,6 +220,12 @@ int main(int argc, char *argv[])
           doc.get("Parallelism")->add("Number of OpenMP threads",nthreads);
 #else
           doc.get("Parallelism")->add("OpenMP not enabled","");
+#endif
+#ifdef USING_SYCL
+         sycl::device d = sycl::default_selector().select_device();
+        doc.get("Parallelism")->add("Number of SYCL threads",(int) d.get_info<sycl::info::device::max_compute_units>());
+#else
+          doc.get("Parallelism")->add("SYCL not enabled","");
 #endif
 
       doc.add("Dimensions","");

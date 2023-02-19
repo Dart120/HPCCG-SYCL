@@ -50,6 +50,5 @@
 
 int HPC_sparsemv( HPC_Sparse_Matrix *A, 
 		 const double * const x, double * const y);
-int HPC_sparsemv_sycl( HPC_Sparse_Matrix *A, 
-		 const double * const x, double * const y);
+
 #endif
