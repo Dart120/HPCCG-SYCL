@@ -78,38 +78,25 @@ static constexpr size_t B = 64;  // work-group size
 int main() {
 queue q;
 std::cout << "Device : " << q.get_device().get_info<info::device::name>() << "\n";
- //# get all supported sub_group sizes and print
-  auto sg_sizes = q.get_device().get_info<info::device::sub_group_sizes>();
-  std::cout << "Supported Sub-Group Sizes : ";
-  for (int i=0; i<sg_sizes.size(); i++) std::cout << sg_sizes[i] << " "; std::cout << "\n";
-    
-  //# find out maximum supported sub_group size
-  auto max_sg_size = std::max_element(sg_sizes.begin(), sg_sizes.end());
-  std::cout << "Max Sub-Group Size        : " << max_sg_size[0] << "\n";
-//# initialize data array using usm
-int *data = malloc_shared<int>(N, q);
-for (int i = 0; i < N; i++) data[i] = i%2 ? i:0;
-for (int i = 0; i < N; i++) std::cout << data[i] << " ";
-std::cout << "\n\n";
+int sum;
+std::vector<int> data{1,1,1,1,1,1,1,1};
+{
 
-q.parallel_for(nd_range<1>(N, B), [=](nd_item<1> item) {
-auto sg = item.get_sub_group();
-auto i = item.get_global_id(0);
 
-//# Add all elements in sub_group using sub_group algorithm
-int result = reduce_over_group(sg, data[i], plus<>());
+sycl::buffer<int> sum_buf(&sum,1);
+sycl::buffer<int> data_buf(data);
 
-//# write sub_group sum in first location for each sub_group
-if (sg.get_local_id()[0] == 0) {
-    data[i] = result;
-} else {
-    data[i] = result;
+q.submit([&](auto &h) {
+      sycl::accessor buf_acc(data_buf, h, sycl::read_only);
+     
+      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
+
+      h.parallel_for(sycl::range<1>{8}, sumr, [=](sycl::id<1> i, auto &sum) {
+      
+        sum += buf_acc[i];
+      });
+    });
 }
-}).wait();
+    std::cout <<sum<<std::endl;
 
-for (int i = 0; i < N; i++) std::cout << data[i] << " ";
-std::cout << "\n";
-
-free(data, q);
-return 0;
 }

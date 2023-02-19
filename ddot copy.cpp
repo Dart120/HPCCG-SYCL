@@ -96,13 +96,10 @@ int ddot_sycl (const int n, const double * const x, const double * const y,
 {  
   sycl::default_selector selector;
 	sycl::queue q(selector);
-  double sump = 0;
   {
-    
-    sycl::buffer<double> sum_buf(&sump,1);
+    sycl::buffer<double> sum_buf(result,1);
     sycl::buffer<double> x_buf(x,cl::sycl::range<1>(n));
     if(y==x){
-      // std::cout<<"eq"<<std::endl;
       q.submit([&](auto &h) {
       sycl::accessor x_acc(x_buf, h, sycl::read_only);
       auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
@@ -112,7 +109,6 @@ int ddot_sycl (const int n, const double * const x, const double * const y,
       });
     });
     }else{
-      // std::cout<<"diff"<<std::endl;
       sycl::buffer<double> y_buf(y,cl::sycl::range<1>(n));
       
 
@@ -141,8 +137,7 @@ q.submit([&](auto &h) {
     }
     
   }
-  *result = sump;
-  // std::cout<<"result "<< *result<<std::endl;
+  std::cout<<"result "<< *result<<std::endl;
 
   return 0;
 }
