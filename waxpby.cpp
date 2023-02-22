@@ -156,3 +156,44 @@ int waxpby (const int n, const double alpha, const double * const x,
 
 
 #endif
+
+
+
+int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, 
+	    const double beta, const double * const y, 
+		     double * const w)
+{  
+
+
+
+  // sycl::gpu_selector selector;
+
+ 
+  
+  if (alpha==1.0) {
+
+  
+       q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
+          // int sum = 0;
+         w[i] = x[i] + beta * y[i]; 
+         }); 
+       
+  }
+  else if(beta==1.0) {
+ 
+       q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
+  
+        w[i] = alpha * x[i] + y[i]; 
+        });
+  }
+  else {
+
+       q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) { 
+        // int sum = 0;
+         w[i] = alpha * x[i] + beta * y[i]; 
+         }); 
+       
+  }
+
+  return(0);
+}

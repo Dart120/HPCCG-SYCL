@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/include"
+            ],
+            "defines": [],
+            "compilerPath": "/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

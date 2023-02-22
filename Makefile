@@ -104,7 +104,7 @@ USE_MPI =
 #    to -DUSING_SYCL
 
 # USE_SYCL = 
-USE_SYCL = -DUSING_SYCL
+# USE_SYCL = -DUSING_SYCL
 
 #
 # 6) OpenMP Compiler argument

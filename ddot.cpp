@@ -138,3 +138,44 @@ int ddot (const int n, const double * const x, const double * const y,
 #endif
 // *** EDITED CODE ***
 
+int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
+	  double * const result, double & time_allreduce)
+{  
+  {
+    sycl::buffer<double> sum_buf(result,1);
+    if(y==x){
+      // std::cout<<"eq"<<std::endl;
+      q->submit([&](auto &h) {
+   
+      
+      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
+      h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
+        sum += x[i] * x[i];
+      });
+    });
+
+
+
+
+
+    }else{
+      // std::cout<<"diff"<<std::endl;
+
+      q->submit([&](auto &h) {
+   
+      
+      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
+      h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
+        sum += x[i] * y[i];
+      });
+    });
+
+
+
+
+
+    }
+  // std::cout<<"result "<< *result<<std::endl;
+  }
+  return 0;
+}
