@@ -176,7 +176,7 @@ int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * 
        q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
           // int sum = 0;
          w[i] = x[i] + beta * y[i]; 
-         }); 
+         }).wait(); 
        
   }
   else if(beta==1.0) {
@@ -184,14 +184,14 @@ int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * 
        q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
   
         w[i] = alpha * x[i] + y[i]; 
-        });
+        }).wait();
   }
   else {
 
        q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) { 
         // int sum = 0;
          w[i] = alpha * x[i] + beta * y[i]; 
-         }); 
+         }).wait(); 
        
   }
 

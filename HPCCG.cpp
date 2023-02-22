@@ -124,8 +124,8 @@ int HPCCG(HPC_Sparse_Matrix * A,
   
   double * rtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
   double * oldrtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
-  double * normr_device = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
-  q.memcpy(normr_device, &normr, sizeof(double)).wait();
+  double * normr_shared = static_cast<double*>(sycl::malloc_shared(sizeof(double), q));
+  q.memcpy(normr_shared, &normr, sizeof(double)).wait();
   *rtrans = 0.0;
   *oldrtrans = 0.0;
 
@@ -154,61 +154,65 @@ int HPCCG(HPC_Sparse_Matrix * A,
   q.submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
-    *normr_device = sqrt(*rtrans);
-    if (rank==0) out << "Initial Residual = "<< *normr_device << cl::sycl::endl;
+    *normr_shared = sqrt(*rtrans);
+    if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });
     
     
   }).wait();
-// q.memcpy(y , normr_device, sizeof(double)).wait();
 
-// if (rank==0) cout << "Initial Residual = "<< normr << std::endl;
+
+
 //   // *******************************************************************************************************
-// for(int k=1; k<max_iter && normr > tolerance; k++ )
-//     {
-//       if (k == 1)
-// 	{
-// 	  TICK(); waxpby(nrow, 1.0, r, 0.0, r, p); TOCK(t2);
-// 	}
-//       else
-// 	{
-// 	  oldrtrans = rtrans;
-// 	  TICK(); ddot (nrow, r, r, &rtrans, t4); TOCK(t1);// 2*nrow ops
-// 	  double beta = rtrans/oldrtrans;
-// 	  TICK(); waxpby (nrow, 1.0, r, beta, p, p);  TOCK(t2);// 2*nrow ops
-// 	}
-//       normr = sqrt(rtrans);
-//       if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
-//       cout << "Iteration = "<< k << "   Residual = "<< normr << endl;
-     
+for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
+    {
+      if (k == 1)
+	{
+	  TICK(); waxpby_sycl(&q,nrow, 1.0, r, 0.0, r, p); TOCK(t2);
+	}
+      else
+	{
+	  *oldrtrans = *rtrans;
+	  TICK(); ddot_sycl(&q,nrow, r, r, rtrans, t4);// 2*nrow ops 
+    double* beta = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
+	  *beta = *rtrans / *oldrtrans;
+	  TICK(); waxpby_sycl(&q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
+	}
 
-// #ifdef USING_MPI
-//       TICK(); exchange_externals(A,p); TOCK(t5); 
-// #endif
+  q.submit([&](handler& h) {
+    sycl::stream out(655, 655, h);
+    h.single_task([=]() {
+    *normr_shared = sqrt(*rtrans);
+    if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
+      out << "Iteration = "<< k << "   Residual = "<< *normr_shared << cl::sycl::endl;
+    });
+    
+    
+  }).wait();
   
-//   TICK();HPC_sparsemv(A, p, Ap);  TOCK(t3); // 2*nnz ops
+  TICK();HPC_sparsemv_sycl(&q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
 
-      
-//       double alpha = 0.0;
-//       TICK(); ddot(nrow, p, Ap, &alpha, t4); TOCK(t1); // 2*nrow ops
-//       alpha = rtrans/alpha;
-//       TICK(); waxpby(nrow, 1.0, x, alpha, p, x);// 2*nrow ops
-//       waxpby(nrow, 1.0, r, -alpha, Ap, r);  TOCK(t2);// 2*nrow ops
-//       niters = k;
-//     }
+      double* alpha = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
+      *alpha = 0.0;
+      TICK(); ddot_sycl(&q,nrow, p, Ap, alpha, t4); TOCK(t1); // 2*nrow ops 
+      *alpha = *rtrans/ *alpha;
+      TICK(); waxpby_sycl(&q,nrow, 1.0, x_device, *alpha, p, x_device); // 2*nrow ops 
+      waxpby_sycl(&q,nrow, 1.0, r, -(*alpha), Ap, r);  TOCK(t2);// 2*nrow ops 
+      niters = k;
+    }
 
-//   // Store times
-//   times[1] = t1; // ddot time
-//   times[2] = t2; // waxpby time
-//   times[3] = t3; // sparsemv time
-//   times[4] = t4; // AllReduce time
-// #ifdef USING_MPI
-//   times[5] = t5; // exchange boundary time
-// #endif
-//   delete [] p;
-//   delete [] Ap;
-//   delete [] r;
-//   times[0] = mytimer() - t_begin;  // Total time. All done...
+  // Store times
+  times[1] = t1; // ddot time
+  times[2] = t2; // waxpby time
+  times[3] = t3; // sparsemv time
+  times[4] = t4; // AllReduce time
+#ifdef USING_MPI
+  times[5] = t5; // exchange boundary time
+#endif
+  delete [] p;
+  delete [] Ap;
+  delete [] r;
+  times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
 }
 

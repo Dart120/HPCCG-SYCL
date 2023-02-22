@@ -1,0 +1,28 @@
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL threads: 32
+Dimensions: 
+  nx: 3
+  ny: 3
+  nz: 3
+Number of iterations: 149
+Final residual: 0
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0
+  DDOT    : 0
+  WAXPBY  : 0
+  SPARSEMV: 0
+FLOPS Summary: 
+  Total   : 257472
+  DDOT    : 16092
+  WAXPBY  : 24138
+  SPARSEMV: 217242
+MFLOPS Summary: 
+  Total   : inf
+  DDOT    : inf
+  WAXPBY  : inf
+  SPARSEMV: inf

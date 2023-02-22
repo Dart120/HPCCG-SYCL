@@ -152,7 +152,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
       h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
         sum += x[i] * x[i];
       });
-    });
+    }).wait();
 
 
 
@@ -168,7 +168,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
       h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
         sum += x[i] * y[i];
       });
-    });
+    }).wait();
 
 
 
