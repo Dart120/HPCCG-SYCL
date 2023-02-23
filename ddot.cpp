@@ -141,16 +141,38 @@ int ddot (const int n, const double * const x, const double * const y,
 int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
 {  
-  {
-    sycl::buffer<double> sum_buf(result,1);
+    *result = 0;
+//      q->submit([&](sycl::handler& h) {
+
+//     sycl::stream out(65535, 65535, h);
+//     h.single_task([=]() {
+     
+     
+//    for (size_t i = 0; i < n; i++)
+//   {
+//     if (i>26900){
+// out << "x = "<< x[i]<< ' '<< i << cl::sycl::endl;
+//     }
+    
+   
+//   }
+ 
+//     });
+//   }).wait();
+
+    auto sumr =sycl::reduction(result,sycl::ext::oneapi::plus<>());
+    // std::cout<<"This is pants"<<std::endl;
+    // std::cout<<n<<std::endl;
     if(y==x){
       // std::cout<<"eq"<<std::endl;
       q->submit([&](auto &h) {
+        
    
-      
-      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
+      // sycl::ext::oneapi::reduction(result,0.0f,sycl::ext::oneapi::plus<>(),q);
+      // For some reason this for loop cant handle n elements
       h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
         sum += x[i] * x[i];
+    
       });
     }).wait();
 
@@ -164,18 +186,25 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
       q->submit([&](auto &h) {
    
       
-      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
+
       h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
         sum += x[i] * y[i];
+       
       });
     }).wait();
 
 
 
 
-
-    }
+  
+    
   // std::cout<<"result "<< *result<<std::endl;
   }
+  // q->submit([&](auto &h) {
+  //   sycl::stream out(655, 655, h);
+  //   h.single_task([=]() {
+  //     out << "result = "<< *result << cl::sycl::endl;
+  //   });
+  // }).wait();
   return 0;
 }
