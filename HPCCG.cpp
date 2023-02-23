@@ -85,8 +85,10 @@ int HPCCG(HPC_Sparse_Matrix * A,
 	  double * times)
 
 {
-  sycl::default_selector selector;
-	sycl::queue q(selector);
+  sycl::device device = sycl::default_selector().select_device();
+  sycl::device aux_device = sycl::default_selector().select_device();
+  sycl::queue q(device);
+  sycl::queue aux_q(aux_device);
   
   std::cout << "Mem Allocation Started"<< std::endl;
 
@@ -202,7 +204,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   // }).wait();
   
     
-    q.submit([&](handler& h) {
+    aux_q.submit([&](handler& h) {
 
     // sycl::stream out(655, 655, h);
     h.single_task([=]() {
@@ -214,7 +216,9 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   }).wait();
   
 	  
-	  TICK(); waxpby_sycl(&q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
+	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
+    aux_q.wait();
+    q.wait();
 	}
 
   q.submit([&](handler& h) {
@@ -242,8 +246,9 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 
       TICK(); waxpby_sycl(&q,nrow, 1.0, x_device, *alpha, p, x_device); // 2*nrow ops 
 
-      waxpby_sycl(&q,nrow, 1.0, r, -(*alpha), Ap, r);  TOCK(t2);// 2*nrow ops 
-
+      waxpby_sycl(&aux_q,nrow, 1.0, r, -(*alpha), Ap, r);  TOCK(t2);// 2*nrow ops 
+      q.wait();
+      aux_q.wait();
       niters = k;
   
     }
