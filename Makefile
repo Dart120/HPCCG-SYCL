@@ -78,7 +78,7 @@ USE_MPI =
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
 # CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
-# CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
+CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
 
 #
 # 4) MPI library:
@@ -125,7 +125,7 @@ TARGET = test_HPCCG
 
 ################### Derived Quantities (no modification required) ##############
 
-CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_INC) -O3
+CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_INC)
 
 LIB_PATHS= $(SYS_LIB)
 
