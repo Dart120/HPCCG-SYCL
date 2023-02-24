@@ -10,4 +10,5 @@ source /etc/profile
 
 module load module load intel-oneapi/2022.1.2/compiler
 make
-./test_HPCCG 200 300 100
+export SYCL_QUEUE_THREAD_POOL_SIZE=1 
+./test_HPCCG 3 3 3

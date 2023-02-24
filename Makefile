@@ -104,7 +104,7 @@ USE_MPI =
 #    to -DUSING_SYCL
 
 # USE_SYCL = 
-# USE_SYCL = -DUSING_SYCL
+USE_SYCL = -DUSING_SYCL
 
 #
 # 6) OpenMP Compiler argument
@@ -125,7 +125,7 @@ TARGET = test_HPCCG
 
 ################### Derived Quantities (no modification required) ##############
 
-CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_INC) -g -O3
+CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_INC) -O3
 
 LIB_PATHS= $(SYS_LIB)
 

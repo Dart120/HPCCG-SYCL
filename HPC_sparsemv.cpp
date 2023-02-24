@@ -66,63 +66,6 @@ using namespace sycl;
 #include "HPC_sparsemv.hpp"
 
 
-#ifdef USING_SYCL
-
-int HPC_sparsemv(HPC_Sparse_Matrix *A,
-				 const double *const x, double *const y)
-{
-	sycl::default_selector selector;
-	sycl::queue q(selector);
-	// std::cout << "Device : " << q.get_device().get_info<info::device::name>() << "\n";
-	const int nrow = (const int)A->local_nrow;
-	double** pointer_to_cur_vals_lst = static_cast<double**>(sycl::malloc_device(sizeof(double*) * nrow, q));
-	int** pointer_to_cur_inds_lst = static_cast<int**>(sycl::malloc_device(sizeof(int*) * nrow, q));
-	// For each row
-	for (int i = 0; i < nrow; i++)
-	{
-		pointer_to_cur_vals_lst[i] = static_cast<double*>(sycl::malloc_device(sizeof(double) * A->nnz_in_row[i], q));
-		pointer_to_cur_inds_lst[i] = static_cast<int*>(sycl::malloc_device(sizeof(int) * A->nnz_in_row[i], q));
-		q.memcpy(pointer_to_cur_vals_lst[i], A->ptr_to_vals_in_row[i], sizeof(double) * A->nnz_in_row[i]).wait();
-		q.memcpy(pointer_to_cur_inds_lst[i], A->ptr_to_inds_in_row[i], sizeof(int) * A->nnz_in_row[i]).wait();
-	}
-
-	double* pointer_to_y = malloc_device<double>(nrow, q);
-	int* pointer_to_cur_nnz = malloc_device<int>(nrow, q);
-	q.memcpy(pointer_to_cur_nnz, A->nnz_in_row, sizeof(int) * nrow).wait();
-	 q.parallel_for(range<1>(nrow), [=](id<1> i) {
-		 int cur_nnz = pointer_to_cur_nnz[i];
-		 double* cur_vals = pointer_to_cur_vals_lst[i];
-		 int* cur_inds = pointer_to_cur_inds_lst[i];
-		 double sum = 0.0;
-		 for (size_t j = 0; j < cur_nnz; j++)
-		 {
-			sum += cur_vals[j] * x[cur_inds[j]];
-		 }
-		 pointer_to_y[i] = sum;
-	}).wait();
-
-
-	
-  //# copy mem from device to host
-  q.memcpy(y, pointer_to_y, sizeof(double) * nrow).wait();
-
-  //# print output
-	for (int i = 0; i < nrow; i++)
-	{
-		sycl::free(pointer_to_cur_vals_lst[i],q);
-		sycl::free(pointer_to_cur_inds_lst[i],q);
-	}
-	sycl::free(pointer_to_cur_vals_lst,q);
-	sycl::free(pointer_to_cur_inds_lst,q);
-
-  return 0;
-}
-
-
-#else
-
-
-
 int HPC_sparsemv(HPC_Sparse_Matrix *A,
 				 const double *const x, double *const y)
 {
@@ -148,7 +91,7 @@ const int nrow = (const int)A->local_nrow;
 	return (0);
 }
 
-#endif
+
 
 int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
 				 const double *const x, double *const y)

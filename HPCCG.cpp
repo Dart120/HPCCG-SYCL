@@ -98,7 +98,7 @@ int HPCCG(HPC_Sparse_Matrix * A,
 
   int nrow = A->local_nrow;
   int ncol = A->local_ncol;
-  
+  #ifdef USING_SYCL
   double * r = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
   double * p = static_cast<double*>(sycl::malloc_device(sizeof(double) * ncol, q));
   double * Ap = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
@@ -112,8 +112,8 @@ int HPCCG(HPC_Sparse_Matrix * A,
 	// For each row
 	for (int i = 0; i < nrow; i++)
 	{
-		pointer_to_cur_vals_lst[i] = static_cast<double*>(sycl::malloc_device(sizeof(double) * A->nnz_in_row[i], q));
-		pointer_to_cur_inds_lst[i] = static_cast<int*>(sycl::malloc_device(sizeof(int) * A->nnz_in_row[i], q));
+		pointer_to_cur_vals_lst[i] = static_cast<double*>(sycl::malloc_shared(sizeof(double) * A->nnz_in_row[i], q));
+		pointer_to_cur_inds_lst[i] = static_cast<int*>(sycl::malloc_shared(sizeof(int) * A->nnz_in_row[i], q));
 		q.memcpy(pointer_to_cur_vals_lst[i], A->ptr_to_vals_in_row[i], sizeof(double) * A->nnz_in_row[i]).wait();
 		q.memcpy(pointer_to_cur_inds_lst[i], A->ptr_to_inds_in_row[i], sizeof(int) * A->nnz_in_row[i]).wait();
 	}
@@ -129,55 +129,73 @@ int HPCCG(HPC_Sparse_Matrix * A,
   *oldrtrans = 0.0;
   double* beta = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
   double* alpha = static_cast<double*>(sycl::malloc_device(sizeof(double), q));
-#ifdef USING_MPI
-  int rank; // Number of MPI processes, My process ID
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-#else
+  std::cout << "Mem Allocation Finished"<< std::endl;
+  #else
+  double * r = new double [nrow];
+  double * p = new double [ncol]; // In parallel case, A is rectangular
+  double * Ap = new double [nrow];
+
+  normr = 0.0;
+  double rtrans = 0.0;
+  double oldrtrans = 0.0;
+  #endif
+
   int rank = 0; // Serial case (not using MPI)
-#endif
+
 
   int print_freq = max_iter/10; 
   if (print_freq>50) print_freq=50;
   if (print_freq<1)  print_freq=1;
-  std::cout << "Mem Allocation Finished"<< std::endl;
-  // p is of length ncols, copy x to p for sparse MV operation
-  TICK(); waxpby_sycl(&q, nrow, 1.0, x_device, 0.0, x_device, p); TOCK(t2);
-#ifdef USING_MPI
-  TICK(); exchange_externals(A,p); TOCK(t5); 
-#endif
-
-  TICK(); HPC_sparsemv_sycl(&q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
   
+  // p is of length ncols, copy x to p for sparse MV operation
+  #ifdef USING_SYCL
+  TICK(); waxpby_sycl(&q, nrow, 1.0, x_device, 0.0, x_device, p); TOCK(t2);
+  #else
+  TICK(); waxpby(nrow, 1.0, x, 0.0, x, p); TOCK(t2);
+  #endif
+
+  #ifdef USING_SYCL
+  TICK(); HPC_sparsemv_sycl(&q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
   TICK(); waxpby_sycl(&q,nrow, 1.0, b_device, -1.0, Ap, r); TOCK(t2);
   TICK(); ddot_sycl(&q,nrow, r, r, rtrans, t4); TOCK(t1);
-
   q.submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
     *normr_shared = sqrt(*rtrans);
     if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });
-    
-    
   }).wait();
+  #else
+  TICK(); HPC_sparsemv(A, p, Ap); TOCK(t3);
+  TICK(); waxpby(nrow, 1.0, b, -1.0, Ap, r); TOCK(t2);
+  TICK(); ddot(nrow, r, r, &rtrans, t4); TOCK(t1);
+  normr = sqrt(rtrans);
+
+  if (rank==0) cout << "Initial Residual = "<< normr << std::endl;
+  #endif
 
 
 
-
+#ifdef USING_SYCL
 for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
+#else
+for(int k=1; k<max_iter && normr > tolerance; k++ )
+#endif
     {
       if (k == 1)
 	{
     
-
+    #ifdef USING_SYCL
 	  TICK(); waxpby_sycl(&q,nrow, 1.0, r, 0.0, r, p); TOCK(t2);
-  
+    #else
+    TICK(); waxpby(nrow, 1.0, r, 0.0, r, p); TOCK(t2);
+    #endif
   
 	}
       else
 	{
 	  
-
+    #ifdef USING_SYCL
     q.submit([&](handler& h) {
 
     // sycl::stream out(655, 655, h);
@@ -196,12 +214,6 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
   
 	  TICK(); ddot_sycl(&q,nrow, r, r, rtrans, t4);// 2*nrow ops 
-    // q.submit([&](handler& h) {
-    // sycl::stream out(655, 655, h);
-    // h.single_task([=]() {
-    // out << "rt = "<< *rtrans << cl::sycl::endl;
-    // });
-  // }).wait();
   
     
     aux_q.submit([&](handler& h) {
@@ -219,8 +231,14 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
     aux_q.wait();
     q.wait();
+    #else
+    oldrtrans = rtrans;
+	  TICK(); ddot (nrow, r, r, &rtrans, t4); TOCK(t1);// 2*nrow ops
+	  double beta = rtrans/oldrtrans;
+	  TICK(); waxpby (nrow, 1.0, r, beta, p, p);  TOCK(t2);// 2*nrow ops
+    #endif
 	}
-
+  #ifdef USING_SYCL
   q.submit([&](handler& h) {
    
     h.single_task([=]() {
@@ -249,8 +267,18 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
       waxpby_sycl(&aux_q,nrow, 1.0, r, -(*alpha), Ap, r);  TOCK(t2);// 2*nrow ops 
       q.wait();
       aux_q.wait();
+      #else
+      normr = sqrt(rtrans);
+      if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
+      cout << "Iteration = "<< k << "   Residual = "<< normr << std::endl;
+      TICK(); HPC_sparsemv(A, p, Ap); TOCK(t3); // 2*nnz ops
+      double alpha = 0.0;
+      TICK(); ddot(nrow, p, Ap, &alpha, t4); TOCK(t1); // 2*nrow ops
+      alpha = rtrans/alpha;
+      TICK(); waxpby(nrow, 1.0, x, alpha, p, x);// 2*nrow ops
+      waxpby(nrow, 1.0, r, -alpha, Ap, r);  TOCK(t2);// 2*nrow ops
+      #endif
       niters = k;
-  
     }
 
   // Store times
@@ -258,10 +286,8 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   times[2] = t2; // waxpby time
   times[3] = t3; // sparsemv time
   times[4] = t4; // AllReduce time
-#ifdef USING_MPI
-  times[5] = t5; // exchange boundary time
-#endif
-    std::cout << "Begun Freeing"<< std::endl;
+  #ifdef USING_SYCL
+  std::cout << "Begun Freeing"<< std::endl;
    sycl::free(r,q);
    sycl::free(p,q);
    sycl::free(Ap,q);
@@ -285,6 +311,11 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   q.memcpy(&normr, normr_shared, sizeof(double)).wait();
   sycl::free(normr_shared,q);
   std::cout << "All Memeory Free"<< std::endl;
+  #else
+  delete [] p;
+  delete [] Ap;
+  delete [] r;
+  #endif
   times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
 }

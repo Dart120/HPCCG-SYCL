@@ -55,55 +55,7 @@
 #include "ddot.hpp"
 #include <CL/sycl.hpp>
 
-#ifdef USING_SYCL
 
-int ddot (const int n, const double * const x, const double * const y, 
-	  double * const result, double & time_allreduce)
-{  
-  sycl::default_selector selector;
-	sycl::queue q(selector);
-  double sump = 0;
-  {
-    
-    sycl::buffer<double> sum_buf(&sump,1);
-    sycl::buffer<double> x_buf(x,cl::sycl::range<1>(n));
-    if(y==x){
-      // std::cout<<"eq"<<std::endl;
-      q.submit([&](auto &h) {
-      sycl::accessor x_acc(x_buf, h, sycl::read_only);
-      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
-      h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
-      
-        sum += x_acc[i] * x_acc[i];
-      });
-    });
-    }else{
-      // std::cout<<"diff"<<std::endl;
-      sycl::buffer<double> y_buf(y,cl::sycl::range<1>(n));
-      
-
-
-q.submit([&](auto &h) {
-      sycl::accessor x_acc(x_buf, h, sycl::read_only);
-      sycl::accessor y_acc(y_buf, h, sycl::read_only);
-      auto sumr =sycl::reduction(sum_buf,h, sycl::ext::oneapi::plus<>());
-      h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
-      
-        sum += x_acc[i] * y_acc[i];
-      });
-    });
-
-
-    }
-    
-  }
-  *result = sump;
-  // std::cout<<"result "<< *result<<std::endl;
-
-  return 0;
-}
-
-#else
 
 int ddot (const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
@@ -135,30 +87,14 @@ int ddot (const int n, const double * const x, const double * const y,
   return(0);
 }
 
-#endif
+
 // *** EDITED CODE ***
 
 int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
 {  
     *result = 0;
-//      q->submit([&](sycl::handler& h) {
 
-//     sycl::stream out(65535, 65535, h);
-//     h.single_task([=]() {
-     
-     
-//    for (size_t i = 0; i < n; i++)
-//   {
-//     if (i>26900){
-// out << "x = "<< x[i]<< ' '<< i << cl::sycl::endl;
-//     }
-    
-   
-//   }
- 
-//     });
-//   }).wait();
 
     auto sumr =sycl::reduction(result,sycl::ext::oneapi::plus<>());
     // std::cout<<"This is pants"<<std::endl;

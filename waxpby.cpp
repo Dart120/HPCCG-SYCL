@@ -62,68 +62,6 @@
 
 
 
-#ifdef USING_SYCL
-
-int waxpby (const int n, const double alpha, const double * const x, 
-	    const double beta, const double * const y, 
-		     double * const w)
-{  
-
-
-  sycl::default_selector selector;
-  // sycl::gpu_selector selector;
-  auto R = sycl::range<1>(n);
-  sycl::queue q(selector);
-  {
-  cl::sycl::buffer<double, 1> x_sycl(x, cl::sycl::range<1>(n));
-  cl::sycl::buffer<double, 1> y_sycl(y, cl::sycl::range<1>(n));
-  cl::sycl::buffer<double, 1> w_sycl(w, cl::sycl::range<1>(n));
-
-
-
-
-
-  if (alpha==1.0) {
-
-    q.submit([&](sycl::handler& h) {
-        auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto w_acc = w_sycl.get_access<cl::sycl::access::mode::write>(h);
-       h.parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
-          // int sum = 0;
-         w_acc[i] = x_acc[i] + beta * y_acc[i]; }); 
-         }).wait();
-  }
-  else if(beta==1.0) {
-    q.submit([&](sycl::handler& h) {
-auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto w_acc = w_sycl.get_access<cl::sycl::access::mode::write>(h);
-       h.parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
-        // int sum = 0;
-        w_acc[i] = alpha * x_acc[i] + y_acc[i]; 
-        }); }).wait();
-  }
-  else {
-    q.submit([&](sycl::handler& h) {
-        auto x_acc = x_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto y_acc = y_sycl.get_access<cl::sycl::access::mode::read>(h);
-         auto w_acc = w_sycl.get_access<cl::sycl::access::mode::write>(h);
-       h.parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) { 
-        // int sum = 0;
-         w_acc[i] = alpha * x_acc[i] + beta * y_acc[i]; }); 
-         }).wait();
-  }
-  // std::cout << w[0] << std::endl;
-  }
-  return(0);
-}
-
-
-
-#else
-
-
 
 
 
@@ -155,7 +93,7 @@ int waxpby (const int n, const double alpha, const double * const x,
 }
 
 
-#endif
+
 
 
 
