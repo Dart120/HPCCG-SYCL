@@ -1,0 +1,2 @@
+make: 'test_HPCCG' is up to date.
+/var/spool/slurmd/job242203/slurm_script: line 11: strongScalingRunScript.sh: command not found

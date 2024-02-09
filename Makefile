@@ -47,8 +47,8 @@
 #
 # 0) Specify compiler and linker:
 
-CXX=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
-LINKER=/apps/intel/oneapi/2022.1.2/compiler/2022.0.2/linux/bin/dpcpp
+CXX=/apps/llvm-sycl-cuda/llvm/build/bin/clang++
+LINKER=/apps/llvm-sycl-cuda/llvm/build/bin/clang++
 # CXX=gcc
 # LINKER=mpicxx
 
@@ -78,7 +78,7 @@ USE_MPI =
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
 # CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
-CPP_OPT_FLAGS = -O3 -fsycl -std=c++20
+CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-cuda -g
 
 #
 # 4) MPI library:

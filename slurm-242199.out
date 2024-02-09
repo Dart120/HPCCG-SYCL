@@ -1,0 +1,13 @@
+Loading compiler version 2022.0.2
+Loading tbb version 2021.5.1
+Loading compiler-rt version 2022.0.2
+Loading oclfpga version 2022.0.2
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+
+Loading intel-oneapi/2022.1.2/compiler
+  Loading requirement: tbb/latest compiler-rt/latest oclfpga/latest
+    compiler/latest
+[opencl:0] ACC : Intel(R) FPGA Emulation Platform for OpenCL(TM) 1.2 [2021.13.11.0.23_160000]
+[opencl:0] CPU : Intel(R) OpenCL 3.0 [2021.13.11.0.23_160000]
+[host:0] HOST: SYCL host platform 1.2 [1.2]

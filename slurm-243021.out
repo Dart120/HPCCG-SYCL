@@ -1,0 +1,7 @@
+make: 'test_HPCCG' is up to date.
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 15   Residual = 120.1
+Iteration = 30   Residual = 0.818529
+slurmstepd: error: *** JOB 243021 ON cpu5 CANCELLED AT 2023-03-07T14:23:08 ***

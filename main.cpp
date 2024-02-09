@@ -106,8 +106,17 @@ int main(int argc, char *argv[])
   double t6 = 0.0;
   int nx,ny,nz;
   #ifdef USING_SYCL
-  sycl::device device = sycl::default_selector().select_device();
-  sycl::queue q(device);
+  // Create a gpu_selector object
+  sycl::gpu_selector selector;
+
+  // Create a queue using the gpu_selector
+  sycl::queue q(selector);
+
+  // Print out the name of the device that the queue will use
+  std::cout << "Running on " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
+    
+  // sycl::device device = sycl::default_selector().select_device();
+  // sycl::queue q(device);
   #endif
   int size = 1; // Serial case (not using MPI)
   int rank = 0; 
@@ -132,6 +141,7 @@ int main(int argc, char *argv[])
     nz = atoi(argv[3]);
     #ifdef USING_SYCL
     generate_matrix_sycl(&q,nx, ny, nz, &A, &x, &b, &xexact);
+    
     #else
     generate_matrix(nx, ny, nz, &A, &x, &b, &xexact);
     #endif
@@ -141,6 +151,7 @@ int main(int argc, char *argv[])
   {
     #ifdef USING_SYCL
     read_HPC_row_sycl(&q,argv[1], &A, &x, &b, &xexact);
+    
     #else
     read_HPC_row(argv[1], &A, &x, &b, &xexact);
     #endif

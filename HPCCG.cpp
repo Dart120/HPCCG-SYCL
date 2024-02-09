@@ -99,9 +99,10 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   int nrow = A->local_nrow;
   int ncol = A->local_ncol;
 
-  double * r = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, *q));
-  double * p = static_cast<double*>(sycl::malloc_device(sizeof(double) * ncol, *q));
-  double * Ap = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, *q));
+  double * r = static_cast<double*>(sycl::malloc_shared(sizeof(double) * nrow, *q));
+  double * p = static_cast<double*>(sycl::malloc_shared(sizeof(double) * ncol, *q));
+  double * Ap = static_cast<double*>(sycl::malloc_shared(sizeof(double) * nrow, *q));
+  
   // double * x_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
   // q->memcpy(x_device, x, sizeof(double) * nrow).wait();
   // double * b_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
@@ -121,15 +122,17 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 	// double* pointer_to_y = malloc_device<double>(nrow, q);
 	int* pointer_to_cur_nnz = A->nnz_in_row;
 	// q->memcpy(pointer_to_cur_nnz, A->nnz_in_row, sizeof(int) * nrow).wait();
-  double * rtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
-  double * oldrtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
+  double * rtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
+  double * oldrtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   double * normr_shared = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
-  q->memcpy(normr_shared, &normr, sizeof(double)).wait();
+  
+  // q->memcpy(normr_shared, &normr, sizeof(double)).wait();
   *rtrans = 0.0;
   *oldrtrans = 0.0;
-  double* beta = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
-  double* alpha = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
+  double* beta = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
+  double* alpha = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   std::cout << "Mem Allocation Finished"<< std::endl;
+  
 
 
   int rank = 0; // Serial case (not using MPI)
@@ -142,12 +145,14 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   // p is of length ncols, copy x to p for sparse MV operation
 
   TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); TOCK(t2);
+  
 
 
 
   TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
   TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); TOCK(t2);
   TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4); TOCK(t1);
+  
   q->submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
@@ -155,6 +160,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
     if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });
   }).wait();
+  
 
 
 
@@ -168,6 +174,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     
   
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, 0.0, r, p); TOCK(t2);
+    
  
   
 	}
@@ -193,6 +200,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
   
 	  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4);// 2*nrow ops 
+    
   
     
     aux_q.submit([&](handler& h) {
@@ -210,6 +218,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
     aux_q.wait();
     q->wait();
+    
   
 	}
  
@@ -222,6 +231,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     
     
   }).wait();
+  
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
       std::cout << "Iteration = "<< k << "   Residual = "<< *normr_shared << std::endl;
   
@@ -244,6 +254,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
      
       niters = k;
     }
+    
 
   // Store times
   times[1] = t1; // ddot time
@@ -267,7 +278,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   sycl::free(A->list_of_vals,*q);
   sycl::free(A->list_of_inds,*q);
   sycl::free(A,*q);
-  std::cout << "All Memeory Free"<< std::endl;
+  std::cout << "All Memory Free"<< std::endl;
 
   times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
