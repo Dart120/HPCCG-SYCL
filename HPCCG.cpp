@@ -279,7 +279,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   sycl::free(A->list_of_inds,*q);
   sycl::free(A,*q);
   std::cout << "All Memory Free"<< std::endl;
-
+  normr = *normr_shared;
   times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
 }
