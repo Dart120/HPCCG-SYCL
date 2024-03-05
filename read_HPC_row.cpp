@@ -55,10 +55,12 @@ using std::endl;
 #include <cstdlib>
 #include <cstdio>
 #include <cassert>
-#include <CL/sycl.hpp>
-using namespace sycl;
+
 using namespace std;
 #include "read_HPC_row.hpp"
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
+using namespace sycl;
 void read_HPC_row_sycl(sycl::queue *q,char *data_file, HPC_Sparse_Matrix **A,
 		  double **x, double **b, double **xexact)
 {
@@ -209,6 +211,8 @@ void read_HPC_row_sycl(sycl::queue *q,char *data_file, HPC_Sparse_Matrix **A,
 
   return;
 }
+
+#endif
 
 void read_HPC_row(char *data_file, HPC_Sparse_Matrix **A,
 		  double **x, double **b, double **xexact)

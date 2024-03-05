@@ -58,7 +58,7 @@
 
 #include "waxpby.hpp"
 #include <iostream>
-#include <CL/sycl.hpp>
+
 
 
 
@@ -94,8 +94,8 @@ int waxpby (const int n, const double alpha, const double * const x,
 
 
 
-
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
 
 int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, 
 	    const double beta, const double * const y, 
@@ -135,3 +135,5 @@ int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * 
 
   return(0);
 }
+
+#endif 

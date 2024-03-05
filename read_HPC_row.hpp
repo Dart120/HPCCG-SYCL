@@ -45,9 +45,12 @@
 #include <mpi.h>
 #endif
 #include "HPC_Sparse_Matrix.hpp"
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
 void read_HPC_row_sycl(sycl::queue *q,char *data_file, HPC_Sparse_Matrix **A,
 		  double **x, double **b, double **xexact);
+#endif
+
 void read_HPC_row(char *data_file, HPC_Sparse_Matrix **A,
 		  double **x, double **b, double **xexact);
 #endif

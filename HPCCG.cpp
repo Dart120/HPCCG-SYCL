@@ -66,8 +66,7 @@ using std::endl;
 #include <cmath>
 #include "mytimer.hpp"
 #include "HPCCG.hpp"
-#include <CL/sycl.hpp>
-using namespace sycl;
+
 
 #define TICK()  t0 = mytimer() // Use TICK and TOCK to time a code section
 #define TOCK(t) t += mytimer() - t0
@@ -77,7 +76,9 @@ using namespace sycl;
 
 
 
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
+using namespace sycl;
 
 int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 	  double * const b_device, double * const x_device,
@@ -86,9 +87,12 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 
 {
 
-  sycl::device aux_device = sycl::default_selector().select_device();
- 
-  sycl::queue aux_q(aux_device);
+  // Create a gpu_selector object
+  sycl::gpu_selector selector;
+
+  // Create a queue using the gpu_selector
+  sycl::queue aux_q(selector);
+  std::cout << "aux q Running on " << aux_q.get_device().get_info<sycl::info::device::name>() << std::endl;
   
   std::cout << "Mem Allocation Started"<< std::endl;
 
@@ -145,13 +149,18 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   // p is of length ncols, copy x to p for sparse MV operation
 
   TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); TOCK(t2);
+  std::cout <<"waxby 1"<< std::endl;
+
   
 
 
 
   TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
+  std::cout <<"spmv 1"<< std::endl;
   TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); TOCK(t2);
+  std::cout <<"wax 2"<< std::endl;
   TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4); TOCK(t1);
+  std::cout <<"ddot 1"<< std::endl;
   
   q->submit([&](handler& h) {
     sycl::stream out(655, 655, h);
@@ -182,20 +191,16 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	{
 	  
  
-    q->submit([&](handler& h) {
+    // q->submit([&](handler& h) {
 
-    // sycl::stream out(655, 655, h);
-    h.single_task([=]() {
+
+    // h.single_task([=]() {
      
      *oldrtrans = *rtrans;
-  //  for (size_t i = 0; i < nrow; i++)
-  // {
-  //   out << "r = "<< r[i] << cl::sycl::endl;
-   
-  // }
+
  
-    });
-  }).wait();
+  //   });
+  // }).wait();
   
   
   
@@ -203,34 +208,35 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     
   
     
-    aux_q.submit([&](handler& h) {
+    // aux_q.submit([&](handler& h) {
 
-    // sycl::stream out(655, 655, h);
-    h.single_task([=]() {
+    // // sycl::stream out(655, 655, h);
+    // h.single_task([=]() {
      
      *beta = *rtrans / *oldrtrans;
 
  
-    });
-  }).wait();
+  //   });
+  // }).wait();
   
 	  
-	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  TOCK(t2);// 2*nrow ops 
+	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  
     aux_q.wait();
     q->wait();
+    TOCK(t2);// 2*nrow ops 
     
   
 	}
  
-  q->submit([&](handler& h) {
+  // q->submit([&](handler& h) {
    
-    h.single_task([=]() {
+  //   h.single_task([=]() {
     *normr_shared = sqrt(*rtrans);
 
-    });
+  //   });
     
     
-  }).wait();
+  // }).wait();
   
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
       std::cout << "Iteration = "<< k << "   Residual = "<< *normr_shared << std::endl;
@@ -240,17 +246,18 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
       
 
       TICK(); ddot_sycl(q,nrow, p, Ap, alpha, t4); TOCK(t1); // 2*nrow ops 
-      q->submit([&](handler& h) {
-    h.single_task([=]() {
+    //   q->submit([&](handler& h) {
+    // h.single_task([=]() {
            *alpha = *rtrans/ *alpha;
-    });
-  }).wait();
+  //   });
+  // }).wait();
 
       TICK(); waxpby_sycl(q,nrow, 1.0, x_device, *alpha, p, x_device); // 2*nrow ops 
 
-      waxpby_sycl(&aux_q,nrow, 1.0, r, -(*alpha), Ap, r);  TOCK(t2);// 2*nrow ops 
+      waxpby_sycl(&aux_q,nrow, 1.0, r, -(*alpha), Ap, r);  
       q->wait();
       aux_q.wait();
+      TOCK(t2);// 2*nrow ops 
      
       niters = k;
     }
@@ -278,8 +285,10 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   sycl::free(A->list_of_vals,*q);
   sycl::free(A->list_of_inds,*q);
   sycl::free(A,*q);
+  normr = *normr_shared;
   std::cout << "All Memory Free"<< std::endl;
   normr = *normr_shared;
+  // std::cout << "residual at end of func "<< normr << std::endl;
   times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
 }
@@ -287,7 +296,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 
 
 
-
+#endif
 
 
 
@@ -381,5 +390,6 @@ int HPCCG(HPC_Sparse_Matrix * A,
   delete [] Ap;
   delete [] r;
   times[0] = mytimer() - t_begin;  // Total time. All done...
-  return(0);
+  
+  return(0 );
 }

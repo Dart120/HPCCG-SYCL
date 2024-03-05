@@ -60,8 +60,7 @@ using std::endl;
 #include <cctype>
 #include <cassert>
 #include <string>
-#include <CL/sycl.hpp>
-using namespace sycl;
+
 #include <cmath>
 #include "HPC_sparsemv.hpp"
 
@@ -91,8 +90,9 @@ const int nrow = (const int)A->local_nrow;
 	return (0);
 }
 
-
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
+using namespace sycl;
 int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
 				 const double *const x, double *const y)
 {
@@ -117,3 +117,4 @@ int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** poin
 
   return 0;
 }
+#endif

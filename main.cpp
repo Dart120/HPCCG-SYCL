@@ -78,7 +78,9 @@ using std::endl;
 #ifdef USING_OMP
 #include <omp.h>
 #endif
+#ifdef USING_SYCL
 #include <CL/sycl.hpp>
+#endif
 #include "generate_matrix.hpp"
 #include "read_HPC_row.hpp"
 #include "mytimer.hpp"
@@ -113,7 +115,7 @@ int main(int argc, char *argv[])
   sycl::queue q(selector);
 
   // Print out the name of the device that the queue will use
-  std::cout << "Running on " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
+  std::cout << "q Running on " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
     
   // sycl::device device = sycl::default_selector().select_device();
   // sycl::queue q(device);
@@ -226,8 +228,8 @@ int main(int argc, char *argv[])
           doc.get("Parallelism")->add("OpenMP not enabled","");
 #endif
 #ifdef USING_SYCL
-         sycl::device d = sycl::default_selector().select_device();
-        doc.get("Parallelism")->add("Number of SYCL threads",(int) d.get_info<sycl::info::device::max_compute_units>());
+         sycl::device d = selector.select_device();
+        doc.get("Parallelism")->add("Number of SYCL compute units",(int) d.get_info<sycl::info::device::max_compute_units>());
 #else
           doc.get("Parallelism")->add("SYCL not enabled","");
 #endif

@@ -53,7 +53,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 #include "ddot.hpp"
-#include <CL/sycl.hpp>
+
 
 
 
@@ -89,7 +89,8 @@ int ddot (const int n, const double * const x, const double * const y,
 
 
 // *** EDITED CODE ***
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
 int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
 {  
@@ -144,3 +145,5 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
   // }).wait();
   return 0;
 }
+
+#endif

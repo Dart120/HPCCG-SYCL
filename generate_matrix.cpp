@@ -58,6 +58,8 @@ using std::endl;
 #include <cstdio>
 #include <cassert>
 #include "generate_matrix.hpp"
+
+#ifdef USING_SYCL
 #include <CL/sycl.hpp>
 using namespace sycl;
 void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matrix **A, double **x, double **b, double **xexact)
@@ -186,6 +188,9 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
 
   return;
 }
+
+
+#endif
 
 
 void generate_matrix(int nx, int ny, int nz, HPC_Sparse_Matrix **A, double **x, double **b, double **xexact)
