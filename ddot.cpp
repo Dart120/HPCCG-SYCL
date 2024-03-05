@@ -91,10 +91,11 @@ int ddot (const int n, const double * const x, const double * const y,
 // *** EDITED CODE ***
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
-int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
+sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
 	  double * const result, double & time_allreduce)
 {  
     *result = 0;
+    sycl::event e_ddot;
 
 
     auto sumr =sycl::reduction(result,sycl::ext::oneapi::plus<>());
@@ -102,7 +103,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
     // std::cout<<n<<std::endl;
     if(y==x){
       // std::cout<<"eq"<<std::endl;
-      q->submit([&](auto &h) {
+      e_ddot = q->submit([&](auto &h) {
         
    
       // sycl::ext::oneapi::reduction(result,0.0f,sycl::ext::oneapi::plus<>(),q);
@@ -111,7 +112,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
         sum += x[i] * x[i];
     
       });
-    }).wait();
+    });
 
 
 
@@ -120,7 +121,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
     }else{
       // std::cout<<"diff"<<std::endl;
 
-      q->submit([&](auto &h) {
+      e_ddot = q->submit([&](auto &h) {
    
       
 
@@ -128,7 +129,7 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
         sum += x[i] * y[i];
        
       });
-    }).wait();
+    });
 
 
 
@@ -142,8 +143,8 @@ int ddot_sycl(sycl::queue* q, const int n, const double * const x, const double 
   //   h.single_task([=]() {
   //     out << "result = "<< *result << cl::sycl::endl;
   //   });
-  // }).wait();
-  return 0;
+  // });
+  return e_ddot;
 }
 
 #endif

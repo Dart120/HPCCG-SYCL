@@ -87,12 +87,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 
 {
 
-  // Create a gpu_selector object
-  sycl::gpu_selector selector;
 
-  // Create a queue using the gpu_selector
-  sycl::queue aux_q(selector);
-  std::cout << "aux q Running on " << aux_q.get_device().get_info<sycl::info::device::name>() << std::endl;
   
   std::cout << "Mem Allocation Started"<< std::endl;
 
@@ -148,27 +143,35 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   
   // p is of length ncols, copy x to p for sparse MV operation
 
-  TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); TOCK(t2);
-  std::cout <<"waxby 1"<< std::endl;
+  TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); q->wait(); TOCK(t2);
+
 
   
 
 
 
-  TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
-  std::cout <<"spmv 1"<< std::endl;
-  TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); TOCK(t2);
-  std::cout <<"wax 2"<< std::endl;
-  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4); TOCK(t1);
-  std::cout <<"ddot 1"<< std::endl;
+  TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap); q->wait();  TOCK(t3); // 2*nnz ops
+
+
+
+  TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); q->wait(); TOCK(t2);
+
+
+
+  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4); q->wait(); TOCK(t1);
+
+
   
-  q->submit([&](handler& h) {
+
+    *normr_shared = sqrt(*rtrans);
+    q->submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
     *normr_shared = sqrt(*rtrans);
     if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });
   }).wait();
+
   
 
 
@@ -182,7 +185,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	{
     
   
-	  TICK(); waxpby_sycl(q,nrow, 1.0, r, 0.0, r, p); TOCK(t2);
+	  TICK(); waxpby_sycl(q,nrow, 1.0, r, 0.0, r, p); q->wait(); TOCK(t2);
     
  
   
@@ -206,7 +209,8 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
 	  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4);// 2*nrow ops 
     
-  
+    q->wait();
+    TOCK(t1);
     
     // aux_q.submit([&](handler& h) {
 
@@ -220,8 +224,8 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   // }).wait();
   
 	  
-	  TICK(); waxpby_sycl(&aux_q,nrow, 1.0, r, *beta, p, p);  
-    aux_q.wait();
+	  TICK(); waxpby_sycl(q,nrow, 1.0, r, *beta, p, p);  
+   
     q->wait();
     TOCK(t2);// 2*nrow ops 
     
@@ -241,22 +245,20 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
       std::cout << "Iteration = "<< k << "   Residual = "<< *normr_shared << std::endl;
   
-  TICK();HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);  TOCK(t3); // 2*nnz ops
+  TICK();HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);q->wait();  TOCK(t3); // 2*nnz ops
 
       
 
-      TICK(); ddot_sycl(q,nrow, p, Ap, alpha, t4); TOCK(t1); // 2*nrow ops 
-    //   q->submit([&](handler& h) {
-    // h.single_task([=]() {
+      TICK(); sycl::event e_ddot = ddot_sycl(q,nrow, p, Ap, alpha, t4);q->wait();TOCK(t1); // 2*nrow ops 
+
            *alpha = *rtrans/ *alpha;
-  //   });
-  // }).wait();
 
-      TICK(); waxpby_sycl(q,nrow, 1.0, x_device, *alpha, p, x_device); // 2*nrow ops 
 
-      waxpby_sycl(&aux_q,nrow, 1.0, r, -(*alpha), Ap, r);  
+      TICK(); waxpby_sycl_tasked(q,nrow, 1.0, x_device, *alpha, p, x_device, e_ddot); // 2*nrow ops 
+// q->wait();
+      waxpby_sycl_tasked(q,nrow, 1.0, r, -(*alpha), Ap, r, e_ddot);  
+      
       q->wait();
-      aux_q.wait();
       TOCK(t2);// 2*nrow ops 
      
       niters = k;

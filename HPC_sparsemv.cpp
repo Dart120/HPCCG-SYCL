@@ -108,7 +108,7 @@ int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** poin
 			sum += cur_vals[j] * x[cur_inds[j]];
 		 }
 		 y[i] = sum;
-	}).wait();
+	});
 
 
 	

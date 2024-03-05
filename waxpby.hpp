@@ -41,6 +41,9 @@
 //@HEADER
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
+int waxpby_sycl_tasked(sycl::queue* q ,const int n, const double alpha, const double * const x, 
+	    const double beta, const double * const y, 
+		     double * const w, sycl::event e);
 int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, 
 	    const double beta, const double * const y, 
 		     double * const w);
