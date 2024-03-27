@@ -91,59 +91,27 @@ int ddot (const int n, const double * const x, const double * const y,
 // *** EDITED CODE ***
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
-sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
-	  double * const result, double & time_allreduce)
+sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, double * const result)
 {  
     *result = 0;
     sycl::event e_ddot;
-
-
-    auto sumr =sycl::reduction(result,sycl::ext::oneapi::plus<>());
-    // std::cout<<"This is pants"<<std::endl;
-    // std::cout<<n<<std::endl;
-    if(y==x){
-      // std::cout<<"eq"<<std::endl;
+    auto sumr = sycl::reduction(result,sycl::plus<>());
+    std::cout<<"N is:  " << n << std::endl;
+    if (y == x) {
+      
       e_ddot = q->submit([&](auto &h) {
-        
-   
-      // sycl::ext::oneapi::reduction(result,0.0f,sycl::ext::oneapi::plus<>(),q);
-      // For some reason this for loop cant handle n elements
       h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
         sum += x[i] * x[i];
-    
       });
     });
-
-
-
-
-
-    }else{
-      // std::cout<<"diff"<<std::endl;
-
+    } else {
       e_ddot = q->submit([&](auto &h) {
-   
-      
-
-      h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
-        sum += x[i] * y[i];
-       
+		h.parallel_for(sycl::range<1>{static_cast<unsigned long>(n)}, sumr, [=](sycl::id<1> i, auto &sum) {
+			sum += x[i] * y[i];
       });
     });
-
-
-
-
-  
-    
-  // std::cout<<"result "<< *result<<std::endl;
   }
-  // q->submit([&](auto &h) {
-  //   sycl::stream out(655, 655, h);
-  //   h.single_task([=]() {
-  //     out << "result = "<< *result << cl::sycl::endl;
-  //   });
-  // });
+  // exit(0);
   return e_ddot;
 }
 

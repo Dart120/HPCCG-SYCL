@@ -132,6 +132,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   double* alpha = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   std::cout << "Mem Allocation Finished"<< std::endl;
   
+  
 
 
   int rank = 0; // Serial case (not using MPI)
@@ -144,21 +145,25 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   // p is of length ncols, copy x to p for sparse MV operation
 
   TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); q->wait(); TOCK(t2);
+  
 
 
   
 
-
+   
 
   TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap); q->wait();  TOCK(t3); // 2*nnz ops
-
+  
 
 
   TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); q->wait(); TOCK(t2);
+  
 
 
 
-  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4); q->wait(); TOCK(t1);
+  TICK(); ddot_sycl(q,nrow, r, r, rtrans); q->wait(); TOCK(t1);
+  
+ 
 
 
   
@@ -207,7 +212,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
   
   
-	  TICK(); ddot_sycl(q,nrow, r, r, rtrans, t4);// 2*nrow ops 
+	  TICK(); ddot_sycl(q,nrow, r, r, rtrans);// 2*nrow ops 
     
     q->wait();
     TOCK(t1);
@@ -249,7 +254,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 
       
 
-      TICK(); sycl::event e_ddot = ddot_sycl(q,nrow, p, Ap, alpha, t4);q->wait();TOCK(t1); // 2*nrow ops 
+      TICK(); sycl::event e_ddot = ddot_sycl(q,nrow, p, Ap, alpha);q->wait();TOCK(t1); // 2*nrow ops 
 
            *alpha = *rtrans/ *alpha;
 

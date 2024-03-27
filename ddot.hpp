@@ -48,7 +48,7 @@
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
 sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, 
-	  double * const result, double & time_allreduce);
+	  double * const result);
 #endif
 
 

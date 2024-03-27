@@ -72,17 +72,15 @@ const int nrow = (const int)A->local_nrow;
 #ifdef USING_OMP
 #pragma omp parallel for
 #endif
-	// For each row
+
 	for (int i = 0; i < nrow; i++)
 	{
-    // std::cout <<"Row "<< i << std::endl;
 		double sum = 0.0;
 		const double *const cur_vals = (const double *const)A->ptr_to_vals_in_row[i];
 		const int *const cur_inds = (const int *const)A->ptr_to_inds_in_row[i];
 		const int cur_nnz = (const int)A->nnz_in_row[i];
 		for (int j = 0; j < cur_nnz; j++)
 		{
-			// Sum = a non zero number in the row * the vector element at that same index
 			sum += cur_vals[j] * x[cur_inds[j]];
 		}
 		y[i] = sum;
@@ -96,8 +94,6 @@ using namespace sycl;
 int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
 				 const double *const x, double *const y)
 {
-	
-	
 	 q->parallel_for(range<1>(nrow), [=](id<1> i) {
 		 int cur_nnz = pointer_to_cur_nnz[i];
 		 double* cur_vals = pointer_to_cur_vals_lst[i];
@@ -109,12 +105,6 @@ int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** poin
 		 }
 		 y[i] = sum;
 	});
-
-
-	
- 
-
-
   return 0;
 }
 #endif
