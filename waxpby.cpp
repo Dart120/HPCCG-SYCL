@@ -100,36 +100,64 @@ int waxpby (const int n, const double alpha, const double * const x,
 int waxpby_sycl_tasked(sycl::queue* q ,const int n, const double alpha, const double * const x, 
 	const double beta, const double * const y, 
 	double * const w, sycl::event e) {  
+
+
+	const size_t localSize = 512;    // Desired work-group size
+    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
+    const size_t numGroups = globalSize / localSize;
+
+
 	if (alpha==1.0) {
-		q->parallel_for(sycl::range<1>(n),{e}, [=](sycl::id<1> i) {
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)),{e}, [=](sycl::nd_item<1> it) {
+			size_t i = it.get_global_id(0);
+			if (i < n){
 			w[i] = x[i] + beta * y[i]; 
+			}
 	});  
 	}
 	else if (beta==1.0) {
 
-		q->parallel_for(sycl::range<1>(n),{e}, [=](sycl::id<1> i) {
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)),{e}, [=](sycl::nd_item<1> it) {
+			size_t i = it.get_global_id(0);
+			if (i < n){
 			w[i] = alpha * x[i] + y[i]; 
+			}
 	});
 	} else {
-		q->parallel_for(sycl::range<1>(n),{e}, [=](sycl::id<1> i) { 
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)),{e}, [=](sycl::nd_item<1> it) { 
+			size_t i = it.get_global_id(0);
+		if (i < n){
 			w[i] = alpha * x[i] + beta * y[i]; 
+			}
 		}); 
 	}
 	return(0);
 }
 int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, const double beta, const double * const y, double * const w)
 { 
+	const size_t localSize = 512;    // Desired work-group size
+    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
+    const size_t numGroups = globalSize / localSize;
 	if (alpha==1.0) {
-		q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](sycl::nd_item<1> it) {
+			size_t i = it.get_global_id(0);
+			if (i < n){
 			w[i] = x[i] + beta * y[i]; 
+			}
 		}); 
 	} else if (beta==1.0) {
-		q->parallel_for(sycl::range<1>(n), [=](sycl::id<1> i) {
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](sycl::nd_item<1> it) {
+			size_t i = it.get_global_id(0);
+			if (i < n){
 			w[i] = alpha * x[i] + y[i]; 
+			}
 		});
 	} else {
-		q->parallel_for(sycl::range<1>(n),[=](sycl::id<1> i) { 
+		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)),[=](sycl::nd_item<1> it) { 
+			size_t i = it.get_global_id(0);
+		if (i < n){
 			w[i] = alpha * x[i] + beta * y[i]; 
+			}
 		});   
 	}
 return(0);
