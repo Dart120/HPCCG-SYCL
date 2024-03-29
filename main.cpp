@@ -78,6 +78,9 @@ using std::endl;
 #ifdef USING_OMP
 #include <omp.h>
 #endif
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
+#endif
 #include "generate_matrix.hpp"
 #include "read_HPC_row.hpp"
 #include "mytimer.hpp"
@@ -104,34 +107,22 @@ int main(int argc, char *argv[])
   double times[7];
   double t6 = 0.0;
   int nx,ny,nz;
+  #ifdef USING_SYCL
+  // Create a gpu_selector object
+  sycl::gpu_selector selector;
 
-#ifdef USING_MPI
+  // Create a queue using the gpu_selector
+  sycl::queue q(selector);
 
-  MPI_Init(&argc, &argv);
-  int size, rank; // Number of MPI processes, My process ID
-  MPI_Comm_size(MPI_COMM_WORLD, &size);
-  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-
-  //  if (size < 100) cout << "Process "<<rank<<" of "<<size<<" is alive." <<endl;
-
-#else
-
+  // Print out the name of the device that the queue will use
+  std::cout << "q Running on " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
+    
+  // sycl::device device = sycl::default_selector().select_device();
+  // sycl::queue q(device);
+  #endif
   int size = 1; // Serial case (not using MPI)
   int rank = 0; 
 
-#endif
-
-
-#ifdef DEBUG
-  if (rank==0)
-   {
-    int junk = 0;
-    cout << "Press enter to continue"<< endl;
-    cin >> junk;
-   }
-
-  MPI_Barrier(MPI_COMM_WORLD);
-#endif
 
 
   if(argc != 2 && argc!=4) {
@@ -146,19 +137,31 @@ int main(int argc, char *argv[])
 
   if (argc==4) 
   {
+    
     nx = atoi(argv[1]);
     ny = atoi(argv[2]);
     nz = atoi(argv[3]);
+    #ifdef USING_SYCL
+    generate_matrix_sycl(&q,nx, ny, nz, &A, &x, &b, &xexact);
+    
+    #else
     generate_matrix(nx, ny, nz, &A, &x, &b, &xexact);
+    #endif
+    // exit(0);
   }
   else
   {
+    #ifdef USING_SYCL
+    read_HPC_row_sycl(&q,argv[1], &A, &x, &b, &xexact);
+    
+    #else
     read_HPC_row(argv[1], &A, &x, &b, &xexact);
+    #endif
   }
 
 
-  bool dump_matrix = false;
-  if (dump_matrix && size<=4) dump_matlab_matrix(A, rank);
+  // bool dump_matrix = true;
+  // if (dump_matrix && size<=4) dump_matlab_matrix(A, rank);
 
 #ifdef USING_MPI
 
@@ -175,7 +178,11 @@ int main(int argc, char *argv[])
   double normr = 0.0;
   int max_iter = 150;
   double tolerance = 0.0; // Set tolerance to zero to make all runs do max_iter iterations
-  ierr = HPCCG( A, b, x, max_iter, tolerance, niters, normr, times);
+  #ifdef USING_SYCL
+  ierr = HPCCG_sycl(&q, A, b, x, max_iter, tolerance, niters, normr, times);
+  #else
+  ierr = HPCCG(A, b, x, max_iter, tolerance, niters, normr, times);
+  #endif
 
 	if (ierr) cerr << "Error in call to CG: " << ierr << ".\n" << endl;
 
@@ -219,6 +226,12 @@ int main(int argc, char *argv[])
           doc.get("Parallelism")->add("Number of OpenMP threads",nthreads);
 #else
           doc.get("Parallelism")->add("OpenMP not enabled","");
+#endif
+#ifdef USING_SYCL
+         sycl::device d = selector.select_device();
+        doc.get("Parallelism")->add("Number of SYCL compute units",(int) d.get_info<sycl::info::device::max_compute_units>());
+#else
+          doc.get("Parallelism")->add("SYCL not enabled","");
 #endif
 
       doc.add("Dimensions","");

@@ -52,8 +52,14 @@
 #include <mpi.h> // If this routine is compiled with -DUSING_MPI
                  // then include mpi.h
 #endif
+#ifdef USING_SYCL
+int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
+	  double * const b, double * const x,
+	  const int max_iter, const double tolerance, int & niters, double & normr, double * times);
+#endif
+
 int HPCCG(HPC_Sparse_Matrix * A,
-	  const double * const b, double * const x,
+	  double * const b, double * const x,
 	  const int max_iter, const double tolerance, int & niters, double & normr, double * times);
 
 // this function will compute the Conjugate Gradient...

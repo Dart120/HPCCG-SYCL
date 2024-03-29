@@ -47,7 +47,12 @@
 #include <mpi.h> // If this routine is compiled with -DUSING_MPI
                  // then include mpi.h
 #endif
-
+#ifdef USING_SYCL
+#include <CL/sycl.hpp>
+int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz,int nrow,
+				 const double *const x, double *const y);
+#endif
 int HPC_sparsemv( HPC_Sparse_Matrix *A, 
 		 const double * const x, double * const y);
+
 #endif
