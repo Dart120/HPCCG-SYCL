@@ -47,8 +47,8 @@
 #
 # 0) Specify compiler and linker:
 
-CXX=/apps/llvm-sycl-cuda/llvm/build/bin/clang++
-LINKER=/apps/llvm-sycl-cuda/llvm/build/bin/clang++
+CXX=/home/temi/sycl_workspace/llvm/build/bin/clang++
+LINKER=/home/temi/sycl_workspace/llvm/build/bin/clang++
 # CXX=gcc
 # LINKER=mpicxx
 
@@ -78,7 +78,7 @@ USE_MPI =
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
 # CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
-CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-nvidia-cuda -g
+CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-nvidia-cuda -g -Xcuda-ptxas --verbose -Xsycl-target-backend --cuda-gpu-arch=sm_75
 
 #
 # 4) MPI library:
