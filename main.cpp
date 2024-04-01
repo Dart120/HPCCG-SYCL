@@ -80,6 +80,7 @@ using std::endl;
 #endif
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
+
 #endif
 #include "generate_matrix.hpp"
 #include "read_HPC_row.hpp"
@@ -143,6 +144,13 @@ int main(int argc, char *argv[])
     nz = atoi(argv[3]);
     #ifdef USING_SYCL
     generate_matrix_sycl(&q,nx, ny, nz, &A, &x, &b, &xexact);
+     q.submit([&](sycl::handler& h) {
+    sycl::stream out(256, 1024, h);
+        h.single_task([=]() {
+          out << "This many nnz: " << A->total_nnz << sycl::endl;
+            // A_device->total_nnz = 10;
+        });
+    }).wait();
     
     #else
     generate_matrix(nx, ny, nz, &A, &x, &b, &xexact);

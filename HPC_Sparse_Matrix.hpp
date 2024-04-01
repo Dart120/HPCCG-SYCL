@@ -52,11 +52,12 @@ const int max_num_neighbors = max_num_messages;
 
 
 struct HPC_Sparse_Matrix_STRUCT {
-  char   *title;
-  int start_row;
-  int stop_row;
+  char title;
+  int  start_row;
+  int  stop_row;
   int total_nrow;
   long long total_nnz;
+  long long* total_nnz_ptr;
   int local_nrow;
   int local_ncol;  // Must be defined in make_local_matrix
   int local_nnz;
