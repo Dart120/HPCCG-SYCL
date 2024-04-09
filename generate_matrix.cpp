@@ -163,6 +163,26 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   (A_host)->local_nnz = local_nnz;
 
 
+    for (size_t i = 0; i < local_nrow; i++)
+  {
+ 
+			int cur_nnz = A_host->nnz_in_row[i];
+			double* cur_vals = A_host->ptr_to_vals_in_row[i];
+			int* cur_inds = A_host->ptr_to_inds_in_row[i];
+
+			for (size_t j = 0; j < cur_nnz; j++)
+			{
+    
+            std::cout << cur_vals[i]  <<",";
+       
+          
+				 
+			}
+		std::cout << std::endl;
+
+  }
+
+
 
 
 
@@ -210,14 +230,7 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
 
 
 
-  // q->submit([&](handler& h) {
-  //   stream out(256, 1024, h);
-  //       h.single_task([=]() {
-          
-  //         out << "This many nnz: " << A_host->nnz_in_row[0] << sycl::endl;
-         
-  //       });
-  //   }).wait();
+  
 
   
   
@@ -239,11 +252,48 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   size_t bufferSize = 1024;
   size_t maxStatementSize = 256;
   q->memcpy(A_device, A_host, sizeof(HPC_Sparse_Matrix)).wait();
-  q->parallel_for(range<1>(total_nrow), [=](id<1> idx) {
-    int row = idx[0];
-    ptr_to_vals_in_row[row] = &list_of_vals[A_device->nnz_in_row[row]];
-    ptr_to_inds_in_row[row] = &list_of_inds[A_device->nnz_in_row[row]];
-}).wait();
+
+   q->submit([&](handler& h) {
+    // sycl::stream out(655, 655, h);
+    h.single_task([=]() {
+      int nnz_counter = 0;
+      for (size_t i = 0; i < total_nrow; i++)
+      {
+          int row = i;
+
+          A_device->ptr_to_vals_in_row[row] = &list_of_vals[nnz_counter];
+          A_device->ptr_to_inds_in_row[row] = &list_of_inds[nnz_counter];
+          nnz_counter += A_device->nnz_in_row[row];
+      }
+    });
+  }).wait();
+
+
+//   q->parallel_for(range<1>(total_nrow), [=](id<1> idx) {
+//     int row = i;
+//     A_device->ptr_to_vals_in_row[row] = &list_of_vals[A_device->nnz_in_row[row]];
+//     A_device->ptr_to_inds_in_row[row] = &list_of_inds[A_device->nnz_in_row[row]];
+// }).wait();
+
+
+  // for (size_t i = 0; i < 10; i++)
+  // {
+    
+	// 		int cur_nnz = A_device->nnz_in_row[i];
+	// 		double* cur_vals = A_device->ptr_to_vals_in_row[i];
+	// 		int* cur_inds = A_device->ptr_to_inds_in_row[i];
+  //     // cur_vals[0] = 69;
+
+	// 		for (size_t j = 0; j < cur_nnz; j++)
+	// 		{
+    
+  //           std::cout << cur_vals[j]  <<",";
+       
+          
+				 
+	// 		}
+	// 	std::cout << std::endl;
+	// 	 }
  
 // exit(0);
   return;
@@ -362,3 +412,4 @@ void generate_matrix(int nx, int ny, int nz, HPC_Sparse_Matrix **A, double **x, 
 
   return;
 }
+Z

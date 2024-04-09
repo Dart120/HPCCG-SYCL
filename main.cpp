@@ -210,8 +210,8 @@ int main(int argc, char *argv[])
   if (rank==0)  // Only PE 0 needs to compute and report timing results
     {
       double fniters = niters; 
-      double fnrow = A->total_nrow;
-      double fnnz = A->total_nnz;
+      double fnrow = nx*ny*nz;
+      double fnnz = fnrow * 27.0;
       double fnops_ddot = fniters*4*fnrow;
       double fnops_waxpby = fniters*6*fnrow;
       double fnops_sparsemv = fniters*2*fnnz;
@@ -297,7 +297,7 @@ int main(int argc, char *argv[])
   // Compute difference between known exact solution and computed solution
   // All processors are needed here.
 
-  double residual = 0;
+  // double residual = 0;
   //  if ((ierr = compute_residual(A->local_nrow, x, xexact, &residual)))
   //  cerr << "Error in call to compute_residual: " << ierr << ".\n" << endl;
 
