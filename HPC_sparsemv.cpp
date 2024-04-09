@@ -101,7 +101,6 @@ int HPC_sparsemv_sycl(sycl::queue *q,HPC_Sparse_Matrix *A,const double *const x,
 	
 // 	exit(0);
 
-
 	 q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](sycl::nd_item<1> it) {
 		 size_t i = it.get_global_id(0);
 		 if (i < nrow){

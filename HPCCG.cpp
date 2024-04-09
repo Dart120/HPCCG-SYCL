@@ -182,6 +182,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   
   
   
+  
 
 
   
@@ -215,6 +216,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
     q->submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
+      *normr_shared = sqrt(*rtrans);
     *normr_shared = sqrt(*rtrans);
     if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });

@@ -64,8 +64,7 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "*.inc": "cpp",
-        "complex": "cpp",
-        "numeric": "cpp"
+        "complex": "cpp"
     },
     "C_Cpp.dimInactiveRegions": false
 }
