@@ -91,46 +91,55 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   
   std::cout << "Mem Allocation Started"<< std::endl;
 
+
   double t_begin = mytimer();  // Start timing right away
 
   double t0 = 0.0, t1 = 0.0, t2 = 0.0, t3 = 0.0, t4 = 0.0;
 
-  int nrow = A->local_nrow;
-  int ncol = A->local_ncol;
+  int nrow = 0;
+  int ncol = 0;
 
-  double * r = static_cast<double*>(sycl::malloc_shared(sizeof(double) * nrow, *q));
-  double * p = static_cast<double*>(sycl::malloc_shared(sizeof(double) * ncol, *q));
-  double * Ap = static_cast<double*>(sycl::malloc_shared(sizeof(double) * nrow, *q));
+
+  q->memcpy(&nrow, &(A->local_nrow), sizeof(int)).wait(); 
+  q->memcpy(&ncol, &(A->local_ncol), sizeof(int)).wait(); 
   
-  // double * x_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
-  // q->memcpy(x_device, x, sizeof(double) * nrow).wait();
-  // double * b_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
-  // q->memcpy(b_device, b, sizeof(double) * nrow).wait();
-  double** pointer_to_cur_vals_lst = A->ptr_to_vals_in_row;
-	int** pointer_to_cur_inds_lst = A->ptr_to_inds_in_row;
-  // std::cout << "Entering loop"<< std::endl;
-	// // For each row
-	// for (int i = 0; i < nrow; i++)
-	// {
-	// 	pointer_to_cur_vals_lst[i] = static_cast<double*>(sycl::malloc_shared(sizeof(double) * A->nnz_in_row[i], q));
-	// 	pointer_to_cur_inds_lst[i] = static_cast<int*>(sycl::malloc_shared(sizeof(int) * A->nnz_in_row[i], q));
-	// 	q->memcpy(pointer_to_cur_vals_lst[i], A->ptr_to_vals_in_row[i], sizeof(double) * A->nnz_in_row[i]).wait();
-	// 	q->memcpy(pointer_to_cur_inds_lst[i], A->ptr_to_inds_in_row[i], sizeof(int) * A->nnz_in_row[i]).wait();
-	// }
-  // std::cout << "Leavingloop"<< std::endl;
-	// double* pointer_to_y = malloc_device<double>(nrow, q);
-	int* pointer_to_cur_nnz = A->nnz_in_row;
-	// q->memcpy(pointer_to_cur_nnz, A->nnz_in_row, sizeof(int) * nrow).wait();
-  double * rtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
-  double * oldrtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
+
+
+
+  
+  double * r = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, *q));
+  double * p = static_cast<double*>(sycl::malloc_device(sizeof(double) * ncol, *q));
+  double * Ap = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, *q));
+
+
+
+
+  double * rtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
+  double * oldrtrans = static_cast<double*>(sycl::malloc_device(sizeof(double), *q));
   double * normr_shared = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   
+ 
+  
   // q->memcpy(normr_shared, &normr, sizeof(double)).wait();
-  *rtrans = 0.0;
-  *oldrtrans = 0.0;
+ 
+  q->submit([&](handler& h) {
+    h.single_task([=]() {
+        *rtrans = 0.0;
+        *oldrtrans = 0.0 ;
+    });
+}).wait(); 
+
+// double** pointer_to_cur_vals_lst = A->ptr_to_vals_in_row;
+// 	int** pointer_to_cur_inds_lst = A->ptr_to_inds_in_row;
+  
+
+
   double* beta = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   double* alpha = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   std::cout << "Mem Allocation Finished"<< std::endl;
+  
+ 
+  
   
   
 
@@ -146,13 +155,21 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 
   TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); q->wait(); TOCK(t2);
   
+  
 
 
   
 
    
 
-  TICK(); HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap); q->wait();  TOCK(t3); // 2*nnz ops
+  TICK(); 
+   
+
+  HPC_sparsemv_sycl(q,A,p, Ap, nrow);
+
+  
+   q->wait();  TOCK(t3); // 2*nnz ops
+  
   
 
 
@@ -160,18 +177,22 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   
 
 
-
+  
   TICK(); ddot_sycl(q,nrow, r, r, rtrans); q->wait(); TOCK(t1);
   
  
+  
+  
+
 
 
   
 
-    *normr_shared = sqrt(*rtrans);
+    
     q->submit([&](handler& h) {
     sycl::stream out(655, 655, h);
     h.single_task([=]() {
+      *normr_shared = sqrt(*rtrans);
     *normr_shared = sqrt(*rtrans);
     if (rank==0) out << "Initial Residual = "<< *normr_shared << cl::sycl::endl;
     });
@@ -189,8 +210,8 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
       if (k == 1)
 	{
     
-  
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, 0.0, r, p); q->wait(); TOCK(t2);
+   
     
  
   
@@ -199,34 +220,35 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	{
 	  
  
-    // q->submit([&](handler& h) {
+    q->submit([&](handler& h) {
 
 
-    // h.single_task([=]() {
+    h.single_task([=]() {
      
      *oldrtrans = *rtrans;
 
  
-  //   });
-  // }).wait();
+    });
+  }).wait();
   
   
-  
+    
 	  TICK(); ddot_sycl(q,nrow, r, r, rtrans);// 2*nrow ops 
     
     q->wait();
     TOCK(t1);
     
-    // aux_q.submit([&](handler& h) {
+    q->submit([&](handler& h) {
 
-    // // sycl::stream out(655, 655, h);
-    // h.single_task([=]() {
+    // sycl::stream out(655, 655, h);
+    h.single_task([=]() {
      
      *beta = *rtrans / *oldrtrans;
 
  
-  //   });
-  // }).wait();
+    });
+  }).wait();
+ 
   
 	  
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, *beta, p, p);  
@@ -234,39 +256,56 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     q->wait();
     TOCK(t2);// 2*nrow ops 
     
+    
   
 	}
  
-  // q->submit([&](handler& h) {
+  q->submit([&](handler& h) {
    
-  //   h.single_task([=]() {
+    h.single_task([=]() {
     *normr_shared = sqrt(*rtrans);
 
-  //   });
+    });
     
     
-  // }).wait();
+  }).wait();
+  
   
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
       std::cout << "Iteration = "<< k << "   Residual = "<< *normr_shared << std::endl;
+     
   
-  TICK();HPC_sparsemv_sycl(q,pointer_to_cur_vals_lst,pointer_to_cur_inds_lst,pointer_to_cur_nnz,nrow, p, Ap);q->wait();  TOCK(t3); // 2*nnz ops
+  TICK();HPC_sparsemv_sycl(q,A, p, Ap,nrow);q->wait();  TOCK(t3); // 2*nnz ops
+  
 
       
 
       TICK(); sycl::event e_ddot = ddot_sycl(q,nrow, p, Ap, alpha);q->wait();TOCK(t1); // 2*nrow ops 
 
-           *alpha = *rtrans/ *alpha;
+           
+           q->submit([&](handler& h) {
+   
+              h.single_task([=]() {
+              *alpha = *rtrans/ *alpha;
+
+              });
+              
+              
+            }).wait();
+            
 
 
       TICK(); waxpby_sycl_tasked(q,nrow, 1.0, x_device, *alpha, p, x_device, e_ddot); // 2*nrow ops 
-// q->wait();
+
+
       waxpby_sycl_tasked(q,nrow, 1.0, r, -(*alpha), Ap, r, e_ddot);  
       
       q->wait();
       TOCK(t2);// 2*nrow ops 
      
+    
       niters = k;
+      
     }
     
 

@@ -1,0 +1,143 @@
+========= COMPUTE-SANITIZER
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000 rows. Global rows 0 through 26999
+Process 0 of 1 has 729000 nonzeros.
+========= Program hit CUDA_ERROR_NOT_FOUND (error 500) due to "named symbol not found" on CUDA API call to cuModuleGetFunction.
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame: [0x2d61f7]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:urKernelCreate [0x34850]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:piKernelCreate [0x42b6c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:_pi_result sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)52, _pi_program*, char const*, _pi_kernel**>(_pi_program*, char const*, _pi_kernel**) const [0x412314]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&)::{lambda()#1}::operator()() const [0x431b2c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&) [0x44fc1d]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::enqueueImpKernel(std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::NDRDescT&, std::vector<sycl::_V1::detail::ArgDesc, std::allocator<sycl::_V1::detail::ArgDesc> >&, std::shared_ptr<sycl::_V1::detail::kernel_bundle_impl> const&, std::shared_ptr<sycl::_V1::detail::kernel_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<_pi_event*, std::allocator<_pi_event*> >&, std::shared_ptr<sycl::_V1::detail::event_impl> const&, std::function<void* (sycl::_V1::detail::AccessorImplHost*)> const&, _pi_kernel_cache_config, bool) [0x4996c8]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ExecCGCommand::enqueueImpQueue() [0x49afa0]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Command::enqueue(sycl::_V1::detail::EnqueueResultT&, sycl::_V1::detail::BlockingT, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&) [0x48728f]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::GraphProcessor::enqueueCommand(sycl::_V1::detail::Command*, std::shared_lock<std::shared_timed_mutex>&, sycl::_V1::detail::EnqueueResultT&, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&, sycl::_V1::detail::Command*, sycl::_V1::detail::BlockingT) [0x4a7261]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::enqueueCommandForCG(std::shared_ptr<sycl::_V1::detail::event_impl>, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&, sycl::_V1::detail::BlockingT) [0x4a3e78]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::addCG(std::unique_ptr<sycl::_V1::detail::CG, std::default_delete<sycl::_V1::detail::CG> >, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, _pi_ext_command_buffer*, std::vector<unsigned int, std::allocator<unsigned int> > const&) [0x4a68c6]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::handler::finalize() [0x4f0b88]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:void sycl::_V1::detail::queue_impl::finalizeHandler<sycl::_V1::handler>(sycl::_V1::handler&, sycl::_V1::event&) [0x451052]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::queue_impl::submit_impl(std::function<void (sycl::_V1::handler&)> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::code_location const&, std::function<void (bool, bool, sycl::_V1::event&)> const*) [0x456e2e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::queue::submit_impl(std::function<void (sycl::_V1::handler&)>, sycl::_V1::detail::code_location const&) [0x51800e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:_ZN4sycl3_V15queue6submitIZ4mainEUlRNS0_7handlerEE_EENSt9enable_ifIXsr3stdE16is_invocable_r_vIvT_S4_EENS0_5eventEE4typeES7_RKNS0_6detail13code_locationE [0x9831]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame:main [0x7024]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame: [0x29d90]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:__libc_start_main [0x29e40]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0x6b15]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+========= 
+This many nnz: 729000
+Mem Allocation Started
+========= Program hit CUDA_ERROR_NOT_FOUND (error 500) due to "named symbol not found" on CUDA API call to cuModuleGetFunction.
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame: [0x2d61f7]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:urKernelCreate [0x34850]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:piKernelCreate [0x42b6c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:_pi_result sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)52, _pi_program*, char const*, _pi_kernel**>(_pi_program*, char const*, _pi_kernel**) const [0x412314]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&)::{lambda()#1}::operator()() const [0x431b2c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&) [0x44fc1d]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::enqueueImpKernel(std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::NDRDescT&, std::vector<sycl::_V1::detail::ArgDesc, std::allocator<sycl::_V1::detail::ArgDesc> >&, std::shared_ptr<sycl::_V1::detail::kernel_bundle_impl> const&, std::shared_ptr<sycl::_V1::detail::kernel_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<_pi_event*, std::allocator<_pi_event*> >&, std::shared_ptr<sycl::_V1::detail::event_impl> const&, std::function<void* (sycl::_V1::detail::AccessorImplHost*)> const&, _pi_kernel_cache_config, bool) [0x4996c8]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ExecCGCommand::enqueueImpQueue() [0x49afa0]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Command::enqueue(sycl::_V1::detail::EnqueueResultT&, sycl::_V1::detail::BlockingT, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&) [0x48728f]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::GraphProcessor::enqueueCommand(sycl::_V1::detail::Command*, std::shared_lock<std::shared_timed_mutex>&, sycl::_V1::detail::EnqueueResultT&, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&, sycl::_V1::detail::Command*, sycl::_V1::detail::BlockingT) [0x4a7261]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::enqueueCommandForCG(std::shared_ptr<sycl::_V1::detail::event_impl>, std::vector<sycl::_V1::detail::Command*, std::allocator<sycl::_V1::detail::Command*> >&, sycl::_V1::detail::BlockingT) [0x4a3e78]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::Scheduler::addCG(std::unique_ptr<sycl::_V1::detail::CG, std::default_delete<sycl::_V1::detail::CG> >, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, _pi_ext_command_buffer*, std::vector<unsigned int, std::allocator<unsigned int> > const&) [0x4a68c6]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::handler::finalize() [0x4f0b88]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:void sycl::_V1::detail::queue_impl::finalizeHandler<sycl::_V1::handler>(sycl::_V1::handler&, sycl::_V1::event&) [0x451052]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::queue_impl::submit_impl(std::function<void (sycl::_V1::handler&)> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::code_location const&, std::function<void (bool, bool, sycl::_V1::event&)> const*) [0x456e2e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::queue::submit_impl(std::function<void (sycl::_V1::handler&)>, sycl::_V1::detail::code_location const&) [0x51800e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:_ZN4sycl3_V15queue6submitIZ10HPCCG_syclPS1_P24HPC_Sparse_Matrix_STRUCTPdS6_idRiRdS6_EUlRNS0_7handlerEE_EENSt9enable_ifIXsr3stdE16is_invocable_r_vIvT_SA_EENS0_5eventEE4typeESD_RKNS0_6detail13code_locationE [0x16e21]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame:HPCCG_sycl(sycl::_V1::queue*, HPC_Sparse_Matrix_STRUCT*, double*, double*, int, double, int&, double&, double*) [0x1675f]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame:main [0x712e]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame: [0x29d90]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:__libc_start_main [0x29e40]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0x6b15]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+========= 
+This many nnz: 729000
+========= Program hit CUDA_ERROR_NOT_FOUND (error 500) due to "named symbol not found" on CUDA API call to cuModuleGetFunction.
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame: [0x2d61f7]
+=========                in /lib/x86_64-linux-gnu/libcuda.so.1
+=========     Host Frame:urKernelCreate [0x34850]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:piKernelCreate [0x42b6c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libpi_cuda.so
+=========     Host Frame:_pi_result sycl::_V1::detail::plugin::call_nocheck<(sycl::_V1::detail::PiApiKind)52, _pi_program*, char const*, _pi_kernel**>(_pi_program*, char const*, _pi_kernel**) const [0x412314]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&)::{lambda()#1}::operator()() const [0x431b2c]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::ProgramManager::getOrCreateKernel(std::shared_ptr<sycl::_V1::detail::context_impl> const&, std::shared_ptr<sycl::_V1::detail::device_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, sycl::_V1::detail::NDRDescT const&) [0x44fc1d]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::enqueueImpKernel(std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::NDRDescT&, std::vector<sycl::_V1::detail::ArgDesc, std::allocator<sycl::_V1::detail::ArgDesc> >&, std::shared_ptr<sycl::_V1::detail::kernel_bundle_impl> const&, std::shared_ptr<sycl::_V1::detail::kernel_impl> const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<_pi_event*, std::allocator<_pi_event*> >&, std::shared_ptr<sycl::_V1::detail::event_impl> const&, std::function<void* (sycl::_V1::detail::AccessorImplHost*)> const&, _pi_kernel_cache_config, bool) [0x4996c8]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::handler::finalize()::{lambda()#1}::operator()() const [0x4eb5b6]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::handler::finalize() [0x4f1e44]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:void sycl::_V1::detail::queue_impl::finalizeHandler<sycl::_V1::handler>(sycl::_V1::handler&, sycl::_V1::event&) [0x451052]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::detail::queue_impl::submit_impl(std::function<void (sycl::_V1::handler&)> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, std::shared_ptr<sycl::_V1::detail::queue_impl> const&, sycl::_V1::detail::code_location const&, std::function<void (bool, bool, sycl::_V1::event&)> const*) [0x456e2e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:sycl::_V1::queue::submit_impl(std::function<void (sycl::_V1::handler&)>, sycl::_V1::detail::code_location const&) [0x51800e]
+=========                in /home/temi/sycl_workspace/llvm/build/lib/libsycl.so.8
+=========     Host Frame:_ZN4sycl3_V15queue6submitIZ10HPCCG_syclPS1_P24HPC_Sparse_Matrix_STRUCTPdS6_idRiRdS6_EUlRNS0_7handlerEE0_EENSt9enable_ifIXsr3stdE16is_invocable_r_vIvT_SA_EENS0_5eventEE4typeESD_RKNS0_6detail13code_locationE [0x16ed5]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame:HPCCG_sycl(sycl::_V1::queue*, HPC_Sparse_Matrix_STRUCT*, double*, double*, int, double, int&, double&, double*) [0x16b46]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame:main [0x712e]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+=========     Host Frame: [0x29d90]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:__libc_start_main [0x29e40]
+=========                in /lib/x86_64-linux-gnu/libc.so.6
+=========     Host Frame:_start [0x6b15]
+=========                in /home/temi/Documents/DEV/HPCCG-SYCL-1/./test_HPCCG
+========= 
+Mem Allocation Finished
+27136
+========= Error: process didn't terminate successfully
+========= Target application returned an error
+========= ERROR SUMMARY: 3 errors

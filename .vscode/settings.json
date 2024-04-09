@@ -62,7 +62,9 @@
         "condition_variable": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "*.inc": "cpp",
+        "complex": "cpp"
     },
     "C_Cpp.dimInactiveRegions": false
 }

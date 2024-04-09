@@ -91,18 +91,22 @@ const int nrow = (const int)A->local_nrow;
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
 using namespace sycl;
-int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
-				 const double *const x, double *const y)
+int HPC_sparsemv_sycl(sycl::queue *q,HPC_Sparse_Matrix *A,const double *const x, double *const y,int nrow)
 {
+// 	exit(0);
+	// int nrow = 3000;
 	const size_t localSize = 512;    // Desired work-group size
     size_t globalSize = ((nrow + localSize - 1) / localSize) * localSize;
     const size_t numGroups = globalSize / localSize;
+	
+// 	exit(0);
+
 	 q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](sycl::nd_item<1> it) {
 		 size_t i = it.get_global_id(0);
 		 if (i < nrow){
-			int cur_nnz = pointer_to_cur_nnz[i];
-			double* cur_vals = pointer_to_cur_vals_lst[i];
-			int* cur_inds = pointer_to_cur_inds_lst[i];
+			int cur_nnz = A->nnz_in_row[i];
+			double* cur_vals = A->ptr_to_vals_in_row[i];
+			int* cur_inds = A->ptr_to_inds_in_row[i];
 			double sum = 0.0;
 			for (size_t j = 0; j < cur_nnz; j++)
 			{

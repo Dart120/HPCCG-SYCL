@@ -71,11 +71,9 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   int size = 1; // Serial case (not using MPI)
   int rank = 0;
 
-  *A = malloc_shared<HPC_Sparse_Matrix>(1,*q); // Allocate matrix struct and fill it
+  HPC_Sparse_Matrix* A_host = new HPC_Sparse_Matrix;
  
-  (*A)->title = 0;
-
-
+  (A_host)->title = 0;
   // Set this bool to true if you want a 7-pt stencil instead of a 27 pt stencil
   bool use_7pt_stencil = false;
 
@@ -91,25 +89,23 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   
 
   // Allocate arrays that are of length local_nrow
-  (*A)->nnz_in_row = static_cast<int*>(sycl::malloc_shared(sizeof(int) * local_nrow, *q));
-  (*A)->ptr_to_vals_in_row = static_cast<double**>(sycl::malloc_shared(sizeof(double*) * local_nrow, *q));
-  (*A)->ptr_to_inds_in_row = static_cast<int**>(sycl::malloc_shared(sizeof(int*) * local_nrow, *q));
-  (*A)->ptr_to_diags       = static_cast<double**>(sycl::malloc_shared(sizeof(double*) * local_nrow, *q));
+  (A_host)->nnz_in_row = new int[local_nrow];
+  (A_host)->ptr_to_vals_in_row = new double*[local_nrow];
+  (A_host)->ptr_to_inds_in_row = new int   *[local_nrow];
+  (A_host)->ptr_to_diags       = new double*[local_nrow];
 
-  *x = static_cast<double*>(sycl::malloc_shared(sizeof(double) * local_nrow, *q));
-  *b = static_cast<double*>(sycl::malloc_shared(sizeof(double) * local_nrow, *q));
-  *xexact = static_cast<double*>(sycl::malloc_shared(sizeof(double) * local_nrow, *q));
+  double * x_host = new double[local_nrow];
+  double * b_host = new double[local_nrow];
+  double * xexact_host = new double[local_nrow];
 
 
   // Allocate arrays that are of length local_nnz
-  (*A)->list_of_vals = static_cast<double*>(sycl::malloc_shared(sizeof(double) * local_nnz, *q));
-  (*A)->list_of_inds = static_cast<int*>(sycl::malloc_shared(sizeof(int) * local_nnz, *q));
-  // q->submit([&](handler& h) {
-    
-  //   h.single_task([=]() {
-   
-      double * curvalptr = (*A)->list_of_vals;
-  int * curindptr = (*A)->list_of_inds;
+  (A_host)->list_of_vals = new double[local_nnz];
+  (A_host)->list_of_inds = new int   [local_nnz];
+
+  double * curvalptr = (A_host)->list_of_vals;
+  int * curindptr = (A_host)->list_of_inds;
+
   long long nnzglobal = 0;
   for (int iz=0; iz<nz; iz++) {
     for (int iy=0; iy<ny; iy++) {
@@ -117,9 +113,8 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
 	int curlocalrow = iz*nx*ny+iy*nx+ix;
 	int currow = start_row+iz*nx*ny+iy*nx+ix;
 	int nnzrow = 0;
-	(*A)->ptr_to_vals_in_row[curlocalrow] = curvalptr;
-	(*A)->ptr_to_inds_in_row[curlocalrow] = curindptr;
-
+	(A_host)->ptr_to_vals_in_row[curlocalrow] = curvalptr;
+	(A_host)->ptr_to_inds_in_row[curlocalrow] = curindptr;
 	for (int sz=-1; sz<=1; sz++) {
 	  for (int sy=-1; sy<=1; sy++) {
 	    for (int sx=-1; sx<=1; sx++) {
@@ -130,7 +125,7 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
               if ((ix+sx>=0) && (ix+sx<nx) && (iy+sy>=0) && (iy+sy<ny) && (curcol>=0 && curcol<total_nrow)) {
                 if (!use_7pt_stencil || (sz*sz+sy*sy+sx*sx<=1)) { // This logic will skip over point that are not part of a 7-pt stencil
                   if (curcol==currow) {
-		    (*A)->ptr_to_diags[curlocalrow] = curvalptr;
+		    (A_host)->ptr_to_diags[curlocalrow] = curvalptr;
 		    *curvalptr++ = 27.0;
 		  }
 		  else {
@@ -143,31 +138,29 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
 	    } // end sx loop
           } // end sy loop
         } // end sz loop
-	
-  (*A)->nnz_in_row[curlocalrow] = nnzrow;
+	(A_host)->nnz_in_row[curlocalrow] = nnzrow;
 	nnzglobal += nnzrow;
-	(*x)[curlocalrow] = 0.0;
-	(*b)[curlocalrow] = 27.0 - ((double) (nnzrow-1));
-	(*xexact)[curlocalrow] = 1.0;
+	(x_host)[curlocalrow] = 0.0;
+	(b_host)[curlocalrow] = 27.0 - ((double) (nnzrow-1));
+	(xexact_host)[curlocalrow] = 1.0;
       } // end ix loop
      } // end iy loop
-  } // end iz loop 
+  } // end iz loop  
+  if (debug) cout << "Process "<<rank<<" of "<<size<<" has "<<local_nrow;
   
-  (*A)->start_row = start_row ; 
-  (*A)->stop_row = stop_row;
-  (*A)->total_nrow = total_nrow;
-  (*A)->total_nnz = total_nnz;
-  (*A)->local_nrow = local_nrow;
-  (*A)->local_ncol = local_nrow;
-  (*A)->local_nnz = local_nnz;
-
-
-
-
-  //   });
-  // }).wait();
+  if (debug) cout << " rows. Global rows "<< start_row
+		  <<" through "<< stop_row <<std::endl;
   
-  sycl::free(*xexact,*q);
+  if (debug) cout << "Process "<<rank<<" of "<<size
+		  <<" has "<<local_nnz<<" nonzeros."<<std::endl;
+
+  (A_host)->start_row = start_row ; 
+  (A_host)->stop_row = stop_row;
+  (A_host)->total_nrow = total_nrow;
+  (A_host)->total_nnz = total_nnz;
+  (A_host)->local_nrow = local_nrow;
+  (A_host)->local_ncol = local_nrow;
+  (A_host)->local_nnz = local_nnz;
 
 
 
@@ -176,22 +169,86 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
 
 
 
-  // if (debug) cout << "Process "<<rank<<" of "<<size<<" has "<<local_nrow;
+
+
+
+  int * nnz_in_row = static_cast<int*>(sycl::malloc_device(sizeof(int) * local_nrow, *q));
+  q->memcpy(nnz_in_row,(A_host)->nnz_in_row , sizeof(int) * local_nrow);
+   
+  double ** ptr_to_vals_in_row = static_cast<double**>(sycl::malloc_device(sizeof(double*) * local_nrow, *q));
+  q->memcpy(ptr_to_vals_in_row,(A_host)->ptr_to_vals_in_row , sizeof(double*) * local_nrow).wait();
+
+  int ** ptr_to_inds_in_row = static_cast<int**>(sycl::malloc_device(sizeof(int*) * local_nrow, *q));
+  q->memcpy(ptr_to_inds_in_row,(A_host)->ptr_to_inds_in_row , sizeof(int*) * local_nrow).wait();
+
+  double ** ptr_to_diags       = static_cast<double**>(sycl::malloc_device(sizeof(double*) * local_nrow, *q));
+  q->memcpy(ptr_to_diags,(A_host)->ptr_to_diags , sizeof(double*) * local_nrow).wait();
+
+  *x = static_cast<double*>(sycl::malloc_device(sizeof(double) * local_nrow, *q));
+  q->memcpy(*x,x_host , sizeof(double) * local_nrow).wait();
+
+  *b = static_cast<double*>(sycl::malloc_device(sizeof(double) * local_nrow, *q));
+  q->memcpy(*b,b_host, sizeof(double) * local_nrow).wait();
+
+  *xexact = static_cast<double*>(sycl::malloc_device(sizeof(double) * local_nrow, *q));
+  q->memcpy(*xexact, xexact_host, sizeof(double) * local_nrow);
+  // // Allocate arrays that are of length local_nnz
+  double * list_of_vals = static_cast<double*>(sycl::malloc_device(sizeof(double) * local_nnz, *q));
+  q->memcpy(list_of_vals,(A_host)->list_of_vals , sizeof(double) * local_nnz);
+
+  int * list_of_inds = static_cast<int*>(sycl::malloc_device(sizeof(int) * local_nnz, *q));
+  q->memcpy(list_of_inds,(A_host)->list_of_inds , sizeof(int) * local_nnz);
+
+
+
+
+
+
+
+
+
+
+
+
+  // q->submit([&](handler& h) {
+  //   stream out(256, 1024, h);
+  //       h.single_task([=]() {
+          
+  //         out << "This many nnz: " << A_host->nnz_in_row[0] << sycl::endl;
+         
+  //       });
+  //   }).wait();
+
   
-  // if (debug) cout << " rows. Global rows "<< start_row
-	// 	  <<" through "<< stop_row <<std::endl;
   
-  // if (debug) cout << "Process "<<rank<<" of "<<size
-	// 	  <<" has "<<local_nnz<<" nonzeros."<<std::endl;
+  A_host->nnz_in_row = nnz_in_row;
+  A_host->ptr_to_vals_in_row = ptr_to_vals_in_row;
+  A_host->ptr_to_inds_in_row = ptr_to_inds_in_row;
+  A_host->ptr_to_diags = ptr_to_diags;
+  A_host->list_of_vals = list_of_vals;
+  A_host->list_of_inds = list_of_inds;
+  
 
 
 
+  
+
+
+  HPC_Sparse_Matrix * A_device = malloc_device<HPC_Sparse_Matrix>(sizeof(HPC_Sparse_Matrix),*q);
+  *A = A_device;
+  size_t bufferSize = 1024;
+  size_t maxStatementSize = 256;
+  q->memcpy(A_device, A_host, sizeof(HPC_Sparse_Matrix)).wait();
+  q->parallel_for(range<1>(total_nrow), [=](id<1> idx) {
+    int row = idx[0];
+    ptr_to_vals_in_row[row] = &list_of_vals[A_device->nnz_in_row[row]];
+    ptr_to_inds_in_row[row] = &list_of_inds[A_device->nnz_in_row[row]];
+}).wait();
+ 
+// exit(0);
   return;
 }
-
-
 #endif
-
 
 void generate_matrix(int nx, int ny, int nz, HPC_Sparse_Matrix **A, double **x, double **b, double **xexact)
 
@@ -305,125 +362,3 @@ void generate_matrix(int nx, int ny, int nz, HPC_Sparse_Matrix **A, double **x, 
 
   return;
 }
-// void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, double **x, double **b, double **xexact)
-
-// {
-// #ifdef DEBUG
-//   int debug = 1;
-// #else
-//   int debug = 0;
-// #endif
-
-
-//   int size = 1; // Serial case (not using MPI)
-//   int rank = 0;
-
-
-  
-//   int title = 0;
-
-
-//   // Set this bool to true if you want a 7-pt stencil instead of a 27 pt stencil
-//   bool use_7pt_stencil = false;
-
-//   int local_nrow = nx*ny*nz; // This is the size of our subblock
-//   assert(local_nrow>0); // Must have something to work with
-//   int local_nnz = 27*local_nrow; // Approximately 27 nonzeros per row (except for boundary nodes)
-
-//   int total_nrow = local_nrow*size; // Total number of grid points in mesh
-//   long long total_nnz = 27* (long long) total_nrow; // Approximately 27 nonzeros per row (except for boundary nodes)
-
-//   int start_row = local_nrow*rank; // Each processor gets a section of a chimney stack domain
-//   int stop_row = start_row+local_nrow-1;
-  
-
-//   // Allocate arrays that are of length local_nrow
-//   // int * nnz_in_row = new int[local_nrow];
-//   int * nnz_in_row = sycl::malloc_shared<int>(local_nrow, *q);
-//   // double ** ptr_to_vals_in_row = new double*[local_nrow];
-//   double ** ptr_to_vals_in_row = sycl::malloc_shared<double*>(local_nrow, *q);
-//   // int ** ptr_to_inds_in_row = new int   *[local_nrow];
-//   int ** ptr_to_inds_in_row = sycl::malloc_shared<int*>(local_nrow, *q);
-//   // double ** ptr_to_diags       = new double*[local_nrow];
-//   double ** ptr_to_diags = sycl::malloc_shared<double*>(local_nrow, *q);
-
-//   *x = sycl::malloc_shared<double>(local_nrow, *q);
-//   // *x = new double[local_nrow];
-//   *b = sycl::malloc_shared<double>(local_nrow, *q);
-//   // *b = new double[local_nrow];
-//   // *xexact = new double[local_nrow];
-//   *xexact = sycl::malloc_shared<double>(local_nrow, *q);
-
-
-//   // Allocate arrays that are of length local_nnz
-//   // double * list_of_vals = new double[local_nnz];
-//   double * list_of_vals = sycl::malloc_shared<double>(local_nnz, *q);
-  
-//   // int * list_of_inds = new int   [local_nnz];
-//   int * list_of_inds = sycl::malloc_shared<int>(local_nnz, *q);
-
-//   double * curvalptr = list_of_vals;
-//   int * curindptr = list_of_inds;
-
-//   long long nnzglobal = 0;
-  
-  
-//   for (int iz=0; iz<nz; iz++) {
-//     for (int iy=0; iy<ny; iy++) {
-//       for (int ix=0; ix<nx; ix++) {
-// 	int curlocalrow = iz*nx*ny+iy*nx+ix;
-// 	int currow = start_row+iz*nx*ny+iy*nx+ix;
-// 	int nnzrow = 0;
-//   ptr_to_vals_in_row[curlocalrow] = curvalptr;
-//   ptr_to_inds_in_row[curlocalrow] = curindptr;
-// // TODO Parallelise the following function?
-// 	for (int sz=-1; sz<=1; sz++) {
-// 	  for (int sy=-1; sy<=1; sy++) {
-// 	    for (int sx=-1; sx<=1; sx++) {
-// 	      int curcol = currow+sz*nx*ny+sy*nx+sx;
-// //            Since we have a stack of nx by ny by nz domains , stacking in the z direction, we check to see
-// //            if sx and sy are reaching outside of the domain, while the check for the curcol being valid
-// //            is sufficient to check the z values
-//               if ((ix+sx>=0) && (ix+sx<nx) && (iy+sy>=0) && (iy+sy<ny) && (curcol>=0 && curcol<total_nrow)) {
-//                 if (!use_7pt_stencil || (sz*sz+sy*sy+sx*sx<=1)) { // This logic will skip over point that are not part of a 7-pt stencil
-//                   if (curcol==currow) {
-// 		    ptr_to_diags[curlocalrow] = curvalptr;
-// 		    *curvalptr++ = 27.0;
-// 		  }
-// 		  else {
-// 		    *curvalptr++ = -1.0;
-//                   }
-// 		  *curindptr++ = curcol;
-// 		  nnzrow++;
-// 	        } 
-//               }
-// 	    } // end sx loop
-//           } // end sy loop
-//         } // end sz loop
-// 	nnz_in_row[curlocalrow] = nnzrow;
-// 	nnzglobal += nnzrow;
-// 	(*x)[curlocalrow] = 0.0;
-// 	(*b)[curlocalrow] = 27.0 - ((double) (nnzrow-1));
-// 	(*xexact)[curlocalrow] = 1.0;
-//       } // end ix loop
-//      } // end iy loop
-//   } // end iz loop  
-//   exit(0);
-//   if (debug) cout << "Process "<<rank<<" of "<<size<<" has "<<local_nrow;
-  
-//   if (debug) cout << " rows. Global rows "<< start_row
-// 		  <<" through "<< stop_row <<std::endl;
-  
-//   if (debug) cout << "Process "<<rank<<" of "<<size
-// 		  <<" has "<<local_nnz<<" nonzeros."<<std::endl;
-
-//   start_row = start_row; 
-//   stop_row = stop_row;
-//   total_nrow = total_nrow;
-//   total_nnz = total_nnz;
-//   local_nrow = local_nrow;
-//   int local_ncol = local_nrow;
-//   local_nnz = local_nnz;
-  
-//   return;
-// }

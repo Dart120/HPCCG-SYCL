@@ -94,8 +94,12 @@ int ddot (const int n, const double * const x, const double * const y,
 
 sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, double * const result)
 {  
-
-    *result = 0;
+    q->submit([&](sycl::handler& h) {
+    h.single_task([=]() {
+        *result = 0;
+    });
+}).wait();
+    
     // Maybe talk about how register pressure needed to be optimised here default implementation used too many registers per thread so moved to nd range impl instead
     const size_t localSize = 512;    // Desired work-group size
     size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
