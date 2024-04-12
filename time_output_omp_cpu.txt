@@ -1,0 +1,48 @@
+Running test_HPCCG_OMP with dimensions 50 50 50
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338561 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.339s
+user	0m0.011s
+sys	0m0.095s
+Running test_HPCCG_OMP with dimensions 100 100 100
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338566 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.256s
+user	0m0.017s
+sys	0m0.066s
+Running test_HPCCG_OMP with dimensions 150 150 150
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338571 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.258s
+user	0m0.020s
+sys	0m0.064s
+Running test_HPCCG_OMP with dimensions 200 200 200
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338576 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.250s
+user	0m0.016s
+sys	0m0.067s
+Running test_HPCCG_OMP with dimensions 250 250 250
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338581 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.249s
+user	0m0.028s
+sys	0m0.056s
+Running test_HPCCG_OMP with dimensions 300 300 300
+terminate called after throwing an instance of 'cl::sycl::runtime_error'
+  what():  No device of requested type available. Please check https://software.intel.com/content/www/us/en/develop/articles/intel-oneapi-dpcpp-system-requirements.html -1 (CL_DEVICE_NOT_FOUND)
+./run_tests.sh: line 10: 338586 Aborted                 (core dumped) ./test_HPCCG $i $i $i
+
+real	0m0.252s
+user	0m0.031s
+sys	0m0.054s

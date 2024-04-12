@@ -70,12 +70,12 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   int debug = 1;
   int size = 1; // Serial case (not using MPI)
   int rank = 0;
-
+ 
   *A = malloc_shared<HPC_Sparse_Matrix>(1,*q); // Allocate matrix struct and fill it
  
   (*A)->title = 0;
 
-
+ 
   // Set this bool to true if you want a 7-pt stencil instead of a 27 pt stencil
   bool use_7pt_stencil = false;
 
@@ -167,7 +167,7 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   //   });
   // }).wait();
   
-  sycl::free(*xexact,*q);
+
 
 
 

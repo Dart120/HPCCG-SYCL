@@ -70,6 +70,7 @@ using std::endl;
 #include <cassert>
 #include <string>
 #include <cmath>
+#include <chrono>
 #ifdef USING_MPI
 #include <mpi.h> // If this routine is compiled with -DUSING_MPI
                  // then include mpi.h
@@ -97,7 +98,7 @@ using std::endl;
 
 int main(int argc, char *argv[])
 {
-
+  
   HPC_Sparse_Matrix *A;
   double *x, *b, *xexact;
   double norm, d;
@@ -107,13 +108,13 @@ int main(int argc, char *argv[])
   double times[7];
   double t6 = 0.0;
   int nx,ny,nz;
+  
   #ifdef USING_SYCL
   // Create a gpu_selector object
   sycl::gpu_selector selector;
 
   // Create a queue using the gpu_selector
   sycl::queue q(selector);
-
   // Print out the name of the device that the queue will use
   std::cout << "q Running on " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
     
@@ -176,13 +177,17 @@ int main(int argc, char *argv[])
   double t1 = mytimer();   // Initialize it (if needed)
   int niters = 0;
   double normr = 0.0;
-  int max_iter = 150;
+  int max_iter = 500;
   double tolerance = 0.0; // Set tolerance to zero to make all runs do max_iter iterations
+  auto start = std::chrono::high_resolution_clock::now();
   #ifdef USING_SYCL
   ierr = HPCCG_sycl(&q, A, b, x, max_iter, tolerance, niters, normr, times);
   #else
   ierr = HPCCG(A, b, x, max_iter, tolerance, niters, normr, times);
   #endif
+  auto end = std::chrono::high_resolution_clock::now();
+  std::chrono::duration<double> elapsed = end - start; // Default duration is in seconds
+  std::cout << "Elapsed time: " << elapsed.count() << " s\n";
 
 	if (ierr) cerr << "Error in call to CG: " << ierr << ".\n" << endl;
 
@@ -201,13 +206,19 @@ int main(int argc, char *argv[])
 
   if (rank==0)  // Only PE 0 needs to compute and report timing results
     {
+      
       double fniters = niters; 
+   
       double fnrow = A->total_nrow;
+    
+      
       double fnnz = A->total_nnz;
+      
       double fnops_ddot = fniters*4*fnrow;
       double fnops_waxpby = fniters*6*fnrow;
       double fnops_sparsemv = fniters*2*fnnz;
       double fnops = fnops_ddot+fnops_waxpby+fnops_sparsemv;
+      
 
       YAML_Doc doc("hpccg", "1.0");
 

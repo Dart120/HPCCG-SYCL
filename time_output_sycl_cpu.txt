@@ -1,0 +1,36 @@
+Running test_HPCCG_OMP with dimensions 50 50 50
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+Running test_HPCCG_OMP with dimensions 100 100 100
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+Running test_HPCCG_OMP with dimensions 150 150 150
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+Running test_HPCCG_OMP with dimensions 200 200 200
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+Running test_HPCCG_OMP with dimensions 250 250 250
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+Running test_HPCCG_OMP with dimensions 300 300 300
+./run_tests.sh: line 13: ./test_HPCCG: No such file or directory
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s

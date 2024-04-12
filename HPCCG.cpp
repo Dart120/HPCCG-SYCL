@@ -291,10 +291,10 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   // Allocate arrays that are of length local_nnz
   sycl::free(A->list_of_vals,*q);
   sycl::free(A->list_of_inds,*q);
-  sycl::free(A,*q);
+  // sycl::free(A,*q);
   normr = *normr_shared;
   std::cout << "All Memory Free"<< std::endl;
-  normr = *normr_shared;
+ 
   // std::cout << "residual at end of func "<< normr << std::endl;
   times[0] = mytimer() - t_begin;  // Total time. All done...
   return(0);
