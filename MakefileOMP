@@ -126,7 +126,7 @@ SYS_LIB =-lm
 #
 # 6) Specify name if executable (optional):
 
-TARGET = test_HPCCG_OMP
+TARGET = test_HPCCG
 
 ################### Derived Quantities (no modification required) ##############
 
