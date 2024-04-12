@@ -94,7 +94,12 @@ using namespace sycl;
 int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
 				 const double *const x, double *const y)
 {
-	 q->parallel_for(range<1>(nrow), [=](id<1> i) {
+	const size_t localSize = 256;    // Desired work-group size
+    size_t globalSize = ((nrow + localSize - 1) / localSize) * localSize;
+    const size_t numGroups = globalSize / localSize;
+	 q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](nd_item<1> it) {
+		size_t i = it.get_global_id(0);
+        	if (i < nrow){
 		 int cur_nnz = pointer_to_cur_nnz[i];
 		 double* cur_vals = pointer_to_cur_vals_lst[i];
 		 int* cur_inds = pointer_to_cur_inds_lst[i];
@@ -104,6 +109,7 @@ int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** poin
 			sum += cur_vals[j] * x[cur_inds[j]];
 		 }
 		 y[i] = sum;
+			}
 	});
   return 0;
 }

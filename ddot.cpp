@@ -97,13 +97,11 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
 
     *result = 0;
     
-    const size_t localSize = 512;    // Desired work-group size
+    const size_t localSize = 256;    // Desired work-group size
     size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
     const size_t numGroups = globalSize / localSize;
     sycl::event e_ddot;
     auto sumr = sycl::reduction(result,sycl::plus<>());
-   
-    // sleep(10000);
     if (y == x) {
       
       e_ddot = q->submit([&](auto &h) {
