@@ -102,10 +102,7 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
     const size_t numGroups = globalSize / localSize;
     sycl::event e_ddot;
     auto sumr = sycl::reduction(result,sycl::plus<>());
-    std::cout<<"N is: " << n << std::endl;
-    std::cout<<"global size: " << globalSize << std::endl;
-    std::cout<<"local size: " << localSize << std::endl;
-    std::cout<<"numGroups: " << numGroups << std::endl;
+   
     // sleep(10000);
     if (y == x) {
       
@@ -117,7 +114,7 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
         }
         
       });
-    });    });    });
+    }); 
     } else {
       e_ddot = q->submit([&](auto &h) {
       h.parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), sumr, [=](sycl::nd_item<1> it, auto &sum) {
