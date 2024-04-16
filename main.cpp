@@ -119,8 +119,8 @@ int main(int argc, char *argv[])
   std::cout << "The device is called " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
   std::cout << "The max work group size is " << q.get_device().get_info<sycl::info::device::max_work_group_size>() << std::endl;
   std::cout << "Number of compute units " << q.get_device().get_info<sycl::info::device::max_compute_units>() << std::endl;
-  std::cout << "Global mem size " << q.get_device().get_info<sycl::info::device::global_mem_size>()/1e+9<<"gb" << std::endl;
-  std::cout << "Local mem size " << q.get_device().get_info<sycl::info::device::local_mem_size>()/1e+3<<"kb" << std::endl;
+  std::cout << "Global memory size " << q.get_device().get_info<sycl::info::device::global_mem_size>()/1073741824<<"gb" << std::endl;
+  std::cout << "Local memory size " << q.get_device().get_info<sycl::info::device::local_mem_size>()/1024 <<"kb" << std::endl;
     
   // sycl::device device = sycl::default_selector().select_device();
   // sycl::queue q(device);

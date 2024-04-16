@@ -97,9 +97,7 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
 
     *result = 0;
     
-    const size_t localSize = 512;    // Desired work-group size
-    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
-    const size_t numGroups = globalSize / localSize;
+  
     sycl::event e_ddot;
     auto sumr = sycl::reduction(result,sycl::plus<>());
    
@@ -107,21 +105,19 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
     if (y == x) {
       
       e_ddot = q->submit([&](auto &h) {
-      h.parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), sumr, [=](sycl::nd_item<1> it, auto &sum) {
-        size_t i = it.get_global_id(0);
-        if (i < n){
+      h.parallel_for(sycl::range<1>(n), sumr, [=](sycl::id<1> i, auto &sum) {
+   
           sum += x[i] * x[i];
-        }
+
         
       });
     }); 
     } else {
       e_ddot = q->submit([&](auto &h) {
-      h.parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), sumr, [=](sycl::nd_item<1> it, auto &sum) {
-        size_t i = it.get_global_id(0);
-			if (i < n){
+      h.parallel_for(sycl::range<1>(n), sumr, [=](sycl::id<1> i, auto &sum) {
+    
           sum += x[i] * y[i];
-        }
+
       });
     });
   }
