@@ -1,0 +1,2970 @@
+Running test_HPCCG with dimensions 50 50 50
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17868e-18
+Iteration = 150   Residual = 1.12015e-28
+Iteration = 200   Residual = 4.95303e-39
+Iteration = 250   Residual = 1.02342e-48
+Iteration = 300   Residual = 8.86757e-59
+Iteration = 350   Residual = 2.35311e-68
+Iteration = 400   Residual = 3.03249e-78
+Iteration = 450   Residual = 6.74504e-88
+Iteration = 499   Residual = 1.09505e-97
+Begun Freeing
+All Memory Free
+Elapsed time: 2.84848 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.09505e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 45.6037
+  DDOT    : 21.238
+  WAXPBY  : 10.943
+  SPARSEMV: 11.8741
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 87.5367
+  DDOT    : 11.7478
+  WAXPBY  : 34.1999
+  SPARSEMV: 283.663
+
+real	0m4.155s
+user	1m8.158s
+sys	0m8.183s
+Running test_HPCCG with dimensions 50 50 50
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17868e-18
+Iteration = 150   Residual = 1.12015e-28
+Iteration = 200   Residual = 4.95303e-39
+Iteration = 250   Residual = 1.02342e-48
+Iteration = 300   Residual = 8.86757e-59
+Iteration = 350   Residual = 2.35311e-68
+Iteration = 400   Residual = 3.03249e-78
+Iteration = 450   Residual = 6.74504e-88
+Iteration = 499   Residual = 1.09505e-97
+Begun Freeing
+All Memory Free
+Elapsed time: 2.73151 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.09505e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 47.2165
+  DDOT    : 22.3819
+  WAXPBY  : 12.5751
+  SPARSEMV: 10.7716
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 84.5468
+  DDOT    : 11.1474
+  WAXPBY  : 29.7612
+  SPARSEMV: 312.698
+
+real	0m3.449s
+user	0m58.320s
+sys	0m7.470s
+Running test_HPCCG with dimensions 50 50 50
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17868e-18
+Iteration = 150   Residual = 1.12015e-28
+Iteration = 200   Residual = 4.95303e-39
+Iteration = 250   Residual = 1.02342e-48
+Iteration = 300   Residual = 8.86757e-59
+Iteration = 350   Residual = 2.35311e-68
+Iteration = 400   Residual = 3.03249e-78
+Iteration = 450   Residual = 6.74504e-88
+Iteration = 499   Residual = 1.09505e-97
+Begun Freeing
+All Memory Free
+Elapsed time: 2.71945 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.09505e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 42.8172
+  DDOT    : 23.3574
+  WAXPBY  : 7.92487
+  SPARSEMV: 9.96393
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 93.2336
+  DDOT    : 10.6818
+  WAXPBY  : 47.2248
+  SPARSEMV: 338.044
+
+real	0m3.497s
+user	0m54.626s
+sys	0m4.488s
+Running test_HPCCG with dimensions 50 50 50
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17868e-18
+Iteration = 150   Residual = 1.12015e-28
+Iteration = 200   Residual = 4.95303e-39
+Iteration = 250   Residual = 1.02342e-48
+Iteration = 300   Residual = 8.86757e-59
+Iteration = 350   Residual = 2.35311e-68
+Iteration = 400   Residual = 3.03249e-78
+Iteration = 450   Residual = 6.74504e-88
+Iteration = 499   Residual = 1.09505e-97
+Begun Freeing
+All Memory Free
+Elapsed time: 2.95396 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.09505e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 40.67
+  DDOT    : 20.3306
+  WAXPBY  : 8.75496
+  SPARSEMV: 10.0602
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 98.156
+  DDOT    : 12.2722
+  WAXPBY  : 42.7472
+  SPARSEMV: 334.809
+
+real	0m3.743s
+user	0m54.622s
+sys	0m9.224s
+Running test_HPCCG with dimensions 50 50 50
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17868e-18
+Iteration = 150   Residual = 1.12015e-28
+Iteration = 200   Residual = 4.95303e-39
+Iteration = 250   Residual = 1.02342e-48
+Iteration = 300   Residual = 8.86757e-59
+Iteration = 350   Residual = 2.35311e-68
+Iteration = 400   Residual = 3.03249e-78
+Iteration = 450   Residual = 6.74504e-88
+Iteration = 499   Residual = 1.09505e-97
+Begun Freeing
+All Memory Free
+Elapsed time: 2.76765 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.09505e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 42.6503
+  DDOT    : 22.1375
+  WAXPBY  : 8.54717
+  SPARSEMV: 10.2436
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 93.5984
+  DDOT    : 11.2705
+  WAXPBY  : 43.7864
+  SPARSEMV: 328.814
+
+real	0m3.663s
+user	1m3.465s
+sys	0m6.530s
+Running test_HPCCG with dimensions 75 75 75
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.33105e-24
+Iteration = 200   Residual = 1.43951e-32
+Iteration = 250   Residual = 6.62233e-42
+Iteration = 300   Residual = 7.71587e-51
+Iteration = 350   Residual = 4.69873e-59
+Iteration = 400   Residual = 3.60767e-68
+Iteration = 450   Residual = 1.41767e-76
+Iteration = 499   Residual = 7.70055e-85
+Begun Freeing
+All Memory Free
+Elapsed time: 5.04894 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.70055e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 87.6633
+  DDOT    : 21.0486
+  WAXPBY  : 10.0707
+  SPARSEMV: 54.0871
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 153.69
+  DDOT    : 40.0057
+  WAXPBY  : 125.423
+  SPARSEMV: 210.177
+
+real	0m5.943s
+user	1m39.216s
+sys	0m11.131s
+Running test_HPCCG with dimensions 75 75 75
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.33105e-24
+Iteration = 200   Residual = 1.43951e-32
+Iteration = 250   Residual = 6.62233e-42
+Iteration = 300   Residual = 7.71587e-51
+Iteration = 350   Residual = 4.69873e-59
+Iteration = 400   Residual = 3.60767e-68
+Iteration = 450   Residual = 1.41767e-76
+Iteration = 499   Residual = 7.70055e-85
+Begun Freeing
+All Memory Free
+Elapsed time: 5.21341 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.70055e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 88.3591
+  DDOT    : 20.8305
+  WAXPBY  : 8.32706
+  SPARSEMV: 56.4365
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 152.48
+  DDOT    : 40.4245
+  WAXPBY  : 151.685
+  SPARSEMV: 201.427
+
+real	0m6.080s
+user	1m43.647s
+sys	0m8.994s
+Running test_HPCCG with dimensions 75 75 75
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.33105e-24
+Iteration = 200   Residual = 1.43951e-32
+Iteration = 250   Residual = 6.62233e-42
+Iteration = 300   Residual = 7.71587e-51
+Iteration = 350   Residual = 4.69873e-59
+Iteration = 400   Residual = 3.60767e-68
+Iteration = 450   Residual = 1.41767e-76
+Iteration = 499   Residual = 7.70055e-85
+Begun Freeing
+All Memory Free
+Elapsed time: 4.88728 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.70055e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 95.6285
+  DDOT    : 20.5811
+  WAXPBY  : 17.7886
+  SPARSEMV: 54.8205
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 140.889
+  DDOT    : 40.9144
+  WAXPBY  : 71.006
+  SPARSEMV: 207.365
+
+real	0m6.031s
+user	1m58.472s
+sys	0m20.347s
+Running test_HPCCG with dimensions 75 75 75
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.33105e-24
+Iteration = 200   Residual = 1.43951e-32
+Iteration = 250   Residual = 6.62233e-42
+Iteration = 300   Residual = 7.71587e-51
+Iteration = 350   Residual = 4.69873e-59
+Iteration = 400   Residual = 3.60767e-68
+Iteration = 450   Residual = 1.41767e-76
+Iteration = 499   Residual = 7.70055e-85
+Begun Freeing
+All Memory Free
+Elapsed time: 5.02163 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.70055e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 91.4522
+  DDOT    : 22.8146
+  WAXPBY  : 10.3443
+  SPARSEMV: 54.699
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 147.323
+  DDOT    : 36.909
+  WAXPBY  : 122.106
+  SPARSEMV: 207.825
+
+real	0m5.936s
+user	1m48.142s
+sys	0m8.643s
+Running test_HPCCG with dimensions 75 75 75
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.33105e-24
+Iteration = 200   Residual = 1.43951e-32
+Iteration = 250   Residual = 6.62233e-42
+Iteration = 300   Residual = 7.71587e-51
+Iteration = 350   Residual = 4.69873e-59
+Iteration = 400   Residual = 3.60767e-68
+Iteration = 450   Residual = 1.41767e-76
+Iteration = 499   Residual = 7.70055e-85
+Begun Freeing
+All Memory Free
+Elapsed time: 5.38273 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.70055e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 92.415
+  DDOT    : 21.5244
+  WAXPBY  : 14.3478
+  SPARSEMV: 53.9618
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 145.788
+  DDOT    : 39.1213
+  WAXPBY  : 88.0338
+  SPARSEMV: 210.665
+
+real	0m6.201s
+user	1m46.777s
+sys	0m17.437s
+Running test_HPCCG with dimensions 100 100 100
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.98251e-30
+Iteration = 250   Residual = 2.59348e-38
+Iteration = 300   Residual = 8.7401e-47
+Iteration = 350   Residual = 3.4e-55
+Iteration = 400   Residual = 3.83632e-63
+Iteration = 450   Residual = 1.67624e-71
+Iteration = 499   Residual = 3.49298e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 10.5008 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 3.49298e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 170.892
+  DDOT    : 25.037
+  WAXPBY  : 11.9786
+  SPARSEMV: 131.532
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 186.879
+  DDOT    : 79.722
+  WAXPBY  : 249.946
+  SPARSEMV: 204.863
+
+real	0m11.760s
+user	3m5.611s
+sys	0m15.935s
+Running test_HPCCG with dimensions 100 100 100
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.98251e-30
+Iteration = 250   Residual = 2.59348e-38
+Iteration = 300   Residual = 8.7401e-47
+Iteration = 350   Residual = 3.4e-55
+Iteration = 400   Residual = 3.83632e-63
+Iteration = 450   Residual = 1.67624e-71
+Iteration = 499   Residual = 3.49298e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 11.9983 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 3.49298e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 182.816
+  DDOT    : 24.984
+  WAXPBY  : 12.9362
+  SPARSEMV: 142.63
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 174.689
+  DDOT    : 79.891
+  WAXPBY  : 231.443
+  SPARSEMV: 188.923
+
+real	0m13.243s
+user	3m17.103s
+sys	0m19.309s
+Running test_HPCCG with dimensions 100 100 100
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.98251e-30
+Iteration = 250   Residual = 2.59348e-38
+Iteration = 300   Residual = 8.7401e-47
+Iteration = 350   Residual = 3.4e-55
+Iteration = 400   Residual = 3.83632e-63
+Iteration = 450   Residual = 1.67624e-71
+Iteration = 499   Residual = 3.49298e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 11.9881 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 3.49298e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 185.015
+  DDOT    : 25.0284
+  WAXPBY  : 21.6065
+  SPARSEMV: 136.622
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 172.613
+  DDOT    : 79.7493
+  WAXPBY  : 138.57
+  SPARSEMV: 197.23
+
+real	0m13.156s
+user	3m28.724s
+sys	0m39.443s
+Running test_HPCCG with dimensions 100 100 100
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.98251e-30
+Iteration = 250   Residual = 2.59348e-38
+Iteration = 300   Residual = 8.7401e-47
+Iteration = 350   Residual = 3.4e-55
+Iteration = 400   Residual = 3.83632e-63
+Iteration = 450   Residual = 1.67624e-71
+Iteration = 499   Residual = 3.49298e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 11.4363 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 3.49298e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 181.83
+  DDOT    : 24.6704
+  WAXPBY  : 14.7811
+  SPARSEMV: 140.249
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 175.636
+  DDOT    : 80.9066
+  WAXPBY  : 202.556
+  SPARSEMV: 192.13
+
+real	0m12.643s
+user	3m23.933s
+sys	0m18.553s
+Running test_HPCCG with dimensions 100 100 100
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.98251e-30
+Iteration = 250   Residual = 2.59348e-38
+Iteration = 300   Residual = 8.7401e-47
+Iteration = 350   Residual = 3.4e-55
+Iteration = 400   Residual = 3.83632e-63
+Iteration = 450   Residual = 1.67624e-71
+Iteration = 499   Residual = 3.49298e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 12.3592 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 3.49298e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 198.603
+  DDOT    : 27.551
+  WAXPBY  : 23.6351
+  SPARSEMV: 145.487
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 160.803
+  DDOT    : 72.4475
+  WAXPBY  : 126.676
+  SPARSEMV: 185.212
+
+real	0m13.517s
+user	3m34.105s
+sys	0m29.137s
+Running test_HPCCG with dimensions 125 125 125
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 1.69469e-36
+Iteration = 300   Residual = 1.45222e-44
+Iteration = 350   Residual = 1.14535e-52
+Iteration = 400   Residual = 2.22886e-60
+Iteration = 450   Residual = 1.76872e-68
+Iteration = 499   Residual = 5.11813e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 33.4138 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.11813e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 328.239
+  DDOT    : 32.286
+  WAXPBY  : 27.0291
+  SPARSEMV: 267.205
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 190.029
+  DDOT    : 120.747
+  WAXPBY  : 216.347
+  SPARSEMV: 196.961
+
+real	0m35.306s
+user	5m45.851s
+sys	0m42.517s
+Running test_HPCCG with dimensions 125 125 125
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 1.69469e-36
+Iteration = 300   Residual = 1.45222e-44
+Iteration = 350   Residual = 1.14535e-52
+Iteration = 400   Residual = 2.22886e-60
+Iteration = 450   Residual = 1.76872e-68
+Iteration = 499   Residual = 5.11813e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 32.752 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.11813e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 334.855
+  DDOT    : 31.7868
+  WAXPBY  : 27.1487
+  SPARSEMV: 273.956
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 186.275
+  DDOT    : 122.643
+  WAXPBY  : 215.394
+  SPARSEMV: 192.107
+
+real	0m34.491s
+user	5m45.567s
+sys	0m40.774s
+Running test_HPCCG with dimensions 125 125 125
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 1.69469e-36
+Iteration = 300   Residual = 1.45222e-44
+Iteration = 350   Residual = 1.14535e-52
+Iteration = 400   Residual = 2.22886e-60
+Iteration = 450   Residual = 1.76872e-68
+Iteration = 499   Residual = 5.11813e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 31.6938 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.11813e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 327.866
+  DDOT    : 31.3771
+  WAXPBY  : 25.0535
+  SPARSEMV: 269.588
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 190.245
+  DDOT    : 124.244
+  WAXPBY  : 233.407
+  SPARSEMV: 195.22
+
+real	0m33.275s
+user	5m37.907s
+sys	0m30.355s
+Running test_HPCCG with dimensions 125 125 125
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 1.69469e-36
+Iteration = 300   Residual = 1.45222e-44
+Iteration = 350   Residual = 1.14535e-52
+Iteration = 400   Residual = 2.22886e-60
+Iteration = 450   Residual = 1.76872e-68
+Iteration = 499   Residual = 5.11813e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 34.1287 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.11813e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 336.293
+  DDOT    : 33.4451
+  WAXPBY  : 27.1544
+  SPARSEMV: 273.847
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 185.478
+  DDOT    : 116.562
+  WAXPBY  : 215.348
+  SPARSEMV: 192.183
+
+real	0m35.715s
+user	5m52.361s
+sys	0m37.473s
+Running test_HPCCG with dimensions 125 125 125
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 1.69469e-36
+Iteration = 300   Residual = 1.45222e-44
+Iteration = 350   Residual = 1.14535e-52
+Iteration = 400   Residual = 2.22886e-60
+Iteration = 450   Residual = 1.76872e-68
+Iteration = 499   Residual = 5.11813e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 26.9243 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.11813e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 332.396
+  DDOT    : 34.5761
+  WAXPBY  : 25.4126
+  SPARSEMV: 270.428
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 187.653
+  DDOT    : 112.75
+  WAXPBY  : 230.108
+  SPARSEMV: 194.613
+
+real	0m28.452s
+user	5m44.392s
+sys	0m34.626s
+Running test_HPCCG with dimensions 150 150 150
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61092e-35
+Iteration = 300   Residual = 5.30416e-43
+Iteration = 350   Residual = 3.69332e-51
+Iteration = 400   Residual = 1.27766e-58
+Iteration = 450   Residual = 1.48895e-66
+Iteration = 499   Residual = 2.25979e-74
+Begun Freeing
+All Memory Free
+Elapsed time: 26.1455 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.25979e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 558.235
+  DDOT    : 42.5828
+  WAXPBY  : 47.8343
+  SPARSEMV: 465.275
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 193.08
+  DDOT    : 158.198
+  WAXPBY  : 211.245
+  SPARSEMV: 195.46
+
+real	0m28.171s
+user	9m35.666s
+sys	0m37.798s
+Running test_HPCCG with dimensions 150 150 150
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61092e-35
+Iteration = 300   Residual = 5.30416e-43
+Iteration = 350   Residual = 3.69332e-51
+Iteration = 400   Residual = 1.27766e-58
+Iteration = 450   Residual = 1.48895e-66
+Iteration = 499   Residual = 2.25979e-74
+Begun Freeing
+All Memory Free
+Elapsed time: 55.8688 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.25979e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 557.525
+  DDOT    : 44.3024
+  WAXPBY  : 35.8811
+  SPARSEMV: 474.022
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 193.326
+  DDOT    : 152.057
+  WAXPBY  : 281.618
+  SPARSEMV: 191.853
+
+real	0m58.048s
+user	9m36.304s
+sys	0m43.200s
+Running test_HPCCG with dimensions 150 150 150
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61092e-35
+Iteration = 300   Residual = 5.30416e-43
+Iteration = 350   Residual = 3.69332e-51
+Iteration = 400   Residual = 1.27766e-58
+Iteration = 450   Residual = 1.48895e-66
+Iteration = 499   Residual = 2.25979e-74
+Begun Freeing
+All Memory Free
+Elapsed time: 58.1391 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.25979e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 541.858
+  DDOT    : 45.0449
+  WAXPBY  : 38.964
+  SPARSEMV: 454.804
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 198.916
+  DDOT    : 149.551
+  WAXPBY  : 259.335
+  SPARSEMV: 199.96
+
+real	1m0.322s
+user	9m14.254s
+sys	0m49.495s
+Running test_HPCCG with dimensions 150 150 150
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61092e-35
+Iteration = 300   Residual = 5.30416e-43
+Iteration = 350   Residual = 3.69332e-51
+Iteration = 400   Residual = 1.27766e-58
+Iteration = 450   Residual = 1.48895e-66
+Iteration = 499   Residual = 2.25979e-74
+Begun Freeing
+All Memory Free
+Elapsed time: 59.6655 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.25979e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 550.472
+  DDOT    : 44.9044
+  WAXPBY  : 35.7849
+  SPARSEMV: 466.812
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 195.803
+  DDOT    : 150.019
+  WAXPBY  : 282.375
+  SPARSEMV: 194.816
+
+real	1m1.591s
+user	9m23.572s
+sys	0m41.655s
+Running test_HPCCG with dimensions 150 150 150
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61092e-35
+Iteration = 300   Residual = 5.30416e-43
+Iteration = 350   Residual = 3.69332e-51
+Iteration = 400   Residual = 1.27766e-58
+Iteration = 450   Residual = 1.48895e-66
+Iteration = 499   Residual = 2.25979e-74
+Begun Freeing
+All Memory Free
+Elapsed time: 55.5003 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.25979e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 535.766
+  DDOT    : 42.5808
+  WAXPBY  : 38.8202
+  SPARSEMV: 451.319
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 201.178
+  DDOT    : 158.205
+  WAXPBY  : 260.296
+  SPARSEMV: 201.504
+
+real	1m1.958s
+user	9m13.880s
+sys	0m51.200s
+Running test_HPCCG with dimensions 175 175 175
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.37911e-42
+Iteration = 350   Residual = 5.63122e-50
+Iteration = 400   Residual = 1.08888e-57
+Iteration = 450   Residual = 4.96092e-65
+Iteration = 499   Residual = 1.19742e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 70.6199 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19742e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 816.842
+  DDOT    : 55.513
+  WAXPBY  : 73.2622
+  SPARSEMV: 685.339
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 209.535
+  DDOT    : 192.699
+  WAXPBY  : 219.021
+  SPARSEMV: 210.719
+
+real	1m13.063s
+user	13m45.553s
+sys	0m48.552s
+Running test_HPCCG with dimensions 175 175 175
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.37911e-42
+Iteration = 350   Residual = 5.63122e-50
+Iteration = 400   Residual = 1.08888e-57
+Iteration = 450   Residual = 4.96092e-65
+Iteration = 499   Residual = 1.19742e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 67.3751 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19742e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 836.258
+  DDOT    : 56.0644
+  WAXPBY  : 75.0284
+  SPARSEMV: 702.442
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 204.67
+  DDOT    : 190.804
+  WAXPBY  : 213.865
+  SPARSEMV: 205.588
+
+real	1m10.075s
+user	14m12.726s
+sys	0m50.662s
+Running test_HPCCG with dimensions 175 175 175
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.37911e-42
+Iteration = 350   Residual = 5.63122e-50
+Iteration = 400   Residual = 1.08888e-57
+Iteration = 450   Residual = 4.96092e-65
+Iteration = 499   Residual = 1.19742e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 70.2557 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19742e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 806.965
+  DDOT    : 54.4484
+  WAXPBY  : 70.2861
+  SPARSEMV: 678.956
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 212.1
+  DDOT    : 196.467
+  WAXPBY  : 228.295
+  SPARSEMV: 212.7
+
+real	1m13.057s
+user	13m49.349s
+sys	0m47.633s
+Running test_HPCCG with dimensions 175 175 175
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.37911e-42
+Iteration = 350   Residual = 5.63122e-50
+Iteration = 400   Residual = 1.08888e-57
+Iteration = 450   Residual = 4.96092e-65
+Iteration = 499   Residual = 1.19742e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 68.0555 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19742e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 826.057
+  DDOT    : 57.1974
+  WAXPBY  : 70.7319
+  SPARSEMV: 694.957
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 207.197
+  DDOT    : 187.024
+  WAXPBY  : 226.856
+  SPARSEMV: 207.802
+
+real	1m10.850s
+user	14m4.612s
+sys	0m50.982s
+Running test_HPCCG with dimensions 175 175 175
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.37911e-42
+Iteration = 350   Residual = 5.63122e-50
+Iteration = 400   Residual = 1.08888e-57
+Iteration = 450   Residual = 4.96092e-65
+Iteration = 499   Residual = 1.19742e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 67.4468 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19742e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 831.243
+  DDOT    : 63.1083
+  WAXPBY  : 67.0126
+  SPARSEMV: 698.405
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 205.905
+  DDOT    : 169.507
+  WAXPBY  : 239.447
+  SPARSEMV: 206.777
+
+real	1m10.085s
+user	14m11.383s
+sys	0m49.545s
+Running test_HPCCG with dimensions 200 200 200
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06943e-49
+Iteration = 400   Residual = 1.05391e-56
+Iteration = 450   Residual = 1.94641e-64
+Iteration = 499   Residual = 8.65472e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 80.7107 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 8.65472e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1209.78
+  DDOT    : 78.3059
+  WAXPBY  : 99.1919
+  SPARSEMV: 1027.12
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 211.185
+  DDOT    : 203.918
+  WAXPBY  : 241.471
+  SPARSEMV: 209.875
+
+real	1m24.731s
+user	20m25.887s
+sys	1m39.037s
+Running test_HPCCG with dimensions 200 200 200
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06943e-49
+Iteration = 400   Residual = 1.05391e-56
+Iteration = 450   Residual = 1.94641e-64
+Iteration = 499   Residual = 8.65472e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 78.2457 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 8.65472e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1197.19
+  DDOT    : 76.7832
+  WAXPBY  : 99.9904
+  SPARSEMV: 1015.37
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 213.406
+  DDOT    : 207.962
+  WAXPBY  : 239.543
+  SPARSEMV: 212.305
+
+real	1m21.889s
+user	20m11.264s
+sys	1m14.369s
+Running test_HPCCG with dimensions 200 200 200
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06943e-49
+Iteration = 400   Residual = 1.05391e-56
+Iteration = 450   Residual = 1.94641e-64
+Iteration = 499   Residual = 8.65472e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 79.8004 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 8.65472e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1193.01
+  DDOT    : 80.6551
+  WAXPBY  : 93.9012
+  SPARSEMV: 1013.24
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 214.155
+  DDOT    : 197.979
+  WAXPBY  : 255.077
+  SPARSEMV: 212.752
+
+real	1m23.389s
+user	20m10.457s
+sys	1m4.925s
+Running test_HPCCG with dimensions 200 200 200
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06943e-49
+Iteration = 400   Residual = 1.05391e-56
+Iteration = 450   Residual = 1.94641e-64
+Iteration = 499   Residual = 8.65472e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 77.8404 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 8.65472e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1217.96
+  DDOT    : 78.9125
+  WAXPBY  : 105.429
+  SPARSEMV: 1028.95
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 209.767
+  DDOT    : 202.351
+  WAXPBY  : 227.186
+  SPARSEMV: 209.503
+
+real	1m21.196s
+user	20m31.497s
+sys	1m14.067s
+Running test_HPCCG with dimensions 200 200 200
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06943e-49
+Iteration = 400   Residual = 1.05391e-56
+Iteration = 450   Residual = 1.94641e-64
+Iteration = 499   Residual = 8.65472e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 77.2323 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 8.65472e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1189.83
+  DDOT    : 84.1631
+  WAXPBY  : 85.641
+  SPARSEMV: 1013.7
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 214.726
+  DDOT    : 189.727
+  WAXPBY  : 279.679
+  SPARSEMV: 212.655
+
+real	1m21.039s
+user	20m13.990s
+sys	1m2.622s
+Running test_HPCCG with dimensions 225 225 225
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47242e-48
+Iteration = 400   Residual = 3.5138e-56
+Iteration = 450   Residual = 1.1537e-63
+Iteration = 499   Residual = 3.94501e-71
+Begun Freeing
+All Memory Free
+Elapsed time: 86.0303 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 3.94501e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1671.45
+  DDOT    : 92.522
+  WAXPBY  : 155.612
+  SPARSEMV: 1418.64
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 217.638
+  DDOT    : 245.733
+  WAXPBY  : 219.158
+  SPARSEMV: 216.356
+
+real	1m30.820s
+user	28m9.227s
+sys	1m5.311s
+Running test_HPCCG with dimensions 225 225 225
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47242e-48
+Iteration = 400   Residual = 3.5138e-56
+Iteration = 450   Residual = 1.1537e-63
+Iteration = 499   Residual = 3.94501e-71
+Begun Freeing
+All Memory Free
+Elapsed time: 83.4219 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 3.94501e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1657.2
+  DDOT    : 94.0302
+  WAXPBY  : 158.974
+  SPARSEMV: 1400.12
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 219.509
+  DDOT    : 241.791
+  WAXPBY  : 214.523
+  SPARSEMV: 219.217
+
+real	1m29.095s
+user	27m49.886s
+sys	1m6.876s
+Running test_HPCCG with dimensions 225 225 225
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47242e-48
+Iteration = 400   Residual = 3.5138e-56
+Iteration = 450   Residual = 1.1537e-63
+Iteration = 499   Residual = 3.94501e-71
+Begun Freeing
+All Memory Free
+Elapsed time: 87.9962 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 3.94501e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1672.96
+  DDOT    : 92.1919
+  WAXPBY  : 161.221
+  SPARSEMV: 1414.93
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 217.442
+  DDOT    : 246.613
+  WAXPBY  : 211.533
+  SPARSEMV: 216.924
+
+real	1m32.990s
+user	28m17.914s
+sys	1m25.206s
+Running test_HPCCG with dimensions 225 225 225
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47242e-48
+Iteration = 400   Residual = 3.5138e-56
+Iteration = 450   Residual = 1.1537e-63
+Iteration = 499   Residual = 3.94501e-71
+Begun Freeing
+All Memory Free
+Elapsed time: 86.4908 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 3.94501e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1658.16
+  DDOT    : 93.4501
+  WAXPBY  : 156.322
+  SPARSEMV: 1403.45
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 219.383
+  DDOT    : 243.292
+  WAXPBY  : 218.162
+  SPARSEMV: 218.699
+
+real	1m31.100s
+user	27m54.248s
+sys	1m10.493s
+Running test_HPCCG with dimensions 225 225 225
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47242e-48
+Iteration = 400   Residual = 3.5138e-56
+Iteration = 450   Residual = 1.1537e-63
+Iteration = 499   Residual = 3.94501e-71
+Begun Freeing
+All Memory Free
+Elapsed time: 84.1991 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 3.94501e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1662.87
+  DDOT    : 92.4691
+  WAXPBY  : 163.931
+  SPARSEMV: 1402.33
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 218.761
+  DDOT    : 245.873
+  WAXPBY  : 208.036
+  SPARSEMV: 218.873
+
+real	1m28.759s
+user	28m0.520s
+sys	1m10.851s
+Running test_HPCCG with dimensions 250 250 250
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.07429e-63
+Iteration = 499   Residual = 1.63838e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 105.384 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.63838e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2285.22
+  DDOT    : 116.058
+  WAXPBY  : 233.713
+  SPARSEMV: 1930.9
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 218.36
+  DDOT    : 268.723
+  WAXPBY  : 200.165
+  SPARSEMV: 218.05
+
+real	1m52.124s
+user	38m21.768s
+sys	1m16.631s
+Running test_HPCCG with dimensions 250 250 250
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.07429e-63
+Iteration = 499   Residual = 1.63838e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 96.6856 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.63838e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2297.26
+  DDOT    : 112.986
+  WAXPBY  : 233.999
+  SPARSEMV: 1944.44
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 217.215
+  DDOT    : 276.03
+  WAXPBY  : 199.921
+  SPARSEMV: 216.531
+
+real	1m43.266s
+user	38m38.976s
+sys	1m13.857s
+Running test_HPCCG with dimensions 250 250 250
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.07429e-63
+Iteration = 499   Residual = 1.63838e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 103.281 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.63838e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2223.35
+  DDOT    : 113.805
+  WAXPBY  : 228.018
+  SPARSEMV: 1877.47
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 224.436
+  DDOT    : 274.044
+  WAXPBY  : 205.164
+  SPARSEMV: 224.254
+
+real	1m49.984s
+user	37m18.994s
+sys	1m31.674s
+Running test_HPCCG with dimensions 250 250 250
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.07429e-63
+Iteration = 499   Residual = 1.63838e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 107.061 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.63838e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2292.57
+  DDOT    : 113.466
+  WAXPBY  : 232.083
+  SPARSEMV: 1942.75
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 217.659
+  DDOT    : 274.863
+  WAXPBY  : 201.571
+  SPARSEMV: 216.719
+
+real	1m53.021s
+user	38m29.581s
+sys	1m13.610s
+Running test_HPCCG with dimensions 250 250 250
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.07429e-63
+Iteration = 499   Residual = 1.63838e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 105.246 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.63838e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2262.36
+  DDOT    : 115.534
+  WAXPBY  : 232.953
+  SPARSEMV: 1910.19
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 220.567
+  DDOT    : 269.943
+  WAXPBY  : 200.819
+  SPARSEMV: 220.414
+
+real	1m51.702s
+user	38m5.781s
+sys	1m33.793s
+Running test_HPCCG with dimensions 275 275 275
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37238e-55
+Iteration = 450   Residual = 6.93178e-63
+Iteration = 499   Residual = 3.66795e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 130.178 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 3.66795e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3006.29
+  DDOT    : 142.346
+  WAXPBY  : 315.319
+  SPARSEMV: 2543.8
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 220.927
+  DDOT    : 291.617
+  WAXPBY  : 197.47
+  SPARSEMV: 220.298
+
+real	2m19.135s
+user	50m29.424s
+sys	1m50.091s
+Running test_HPCCG with dimensions 275 275 275
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37238e-55
+Iteration = 450   Residual = 6.93178e-63
+Iteration = 499   Residual = 3.66795e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 131.49 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 3.66795e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3044.13
+  DDOT    : 142.024
+  WAXPBY  : 326.424
+  SPARSEMV: 2572.34
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 218.18
+  DDOT    : 292.278
+  WAXPBY  : 190.752
+  SPARSEMV: 217.853
+
+real	2m19.286s
+user	51m0.071s
+sys	1m32.145s
+Running test_HPCCG with dimensions 275 275 275
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37238e-55
+Iteration = 450   Residual = 6.93178e-63
+Iteration = 499   Residual = 3.66795e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 133.018 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 3.66795e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3060.36
+  DDOT    : 150.494
+  WAXPBY  : 348.403
+  SPARSEMV: 2557.61
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 217.023
+  DDOT    : 275.829
+  WAXPBY  : 178.718
+  SPARSEMV: 219.108
+
+real	2m21.171s
+user	51m20.369s
+sys	1m16.542s
+Running test_HPCCG with dimensions 275 275 275
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37238e-55
+Iteration = 450   Residual = 6.93178e-63
+Iteration = 499   Residual = 3.66795e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 130.314 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 3.66795e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3018.37
+  DDOT    : 144.439
+  WAXPBY  : 333.759
+  SPARSEMV: 2536.92
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 220.043
+  DDOT    : 287.392
+  WAXPBY  : 186.559
+  SPARSEMV: 220.895
+
+real	2m18.515s
+user	50m35.864s
+sys	1m39.747s
+Running test_HPCCG with dimensions 275 275 275
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37238e-55
+Iteration = 450   Residual = 6.93178e-63
+Iteration = 499   Residual = 3.66795e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 132.909 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 3.66795e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3002.78
+  DDOT    : 144.233
+  WAXPBY  : 324.851
+  SPARSEMV: 2529.45
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 221.185
+  DDOT    : 287.801
+  WAXPBY  : 191.675
+  SPARSEMV: 221.547
+
+real	2m21.197s
+user	50m21.999s
+sys	1m34.869s
+Running test_HPCCG with dimensions 300 300 300
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.6189e-62
+Iteration = 499   Residual = 7.0714e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 170.381 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 7.0714e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 4006.53
+  DDOT    : 189.449
+  WAXPBY  : 468.183
+  SPARSEMV: 3345.82
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 215.217
+  DDOT    : 284.467
+  WAXPBY  : 172.663
+  SPARSEMV: 217.448
+
+real	3m0.594s
+user	67m4.815s
+sys	1m53.742s
+Running test_HPCCG with dimensions 300 300 300
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.6189e-62
+Iteration = 499   Residual = 7.0714e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 172.309 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 7.0714e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3987.31
+  DDOT    : 189.728
+  WAXPBY  : 460.691
+  SPARSEMV: 3334.57
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 216.254
+  DDOT    : 284.048
+  WAXPBY  : 175.471
+  SPARSEMV: 218.182
+
+real	3m2.082s
+user	66m47.403s
+sys	1m56.046s
+Running test_HPCCG with dimensions 300 300 300
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.6189e-62
+Iteration = 499   Residual = 7.0714e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 173.713 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 7.0714e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3870.52
+  DDOT    : 176.4
+  WAXPBY  : 428.155
+  SPARSEMV: 3262.87
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 222.779
+  DDOT    : 305.51
+  WAXPBY  : 188.805
+  SPARSEMV: 222.976
+
+real	3m4.362s
+user	64m58.601s
+sys	2m9.605s
+Running test_HPCCG with dimensions 300 300 300
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.6189e-62
+Iteration = 499   Residual = 7.0714e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 163.359 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 7.0714e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3878.28
+  DDOT    : 175.081
+  WAXPBY  : 432.827
+  SPARSEMV: 3267.81
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 222.333
+  DDOT    : 307.812
+  WAXPBY  : 186.767
+  SPARSEMV: 222.639
+
+real	2m53.993s
+user	64m59.389s
+sys	2m10.320s
+Running test_HPCCG with dimensions 300 300 300
+The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
+The max work group size is 8192
+Number of compute units 64
+Global memory size 1132gb
+Local memory size 32kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.6189e-62
+Iteration = 499   Residual = 7.0714e-70
+Begun Freeing
+All Memory Free
+Elapsed time: 166.184 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 64
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 7.0714e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3915.63
+  DDOT    : 178.271
+  WAXPBY  : 435.515
+  SPARSEMV: 3299.55
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 220.213
+  DDOT    : 302.303
+  WAXPBY  : 185.615
+  SPARSEMV: 220.497
+
+real	2m56.413s
+user	65m33.959s
+sys	2m21.720s

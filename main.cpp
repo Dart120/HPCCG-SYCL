@@ -121,6 +121,9 @@ int main(int argc, char *argv[])
   std::cout << "Number of compute units " << q.get_device().get_info<sycl::info::device::max_compute_units>() << std::endl;
   std::cout << "Global memory size " << q.get_device().get_info<sycl::info::device::global_mem_size>()/1073741824<<"gb" << std::endl;
   std::cout << "Local memory size " << q.get_device().get_info<sycl::info::device::local_mem_size>()/1024 <<"kb" << std::endl;
+sycl::device device = q.get_device();
+
+   
     
   // sycl::device device = sycl::default_selector().select_device();
   // sycl::queue q(device);

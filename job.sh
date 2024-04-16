@@ -12,5 +12,6 @@ source /etc/profile
 module unload cuda
 module load llvm-clang/15.0.0 
 module load cuda/11.5
+ make -f MakefileSYCL clean
  make -f MakefileSYCL
-./run_tests_amp.sh
+./run_tests_pas.sh
