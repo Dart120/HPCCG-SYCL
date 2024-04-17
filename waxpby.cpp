@@ -60,7 +60,8 @@
 #include <iostream>
 
 
-
+extern int init_size;
+extern int mult;
 
 
 
@@ -100,9 +101,17 @@ int waxpby (const int n, const double alpha, const double * const x,
 int waxpby_sycl_tasked(sycl::queue* q ,const int n, const double alpha, const double * const x, 
 	const double beta, const double * const y, 
 	double * const w, sycl::event e) {  
-	const size_t localSize = 256;    // Desired work-group size
-    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
-    const size_t numGroups = globalSize / localSize;
+
+    
+    const size_t numGroups = init_size * mult;
+	
+
+    size_t globalSize = n;
+    const size_t initial_local_size = n / numGroups;    // Desired work-group size
+    const size_t localSize = std::pow(2, std::round(std::log2(initial_local_size)));
+    if (globalSize % localSize != 0){
+      globalSize = ((globalSize / localSize) + 1) * localSize;
+    }
 
 	if (alpha==1.0) {
 		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)),{e}, [=](sycl::nd_item<1> it) {
@@ -132,9 +141,16 @@ int waxpby_sycl_tasked(sycl::queue* q ,const int n, const double alpha, const do
 }
 int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, const double beta, const double * const y, double * const w)
 { 
-	const size_t localSize = 256;    // Desired work-group size
-    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
-    const size_t numGroups = globalSize / localSize;
+	
+    
+    const size_t numGroups = init_size * std::pow(2, mult);
+
+    size_t globalSize = n;
+    const size_t initial_local_size = n / numGroups;    // Desired work-group size
+    const size_t localSize = std::pow(2, std::round(std::log2(initial_local_size)));
+    if (globalSize % localSize != 0){
+      globalSize = ((globalSize / localSize) + 1) * localSize;
+    }
 	if (alpha==1.0) {
 		q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](sycl::nd_item<1> it) {
 			size_t i = it.get_global_id(0);

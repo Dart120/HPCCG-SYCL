@@ -84,6 +84,7 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   int local_nnz = 27*local_nrow; // Approximately 27 nonzeros per row (except for boundary nodes)
 
   int total_nrow = local_nrow*size; // Total number of grid points in mesh
+  std::cout << "Number of Rows: " << total_nrow << std::endl;
   long long total_nnz = 27* (long long) total_nrow; // Approximately 27 nonzeros per row (except for boundary nodes)
 
   int start_row = local_nrow*rank; // Each processor gets a section of a chimney stack domain

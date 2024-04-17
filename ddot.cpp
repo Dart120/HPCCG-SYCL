@@ -54,7 +54,8 @@
 
 #include "ddot.hpp"
 
-
+int init_size = 32;
+int mult = 3;
 
 
 int ddot (const int n, const double * const x, const double * const y, 
@@ -94,13 +95,21 @@ int ddot (const int n, const double * const x, const double * const y,
 
 sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const double * const y, double * const result)
 {  
-
-    *result = 0;
     
-    const size_t localSize = 256;    // Desired work-group size
-    size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
-    const size_t numGroups = globalSize / localSize;
+    
+    const size_t numGroups = init_size * std::pow(2, mult);
+    *result = 0;
+    size_t globalSize = n;
+    const size_t initial_local_size = n / numGroups;    // Desired work-group size
+    const size_t localSize = std::pow(2, std::round(std::log2(initial_local_size)));
+    if (globalSize % localSize != 0){
+      globalSize = ((globalSize / localSize) + 1) * localSize;
+    }
+        
+
     sycl::event e_ddot;
+    // std::cout << "Global size in ddot: "<< globalSize<<std::endl;
+    // std::cout << "Local size in ddot: "<< localSize<<std::endl;
     auto sumr = sycl::reduction(result,sycl::plus<>());
     if (y == x) {
       
