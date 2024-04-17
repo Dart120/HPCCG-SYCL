@@ -94,7 +94,7 @@ using namespace sycl;
 int HPC_sparsemv_sycl(sycl::queue *q,double** pointer_to_cur_vals_lst,int** pointer_to_cur_inds_lst,int* pointer_to_cur_nnz, int nrow,
 				 const double *const x, double *const y)
 {
-	const size_t localSize = 256;    // Desired work-group size
+	const size_t localSize = 1024;    // Desired work-group size
     size_t globalSize = ((nrow + localSize - 1) / localSize) * localSize;
     const size_t numGroups = globalSize / localSize;
 	 q->parallel_for(sycl::nd_range<1>(sycl::range<1>(globalSize), sycl::range<1>(localSize)), [=](nd_item<1> it) {

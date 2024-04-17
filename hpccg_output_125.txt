@@ -1,0 +1,1415 @@
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89389e-28
+Iteration = 250   Residual = 3.9503e-36
+Iteration = 300   Residual = 1.9351e-44
+Iteration = 350   Residual = 3.74187e-52
+Iteration = 400   Residual = 3.28163e-60
+Iteration = 450   Residual = 4.29849e-68
+Iteration = 499   Residual = 9.19274e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 39.6093 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 9.19274e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 38.9351
+  DDOT    : 35.1238
+  WAXPBY  : 0.155133
+  SPARSEMV: 3.62957
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1602.03
+  DDOT    : 110.991
+  WAXPBY  : 37694.5
+  SPARSEMV: 14500.1
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89397e-28
+Iteration = 250   Residual = 3.95032e-36
+Iteration = 300   Residual = 1.93269e-44
+Iteration = 350   Residual = 3.87574e-52
+Iteration = 400   Residual = 2.48749e-60
+Iteration = 450   Residual = 4.73391e-68
+Iteration = 499   Residual = 1.12594e-75
+Begun Freeing
+All Memory Free
+Elapsed time: 40.0795 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 1.12594e-75
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.2265
+  DDOT    : 35.4328
+  WAXPBY  : 0.154787
+  SPARSEMV: 3.61036
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1590.12
+  DDOT    : 110.023
+  WAXPBY  : 37778.7
+  SPARSEMV: 14577.2
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.894e-28
+Iteration = 250   Residual = 3.95044e-36
+Iteration = 300   Residual = 1.93419e-44
+Iteration = 350   Residual = 3.88156e-52
+Iteration = 400   Residual = 3.27389e-60
+Iteration = 450   Residual = 4.63789e-68
+Iteration = 499   Residual = 9.48474e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 39.9108 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 9.48474e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.2429
+  DDOT    : 35.4329
+  WAXPBY  : 0.155617
+  SPARSEMV: 3.62571
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1589.46
+  DDOT    : 110.023
+  WAXPBY  : 37577.2
+  SPARSEMV: 14515.5
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89395e-28
+Iteration = 250   Residual = 3.95043e-36
+Iteration = 300   Residual = 1.94687e-44
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89397e-28
+Iteration = 250   Residual = 3.95039e-36
+Iteration = 300   Residual = 1.93316e-44
+Iteration = 350   Residual = 3.85089e-52
+Iteration = 400   Residual = 2.20621e-60
+Iteration = 450   Residual = 4.62268e-68
+Iteration = 499   Residual = 8.77974e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 52.7849 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.77974e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 52.3524
+  DDOT    : 48.5952
+  WAXPBY  : 0.149727
+  SPARSEMV: 3.58831
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1191.44
+  DDOT    : 80.2228
+  WAXPBY  : 39055.5
+  SPARSEMV: 14666.8
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89398e-28
+Iteration = 250   Residual = 3.9504e-36
+Iteration = 300   Residual = 1.94052e-44
+Iteration = 350   Residual = 3.84933e-52
+Iteration = 400   Residual = 3.23582e-60
+Iteration = 450   Residual = 4.6874e-68
+Iteration = 499   Residual = 8.33667e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 52.8336 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.33667e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 52.3052
+  DDOT    : 48.5433
+  WAXPBY  : 0.149348
+  SPARSEMV: 3.58946
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1192.52
+  DDOT    : 80.3084
+  WAXPBY  : 39154.6
+  SPARSEMV: 14662.1
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89394e-28
+Iteration = 250   Residual = 3.95043e-36
+Iteration = 300   Residual = 1.93398e-44
+Iteration = 350   Residual = 3.81628e-52
+Iteration = 400   Residual = 3.2762e-60
+Iteration = 450   Residual = 4.53675e-68
+Iteration = 499   Residual = 1.05196e-75
+Begun Freeing
+All Memory Free
+Elapsed time: 52.9129 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 1.05196e-75
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 52.415
+  DDOT    : 48.6505
+  WAXPBY  : 0.150851
+  SPARSEMV: 3.58807
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1190.02
+  DDOT    : 80.1315
+  WAXPBY  : 38764.5
+  SPARSEMV: 14667.8
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89398e-28
+Iteration = 250   Residual = 3.9504e-36
+Iteration = 300   Residual = 1.93385e-44
+Iteration = 350   Residual = 3.89498e-52
+Iteration = 400   Residual = 3.2571e-60
+Iteration = 450   Residual = 4.61059e-68
+Iteration = 499   Residual = 8.39527e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 63.5746 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.39527e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 52.4096
+  DDOT    : 48.65
+  WAXPBY  : 0.150448
+  SPARSEMV: 3.58734
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1190.14
+  DDOT    : 80.1323
+  WAXPBY  : 38868.3
+  SPARSEMV: 14670.7
+Run #5 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89396e-28
+Iteration = 250   Residual = 3.9505e-36
+Iteration = 300   Residual = 1.93617e-44
+Iteration = 350   Residual = 3.77551e-52
+Iteration = 400   Residual = 3.24525e-60
+Iteration = 450   Residual = 4.59761e-68
+Iteration = 499   Residual = 1.34553e-75
+Begun Freeing
+All Memory Free
+Elapsed time: 52.8021 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 1.34553e-75
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 52.3316
+  DDOT    : 48.5847
+  WAXPBY  : 0.150138
+  SPARSEMV: 3.5775
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 1191.92
+  DDOT    : 80.2401
+  WAXPBY  : 38948.5
+  SPARSEMV: 14711.1
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89333e-28
+Iteration = 250   Residual = 3.94925e-36
+Iteration = 300   Residual = 1.93759e-44
+Iteration = 350   Residual = 2.60072e-52
+Iteration = 400   Residual = 3.06231e-60
+Iteration = 450   Residual = 2.99445e-68
+Iteration = 499   Residual = 8.94473e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 28.1687 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.94473e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 27.6111
+  DDOT    : 23.8672
+  WAXPBY  : 0.152396
+  SPARSEMV: 3.56934
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 2259.05
+  DDOT    : 163.339
+  WAXPBY  : 38371.5
+  SPARSEMV: 14744.7
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89331e-28
+Iteration = 250   Residual = 3.94924e-36
+Iteration = 300   Residual = 1.93563e-44
+Iteration = 350   Residual = 3.37674e-52
+Iteration = 400   Residual = 2.80778e-60
+Iteration = 450   Residual = 2.69635e-68
+Iteration = 499   Residual = 8.64363e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 28.092 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.64363e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 27.5669
+  DDOT    : 23.8151
+  WAXPBY  : 0.151647
+  SPARSEMV: 3.57946
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 2262.68
+  DDOT    : 163.696
+  WAXPBY  : 38561
+  SPARSEMV: 14703
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89325e-28
+Iteration = 250   Residual = 3.94889e-36
+Iteration = 300   Residual = 1.94006e-44
+Iteration = 350   Residual = 3.42875e-52
+Iteration = 400   Residual = 3.31234e-60
+Iteration = 450   Residual = 2.62406e-68
+Iteration = 499   Residual = 8.71426e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 28.0936 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.71426e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 27.5693
+  DDOT    : 23.8253
+  WAXPBY  : 0.151275
+  SPARSEMV: 3.57235
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 2262.48
+  DDOT    : 163.626
+  WAXPBY  : 38655.8
+  SPARSEMV: 14732.3
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89322e-28
+Iteration = 250   Residual = 3.94877e-36
+Iteration = 300   Residual = 1.93597e-44
+Iteration = 350   Residual = 2.94491e-52
+Iteration = 400   Residual = 2.74728e-60
+Iteration = 450   Residual = 2.61238e-68
+Iteration = 499   Residual = 8.84513e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 28.1023 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.84513e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 27.4984
+  DDOT    : 23.7428
+  WAXPBY  : 0.15097
+  SPARSEMV: 3.58361
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 2268.31
+  DDOT    : 164.194
+  WAXPBY  : 38733.9
+  SPARSEMV: 14686
+Run #5 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89335e-28
+Iteration = 250   Residual = 3.94922e-36
+Iteration = 300   Residual = 1.93841e-44
+Iteration = 350   Residual = 3.57117e-52
+Iteration = 400   Residual = 3.18513e-60
+Iteration = 450   Residual = 2.6245e-68
+Iteration = 499   Residual = 1.13193e-75
+Begun Freeing
+All Memory Free
+Elapsed time: 28.0527 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 1.13193e-75
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 27.6228
+  DDOT    : 23.8788
+  WAXPBY  : 0.151884
+  SPARSEMV: 3.57152
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 2258.1
+  DDOT    : 163.259
+  WAXPBY  : 38500.8
+  SPARSEMV: 14735.7
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89333e-28
+Iteration = 250   Residual = 3.94928e-36
+Iteration = 300   Residual = 1.93848e-44
+Iteration = 350   Residual = 3.70742e-52
+Iteration = 400   Residual = 3.04805e-60
+Iteration = 450   Residual = 3.27706e-68
+Iteration = 499   Residual = 8.92218e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 15.5456 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.92218e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 14.8592
+  DDOT    : 11.1507
+  WAXPBY  : 0.151061
+  SPARSEMV: 3.5359
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 4197.74
+  DDOT    : 349.614
+  WAXPBY  : 38710.6
+  SPARSEMV: 14884.2
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89335e-28
+Iteration = 250   Residual = 3.94933e-36
+Iteration = 300   Residual = 1.9395e-44
+Iteration = 350   Residual = 3.74254e-52
+Iteration = 400   Residual = 3.22326e-60
+Iteration = 450   Residual = 3.95192e-68
+Iteration = 499   Residual = 8.74688e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 15.5277 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.74688e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 14.9944
+  DDOT    : 11.2437
+  WAXPBY  : 0.15196
+  SPARSEMV: 3.57737
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 4159.88
+  DDOT    : 346.723
+  WAXPBY  : 38481.5
+  SPARSEMV: 14711.6
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89329e-28
+Iteration = 250   Residual = 3.9491e-36
+Iteration = 300   Residual = 1.95037e-44
+Iteration = 350   Residual = 3.0294e-52
+Iteration = 400   Residual = 3.29486e-60
+Iteration = 450   Residual = 2.37745e-68
+Iteration = 499   Residual = 8.20225e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 15.4398 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.20225e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 14.9913
+  DDOT    : 11.2445
+  WAXPBY  : 0.151945
+  SPARSEMV: 3.57408
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 4160.74
+  DDOT    : 346.698
+  WAXPBY  : 38485.3
+  SPARSEMV: 14725.2
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89332e-28
+Iteration = 250   Residual = 3.94923e-36
+Iteration = 300   Residual = 1.93857e-44
+Iteration = 350   Residual = 3.33107e-52
+Iteration = 400   Residual = 2.38187e-60
+Iteration = 450   Residual = 2.63023e-68
+Iteration = 499   Residual = 8.45515e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 15.4665 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.45515e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 14.9051
+  DDOT    : 11.1545
+  WAXPBY  : 0.151254
+  SPARSEMV: 3.57923
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 4184.8
+  DDOT    : 349.494
+  WAXPBY  : 38661.2
+  SPARSEMV: 14704
+Run #5 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89334e-28
+Iteration = 250   Residual = 3.94929e-36
+Iteration = 300   Residual = 1.9344e-44
+Iteration = 350   Residual = 3.41164e-52
+Iteration = 400   Residual = 2.49815e-60
+Iteration = 450   Residual = 3.2507e-68
+Iteration = 499   Residual = 9.84885e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 15.5313 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 9.84885e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 14.9617
+  DDOT    : 11.2189
+  WAXPBY  : 0.145989
+  SPARSEMV: 3.57213
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 4168.98
+  DDOT    : 347.488
+  WAXPBY  : 40055.5
+  SPARSEMV: 14733.2
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.91917e-36
+Iteration = 300   Residual = 1.9347e-44
+Iteration = 350   Residual = 1.72923e-52
+Iteration = 400   Residual = 3.07887e-60
+Iteration = 450   Residual = 2.31079e-68
+Iteration = 499   Residual = 6.64708e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 6.40802 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.64708e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.97609
+  DDOT    : 2.27265
+  WAXPBY  : 0.137236
+  SPARSEMV: 3.54642
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 10437.4
+  DDOT    : 1715.37
+  WAXPBY  : 42610.2
+  SPARSEMV: 14840
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.91501e-36
+Iteration = 300   Residual = 1.93185e-44
+Iteration = 350   Residual = 1.17758e-52
+Iteration = 400   Residual = 3.2111e-60
+Iteration = 450   Residual = 2.31312e-68
+Iteration = 499   Residual = 6.47539e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 6.29274 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.47539e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.97919
+  DDOT    : 2.27158
+  WAXPBY  : 0.137172
+  SPARSEMV: 3.55068
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 10432
+  DDOT    : 1716.18
+  WAXPBY  : 42630.1
+  SPARSEMV: 14822.2
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.94107e-36
+Iteration = 300   Residual = 1.93374e-44
+Iteration = 350   Residual = 1.91871e-52
+Iteration = 400   Residual = 3.31557e-60
+Iteration = 450   Residual = 2.35539e-68
+Iteration = 499   Residual = 8.08737e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 6.3595 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 8.08737e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.95741
+  DDOT    : 2.27781
+  WAXPBY  : 0.135928
+  SPARSEMV: 3.52441
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 10470.1
+  DDOT    : 1711.48
+  WAXPBY  : 43020.2
+  SPARSEMV: 14932.7
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.90607e-36
+Iteration = 300   Residual = 1.93228e-44
+Iteration = 350   Residual = 1.68588e-52
+Iteration = 400   Residual = 3.5145e-60
+Iteration = 450   Residual = 2.06533e-68
+Iteration = 499   Residual = 6.47428e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 6.40343 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.47428e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.94401
+  DDOT    : 2.24656
+  WAXPBY  : 0.134704
+  SPARSEMV: 3.54103
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 10493.8
+  DDOT    : 1735.3
+  WAXPBY  : 43411.2
+  SPARSEMV: 14862.6
+Run #5 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.93428e-36
+Iteration = 300   Residual = 1.93525e-44
+Iteration = 350   Residual = 1.39389e-52
+Iteration = 400   Residual = 3.26994e-60
+Iteration = 450   Residual = 2.2512e-68
+Iteration = 499   Residual = 7.32569e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 6.41038 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 7.32569e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.99764
+  DDOT    : 2.29368
+  WAXPBY  : 0.136464
+  SPARSEMV: 3.54434
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 10399.9
+  DDOT    : 1699.65
+  WAXPBY  : 42851.3
+  SPARSEMV: 14848.7
+Run #1 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.93161e-36
+Iteration = 300   Residual = 1.93001e-44
+Iteration = 350   Residual = 2.25253e-52
+Iteration = 400   Residual = 2.38982e-60
+Iteration = 450   Residual = 2.23728e-68
+Iteration = 499   Residual = 7.35784e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 5.69964 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 7.35784e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.26285
+  DDOT    : 0.907801
+  WAXPBY  : 0.13326
+  SPARSEMV: 4.20454
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 11851.9
+  DDOT    : 4294.37
+  WAXPBY  : 43881.6
+  SPARSEMV: 12517.2
+Run #2 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92555e-36
+Iteration = 300   Residual = 1.93327e-44
+Iteration = 350   Residual = 1.35874e-52
+Iteration = 400   Residual = 2.498e-60
+Iteration = 450   Residual = 2.36019e-68
+Iteration = 499   Residual = 6.95035e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 5.74777 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.95035e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.25727
+  DDOT    : 0.906106
+  WAXPBY  : 0.130741
+  SPARSEMV: 4.19684
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 11864.5
+  DDOT    : 4302.41
+  WAXPBY  : 44727
+  SPARSEMV: 12540.1
+Run #3 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92566e-36
+Iteration = 300   Residual = 1.93152e-44
+Iteration = 350   Residual = 1.21346e-52
+Iteration = 400   Residual = 2.86988e-60
+Iteration = 450   Residual = 2.26698e-68
+Iteration = 499   Residual = 6.90929e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 5.57242 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.90929e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.25978
+  DDOT    : 0.893144
+  WAXPBY  : 0.134275
+  SPARSEMV: 4.21461
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 11858.8
+  DDOT    : 4364.85
+  WAXPBY  : 43549.9
+  SPARSEMV: 12487.2
+Run #4 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92457e-36
+Iteration = 300   Residual = 1.93235e-44
+Iteration = 350   Residual = 1.33946e-52
+Iteration = 400   Residual = 2.85809e-60
+Iteration = 450   Residual = 2.05739e-68
+Iteration = 499   Residual = 6.93988e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 5.68985 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.93988e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.18989
+  DDOT    : 0.866102
+  WAXPBY  : 0.126862
+  SPARSEMV: 4.17981
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 12018.6
+  DDOT    : 4501.13
+  WAXPBY  : 46094.6
+  SPARSEMV: 12591.2
+Run #5 for size 125 x 125 x 125
+The device is called NVIDIA GeForce RTX 2080 Ti
+The max work group size is 1024
+Number of compute units 68
+Global mem size 11.5391gb
+Local mem size 49.152kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.93088e-36
+Iteration = 300   Residual = 1.93926e-44
+Iteration = 350   Residual = 1.58904e-52
+Iteration = 400   Residual = 2.68796e-60
+Iteration = 450   Residual = 2.36646e-68
+Iteration = 499   Residual = 7.25886e-76
+Begun Freeing
+All Memory Free
+Elapsed time: 5.71035 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 7.25886e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.25328
+  DDOT    : 0.908853
+  WAXPBY  : 0.133493
+  SPARSEMV: 4.19278
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 11873.5
+  DDOT    : 4289.4
+  WAXPBY  : 43805
+  SPARSEMV: 12552.3
