@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Output file for the time command results
-output_file="runtime_test_SYCL_CPU.txt"
+output_file="runtime_test_SYCL_tur.txt"
 
 # Clear the output file if it already exists
 > "$output_file"

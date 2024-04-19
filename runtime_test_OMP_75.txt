@@ -1,0 +1,1575 @@
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.12249e-23
+Iteration = 200   Residual = 2.11382e-32
+Iteration = 250   Residual = 1.95079e-41
+Iteration = 300   Residual = 6.68765e-50
+Iteration = 350   Residual = 1.10162e-58
+Iteration = 400   Residual = 2.71838e-67
+Iteration = 450   Residual = 1.0655e-75
+Iteration = 499   Residual = 1.15859e-83
+Elapsed time: 10.1826 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.15859e-83
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.1826
+  DDOT    : 0.558738
+  WAXPBY  : 0.674936
+  SPARSEMV: 8.94714
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 1323.14
+  DDOT    : 1507.08
+  WAXPBY  : 1871.43
+  SPARSEMV: 1270.56
+
+real	0m10.304s
+user	0m10.120s
+sys	0m0.181s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.12249e-23
+Iteration = 200   Residual = 2.11382e-32
+Iteration = 250   Residual = 1.95079e-41
+Iteration = 300   Residual = 6.68765e-50
+Iteration = 350   Residual = 1.10162e-58
+Iteration = 400   Residual = 2.71838e-67
+Iteration = 450   Residual = 1.0655e-75
+Iteration = 499   Residual = 1.15859e-83
+Elapsed time: 10.3387 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.15859e-83
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.3387
+  DDOT    : 0.591038
+  WAXPBY  : 0.716315
+  SPARSEMV: 9.02986
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 1303.17
+  DDOT    : 1424.72
+  WAXPBY  : 1763.32
+  SPARSEMV: 1258.92
+
+real	0m10.453s
+user	0m10.218s
+sys	0m0.233s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.12249e-23
+Iteration = 200   Residual = 2.11382e-32
+Iteration = 250   Residual = 1.95079e-41
+Iteration = 300   Residual = 6.68765e-50
+Iteration = 350   Residual = 1.10162e-58
+Iteration = 400   Residual = 2.71838e-67
+Iteration = 450   Residual = 1.0655e-75
+Iteration = 499   Residual = 1.15859e-83
+Elapsed time: 10.165 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.15859e-83
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.165
+  DDOT    : 0.558561
+  WAXPBY  : 0.661572
+  SPARSEMV: 8.94341
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 1325.43
+  DDOT    : 1507.56
+  WAXPBY  : 1909.23
+  SPARSEMV: 1271.09
+
+real	0m10.280s
+user	0m10.065s
+sys	0m0.212s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.12249e-23
+Iteration = 200   Residual = 2.11382e-32
+Iteration = 250   Residual = 1.95079e-41
+Iteration = 300   Residual = 6.68765e-50
+Iteration = 350   Residual = 1.10162e-58
+Iteration = 400   Residual = 2.71838e-67
+Iteration = 450   Residual = 1.0655e-75
+Iteration = 499   Residual = 1.15859e-83
+Elapsed time: 10.0895 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.15859e-83
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.0895
+  DDOT    : 0.554084
+  WAXPBY  : 0.654441
+  SPARSEMV: 8.87954
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 1335.35
+  DDOT    : 1519.74
+  WAXPBY  : 1930.03
+  SPARSEMV: 1280.23
+
+real	0m10.200s
+user	0m9.985s
+sys	0m0.212s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.12249e-23
+Iteration = 200   Residual = 2.11382e-32
+Iteration = 250   Residual = 1.95079e-41
+Iteration = 300   Residual = 6.68765e-50
+Iteration = 350   Residual = 1.10162e-58
+Iteration = 400   Residual = 2.71838e-67
+Iteration = 450   Residual = 1.0655e-75
+Iteration = 499   Residual = 1.15859e-83
+Elapsed time: 10.1896 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 1
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.15859e-83
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 10.1896
+  DDOT    : 0.558146
+  WAXPBY  : 0.669801
+  SPARSEMV: 8.96017
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 1322.23
+  DDOT    : 1508.68
+  WAXPBY  : 1885.77
+  SPARSEMV: 1268.71
+
+real	0m10.300s
+user	0m10.053s
+sys	0m0.244s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.1502e-23
+Iteration = 200   Residual = 2.13396e-32
+Iteration = 250   Residual = 1.52795e-41
+Iteration = 300   Residual = 6.83102e-50
+Iteration = 350   Residual = 1.07518e-58
+Iteration = 400   Residual = 2.45562e-67
+Iteration = 450   Residual = 2.33169e-75
+Iteration = 499   Residual = 7.28967e-84
+Elapsed time: 4.89921 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.28967e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 4.89921
+  DDOT    : 0.270278
+  WAXPBY  : 0.302108
+  SPARSEMV: 4.32554
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 2750.04
+  DDOT    : 3115.54
+  WAXPBY  : 4180.93
+  SPARSEMV: 2628.08
+
+real	0m4.998s
+user	0m9.756s
+sys	0m0.140s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.1502e-23
+Iteration = 200   Residual = 2.13396e-32
+Iteration = 250   Residual = 1.52795e-41
+Iteration = 300   Residual = 6.83102e-50
+Iteration = 350   Residual = 1.07518e-58
+Iteration = 400   Residual = 2.45562e-67
+Iteration = 450   Residual = 2.33169e-75
+Iteration = 499   Residual = 7.28967e-84
+Elapsed time: 5.09767 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.28967e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 5.09767
+  DDOT    : 0.282994
+  WAXPBY  : 0.322445
+  SPARSEMV: 4.49106
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 2642.97
+  DDOT    : 2975.55
+  WAXPBY  : 3917.24
+  SPARSEMV: 2531.22
+
+real	0m5.208s
+user	0m10.173s
+sys	0m0.128s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.1502e-23
+Iteration = 200   Residual = 2.13396e-32
+Iteration = 250   Residual = 1.52795e-41
+Iteration = 300   Residual = 6.83102e-50
+Iteration = 350   Residual = 1.07518e-58
+Iteration = 400   Residual = 2.45562e-67
+Iteration = 450   Residual = 2.33169e-75
+Iteration = 499   Residual = 7.28967e-84
+Elapsed time: 4.92442 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.28967e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 4.92442
+  DDOT    : 0.269556
+  WAXPBY  : 0.310463
+  SPARSEMV: 4.34307
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 2735.96
+  DDOT    : 3123.89
+  WAXPBY  : 4068.42
+  SPARSEMV: 2617.47
+
+real	0m5.030s
+user	0m9.803s
+sys	0m0.148s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.1502e-23
+Iteration = 200   Residual = 2.13396e-32
+Iteration = 250   Residual = 1.52795e-41
+Iteration = 300   Residual = 6.83102e-50
+Iteration = 350   Residual = 1.07518e-58
+Iteration = 400   Residual = 2.45562e-67
+Iteration = 450   Residual = 2.33169e-75
+Iteration = 499   Residual = 7.28967e-84
+Elapsed time: 4.97832 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.28967e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 4.97832
+  DDOT    : 0.28162
+  WAXPBY  : 0.313644
+  SPARSEMV: 4.38184
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 2706.33
+  DDOT    : 2990.07
+  WAXPBY  : 4027.16
+  SPARSEMV: 2594.31
+
+real	0m5.085s
+user	0m9.930s
+sys	0m0.132s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.1502e-23
+Iteration = 200   Residual = 2.13396e-32
+Iteration = 250   Residual = 1.52795e-41
+Iteration = 300   Residual = 6.83102e-50
+Iteration = 350   Residual = 1.07518e-58
+Iteration = 400   Residual = 2.45562e-67
+Iteration = 450   Residual = 2.33169e-75
+Iteration = 499   Residual = 7.28967e-84
+Elapsed time: 4.91817 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 2
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.28967e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 4.91817
+  DDOT    : 0.269252
+  WAXPBY  : 0.313889
+  SPARSEMV: 4.3338
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 2739.43
+  DDOT    : 3127.41
+  WAXPBY  : 4024.01
+  SPARSEMV: 2623.06
+
+real	0m5.029s
+user	0m9.807s
+sys	0m0.140s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.92179e-23
+Iteration = 200   Residual = 2.07582e-32
+Iteration = 250   Residual = 8.5068e-42
+Iteration = 300   Residual = 3.61911e-50
+Iteration = 350   Residual = 1.06809e-58
+Iteration = 400   Residual = 1.78222e-67
+Iteration = 450   Residual = 9.8867e-76
+Iteration = 499   Residual = 4.2026e-84
+Elapsed time: 2.54688 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 4.2026e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2.54688
+  DDOT    : 0.145919
+  WAXPBY  : 0.153095
+  SPARSEMV: 2.24662
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 5290
+  DDOT    : 5770.75
+  WAXPBY  : 8250.39
+  SPARSEMV: 5059.98
+
+real	0m2.647s
+user	0m10.175s
+sys	0m0.116s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.27324e-23
+Iteration = 200   Residual = 1.60948e-32
+Iteration = 250   Residual = 8.67395e-42
+Iteration = 300   Residual = 3.47821e-50
+Iteration = 350   Residual = 1.0671e-58
+Iteration = 400   Residual = 1.30466e-67
+Iteration = 450   Residual = 9.01959e-76
+Iteration = 499   Residual = 3.49458e-84
+Elapsed time: 2.81845 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 3.49458e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2.81845
+  DDOT    : 0.155581
+  WAXPBY  : 0.179198
+  SPARSEMV: 2.48248
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 4780.29
+  DDOT    : 5412.37
+  WAXPBY  : 7048.59
+  SPARSEMV: 4579.23
+
+real	0m2.926s
+user	0m11.247s
+sys	0m0.136s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.87111e-23
+Iteration = 200   Residual = 1.96305e-32
+Iteration = 250   Residual = 1.17239e-41
+Iteration = 300   Residual = 3.81834e-50
+Iteration = 350   Residual = 1.07378e-58
+Iteration = 400   Residual = 1.95379e-67
+Iteration = 450   Residual = 8.30375e-76
+Iteration = 499   Residual = 3.39905e-84
+Elapsed time: 2.52222 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 3.39905e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2.52221
+  DDOT    : 0.143691
+  WAXPBY  : 0.15215
+  SPARSEMV: 2.22516
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 5341.74
+  DDOT    : 5860.23
+  WAXPBY  : 8301.63
+  SPARSEMV: 5108.78
+
+real	0m2.625s
+user	0m10.087s
+sys	0m0.108s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.91071e-23
+Iteration = 200   Residual = 2.08162e-32
+Iteration = 250   Residual = 9.62688e-42
+Iteration = 300   Residual = 3.37385e-50
+Iteration = 350   Residual = 1.03354e-58
+Iteration = 400   Residual = 1.32058e-67
+Iteration = 450   Residual = 1.00728e-75
+Iteration = 499   Residual = 5.33389e-84
+Elapsed time: 2.53365 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 5.33389e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2.53365
+  DDOT    : 0.144307
+  WAXPBY  : 0.154171
+  SPARSEMV: 2.23399
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 5317.63
+  DDOT    : 5835.22
+  WAXPBY  : 8192.81
+  SPARSEMV: 5088.59
+
+real	0m2.638s
+user	0m10.117s
+sys	0m0.124s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.17294e-23
+Iteration = 200   Residual = 1.5974e-32
+Iteration = 250   Residual = 9.34979e-42
+Iteration = 300   Residual = 2.15371e-50
+Iteration = 350   Residual = 1.0728e-58
+Iteration = 400   Residual = 1.37481e-67
+Iteration = 450   Residual = 9.61048e-76
+Iteration = 499   Residual = 2.37798e-84
+Elapsed time: 2.55735 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 4
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.37798e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 2.55735
+  DDOT    : 0.147173
+  WAXPBY  : 0.155062
+  SPARSEMV: 2.25383
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 5268.35
+  DDOT    : 5721.58
+  WAXPBY  : 8145.73
+  SPARSEMV: 5043.79
+
+real	0m2.662s
+user	0m10.234s
+sys	0m0.104s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.97755e-23
+Iteration = 200   Residual = 2.0922e-32
+Iteration = 250   Residual = 6.72487e-42
+Iteration = 300   Residual = 3.58773e-50
+Iteration = 350   Residual = 9.99821e-59
+Iteration = 400   Residual = 8.99888e-68
+Iteration = 450   Residual = 3.848e-76
+Iteration = 499   Residual = 3.19781e-84
+Elapsed time: 1.30368 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 3.19781e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.30368
+  DDOT    : 0.081285
+  WAXPBY  : 0.084381
+  SPARSEMV: 1.1367
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 10334.6
+  DDOT    : 10359.4
+  WAXPBY  : 14968.9
+  SPARSEMV: 10000.8
+
+real	0m1.418s
+user	0m10.430s
+sys	0m0.124s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 4.00314e-23
+Iteration = 200   Residual = 1.52959e-32
+Iteration = 250   Residual = 8.25051e-42
+Iteration = 300   Residual = 1.87151e-50
+Iteration = 350   Residual = 9.94976e-59
+Iteration = 400   Residual = 1.00683e-67
+Iteration = 450   Residual = 3.74599e-76
+Iteration = 499   Residual = 2.16265e-84
+Elapsed time: 1.32234 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.16265e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.32233
+  DDOT    : 0.084812
+  WAXPBY  : 0.083625
+  SPARSEMV: 1.15269
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 10188.8
+  DDOT    : 9928.58
+  WAXPBY  : 15104.3
+  SPARSEMV: 9862.03
+
+real	0m1.420s
+user	0m10.578s
+sys	0m0.112s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.2572e-23
+Iteration = 200   Residual = 1.98976e-32
+Iteration = 250   Residual = 9.41089e-42
+Iteration = 300   Residual = 1.13945e-50
+Iteration = 350   Residual = 1.00628e-58
+Iteration = 400   Residual = 9.4794e-68
+Iteration = 450   Residual = 4.41072e-76
+Iteration = 499   Residual = 3.13575e-84
+Elapsed time: 1.35601 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 3.13575e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.35601
+  DDOT    : 0.08536
+  WAXPBY  : 0.087172
+  SPARSEMV: 1.18225
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 9935.77
+  DDOT    : 9864.84
+  WAXPBY  : 14489.7
+  SPARSEMV: 9615.46
+
+real	0m1.460s
+user	0m10.710s
+sys	0m0.168s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.94811e-23
+Iteration = 200   Residual = 1.8728e-32
+Iteration = 250   Residual = 7.08225e-42
+Iteration = 300   Residual = 4.07812e-50
+Iteration = 350   Residual = 1.07008e-58
+Iteration = 400   Residual = 8.22863e-68
+Iteration = 450   Residual = 4.15642e-76
+Iteration = 499   Residual = 2.53762e-84
+Elapsed time: 1.32005 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.53762e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.32005
+  DDOT    : 0.081773
+  WAXPBY  : 0.082934
+  SPARSEMV: 1.15411
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 10206.5
+  DDOT    : 10297.6
+  WAXPBY  : 15230.1
+  SPARSEMV: 9849.84
+
+real	0m1.422s
+user	0m10.553s
+sys	0m0.120s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.83695e-23
+Iteration = 200   Residual = 1.89156e-32
+Iteration = 250   Residual = 6.85892e-42
+Iteration = 300   Residual = 2.87057e-50
+Iteration = 350   Residual = 1.06958e-58
+Iteration = 400   Residual = 8.00376e-68
+Iteration = 450   Residual = 2.09006e-76
+Iteration = 499   Residual = 2.45898e-84
+Elapsed time: 1.32531 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 8
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.45898e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.3253
+  DDOT    : 0.082592
+  WAXPBY  : 0.083353
+  SPARSEMV: 1.15812
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 10166
+  DDOT    : 10195.4
+  WAXPBY  : 15153.5
+  SPARSEMV: 9815.81
+
+real	0m1.429s
+user	0m10.596s
+sys	0m0.121s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 2.57244e-23
+Iteration = 200   Residual = 1.06839e-32
+Iteration = 250   Residual = 7.9702e-42
+Iteration = 300   Residual = 1.29404e-50
+Iteration = 350   Residual = 1.04096e-58
+Iteration = 400   Residual = 6.98107e-68
+Iteration = 450   Residual = 2.38604e-76
+Iteration = 499   Residual = 1.84906e-84
+Elapsed time: 1.02051 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.84906e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.02051
+  DDOT    : 0.046763
+  WAXPBY  : 0.072749
+  SPARSEMV: 0.899836
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 13202.3
+  DDOT    : 18007
+  WAXPBY  : 17362.4
+  SPARSEMV: 12633.2
+
+real	0m1.120s
+user	0m16.241s
+sys	0m0.216s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 2.53893e-23
+Iteration = 200   Residual = 1.97279e-32
+Iteration = 250   Residual = 7.01643e-42
+Iteration = 300   Residual = 1.11114e-50
+Iteration = 350   Residual = 1.00572e-58
+Iteration = 400   Residual = 5.37139e-68
+Iteration = 450   Residual = 2.37503e-76
+Iteration = 499   Residual = 2.0774e-84
+Elapsed time: 1.02593 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.0774e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.02593
+  DDOT    : 0.047944
+  WAXPBY  : 0.077816
+  SPARSEMV: 0.898579
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 13132.5
+  DDOT    : 17563.5
+  WAXPBY  : 16231.8
+  SPARSEMV: 12650.9
+
+real	0m1.129s
+user	0m16.344s
+sys	0m0.180s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 2.63861e-23
+Iteration = 200   Residual = 2.03709e-32
+Iteration = 250   Residual = 7.78232e-42
+Iteration = 300   Residual = 9.44572e-51
+Iteration = 350   Residual = 1.06491e-58
+Iteration = 400   Residual = 6.66474e-68
+Iteration = 450   Residual = 2.39131e-76
+Iteration = 499   Residual = 2.62821e-84
+Elapsed time: 1.03663 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.62821e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.03663
+  DDOT    : 0.051529
+  WAXPBY  : 0.082187
+  SPARSEMV: 0.901641
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 12996.9
+  DDOT    : 16341.5
+  WAXPBY  : 15368.5
+  SPARSEMV: 12607.9
+
+real	0m1.137s
+user	0m16.562s
+sys	0m0.112s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 2.62525e-23
+Iteration = 200   Residual = 1.99742e-32
+Iteration = 250   Residual = 8.70273e-42
+Iteration = 300   Residual = 7.23822e-51
+Iteration = 350   Residual = 9.75016e-59
+Iteration = 400   Residual = 6.70074e-68
+Iteration = 450   Residual = 3.6803e-76
+Iteration = 499   Residual = 2.08914e-84
+Elapsed time: 1.04821 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 2.08914e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.04821
+  DDOT    : 0.050441
+  WAXPBY  : 0.080381
+  SPARSEMV: 0.916059
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 12853.4
+  DDOT    : 16694
+  WAXPBY  : 15713.8
+  SPARSEMV: 12409.5
+
+real	0m1.151s
+user	0m16.668s
+sys	0m0.196s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.26581e-23
+Iteration = 200   Residual = 1.99905e-32
+Iteration = 250   Residual = 8.5437e-42
+Iteration = 300   Residual = 1.41788e-50
+Iteration = 350   Residual = 9.82065e-59
+Iteration = 400   Residual = 7.24258e-68
+Iteration = 450   Residual = 5.85971e-76
+Iteration = 499   Residual = 1.69825e-84
+Elapsed time: 1.02056 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 16
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.69825e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.02055
+  DDOT    : 0.048811
+  WAXPBY  : 0.073234
+  SPARSEMV: 0.897349
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 13201.7
+  DDOT    : 17251.5
+  WAXPBY  : 17247.4
+  SPARSEMV: 12668.3
+
+real	0m1.121s
+user	0m16.286s
+sys	0m0.165s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 9.56896e-24
+Iteration = 200   Residual = 2.09226e-32
+Iteration = 250   Residual = 6.7119e-42
+Iteration = 300   Residual = 9.21833e-51
+Iteration = 350   Residual = 1.02032e-58
+Iteration = 400   Residual = 5.9951e-68
+Iteration = 450   Residual = 2.11525e-76
+Iteration = 499   Residual = 1.20856e-84
+Elapsed time: 0.926101 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.20856e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.926099
+  DDOT    : 0.049663
+  WAXPBY  : 0.088553
+  SPARSEMV: 0.786102
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 14548.1
+  DDOT    : 16955.5
+  WAXPBY  : 14263.7
+  SPARSEMV: 14461
+
+real	0m1.030s
+user	0m29.196s
+sys	0m0.100s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.14476e-23
+Iteration = 200   Residual = 2.14501e-32
+Iteration = 250   Residual = 6.75521e-42
+Iteration = 300   Residual = 9.81539e-51
+Iteration = 350   Residual = 1.05085e-58
+Iteration = 400   Residual = 7.50749e-68
+Iteration = 450   Residual = 3.06133e-76
+Iteration = 499   Residual = 1.29817e-84
+Elapsed time: 0.949432 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.29817e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.949431
+  DDOT    : 0.042929
+  WAXPBY  : 0.080046
+  SPARSEMV: 0.824701
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 14190.6
+  DDOT    : 19615.2
+  WAXPBY  : 15779.6
+  SPARSEMV: 13784.2
+
+real	0m1.057s
+user	0m30.174s
+sys	0m0.116s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 2.43953e-23
+Iteration = 200   Residual = 2.05945e-32
+Iteration = 250   Residual = 6.8025e-42
+Iteration = 300   Residual = 7.81557e-51
+Iteration = 350   Residual = 9.73592e-59
+Iteration = 400   Residual = 6.27702e-68
+Iteration = 450   Residual = 2.0335e-76
+Iteration = 499   Residual = 1.44528e-84
+Elapsed time: 1.68794 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.44528e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.68794
+  DDOT    : 0.338899
+  WAXPBY  : 0.503975
+  SPARSEMV: 0.843085
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 7981.93
+  DDOT    : 2484.7
+  WAXPBY  : 2506.26
+  SPARSEMV: 13483.6
+
+real	0m1.790s
+user	0m48.648s
+sys	0m0.125s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.11485e-23
+Iteration = 200   Residual = 1.2016e-32
+Iteration = 250   Residual = 6.79341e-42
+Iteration = 300   Residual = 8.34388e-51
+Iteration = 350   Residual = 6.98933e-59
+Iteration = 400   Residual = 5.35167e-68
+Iteration = 450   Residual = 2.60314e-76
+Iteration = 499   Residual = 1.04667e-84
+Elapsed time: 0.861946 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.04667e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.861944
+  DDOT    : 0.041895
+  WAXPBY  : 0.075558
+  SPARSEMV: 0.742493
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 15630.9
+  DDOT    : 20099.4
+  WAXPBY  : 16716.9
+  SPARSEMV: 15310.4
+
+real	0m0.963s
+user	0m27.471s
+sys	0m0.088s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.18556e-23
+Iteration = 200   Residual = 1.81049e-32
+Iteration = 250   Residual = 6.71488e-42
+Iteration = 300   Residual = 7.58997e-51
+Iteration = 350   Residual = 4.65821e-59
+Iteration = 400   Residual = 5.8347e-68
+Iteration = 450   Residual = 2.51368e-76
+Iteration = 499   Residual = 1.24455e-84
+Elapsed time: 0.838679 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 32
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.24455e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.838677
+  DDOT    : 0.037851
+  WAXPBY  : 0.084424
+  SPARSEMV: 0.714899
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 16064.6
+  DDOT    : 22246.8
+  WAXPBY  : 14961.3
+  SPARSEMV: 15901.3
+
+real	0m1.016s
+user	0m26.414s
+sys	0m0.096s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.66198e-23
+Iteration = 200   Residual = 2.10833e-32
+Iteration = 250   Residual = 6.84493e-42
+Iteration = 300   Residual = 1.80197e-50
+Iteration = 350   Residual = 8.15014e-59
+Iteration = 400   Residual = 4.76322e-68
+Iteration = 450   Residual = 3.75486e-76
+Iteration = 499   Residual = 1.56082e-84
+Elapsed time: 41.8002 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 64
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.56082e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 41.8002
+  DDOT    : 13.9802
+  WAXPBY  : 20.8489
+  SPARSEMV: 6.9628
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 322.319
+  DDOT    : 60.2325
+  WAXPBY  : 60.5832
+  SPARSEMV: 1632.65
+
+real	0m41.926s
+user	27m5.124s
+sys	0m5.239s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.60576e-23
+Iteration = 200   Residual = 1.99047e-32
+Iteration = 250   Residual = 6.80448e-42
+Iteration = 300   Residual = 1.55546e-50
+Iteration = 350   Residual = 8.62059e-59
+Iteration = 400   Residual = 5.28135e-68
+Iteration = 450   Residual = 3.91787e-76
+Iteration = 499   Residual = 1.43064e-84
+Elapsed time: 41.3635 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 64
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.43064e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 41.3635
+  DDOT    : 13.7106
+  WAXPBY  : 20.5455
+  SPARSEMV: 7.09942
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 325.722
+  DDOT    : 61.4167
+  WAXPBY  : 61.4779
+  SPARSEMV: 1601.24
+
+real	0m41.491s
+user	27m0.209s
+sys	0m6.138s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.77168e-23
+Iteration = 200   Residual = 1.96221e-32
+Iteration = 250   Residual = 6.72336e-42
+Iteration = 300   Residual = 1.79384e-50
+Iteration = 350   Residual = 1.01622e-58
+Iteration = 400   Residual = 6.05403e-68
+Iteration = 450   Residual = 3.64798e-76
+Iteration = 499   Residual = 1.58284e-84
+Elapsed time: 41.9241 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 64
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.58284e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 41.9241
+  DDOT    : 14.0126
+  WAXPBY  : 20.7243
+  SPARSEMV: 7.17873
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 321.366
+  DDOT    : 60.0933
+  WAXPBY  : 60.9474
+  SPARSEMV: 1583.55
+
+real	0m42.058s
+user	27m1.263s
+sys	0m5.201s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.65154e-23
+Iteration = 200   Residual = 1.22174e-32
+Iteration = 250   Residual = 6.86335e-42
+Iteration = 300   Residual = 1.68336e-50
+Iteration = 350   Residual = 8.33446e-59
+Iteration = 400   Residual = 4.65458e-68
+Iteration = 450   Residual = 3.4089e-76
+Iteration = 499   Residual = 1.50173e-84
+Elapsed time: 42.6505 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 64
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.50173e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 42.6505
+  DDOT    : 14.128
+  WAXPBY  : 21.1825
+  SPARSEMV: 7.33731
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 315.893
+  DDOT    : 59.6024
+  WAXPBY  : 59.6291
+  SPARSEMV: 1549.32
+
+real	0m42.782s
+user	27m11.921s
+sys	0m4.597s
+Running test_HPCCG with dimensions 75 75 75
+Initial Residual = 1952.91
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 3.87171e-23
+Iteration = 200   Residual = 1.97456e-32
+Iteration = 250   Residual = 6.76423e-42
+Iteration = 300   Residual = 2.88666e-50
+Iteration = 350   Residual = 9.32612e-59
+Iteration = 400   Residual = 5.55142e-68
+Iteration = 450   Residual = 4.03547e-76
+Iteration = 499   Residual = 1.68136e-84
+Elapsed time: 43.1338 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  Number of OpenMP threads: 64
+  SYCL not enabled: 
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.68136e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 43.1338
+  DDOT    : 14.4835
+  WAXPBY  : 21.5859
+  SPARSEMV: 7.06213
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 312.354
+  DDOT    : 58.1396
+  WAXPBY  : 58.5148
+  SPARSEMV: 1609.69
+
+real	0m43.271s
+user	27m10.597s
+sys	0m4.727s
