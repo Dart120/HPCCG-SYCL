@@ -96,7 +96,7 @@ sycl::event ddot_sycl(sycl::queue* q, const int n, const double * const x, const
 {  
 
     *result = 0;
-    size_t localSize = 1024;
+    size_t localSize = 64;
     
         // Desired work-group size
     size_t globalSize = ((n + localSize - 1) / localSize) * localSize;

@@ -9,7 +9,7 @@ BASE_OUTPUT_FILE="hpccg_output"
 make -f MakefileSYCL
 
 # Loop through problem sizes from 50 to 125 in steps of 25
-for size in {50..125..25}; do
+for size in {175..300..25}; do
     # Define the output file for this size
     OUTPUT_FILE="${BASE_OUTPUT_FILE}_${size}.txt"
 
