@@ -1,819 +1,819 @@
 Running test_HPCCG with dimensions 50 50 50
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1282.0484
 Iteration = 50   Residual = 3.172e-06
-Iteration = 100   Residual = 4.17868e-18
-Iteration = 150   Residual = 1.12015e-28
-Iteration = 200   Residual = 4.95303e-39
-Iteration = 250   Residual = 1.02342e-48
-Iteration = 300   Residual = 8.86757e-59
-Iteration = 350   Residual = 2.35311e-68
-Iteration = 400   Residual = 3.03249e-78
-Iteration = 450   Residual = 6.74504e-88
-Iteration = 499   Residual = 1.09505e-97
+Iteration = 100   Residual = 4.17826e-18
+Iteration = 150   Residual = 5.42196e-29
+Iteration = 200   Residual = 4.42455e-39
+Iteration = 250   Residual = 9.41878e-49
+Iteration = 300   Residual = 8.46597e-59
+Iteration = 350   Residual = 5.66559e-69
+Iteration = 400   Residual = 2.74038e-78
+Iteration = 450   Residual = 6.55192e-88
+Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 2.84848 s
+Elapsed time: 0.724393 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 50
   ny: 50
   nz: 50
 Number of iterations: 499
-Final residual: 1.09505e-97
+Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 45.6037
-  DDOT    : 21.238
-  WAXPBY  : 10.943
-  SPARSEMV: 11.8741
+  Total   : 0.724376
+  DDOT    : 0.501768
+  WAXPBY  : 0.048189
+  SPARSEMV: 0.092264
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 87.5367
-  DDOT    : 11.7478
-  WAXPBY  : 34.1999
-  SPARSEMV: 283.663
+  Total   : 5510.95
+  DDOT    : 497.242
+  WAXPBY  : 7766.3
+  SPARSEMV: 36506.7
 
-real	0m4.155s
-user	1m8.158s
-sys	0m8.183s
+real	0m1.586s
+user	0m0.347s
+sys	0m0.836s
 Running test_HPCCG with dimensions 50 50 50
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1282.0484
 Iteration = 50   Residual = 3.172e-06
-Iteration = 100   Residual = 4.17868e-18
-Iteration = 150   Residual = 1.12015e-28
-Iteration = 200   Residual = 4.95303e-39
-Iteration = 250   Residual = 1.02342e-48
-Iteration = 300   Residual = 8.86757e-59
-Iteration = 350   Residual = 2.35311e-68
-Iteration = 400   Residual = 3.03249e-78
-Iteration = 450   Residual = 6.74504e-88
-Iteration = 499   Residual = 1.09505e-97
+Iteration = 100   Residual = 4.17826e-18
+Iteration = 150   Residual = 5.42196e-29
+Iteration = 200   Residual = 4.42455e-39
+Iteration = 250   Residual = 9.41878e-49
+Iteration = 300   Residual = 8.46597e-59
+Iteration = 350   Residual = 5.66559e-69
+Iteration = 400   Residual = 2.74038e-78
+Iteration = 450   Residual = 6.55192e-88
+Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 2.73151 s
+Elapsed time: 1.51159 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 50
   ny: 50
   nz: 50
 Number of iterations: 499
-Final residual: 1.09505e-97
+Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 47.2165
-  DDOT    : 22.3819
-  WAXPBY  : 12.5751
-  SPARSEMV: 10.7716
+  Total   : 1.51158
+  DDOT    : 1.34203
+  WAXPBY  : 0.037576
+  SPARSEMV: 0.058377
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 84.5468
-  DDOT    : 11.1474
-  WAXPBY  : 29.7612
-  SPARSEMV: 312.698
+  Total   : 2640.95
+  DDOT    : 185.913
+  WAXPBY  : 9959.81
+  SPARSEMV: 57698.2
 
-real	0m3.449s
-user	0m58.320s
-sys	0m7.470s
+real	0m2.148s
+user	0m0.434s
+sys	0m1.342s
 Running test_HPCCG with dimensions 50 50 50
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1282.0484
 Iteration = 50   Residual = 3.172e-06
-Iteration = 100   Residual = 4.17868e-18
-Iteration = 150   Residual = 1.12015e-28
-Iteration = 200   Residual = 4.95303e-39
-Iteration = 250   Residual = 1.02342e-48
-Iteration = 300   Residual = 8.86757e-59
-Iteration = 350   Residual = 2.35311e-68
-Iteration = 400   Residual = 3.03249e-78
-Iteration = 450   Residual = 6.74504e-88
-Iteration = 499   Residual = 1.09505e-97
+Iteration = 100   Residual = 4.17826e-18
+Iteration = 150   Residual = 5.42196e-29
+Iteration = 200   Residual = 4.42455e-39
+Iteration = 250   Residual = 9.41878e-49
+Iteration = 300   Residual = 8.46597e-59
+Iteration = 350   Residual = 5.66559e-69
+Iteration = 400   Residual = 2.74038e-78
+Iteration = 450   Residual = 6.55192e-88
+Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 2.71945 s
+Elapsed time: 1.16144 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 50
   ny: 50
   nz: 50
 Number of iterations: 499
-Final residual: 1.09505e-97
+Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 42.8172
-  DDOT    : 23.3574
-  WAXPBY  : 7.92487
-  SPARSEMV: 9.96393
+  Total   : 1.16143
+  DDOT    : 0.996025
+  WAXPBY  : 0.035248
+  SPARSEMV: 0.057881
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 93.2336
-  DDOT    : 10.6818
-  WAXPBY  : 47.2248
-  SPARSEMV: 338.044
+  Total   : 3437.15
+  DDOT    : 250.496
+  WAXPBY  : 10617.6
+  SPARSEMV: 58192.7
 
-real	0m3.497s
-user	0m54.626s
-sys	0m4.488s
+real	0m1.876s
+user	0m0.455s
+sys	0m1.248s
 Running test_HPCCG with dimensions 50 50 50
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1282.0484
 Iteration = 50   Residual = 3.172e-06
-Iteration = 100   Residual = 4.17868e-18
-Iteration = 150   Residual = 1.12015e-28
-Iteration = 200   Residual = 4.95303e-39
-Iteration = 250   Residual = 1.02342e-48
-Iteration = 300   Residual = 8.86757e-59
-Iteration = 350   Residual = 2.35311e-68
-Iteration = 400   Residual = 3.03249e-78
-Iteration = 450   Residual = 6.74504e-88
-Iteration = 499   Residual = 1.09505e-97
+Iteration = 100   Residual = 4.17826e-18
+Iteration = 150   Residual = 5.42196e-29
+Iteration = 200   Residual = 4.42455e-39
+Iteration = 250   Residual = 9.41878e-49
+Iteration = 300   Residual = 8.46597e-59
+Iteration = 350   Residual = 5.66559e-69
+Iteration = 400   Residual = 2.74038e-78
+Iteration = 450   Residual = 6.55192e-88
+Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 2.95396 s
+Elapsed time: 0.630251 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 50
   ny: 50
   nz: 50
 Number of iterations: 499
-Final residual: 1.09505e-97
+Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 40.67
-  DDOT    : 20.3306
-  WAXPBY  : 8.75496
-  SPARSEMV: 10.0602
+  Total   : 0.630236
+  DDOT    : 0.475938
+  WAXPBY  : 0.034521
+  SPARSEMV: 0.056966
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 98.156
-  DDOT    : 12.2722
-  WAXPBY  : 42.7472
-  SPARSEMV: 334.809
+  Total   : 6334.14
+  DDOT    : 524.228
+  WAXPBY  : 10841.2
+  SPARSEMV: 59127.4
 
-real	0m3.743s
-user	0m54.622s
-sys	0m9.224s
+real	0m1.177s
+user	0m0.413s
+sys	0m0.697s
 Running test_HPCCG with dimensions 50 50 50
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1282.0484
 Iteration = 50   Residual = 3.172e-06
-Iteration = 100   Residual = 4.17868e-18
-Iteration = 150   Residual = 1.12015e-28
-Iteration = 200   Residual = 4.95303e-39
-Iteration = 250   Residual = 1.02342e-48
-Iteration = 300   Residual = 8.86757e-59
-Iteration = 350   Residual = 2.35311e-68
-Iteration = 400   Residual = 3.03249e-78
-Iteration = 450   Residual = 6.74504e-88
-Iteration = 499   Residual = 1.09505e-97
+Iteration = 100   Residual = 4.17826e-18
+Iteration = 150   Residual = 5.42196e-29
+Iteration = 200   Residual = 4.42455e-39
+Iteration = 250   Residual = 9.41878e-49
+Iteration = 300   Residual = 8.46597e-59
+Iteration = 350   Residual = 5.66559e-69
+Iteration = 400   Residual = 2.74038e-78
+Iteration = 450   Residual = 6.55192e-88
+Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 2.76765 s
+Elapsed time: 0.616961 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 50
   ny: 50
   nz: 50
 Number of iterations: 499
-Final residual: 1.09505e-97
+Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 42.6503
-  DDOT    : 22.1375
-  WAXPBY  : 8.54717
-  SPARSEMV: 10.2436
+  Total   : 0.616943
+  DDOT    : 0.462298
+  WAXPBY  : 0.034167
+  SPARSEMV: 0.056977
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 93.5984
-  DDOT    : 11.2705
-  WAXPBY  : 43.7864
-  SPARSEMV: 328.814
+  Total   : 6470.61
+  DDOT    : 539.695
+  WAXPBY  : 10953.6
+  SPARSEMV: 59116
 
-real	0m3.663s
-user	1m3.465s
-sys	0m6.530s
+real	0m1.360s
+user	0m0.339s
+sys	0m0.777s
 Running test_HPCCG with dimensions 75 75 75
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1952.914
 Iteration = 50   Residual = 6.62134e-05
 Iteration = 100   Residual = 4.66671e-14
-Iteration = 150   Residual = 8.33105e-24
-Iteration = 200   Residual = 1.43951e-32
-Iteration = 250   Residual = 6.62233e-42
-Iteration = 300   Residual = 7.71587e-51
-Iteration = 350   Residual = 4.69873e-59
-Iteration = 400   Residual = 3.60767e-68
-Iteration = 450   Residual = 1.41767e-76
-Iteration = 499   Residual = 7.70055e-85
+Iteration = 150   Residual = 8.24112e-24
+Iteration = 200   Residual = 1.08393e-32
+Iteration = 250   Residual = 6.57819e-42
+Iteration = 300   Residual = 7.21378e-51
+Iteration = 350   Residual = 3.94929e-59
+Iteration = 400   Residual = 3.98803e-68
+Iteration = 450   Residual = 1.46229e-76
+Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 5.04894 s
+Elapsed time: 0.63189 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 75
   ny: 75
   nz: 75
 Number of iterations: 499
-Final residual: 7.70055e-85
+Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 87.6633
-  DDOT    : 21.0486
-  WAXPBY  : 10.0707
-  SPARSEMV: 54.0871
+  Total   : 0.631876
+  DDOT    : 0.414689
+  WAXPBY  : 0.041463
+  SPARSEMV: 0.15807
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 153.69
-  DDOT    : 40.0057
-  WAXPBY  : 125.423
-  SPARSEMV: 210.177
+  Total   : 21322.2
+  DDOT    : 2030.59
+  WAXPBY  : 30463.2
+  SPARSEMV: 71916.5
 
-real	0m5.943s
-user	1m39.216s
-sys	0m11.131s
+real	0m1.272s
+user	0m0.459s
+sys	0m0.764s
 Running test_HPCCG with dimensions 75 75 75
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1952.914
 Iteration = 50   Residual = 6.62134e-05
 Iteration = 100   Residual = 4.66671e-14
-Iteration = 150   Residual = 8.33105e-24
-Iteration = 200   Residual = 1.43951e-32
-Iteration = 250   Residual = 6.62233e-42
-Iteration = 300   Residual = 7.71587e-51
-Iteration = 350   Residual = 4.69873e-59
-Iteration = 400   Residual = 3.60767e-68
-Iteration = 450   Residual = 1.41767e-76
-Iteration = 499   Residual = 7.70055e-85
+Iteration = 150   Residual = 8.24112e-24
+Iteration = 200   Residual = 1.08393e-32
+Iteration = 250   Residual = 6.57819e-42
+Iteration = 300   Residual = 7.21378e-51
+Iteration = 350   Residual = 3.94929e-59
+Iteration = 400   Residual = 3.98803e-68
+Iteration = 450   Residual = 1.46229e-76
+Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 5.21341 s
+Elapsed time: 0.636277 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 75
   ny: 75
   nz: 75
 Number of iterations: 499
-Final residual: 7.70055e-85
+Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 88.3591
-  DDOT    : 20.8305
-  WAXPBY  : 8.32706
-  SPARSEMV: 56.4365
+  Total   : 0.636262
+  DDOT    : 0.418353
+  WAXPBY  : 0.041427
+  SPARSEMV: 0.156373
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 152.48
-  DDOT    : 40.4245
-  WAXPBY  : 151.685
-  SPARSEMV: 201.427
+  Total   : 21175.2
+  DDOT    : 2012.8
+  WAXPBY  : 30489.6
+  SPARSEMV: 72697
 
-real	0m6.080s
-user	1m43.647s
-sys	0m8.994s
+real	0m1.367s
+user	0m0.483s
+sys	0m0.733s
 Running test_HPCCG with dimensions 75 75 75
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1952.914
 Iteration = 50   Residual = 6.62134e-05
 Iteration = 100   Residual = 4.66671e-14
-Iteration = 150   Residual = 8.33105e-24
-Iteration = 200   Residual = 1.43951e-32
-Iteration = 250   Residual = 6.62233e-42
-Iteration = 300   Residual = 7.71587e-51
-Iteration = 350   Residual = 4.69873e-59
-Iteration = 400   Residual = 3.60767e-68
-Iteration = 450   Residual = 1.41767e-76
-Iteration = 499   Residual = 7.70055e-85
+Iteration = 150   Residual = 8.24112e-24
+Iteration = 200   Residual = 1.08393e-32
+Iteration = 250   Residual = 6.57819e-42
+Iteration = 300   Residual = 7.21378e-51
+Iteration = 350   Residual = 3.94929e-59
+Iteration = 400   Residual = 3.98803e-68
+Iteration = 450   Residual = 1.46229e-76
+Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 4.88728 s
+Elapsed time: 0.73781 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 75
   ny: 75
   nz: 75
 Number of iterations: 499
-Final residual: 7.70055e-85
+Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 95.6285
-  DDOT    : 20.5811
-  WAXPBY  : 17.7886
-  SPARSEMV: 54.8205
+  Total   : 0.737795
+  DDOT    : 0.516568
+  WAXPBY  : 0.040993
+  SPARSEMV: 0.158231
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 140.889
-  DDOT    : 40.9144
-  WAXPBY  : 71.006
-  SPARSEMV: 207.365
+  Total   : 18261.2
+  DDOT    : 1630.11
+  WAXPBY  : 30812.4
+  SPARSEMV: 71843.3
 
-real	0m6.031s
-user	1m58.472s
-sys	0m20.347s
+real	0m1.419s
+user	0m0.442s
+sys	0m0.867s
 Running test_HPCCG with dimensions 75 75 75
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1952.914
 Iteration = 50   Residual = 6.62134e-05
 Iteration = 100   Residual = 4.66671e-14
-Iteration = 150   Residual = 8.33105e-24
-Iteration = 200   Residual = 1.43951e-32
-Iteration = 250   Residual = 6.62233e-42
-Iteration = 300   Residual = 7.71587e-51
-Iteration = 350   Residual = 4.69873e-59
-Iteration = 400   Residual = 3.60767e-68
-Iteration = 450   Residual = 1.41767e-76
-Iteration = 499   Residual = 7.70055e-85
+Iteration = 150   Residual = 8.24112e-24
+Iteration = 200   Residual = 1.08393e-32
+Iteration = 250   Residual = 6.57819e-42
+Iteration = 300   Residual = 7.21378e-51
+Iteration = 350   Residual = 3.94929e-59
+Iteration = 400   Residual = 3.98803e-68
+Iteration = 450   Residual = 1.46229e-76
+Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 5.02163 s
+Elapsed time: 1.75598 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 75
   ny: 75
   nz: 75
 Number of iterations: 499
-Final residual: 7.70055e-85
+Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 91.4522
-  DDOT    : 22.8146
-  WAXPBY  : 10.3443
-  SPARSEMV: 54.699
+  Total   : 1.75596
+  DDOT    : 1.48615
+  WAXPBY  : 0.042862
+  SPARSEMV: 0.185392
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 147.323
-  DDOT    : 36.909
-  WAXPBY  : 122.106
-  SPARSEMV: 207.825
+  Total   : 7672.74
+  DDOT    : 566.605
+  WAXPBY  : 29468.8
+  SPARSEMV: 61317.9
 
-real	0m5.936s
-user	1m48.142s
-sys	0m8.643s
+real	0m2.523s
+user	0m0.614s
+sys	0m1.605s
 Running test_HPCCG with dimensions 75 75 75
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 1952.914
 Iteration = 50   Residual = 6.62134e-05
 Iteration = 100   Residual = 4.66671e-14
-Iteration = 150   Residual = 8.33105e-24
-Iteration = 200   Residual = 1.43951e-32
-Iteration = 250   Residual = 6.62233e-42
-Iteration = 300   Residual = 7.71587e-51
-Iteration = 350   Residual = 4.69873e-59
-Iteration = 400   Residual = 3.60767e-68
-Iteration = 450   Residual = 1.41767e-76
-Iteration = 499   Residual = 7.70055e-85
+Iteration = 150   Residual = 8.24112e-24
+Iteration = 200   Residual = 1.08393e-32
+Iteration = 250   Residual = 6.57819e-42
+Iteration = 300   Residual = 7.21378e-51
+Iteration = 350   Residual = 3.94929e-59
+Iteration = 400   Residual = 3.98803e-68
+Iteration = 450   Residual = 1.46229e-76
+Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 5.38273 s
+Elapsed time: 0.632947 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 75
   ny: 75
   nz: 75
 Number of iterations: 499
-Final residual: 7.70055e-85
+Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 92.415
-  DDOT    : 21.5244
-  WAXPBY  : 14.3478
-  SPARSEMV: 53.9618
+  Total   : 0.632932
+  DDOT    : 0.413044
+  WAXPBY  : 0.041292
+  SPARSEMV: 0.159619
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 145.788
-  DDOT    : 39.1213
-  WAXPBY  : 88.0338
-  SPARSEMV: 210.665
+  Total   : 21286.6
+  DDOT    : 2038.68
+  WAXPBY  : 30589.3
+  SPARSEMV: 71218.6
 
-real	0m6.201s
-user	1m46.777s
-sys	0m17.437s
+real	0m1.345s
+user	0m0.459s
+sys	0m0.818s
 Running test_HPCCG with dimensions 100 100 100
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 2647.234
 Iteration = 50   Residual = 0.00022656
 Iteration = 100   Residual = 1.5527e-12
 Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.98251e-30
-Iteration = 250   Residual = 2.59348e-38
-Iteration = 300   Residual = 8.7401e-47
-Iteration = 350   Residual = 3.4e-55
-Iteration = 400   Residual = 3.83632e-63
-Iteration = 450   Residual = 1.67624e-71
-Iteration = 499   Residual = 3.49298e-79
+Iteration = 200   Residual = 5.04767e-30
+Iteration = 250   Residual = 2.58725e-38
+Iteration = 300   Residual = 9.87368e-47
+Iteration = 350   Residual = 3.60997e-55
+Iteration = 400   Residual = 3.54549e-63
+Iteration = 450   Residual = 1.79864e-71
+Iteration = 499   Residual = 2.93242e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 10.5008 s
+Elapsed time: 0.968742 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 100
   ny: 100
   nz: 100
 Number of iterations: 499
-Final residual: 3.49298e-79
+Final residual: 2.93242e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 170.892
-  DDOT    : 25.037
-  WAXPBY  : 11.9786
-  SPARSEMV: 131.532
+  Total   : 0.968726
+  DDOT    : 0.434288
+  WAXPBY  : 0.047011
+  SPARSEMV: 0.440759
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 186.879
-  DDOT    : 79.722
-  WAXPBY  : 249.946
-  SPARSEMV: 204.863
+  Total   : 32967
+  DDOT    : 4596.03
+  WAXPBY  : 63687.2
+  SPARSEMV: 61135.5
 
-real	0m11.760s
-user	3m5.611s
-sys	0m15.935s
+real	0m3.657s
+user	0m0.910s
+sys	0m0.828s
 Running test_HPCCG with dimensions 100 100 100
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 2647.234
 Iteration = 50   Residual = 0.00022656
 Iteration = 100   Residual = 1.5527e-12
 Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.98251e-30
-Iteration = 250   Residual = 2.59348e-38
-Iteration = 300   Residual = 8.7401e-47
-Iteration = 350   Residual = 3.4e-55
-Iteration = 400   Residual = 3.83632e-63
-Iteration = 450   Residual = 1.67624e-71
-Iteration = 499   Residual = 3.49298e-79
+Iteration = 200   Residual = 5.04767e-30
+Iteration = 250   Residual = 2.58725e-38
+Iteration = 300   Residual = 9.87368e-47
+Iteration = 350   Residual = 3.60997e-55
+Iteration = 400   Residual = 3.54549e-63
+Iteration = 450   Residual = 1.79864e-71
+Iteration = 499   Residual = 2.93242e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 11.9983 s
+Elapsed time: 0.96989 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 100
   ny: 100
   nz: 100
 Number of iterations: 499
-Final residual: 3.49298e-79
+Final residual: 2.93242e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 182.816
-  DDOT    : 24.984
-  WAXPBY  : 12.9362
-  SPARSEMV: 142.63
+  Total   : 0.969874
+  DDOT    : 0.438383
+  WAXPBY  : 0.046731
+  SPARSEMV: 0.437703
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 174.689
-  DDOT    : 79.891
-  WAXPBY  : 231.443
-  SPARSEMV: 188.923
+  Total   : 32928
+  DDOT    : 4553.1
+  WAXPBY  : 64068.8
+  SPARSEMV: 61562.3
 
-real	0m13.243s
-user	3m17.103s
-sys	0m19.309s
+real	0m2.434s
+user	0m0.967s
+sys	0m0.793s
 Running test_HPCCG with dimensions 100 100 100
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 2647.234
 Iteration = 50   Residual = 0.00022656
 Iteration = 100   Residual = 1.5527e-12
 Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.98251e-30
-Iteration = 250   Residual = 2.59348e-38
-Iteration = 300   Residual = 8.7401e-47
-Iteration = 350   Residual = 3.4e-55
-Iteration = 400   Residual = 3.83632e-63
-Iteration = 450   Residual = 1.67624e-71
-Iteration = 499   Residual = 3.49298e-79
+Iteration = 200   Residual = 5.04767e-30
+Iteration = 250   Residual = 2.58725e-38
+Iteration = 300   Residual = 9.87368e-47
+Iteration = 350   Residual = 3.60997e-55
+Iteration = 400   Residual = 3.54549e-63
+Iteration = 450   Residual = 1.79864e-71
+Iteration = 499   Residual = 2.93242e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 11.9881 s
+Elapsed time: 2.05761 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 100
   ny: 100
   nz: 100
 Number of iterations: 499
-Final residual: 3.49298e-79
+Final residual: 2.93242e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 185.015
-  DDOT    : 25.0284
-  WAXPBY  : 21.6065
-  SPARSEMV: 136.622
+  Total   : 2.0576
+  DDOT    : 1.49814
+  WAXPBY  : 0.049056
+  SPARSEMV: 0.438196
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 172.613
-  DDOT    : 79.7493
-  WAXPBY  : 138.57
-  SPARSEMV: 197.23
+  Total   : 15521
+  DDOT    : 1332.32
+  WAXPBY  : 61032.3
+  SPARSEMV: 61493
 
-real	0m13.156s
-user	3m28.724s
-sys	0m39.443s
+real	0m3.199s
+user	0m0.955s
+sys	0m1.752s
 Running test_HPCCG with dimensions 100 100 100
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 2647.234
 Iteration = 50   Residual = 0.00022656
 Iteration = 100   Residual = 1.5527e-12
 Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.98251e-30
-Iteration = 250   Residual = 2.59348e-38
-Iteration = 300   Residual = 8.7401e-47
-Iteration = 350   Residual = 3.4e-55
-Iteration = 400   Residual = 3.83632e-63
-Iteration = 450   Residual = 1.67624e-71
-Iteration = 499   Residual = 3.49298e-79
+Iteration = 200   Residual = 5.04767e-30
+Iteration = 250   Residual = 2.58725e-38
+Iteration = 300   Residual = 9.87368e-47
+Iteration = 350   Residual = 3.60997e-55
+Iteration = 400   Residual = 3.54549e-63
+Iteration = 450   Residual = 1.79864e-71
+Iteration = 499   Residual = 2.93242e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 11.4363 s
+Elapsed time: 0.983654 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 100
   ny: 100
   nz: 100
 Number of iterations: 499
-Final residual: 3.49298e-79
+Final residual: 2.93242e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 181.83
-  DDOT    : 24.6704
-  WAXPBY  : 14.7811
-  SPARSEMV: 140.249
+  Total   : 0.983639
+  DDOT    : 0.454886
+  WAXPBY  : 0.046672
+  SPARSEMV: 0.436491
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 175.636
-  DDOT    : 80.9066
-  WAXPBY  : 202.556
-  SPARSEMV: 192.13
+  Total   : 32467.2
+  DDOT    : 4387.91
+  WAXPBY  : 64149.8
+  SPARSEMV: 61733.2
 
-real	0m12.643s
-user	3m23.933s
-sys	0m18.553s
+real	0m1.888s
+user	0m0.909s
+sys	0m0.853s
 Running test_HPCCG with dimensions 100 100 100
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 2647.234
 Iteration = 50   Residual = 0.00022656
 Iteration = 100   Residual = 1.5527e-12
 Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.98251e-30
-Iteration = 250   Residual = 2.59348e-38
-Iteration = 300   Residual = 8.7401e-47
-Iteration = 350   Residual = 3.4e-55
-Iteration = 400   Residual = 3.83632e-63
-Iteration = 450   Residual = 1.67624e-71
-Iteration = 499   Residual = 3.49298e-79
+Iteration = 200   Residual = 5.04767e-30
+Iteration = 250   Residual = 2.58725e-38
+Iteration = 300   Residual = 9.87368e-47
+Iteration = 350   Residual = 3.60997e-55
+Iteration = 400   Residual = 3.54549e-63
+Iteration = 450   Residual = 1.79864e-71
+Iteration = 499   Residual = 2.93242e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 12.3592 s
+Elapsed time: 0.980485 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 100
   ny: 100
   nz: 100
 Number of iterations: 499
-Final residual: 3.49298e-79
+Final residual: 2.93242e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 198.603
-  DDOT    : 27.551
-  WAXPBY  : 23.6351
-  SPARSEMV: 145.487
+  Total   : 0.980467
+  DDOT    : 0.446443
+  WAXPBY  : 0.047357
+  SPARSEMV: 0.438599
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 160.803
-  DDOT    : 72.4475
-  WAXPBY  : 126.676
-  SPARSEMV: 185.212
+  Total   : 32572.2
+  DDOT    : 4470.9
+  WAXPBY  : 63221.9
+  SPARSEMV: 61436.5
 
-real	0m13.517s
-user	3m34.105s
-sys	0m29.137s
+real	0m1.797s
+user	0m0.990s
+sys	0m0.751s
 Running test_HPCCG with dimensions 125 125 125
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 3364.4202
@@ -821,53 +821,53 @@ Iteration = 50   Residual = 0.000362881
 Iteration = 100   Residual = 6.64807e-12
 Iteration = 150   Residual = 5.65993e-20
 Iteration = 200   Residual = 3.89313e-28
-Iteration = 250   Residual = 1.69469e-36
-Iteration = 300   Residual = 1.45222e-44
-Iteration = 350   Residual = 1.14535e-52
-Iteration = 400   Residual = 2.22886e-60
-Iteration = 450   Residual = 1.76872e-68
-Iteration = 499   Residual = 5.11813e-76
+Iteration = 250   Residual = 1.63284e-36
+Iteration = 300   Residual = 1.86047e-44
+Iteration = 350   Residual = 1.09576e-52
+Iteration = 400   Residual = 2.39809e-60
+Iteration = 450   Residual = 2.05696e-68
+Iteration = 499   Residual = 4.83714e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 33.4138 s
+Elapsed time: 1.29884 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 125
   ny: 125
   nz: 125
 Number of iterations: 499
-Final residual: 5.11813e-76
+Final residual: 4.83714e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 328.239
-  DDOT    : 32.286
-  WAXPBY  : 27.0291
-  SPARSEMV: 267.205
+  Total   : 1.29882
+  DDOT    : 0.465455
+  WAXPBY  : 0.074476
+  SPARSEMV: 0.689777
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 190.029
-  DDOT    : 120.747
-  WAXPBY  : 216.347
-  SPARSEMV: 196.961
+  Total   : 48024.2
+  DDOT    : 8375.54
+  WAXPBY  : 78517.3
+  SPARSEMV: 76298.4
 
-real	0m35.306s
-user	5m45.851s
-sys	0m42.517s
+real	0m2.653s
+user	0m1.470s
+sys	0m0.902s
 Running test_HPCCG with dimensions 125 125 125
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 3364.4202
@@ -875,53 +875,53 @@ Iteration = 50   Residual = 0.000362881
 Iteration = 100   Residual = 6.64807e-12
 Iteration = 150   Residual = 5.65993e-20
 Iteration = 200   Residual = 3.89313e-28
-Iteration = 250   Residual = 1.69469e-36
-Iteration = 300   Residual = 1.45222e-44
-Iteration = 350   Residual = 1.14535e-52
-Iteration = 400   Residual = 2.22886e-60
-Iteration = 450   Residual = 1.76872e-68
-Iteration = 499   Residual = 5.11813e-76
+Iteration = 250   Residual = 1.63284e-36
+Iteration = 300   Residual = 1.86047e-44
+Iteration = 350   Residual = 1.09576e-52
+Iteration = 400   Residual = 2.39809e-60
+Iteration = 450   Residual = 2.05696e-68
+Iteration = 499   Residual = 4.83714e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 32.752 s
+Elapsed time: 2.21834 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 125
   ny: 125
   nz: 125
 Number of iterations: 499
-Final residual: 5.11813e-76
+Final residual: 4.83714e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 334.855
-  DDOT    : 31.7868
-  WAXPBY  : 27.1487
-  SPARSEMV: 273.956
+  Total   : 2.21832
+  DDOT    : 1.36423
+  WAXPBY  : 0.074064
+  SPARSEMV: 0.692188
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 186.275
-  DDOT    : 122.643
-  WAXPBY  : 215.394
-  SPARSEMV: 192.107
+  Total   : 28118.1
+  DDOT    : 2857.61
+  WAXPBY  : 78954.1
+  SPARSEMV: 76032.7
 
-real	0m34.491s
-user	5m45.567s
-sys	0m40.774s
+real	0m3.479s
+user	0m1.529s
+sys	0m1.718s
 Running test_HPCCG with dimensions 125 125 125
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 3364.4202
@@ -929,53 +929,53 @@ Iteration = 50   Residual = 0.000362881
 Iteration = 100   Residual = 6.64807e-12
 Iteration = 150   Residual = 5.65993e-20
 Iteration = 200   Residual = 3.89313e-28
-Iteration = 250   Residual = 1.69469e-36
-Iteration = 300   Residual = 1.45222e-44
-Iteration = 350   Residual = 1.14535e-52
-Iteration = 400   Residual = 2.22886e-60
-Iteration = 450   Residual = 1.76872e-68
-Iteration = 499   Residual = 5.11813e-76
+Iteration = 250   Residual = 1.63284e-36
+Iteration = 300   Residual = 1.86047e-44
+Iteration = 350   Residual = 1.09576e-52
+Iteration = 400   Residual = 2.39809e-60
+Iteration = 450   Residual = 2.05696e-68
+Iteration = 499   Residual = 4.83714e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 31.6938 s
+Elapsed time: 1.29648 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 125
   ny: 125
   nz: 125
 Number of iterations: 499
-Final residual: 5.11813e-76
+Final residual: 4.83714e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 327.866
-  DDOT    : 31.3771
-  WAXPBY  : 25.0535
-  SPARSEMV: 269.588
+  Total   : 1.29646
+  DDOT    : 0.460116
+  WAXPBY  : 0.074357
+  SPARSEMV: 0.693316
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 190.245
-  DDOT    : 124.244
-  WAXPBY  : 233.407
-  SPARSEMV: 195.22
+  Total   : 48111.6
+  DDOT    : 8472.73
+  WAXPBY  : 78643
+  SPARSEMV: 75909
 
-real	0m33.275s
-user	5m37.907s
-sys	0m30.355s
+real	0m2.411s
+user	0m1.392s
+sys	0m0.960s
 Running test_HPCCG with dimensions 125 125 125
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 3364.4202
@@ -983,53 +983,53 @@ Iteration = 50   Residual = 0.000362881
 Iteration = 100   Residual = 6.64807e-12
 Iteration = 150   Residual = 5.65993e-20
 Iteration = 200   Residual = 3.89313e-28
-Iteration = 250   Residual = 1.69469e-36
-Iteration = 300   Residual = 1.45222e-44
-Iteration = 350   Residual = 1.14535e-52
-Iteration = 400   Residual = 2.22886e-60
-Iteration = 450   Residual = 1.76872e-68
-Iteration = 499   Residual = 5.11813e-76
+Iteration = 250   Residual = 1.63284e-36
+Iteration = 300   Residual = 1.86047e-44
+Iteration = 350   Residual = 1.09576e-52
+Iteration = 400   Residual = 2.39809e-60
+Iteration = 450   Residual = 2.05696e-68
+Iteration = 499   Residual = 4.83714e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 34.1287 s
+Elapsed time: 1.29966 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 125
   ny: 125
   nz: 125
 Number of iterations: 499
-Final residual: 5.11813e-76
+Final residual: 4.83714e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 336.293
-  DDOT    : 33.4451
-  WAXPBY  : 27.1544
-  SPARSEMV: 273.847
+  Total   : 1.29964
+  DDOT    : 0.465291
+  WAXPBY  : 0.073572
+  SPARSEMV: 0.692279
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 185.478
-  DDOT    : 116.562
-  WAXPBY  : 215.348
-  SPARSEMV: 192.183
+  Total   : 47994
+  DDOT    : 8378.49
+  WAXPBY  : 79482.1
+  SPARSEMV: 76022.7
 
-real	0m35.715s
-user	5m52.361s
-sys	0m37.473s
+real	0m2.444s
+user	0m1.409s
+sys	0m0.968s
 Running test_HPCCG with dimensions 125 125 125
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 3364.4202
@@ -1037,53 +1037,53 @@ Iteration = 50   Residual = 0.000362881
 Iteration = 100   Residual = 6.64807e-12
 Iteration = 150   Residual = 5.65993e-20
 Iteration = 200   Residual = 3.89313e-28
-Iteration = 250   Residual = 1.69469e-36
-Iteration = 300   Residual = 1.45222e-44
-Iteration = 350   Residual = 1.14535e-52
-Iteration = 400   Residual = 2.22886e-60
-Iteration = 450   Residual = 1.76872e-68
-Iteration = 499   Residual = 5.11813e-76
+Iteration = 250   Residual = 1.63284e-36
+Iteration = 300   Residual = 1.86047e-44
+Iteration = 350   Residual = 1.09576e-52
+Iteration = 400   Residual = 2.39809e-60
+Iteration = 450   Residual = 2.05696e-68
+Iteration = 499   Residual = 4.83714e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 26.9243 s
+Elapsed time: 1.59333 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 125
   ny: 125
   nz: 125
 Number of iterations: 499
-Final residual: 5.11813e-76
+Final residual: 4.83714e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 332.396
-  DDOT    : 34.5761
-  WAXPBY  : 25.4126
-  SPARSEMV: 270.428
+  Total   : 1.59331
+  DDOT    : 0.756912
+  WAXPBY  : 0.073874
+  SPARSEMV: 0.690242
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 187.653
-  DDOT    : 112.75
-  WAXPBY  : 230.108
-  SPARSEMV: 194.613
+  Total   : 39148
+  DDOT    : 5150.45
+  WAXPBY  : 79157.2
+  SPARSEMV: 76247
 
-real	0m28.452s
-user	5m44.392s
-sys	0m34.626s
+real	0m2.816s
+user	0m1.456s
+sys	0m1.149s
 Running test_HPCCG with dimensions 150 150 150
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4103.9064
@@ -1092,52 +1092,52 @@ Iteration = 100   Residual = 1.17344e-11
 Iteration = 150   Residual = 2.58554e-19
 Iteration = 200   Residual = 2.85922e-27
 Iteration = 250   Residual = 3.61092e-35
-Iteration = 300   Residual = 5.30416e-43
-Iteration = 350   Residual = 3.69332e-51
-Iteration = 400   Residual = 1.27766e-58
-Iteration = 450   Residual = 1.48895e-66
-Iteration = 499   Residual = 2.25979e-74
+Iteration = 300   Residual = 3.69014e-43
+Iteration = 350   Residual = 5.06588e-51
+Iteration = 400   Residual = 1.27285e-58
+Iteration = 450   Residual = 1.83984e-66
+Iteration = 499   Residual = 2.45759e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 26.1455 s
+Elapsed time: 2.33813 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 150
   ny: 150
   nz: 150
 Number of iterations: 499
-Final residual: 2.25979e-74
+Final residual: 2.45759e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 558.235
-  DDOT    : 42.5828
-  WAXPBY  : 47.8343
-  SPARSEMV: 465.275
+  Total   : 2.33811
+  DDOT    : 0.645293
+  WAXPBY  : 0.10949
+  SPARSEMV: 1.48151
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 193.08
-  DDOT    : 158.198
-  WAXPBY  : 211.245
-  SPARSEMV: 195.46
+  Total   : 46098.8
+  DDOT    : 10439.4
+  WAXPBY  : 92289.3
+  SPARSEMV: 61385.1
 
-real	0m28.171s
-user	9m35.666s
-sys	0m37.798s
+real	0m4.051s
+user	0m2.611s
+sys	0m1.343s
 Running test_HPCCG with dimensions 150 150 150
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4103.9064
@@ -1146,52 +1146,52 @@ Iteration = 100   Residual = 1.17344e-11
 Iteration = 150   Residual = 2.58554e-19
 Iteration = 200   Residual = 2.85922e-27
 Iteration = 250   Residual = 3.61092e-35
-Iteration = 300   Residual = 5.30416e-43
-Iteration = 350   Residual = 3.69332e-51
-Iteration = 400   Residual = 1.27766e-58
-Iteration = 450   Residual = 1.48895e-66
-Iteration = 499   Residual = 2.25979e-74
+Iteration = 300   Residual = 3.69014e-43
+Iteration = 350   Residual = 5.06588e-51
+Iteration = 400   Residual = 1.27285e-58
+Iteration = 450   Residual = 1.83984e-66
+Iteration = 499   Residual = 2.45759e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 55.8688 s
+Elapsed time: 2.19277 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 150
   ny: 150
   nz: 150
 Number of iterations: 499
-Final residual: 2.25979e-74
+Final residual: 2.45759e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 557.525
-  DDOT    : 44.3024
-  WAXPBY  : 35.8811
-  SPARSEMV: 474.022
+  Total   : 2.19274
+  DDOT    : 0.501994
+  WAXPBY  : 0.109819
+  SPARSEMV: 1.47939
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 193.326
-  DDOT    : 152.057
-  WAXPBY  : 281.618
-  SPARSEMV: 191.853
+  Total   : 49154.8
+  DDOT    : 13419.5
+  WAXPBY  : 92012.8
+  SPARSEMV: 61472.9
 
-real	0m58.048s
-user	9m36.304s
-sys	0m43.200s
+real	0m3.951s
+user	0m2.599s
+sys	0m1.124s
 Running test_HPCCG with dimensions 150 150 150
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4103.9064
@@ -1200,52 +1200,52 @@ Iteration = 100   Residual = 1.17344e-11
 Iteration = 150   Residual = 2.58554e-19
 Iteration = 200   Residual = 2.85922e-27
 Iteration = 250   Residual = 3.61092e-35
-Iteration = 300   Residual = 5.30416e-43
-Iteration = 350   Residual = 3.69332e-51
-Iteration = 400   Residual = 1.27766e-58
-Iteration = 450   Residual = 1.48895e-66
-Iteration = 499   Residual = 2.25979e-74
+Iteration = 300   Residual = 3.69014e-43
+Iteration = 350   Residual = 5.06588e-51
+Iteration = 400   Residual = 1.27285e-58
+Iteration = 450   Residual = 1.83984e-66
+Iteration = 499   Residual = 2.45759e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 58.1391 s
+Elapsed time: 3.02792 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 150
   ny: 150
   nz: 150
 Number of iterations: 499
-Final residual: 2.25979e-74
+Final residual: 2.45759e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 541.858
-  DDOT    : 45.0449
-  WAXPBY  : 38.964
-  SPARSEMV: 454.804
+  Total   : 3.0279
+  DDOT    : 1.32174
+  WAXPBY  : 0.110237
+  SPARSEMV: 1.4827
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 198.916
-  DDOT    : 149.551
-  WAXPBY  : 259.335
-  SPARSEMV: 199.96
+  Total   : 35597
+  DDOT    : 5096.68
+  WAXPBY  : 91663.9
+  SPARSEMV: 61335.9
 
-real	1m0.322s
-user	9m14.254s
-sys	0m49.495s
+real	0m4.624s
+user	0m2.670s
+sys	0m1.752s
 Running test_HPCCG with dimensions 150 150 150
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4103.9064
@@ -1254,52 +1254,52 @@ Iteration = 100   Residual = 1.17344e-11
 Iteration = 150   Residual = 2.58554e-19
 Iteration = 200   Residual = 2.85922e-27
 Iteration = 250   Residual = 3.61092e-35
-Iteration = 300   Residual = 5.30416e-43
-Iteration = 350   Residual = 3.69332e-51
-Iteration = 400   Residual = 1.27766e-58
-Iteration = 450   Residual = 1.48895e-66
-Iteration = 499   Residual = 2.25979e-74
+Iteration = 300   Residual = 3.69014e-43
+Iteration = 350   Residual = 5.06588e-51
+Iteration = 400   Residual = 1.27285e-58
+Iteration = 450   Residual = 1.83984e-66
+Iteration = 499   Residual = 2.45759e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 59.6655 s
+Elapsed time: 2.18772 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 150
   ny: 150
   nz: 150
 Number of iterations: 499
-Final residual: 2.25979e-74
+Final residual: 2.45759e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 550.472
-  DDOT    : 44.9044
-  WAXPBY  : 35.7849
-  SPARSEMV: 466.812
+  Total   : 2.18769
+  DDOT    : 0.497836
+  WAXPBY  : 0.108546
+  SPARSEMV: 1.48115
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 195.803
-  DDOT    : 150.019
-  WAXPBY  : 282.375
-  SPARSEMV: 194.816
+  Total   : 49268.3
+  DDOT    : 13531.6
+  WAXPBY  : 93091.9
+  SPARSEMV: 61400.2
 
-real	1m1.591s
-user	9m23.572s
-sys	0m41.655s
+real	0m3.809s
+user	0m2.597s
+sys	0m1.091s
 Running test_HPCCG with dimensions 150 150 150
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4103.9064
@@ -1308,52 +1308,52 @@ Iteration = 100   Residual = 1.17344e-11
 Iteration = 150   Residual = 2.58554e-19
 Iteration = 200   Residual = 2.85922e-27
 Iteration = 250   Residual = 3.61092e-35
-Iteration = 300   Residual = 5.30416e-43
-Iteration = 350   Residual = 3.69332e-51
-Iteration = 400   Residual = 1.27766e-58
-Iteration = 450   Residual = 1.48895e-66
-Iteration = 499   Residual = 2.25979e-74
+Iteration = 300   Residual = 3.69014e-43
+Iteration = 350   Residual = 5.06588e-51
+Iteration = 400   Residual = 1.27285e-58
+Iteration = 450   Residual = 1.83984e-66
+Iteration = 499   Residual = 2.45759e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 55.5003 s
+Elapsed time: 2.71125 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 150
   ny: 150
   nz: 150
 Number of iterations: 499
-Final residual: 2.25979e-74
+Final residual: 2.45759e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 535.766
-  DDOT    : 42.5808
-  WAXPBY  : 38.8202
-  SPARSEMV: 451.319
+  Total   : 2.71122
+  DDOT    : 1.01357
+  WAXPBY  : 0.110528
+  SPARSEMV: 1.47994
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 201.178
-  DDOT    : 158.205
-  WAXPBY  : 260.296
-  SPARSEMV: 201.504
+  Total   : 39754.7
+  DDOT    : 6646.34
+  WAXPBY  : 91422.5
+  SPARSEMV: 61450.5
 
-real	1m1.958s
-user	9m13.880s
-sys	0m51.200s
+real	0m4.354s
+user	0m2.700s
+sys	0m1.456s
 Running test_HPCCG with dimensions 175 175 175
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4865.1591
@@ -1363,51 +1363,51 @@ Iteration = 150   Residual = 5.96509e-19
 Iteration = 200   Residual = 1.25552e-26
 Iteration = 250   Residual = 2.66864e-34
 Iteration = 300   Residual = 4.37911e-42
-Iteration = 350   Residual = 5.63122e-50
-Iteration = 400   Residual = 1.08888e-57
-Iteration = 450   Residual = 4.96092e-65
-Iteration = 499   Residual = 1.19742e-72
+Iteration = 350   Residual = 5.89502e-50
+Iteration = 400   Residual = 1.05725e-57
+Iteration = 450   Residual = 2.58764e-65
+Iteration = 499   Residual = 1.15919e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 70.6199 s
+Elapsed time: 3.15407 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 175
   ny: 175
   nz: 175
 Number of iterations: 499
-Final residual: 1.19742e-72
+Final residual: 1.15919e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 816.842
-  DDOT    : 55.513
-  WAXPBY  : 73.2622
-  SPARSEMV: 685.339
+  Total   : 3.15405
+  DDOT    : 0.561514
+  WAXPBY  : 0.159445
+  SPARSEMV: 2.29484
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 209.535
-  DDOT    : 192.699
-  WAXPBY  : 219.021
-  SPARSEMV: 210.719
+  Total   : 54265.8
+  DDOT    : 19050.8
+  WAXPBY  : 100636
+  SPARSEMV: 62929.7
 
-real	1m13.063s
-user	13m45.553s
-sys	0m48.552s
+real	0m5.488s
+user	0m3.921s
+sys	0m1.485s
 Running test_HPCCG with dimensions 175 175 175
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4865.1591
@@ -1417,51 +1417,51 @@ Iteration = 150   Residual = 5.96509e-19
 Iteration = 200   Residual = 1.25552e-26
 Iteration = 250   Residual = 2.66864e-34
 Iteration = 300   Residual = 4.37911e-42
-Iteration = 350   Residual = 5.63122e-50
-Iteration = 400   Residual = 1.08888e-57
-Iteration = 450   Residual = 4.96092e-65
-Iteration = 499   Residual = 1.19742e-72
+Iteration = 350   Residual = 5.89502e-50
+Iteration = 400   Residual = 1.05725e-57
+Iteration = 450   Residual = 2.58764e-65
+Iteration = 499   Residual = 1.15919e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 67.3751 s
+Elapsed time: 3.91887 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 175
   ny: 175
   nz: 175
 Number of iterations: 499
-Final residual: 1.19742e-72
+Final residual: 1.15919e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 836.258
-  DDOT    : 56.0644
-  WAXPBY  : 75.0284
-  SPARSEMV: 702.442
+  Total   : 3.91885
+  DDOT    : 1.32023
+  WAXPBY  : 0.160992
+  SPARSEMV: 2.29602
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 204.67
-  DDOT    : 190.804
-  WAXPBY  : 213.865
-  SPARSEMV: 205.588
+  Total   : 43675.3
+  DDOT    : 8102.6
+  WAXPBY  : 99669.4
+  SPARSEMV: 62897.3
 
-real	1m10.075s
-user	14m12.726s
-sys	0m50.662s
+real	0m6.113s
+user	0m3.953s
+sys	0m1.936s
 Running test_HPCCG with dimensions 175 175 175
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4865.1591
@@ -1471,51 +1471,51 @@ Iteration = 150   Residual = 5.96509e-19
 Iteration = 200   Residual = 1.25552e-26
 Iteration = 250   Residual = 2.66864e-34
 Iteration = 300   Residual = 4.37911e-42
-Iteration = 350   Residual = 5.63122e-50
-Iteration = 400   Residual = 1.08888e-57
-Iteration = 450   Residual = 4.96092e-65
-Iteration = 499   Residual = 1.19742e-72
+Iteration = 350   Residual = 5.89502e-50
+Iteration = 400   Residual = 1.05725e-57
+Iteration = 450   Residual = 2.58764e-65
+Iteration = 499   Residual = 1.15919e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 70.2557 s
+Elapsed time: 3.14423 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 175
   ny: 175
   nz: 175
 Number of iterations: 499
-Final residual: 1.19742e-72
+Final residual: 1.15919e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 806.965
-  DDOT    : 54.4484
-  WAXPBY  : 70.2861
-  SPARSEMV: 678.956
+  Total   : 3.14421
+  DDOT    : 0.554738
+  WAXPBY  : 0.159074
+  SPARSEMV: 2.29252
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 212.1
-  DDOT    : 196.467
-  WAXPBY  : 228.295
-  SPARSEMV: 212.7
+  Total   : 54435.6
+  DDOT    : 19283.5
+  WAXPBY  : 100871
+  SPARSEMV: 62993.5
 
-real	1m13.057s
-user	13m49.349s
-sys	0m47.633s
+real	0m5.655s
+user	0m3.957s
+sys	0m1.315s
 Running test_HPCCG with dimensions 175 175 175
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4865.1591
@@ -1525,51 +1525,51 @@ Iteration = 150   Residual = 5.96509e-19
 Iteration = 200   Residual = 1.25552e-26
 Iteration = 250   Residual = 2.66864e-34
 Iteration = 300   Residual = 4.37911e-42
-Iteration = 350   Residual = 5.63122e-50
-Iteration = 400   Residual = 1.08888e-57
-Iteration = 450   Residual = 4.96092e-65
-Iteration = 499   Residual = 1.19742e-72
+Iteration = 350   Residual = 5.89502e-50
+Iteration = 400   Residual = 1.05725e-57
+Iteration = 450   Residual = 2.58764e-65
+Iteration = 499   Residual = 1.15919e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 68.0555 s
+Elapsed time: 3.53742 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 175
   ny: 175
   nz: 175
 Number of iterations: 499
-Final residual: 1.19742e-72
+Final residual: 1.15919e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 826.057
-  DDOT    : 57.1974
-  WAXPBY  : 70.7319
-  SPARSEMV: 694.957
+  Total   : 3.5374
+  DDOT    : 0.945128
+  WAXPBY  : 0.161593
+  SPARSEMV: 2.29401
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 207.197
-  DDOT    : 187.024
-  WAXPBY  : 226.856
-  SPARSEMV: 207.802
+  Total   : 48385
+  DDOT    : 11318.4
+  WAXPBY  : 99298.7
+  SPARSEMV: 62952.5
 
-real	1m10.850s
-user	14m4.612s
-sys	0m50.982s
+real	0m8.036s
+user	0m3.976s
+sys	0m1.669s
 Running test_HPCCG with dimensions 175 175 175
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 4865.1591
@@ -1579,51 +1579,51 @@ Iteration = 150   Residual = 5.96509e-19
 Iteration = 200   Residual = 1.25552e-26
 Iteration = 250   Residual = 2.66864e-34
 Iteration = 300   Residual = 4.37911e-42
-Iteration = 350   Residual = 5.63122e-50
-Iteration = 400   Residual = 1.08888e-57
-Iteration = 450   Residual = 4.96092e-65
-Iteration = 499   Residual = 1.19742e-72
+Iteration = 350   Residual = 5.89502e-50
+Iteration = 400   Residual = 1.05725e-57
+Iteration = 450   Residual = 2.58764e-65
+Iteration = 499   Residual = 1.15919e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 67.4468 s
+Elapsed time: 3.96429 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 175
   ny: 175
   nz: 175
 Number of iterations: 499
-Final residual: 1.19742e-72
+Final residual: 1.15919e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 831.243
-  DDOT    : 63.1083
-  WAXPBY  : 67.0126
-  SPARSEMV: 698.405
+  Total   : 3.96427
+  DDOT    : 1.37016
+  WAXPBY  : 0.1603
+  SPARSEMV: 2.29444
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 205.905
-  DDOT    : 169.507
-  WAXPBY  : 239.447
-  SPARSEMV: 206.777
+  Total   : 43174.9
+  DDOT    : 7807.37
+  WAXPBY  : 100100
+  SPARSEMV: 62940.8
 
-real	1m10.085s
-user	14m11.383s
-sys	0m49.545s
+real	0m6.173s
+user	0m3.931s
+sys	0m1.975s
 Running test_HPCCG with dimensions 200 200 200
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 5647.6763
@@ -1633,51 +1633,51 @@ Iteration = 150   Residual = 9.66311e-19
 Iteration = 200   Residual = 2.84339e-26
 Iteration = 250   Residual = 6.5212e-34
 Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06943e-49
-Iteration = 400   Residual = 1.05391e-56
-Iteration = 450   Residual = 1.94641e-64
-Iteration = 499   Residual = 8.65472e-72
+Iteration = 350   Residual = 4.06937e-49
+Iteration = 400   Residual = 9.60674e-57
+Iteration = 450   Residual = 1.96507e-64
+Iteration = 499   Residual = 1.05169e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 80.7107 s
+Elapsed time: 4.80136 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 200
   ny: 200
   nz: 200
 Number of iterations: 499
-Final residual: 8.65472e-72
+Final residual: 1.05169e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1209.78
-  DDOT    : 78.3059
-  WAXPBY  : 99.1919
-  SPARSEMV: 1027.12
+  Total   : 4.80134
+  DDOT    : 0.810168
+  WAXPBY  : 0.25631
+  SPARSEMV: 3.52896
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 211.185
-  DDOT    : 203.918
-  WAXPBY  : 241.471
-  SPARSEMV: 209.875
+  Total   : 53211.8
+  DDOT    : 19709.5
+  WAXPBY  : 93449.3
+  SPARSEMV: 61085.5
 
-real	1m24.731s
-user	20m25.887s
-sys	1m39.037s
+real	0m8.051s
+user	0m5.947s
+sys	0m1.790s
 Running test_HPCCG with dimensions 200 200 200
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 5647.6763
@@ -1687,51 +1687,51 @@ Iteration = 150   Residual = 9.66311e-19
 Iteration = 200   Residual = 2.84339e-26
 Iteration = 250   Residual = 6.5212e-34
 Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06943e-49
-Iteration = 400   Residual = 1.05391e-56
-Iteration = 450   Residual = 1.94641e-64
-Iteration = 499   Residual = 8.65472e-72
+Iteration = 350   Residual = 4.06937e-49
+Iteration = 400   Residual = 9.60674e-57
+Iteration = 450   Residual = 1.96507e-64
+Iteration = 499   Residual = 1.05169e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 78.2457 s
+Elapsed time: 4.55646 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 200
   ny: 200
   nz: 200
 Number of iterations: 499
-Final residual: 8.65472e-72
+Final residual: 1.05169e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1197.19
-  DDOT    : 76.7832
-  WAXPBY  : 99.9904
-  SPARSEMV: 1015.37
+  Total   : 4.55644
+  DDOT    : 0.615519
+  WAXPBY  : 0.228539
+  SPARSEMV: 3.53018
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 213.406
-  DDOT    : 207.962
-  WAXPBY  : 239.543
-  SPARSEMV: 212.305
+  Total   : 56071.8
+  DDOT    : 25942.3
+  WAXPBY  : 104805
+  SPARSEMV: 61064.4
 
-real	1m21.889s
-user	20m11.264s
-sys	1m14.369s
+real	0m7.658s
+user	0m5.900s
+sys	0m1.731s
 Running test_HPCCG with dimensions 200 200 200
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 5647.6763
@@ -1741,51 +1741,51 @@ Iteration = 150   Residual = 9.66311e-19
 Iteration = 200   Residual = 2.84339e-26
 Iteration = 250   Residual = 6.5212e-34
 Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06943e-49
-Iteration = 400   Residual = 1.05391e-56
-Iteration = 450   Residual = 1.94641e-64
-Iteration = 499   Residual = 8.65472e-72
+Iteration = 350   Residual = 4.06937e-49
+Iteration = 400   Residual = 9.60674e-57
+Iteration = 450   Residual = 1.96507e-64
+Iteration = 499   Residual = 1.05169e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 79.8004 s
+Elapsed time: 4.5942 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 200
   ny: 200
   nz: 200
 Number of iterations: 499
-Final residual: 8.65472e-72
+Final residual: 1.05169e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1193.01
-  DDOT    : 80.6551
-  WAXPBY  : 93.9012
-  SPARSEMV: 1013.24
+  Total   : 4.59417
+  DDOT    : 0.657263
+  WAXPBY  : 0.226995
+  SPARSEMV: 3.52738
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 214.155
-  DDOT    : 197.979
-  WAXPBY  : 255.077
-  SPARSEMV: 212.752
+  Total   : 55611.3
+  DDOT    : 24294.7
+  WAXPBY  : 105518
+  SPARSEMV: 61112.8
 
-real	1m23.389s
-user	20m10.457s
-sys	1m4.925s
+real	0m7.709s
+user	0m6.051s
+sys	0m1.598s
 Running test_HPCCG with dimensions 200 200 200
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 5647.6763
@@ -1795,51 +1795,51 @@ Iteration = 150   Residual = 9.66311e-19
 Iteration = 200   Residual = 2.84339e-26
 Iteration = 250   Residual = 6.5212e-34
 Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06943e-49
-Iteration = 400   Residual = 1.05391e-56
-Iteration = 450   Residual = 1.94641e-64
-Iteration = 499   Residual = 8.65472e-72
+Iteration = 350   Residual = 4.06937e-49
+Iteration = 400   Residual = 9.60674e-57
+Iteration = 450   Residual = 1.96507e-64
+Iteration = 499   Residual = 1.05169e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 77.8404 s
+Elapsed time: 5.16016 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 200
   ny: 200
   nz: 200
 Number of iterations: 499
-Final residual: 8.65472e-72
+Final residual: 1.05169e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1217.96
-  DDOT    : 78.9125
-  WAXPBY  : 105.429
-  SPARSEMV: 1028.95
+  Total   : 5.16014
+  DDOT    : 1.21441
+  WAXPBY  : 0.227984
+  SPARSEMV: 3.53639
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 209.767
-  DDOT    : 202.351
-  WAXPBY  : 227.186
-  SPARSEMV: 209.503
+  Total   : 49511.8
+  DDOT    : 13148.8
+  WAXPBY  : 105060
+  SPARSEMV: 60957
 
-real	1m21.196s
-user	20m31.497s
-sys	1m14.067s
+real	0m8.204s
+user	0m5.950s
+sys	0m2.057s
 Running test_HPCCG with dimensions 200 200 200
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 5647.6763
@@ -1849,51 +1849,51 @@ Iteration = 150   Residual = 9.66311e-19
 Iteration = 200   Residual = 2.84339e-26
 Iteration = 250   Residual = 6.5212e-34
 Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06943e-49
-Iteration = 400   Residual = 1.05391e-56
-Iteration = 450   Residual = 1.94641e-64
-Iteration = 499   Residual = 8.65472e-72
+Iteration = 350   Residual = 4.06937e-49
+Iteration = 400   Residual = 9.60674e-57
+Iteration = 450   Residual = 1.96507e-64
+Iteration = 499   Residual = 1.05169e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 77.2323 s
+Elapsed time: 5.17317 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 200
   ny: 200
   nz: 200
 Number of iterations: 499
-Final residual: 8.65472e-72
+Final residual: 1.05169e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1189.83
-  DDOT    : 84.1631
-  WAXPBY  : 85.641
-  SPARSEMV: 1013.7
+  Total   : 5.17315
+  DDOT    : 1.23899
+  WAXPBY  : 0.228359
+  SPARSEMV: 3.52483
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 214.726
-  DDOT    : 189.727
-  WAXPBY  : 279.679
-  SPARSEMV: 212.655
+  Total   : 49387.3
+  DDOT    : 12887.9
+  WAXPBY  : 104887
+  SPARSEMV: 61157
 
-real	1m21.039s
-user	20m13.990s
-sys	1m2.622s
+real	0m8.276s
+user	0m5.944s
+sys	0m2.024s
 Running test_HPCCG with dimensions 225 225 225
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 6450.9862
@@ -1904,50 +1904,50 @@ Iteration = 200   Residual = 4.94977e-26
 Iteration = 250   Residual = 1.64292e-33
 Iteration = 300   Residual = 4.28203e-41
 Iteration = 350   Residual = 1.47242e-48
-Iteration = 400   Residual = 3.5138e-56
-Iteration = 450   Residual = 1.1537e-63
-Iteration = 499   Residual = 3.94501e-71
+Iteration = 400   Residual = 3.51356e-56
+Iteration = 450   Residual = 1.08466e-63
+Iteration = 499   Residual = 3.89904e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 86.0303 s
+Elapsed time: 5.74294 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 225
   ny: 225
   nz: 225
 Number of iterations: 499
-Final residual: 3.94501e-71
+Final residual: 3.89904e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1671.45
-  DDOT    : 92.522
-  WAXPBY  : 155.612
-  SPARSEMV: 1418.64
+  Total   : 5.74292
+  DDOT    : 1.17978
+  WAXPBY  : 0.319944
+  SPARSEMV: 4.01227
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 217.638
-  DDOT    : 245.733
-  WAXPBY  : 219.158
-  SPARSEMV: 216.356
+  Total   : 63342.5
+  DDOT    : 19271.2
+  WAXPBY  : 106592
+  SPARSEMV: 76498.4
 
-real	1m30.820s
-user	28m9.227s
-sys	1m5.311s
+real	0m9.821s
+user	0m7.254s
+sys	0m2.381s
 Running test_HPCCG with dimensions 225 225 225
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 6450.9862
@@ -1958,50 +1958,50 @@ Iteration = 200   Residual = 4.94977e-26
 Iteration = 250   Residual = 1.64292e-33
 Iteration = 300   Residual = 4.28203e-41
 Iteration = 350   Residual = 1.47242e-48
-Iteration = 400   Residual = 3.5138e-56
-Iteration = 450   Residual = 1.1537e-63
-Iteration = 499   Residual = 3.94501e-71
+Iteration = 400   Residual = 3.51356e-56
+Iteration = 450   Residual = 1.08466e-63
+Iteration = 499   Residual = 3.89904e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 83.4219 s
+Elapsed time: 5.71058 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 225
   ny: 225
   nz: 225
 Number of iterations: 499
-Final residual: 3.94501e-71
+Final residual: 3.89904e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1657.2
-  DDOT    : 94.0302
-  WAXPBY  : 158.974
-  SPARSEMV: 1400.12
+  Total   : 5.71056
+  DDOT    : 1.15115
+  WAXPBY  : 0.319131
+  SPARSEMV: 4.00893
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 219.509
-  DDOT    : 241.791
-  WAXPBY  : 214.523
-  SPARSEMV: 219.217
+  Total   : 63701.5
+  DDOT    : 19750.5
+  WAXPBY  : 106864
+  SPARSEMV: 76562
 
-real	1m29.095s
-user	27m49.886s
-sys	1m6.876s
+real	0m9.857s
+user	0m7.232s
+sys	0m2.395s
 Running test_HPCCG with dimensions 225 225 225
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 6450.9862
@@ -2012,50 +2012,50 @@ Iteration = 200   Residual = 4.94977e-26
 Iteration = 250   Residual = 1.64292e-33
 Iteration = 300   Residual = 4.28203e-41
 Iteration = 350   Residual = 1.47242e-48
-Iteration = 400   Residual = 3.5138e-56
-Iteration = 450   Residual = 1.1537e-63
-Iteration = 499   Residual = 3.94501e-71
+Iteration = 400   Residual = 3.51356e-56
+Iteration = 450   Residual = 1.08466e-63
+Iteration = 499   Residual = 3.89904e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 87.9962 s
+Elapsed time: 5.66594 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 225
   ny: 225
   nz: 225
 Number of iterations: 499
-Final residual: 3.94501e-71
+Final residual: 3.89904e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1672.96
-  DDOT    : 92.1919
-  WAXPBY  : 161.221
-  SPARSEMV: 1414.93
+  Total   : 5.66591
+  DDOT    : 1.09207
+  WAXPBY  : 0.319662
+  SPARSEMV: 4.0214
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 217.442
-  DDOT    : 246.613
-  WAXPBY  : 211.533
-  SPARSEMV: 216.924
+  Total   : 64203.4
+  DDOT    : 20818.9
+  WAXPBY  : 106686
+  SPARSEMV: 76324.6
 
-real	1m32.990s
-user	28m17.914s
-sys	1m25.206s
+real	0m9.838s
+user	0m7.285s
+sys	0m2.315s
 Running test_HPCCG with dimensions 225 225 225
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 6450.9862
@@ -2066,50 +2066,50 @@ Iteration = 200   Residual = 4.94977e-26
 Iteration = 250   Residual = 1.64292e-33
 Iteration = 300   Residual = 4.28203e-41
 Iteration = 350   Residual = 1.47242e-48
-Iteration = 400   Residual = 3.5138e-56
-Iteration = 450   Residual = 1.1537e-63
-Iteration = 499   Residual = 3.94501e-71
+Iteration = 400   Residual = 3.51356e-56
+Iteration = 450   Residual = 1.08466e-63
+Iteration = 499   Residual = 3.89904e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 86.4908 s
+Elapsed time: 5.64915 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 225
   ny: 225
   nz: 225
 Number of iterations: 499
-Final residual: 3.94501e-71
+Final residual: 3.89904e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1658.16
-  DDOT    : 93.4501
-  WAXPBY  : 156.322
-  SPARSEMV: 1403.45
+  Total   : 5.64913
+  DDOT    : 1.08546
+  WAXPBY  : 0.320048
+  SPARSEMV: 4.01029
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 219.383
-  DDOT    : 243.292
-  WAXPBY  : 218.162
-  SPARSEMV: 218.699
+  Total   : 64394.2
+  DDOT    : 20945.7
+  WAXPBY  : 106558
+  SPARSEMV: 76536
 
-real	1m31.100s
-user	27m54.248s
-sys	1m10.493s
+real	0m9.749s
+user	0m7.265s
+sys	0m2.303s
 Running test_HPCCG with dimensions 225 225 225
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 6450.9862
@@ -2120,50 +2120,50 @@ Iteration = 200   Residual = 4.94977e-26
 Iteration = 250   Residual = 1.64292e-33
 Iteration = 300   Residual = 4.28203e-41
 Iteration = 350   Residual = 1.47242e-48
-Iteration = 400   Residual = 3.5138e-56
-Iteration = 450   Residual = 1.1537e-63
-Iteration = 499   Residual = 3.94501e-71
+Iteration = 400   Residual = 3.51356e-56
+Iteration = 450   Residual = 1.08466e-63
+Iteration = 499   Residual = 3.89904e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 84.1991 s
+Elapsed time: 5.6099 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 225
   ny: 225
   nz: 225
 Number of iterations: 499
-Final residual: 3.94501e-71
+Final residual: 3.89904e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1662.87
-  DDOT    : 92.4691
-  WAXPBY  : 163.931
-  SPARSEMV: 1402.33
+  Total   : 5.60987
+  DDOT    : 1.04565
+  WAXPBY  : 0.31954
+  SPARSEMV: 4.01192
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 218.761
-  DDOT    : 245.873
-  WAXPBY  : 208.036
-  SPARSEMV: 218.873
+  Total   : 64844.8
+  DDOT    : 21743.2
+  WAXPBY  : 106727
+  SPARSEMV: 76504.9
 
-real	1m28.759s
-user	28m0.520s
-sys	1m10.851s
+real	0m9.987s
+user	0m7.327s
+sys	0m2.361s
 Running test_HPCCG with dimensions 250 250 250
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 7274.6442
@@ -2175,49 +2175,49 @@ Iteration = 250   Residual = 2.62282e-33
 Iteration = 300   Residual = 9.12033e-41
 Iteration = 350   Residual = 2.7719e-48
 Iteration = 400   Residual = 1.01313e-55
-Iteration = 450   Residual = 3.07429e-63
-Iteration = 499   Residual = 1.63838e-70
+Iteration = 450   Residual = 3.07446e-63
+Iteration = 499   Residual = 1.64184e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 105.384 s
+Elapsed time: 8.77288 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 250
   ny: 250
   nz: 250
 Number of iterations: 499
-Final residual: 1.63838e-70
+Final residual: 1.64184e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2285.22
-  DDOT    : 116.058
-  WAXPBY  : 233.713
-  SPARSEMV: 1930.9
+  Total   : 8.77285
+  DDOT    : 1.10066
+  WAXPBY  : 0.423719
+  SPARSEMV: 6.9536
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 218.36
-  DDOT    : 268.723
-  WAXPBY  : 200.165
-  SPARSEMV: 218.05
+  Total   : 56880
+  DDOT    : 28335.1
+  WAXPBY  : 110406
+  SPARSEMV: 60548.6
 
-real	1m52.124s
-user	38m21.768s
-sys	1m16.631s
+real	0m14.381s
+user	0m11.213s
+sys	0m2.902s
 Running test_HPCCG with dimensions 250 250 250
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 7274.6442
@@ -2229,49 +2229,49 @@ Iteration = 250   Residual = 2.62282e-33
 Iteration = 300   Residual = 9.12033e-41
 Iteration = 350   Residual = 2.7719e-48
 Iteration = 400   Residual = 1.01313e-55
-Iteration = 450   Residual = 3.07429e-63
-Iteration = 499   Residual = 1.63838e-70
+Iteration = 450   Residual = 3.07446e-63
+Iteration = 499   Residual = 1.64184e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 96.6856 s
+Elapsed time: 8.45834 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 250
   ny: 250
   nz: 250
 Number of iterations: 499
-Final residual: 1.63838e-70
+Final residual: 1.64184e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2297.26
-  DDOT    : 112.986
-  WAXPBY  : 233.999
-  SPARSEMV: 1944.44
+  Total   : 8.45831
+  DDOT    : 0.788209
+  WAXPBY  : 0.424977
+  SPARSEMV: 6.94939
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 217.215
-  DDOT    : 276.03
-  WAXPBY  : 199.921
-  SPARSEMV: 216.531
+  Total   : 58995.2
+  DDOT    : 39567.6
+  WAXPBY  : 110079
+  SPARSEMV: 60585.3
 
-real	1m43.266s
-user	38m38.976s
-sys	1m13.857s
+real	0m13.897s
+user	0m11.160s
+sys	0m2.634s
 Running test_HPCCG with dimensions 250 250 250
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 7274.6442
@@ -2283,49 +2283,49 @@ Iteration = 250   Residual = 2.62282e-33
 Iteration = 300   Residual = 9.12033e-41
 Iteration = 350   Residual = 2.7719e-48
 Iteration = 400   Residual = 1.01313e-55
-Iteration = 450   Residual = 3.07429e-63
-Iteration = 499   Residual = 1.63838e-70
+Iteration = 450   Residual = 3.07446e-63
+Iteration = 499   Residual = 1.64184e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 103.281 s
+Elapsed time: 8.79648 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 250
   ny: 250
   nz: 250
 Number of iterations: 499
-Final residual: 1.63838e-70
+Final residual: 1.64184e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2223.35
-  DDOT    : 113.805
-  WAXPBY  : 228.018
-  SPARSEMV: 1877.47
+  Total   : 8.79646
+  DDOT    : 1.13137
+  WAXPBY  : 0.423435
+  SPARSEMV: 6.94801
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 224.436
-  DDOT    : 274.044
-  WAXPBY  : 205.164
-  SPARSEMV: 224.254
+  Total   : 56727.4
+  DDOT    : 27566.1
+  WAXPBY  : 110480
+  SPARSEMV: 60597.4
 
-real	1m49.984s
-user	37m18.994s
-sys	1m31.674s
+real	0m14.393s
+user	0m11.224s
+sys	0m2.970s
 Running test_HPCCG with dimensions 250 250 250
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 7274.6442
@@ -2337,49 +2337,49 @@ Iteration = 250   Residual = 2.62282e-33
 Iteration = 300   Residual = 9.12033e-41
 Iteration = 350   Residual = 2.7719e-48
 Iteration = 400   Residual = 1.01313e-55
-Iteration = 450   Residual = 3.07429e-63
-Iteration = 499   Residual = 1.63838e-70
+Iteration = 450   Residual = 3.07446e-63
+Iteration = 499   Residual = 1.64184e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 107.061 s
+Elapsed time: 8.63566 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 250
   ny: 250
   nz: 250
 Number of iterations: 499
-Final residual: 1.63838e-70
+Final residual: 1.64184e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2292.57
-  DDOT    : 113.466
-  WAXPBY  : 232.083
-  SPARSEMV: 1942.75
+  Total   : 8.63564
+  DDOT    : 0.956109
+  WAXPBY  : 0.423369
+  SPARSEMV: 6.96013
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 217.659
-  DDOT    : 274.863
-  WAXPBY  : 201.571
-  SPARSEMV: 216.719
+  Total   : 57783.8
+  DDOT    : 32619.2
+  WAXPBY  : 110498
+  SPARSEMV: 60491.9
 
-real	1m53.021s
-user	38m29.581s
-sys	1m13.610s
+real	0m13.959s
+user	0m11.106s
+sys	0m2.771s
 Running test_HPCCG with dimensions 250 250 250
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 7274.6442
@@ -2391,49 +2391,49 @@ Iteration = 250   Residual = 2.62282e-33
 Iteration = 300   Residual = 9.12033e-41
 Iteration = 350   Residual = 2.7719e-48
 Iteration = 400   Residual = 1.01313e-55
-Iteration = 450   Residual = 3.07429e-63
-Iteration = 499   Residual = 1.63838e-70
+Iteration = 450   Residual = 3.07446e-63
+Iteration = 499   Residual = 1.64184e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 105.246 s
+Elapsed time: 8.80437 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 250
   ny: 250
   nz: 250
 Number of iterations: 499
-Final residual: 1.63838e-70
+Final residual: 1.64184e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2262.36
-  DDOT    : 115.534
-  WAXPBY  : 232.953
-  SPARSEMV: 1910.19
+  Total   : 8.80434
+  DDOT    : 1.13502
+  WAXPBY  : 0.423186
+  SPARSEMV: 6.95218
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 220.567
-  DDOT    : 269.943
-  WAXPBY  : 200.819
-  SPARSEMV: 220.414
+  Total   : 56676.6
+  DDOT    : 27477.5
+  WAXPBY  : 110545
+  SPARSEMV: 60561.1
 
-real	1m51.702s
-user	38m5.781s
-sys	1m33.793s
+real	0m14.231s
+user	0m11.205s
+sys	0m2.887s
 Running test_HPCCG with dimensions 275 275 275
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8118.2309
@@ -2445,49 +2445,49 @@ Iteration = 250   Residual = 3.93546e-33
 Iteration = 300   Residual = 1.60632e-40
 Iteration = 350   Residual = 5.36316e-48
 Iteration = 400   Residual = 2.37238e-55
-Iteration = 450   Residual = 6.93178e-63
-Iteration = 499   Residual = 3.66795e-70
+Iteration = 450   Residual = 6.93177e-63
+Iteration = 499   Residual = 3.65983e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 130.178 s
+Elapsed time: 9.39143 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 275
   ny: 275
   nz: 275
 Number of iterations: 499
-Final residual: 3.66795e-70
+Final residual: 3.65983e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3006.29
-  DDOT    : 142.346
-  WAXPBY  : 315.319
-  SPARSEMV: 2543.8
+  Total   : 9.39141
+  DDOT    : 1.02895
+  WAXPBY  : 0.57244
+  SPARSEMV: 7.41835
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 220.927
-  DDOT    : 291.617
-  WAXPBY  : 197.47
-  SPARSEMV: 220.298
+  Total   : 70720.9
+  DDOT    : 40342.7
+  WAXPBY  : 108773
+  SPARSEMV: 75541.4
 
-real	2m19.135s
-user	50m29.424s
-sys	1m50.091s
+real	0m16.443s
+user	0m12.984s
+sys	0m3.379s
 Running test_HPCCG with dimensions 275 275 275
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8118.2309
@@ -2499,49 +2499,49 @@ Iteration = 250   Residual = 3.93546e-33
 Iteration = 300   Residual = 1.60632e-40
 Iteration = 350   Residual = 5.36316e-48
 Iteration = 400   Residual = 2.37238e-55
-Iteration = 450   Residual = 6.93178e-63
-Iteration = 499   Residual = 3.66795e-70
+Iteration = 450   Residual = 6.93177e-63
+Iteration = 499   Residual = 3.65983e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 131.49 s
+Elapsed time: 9.55358 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 275
   ny: 275
   nz: 275
 Number of iterations: 499
-Final residual: 3.66795e-70
+Final residual: 3.65983e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3044.13
-  DDOT    : 142.024
-  WAXPBY  : 326.424
-  SPARSEMV: 2572.34
+  Total   : 9.55356
+  DDOT    : 1.19792
+  WAXPBY  : 0.565173
+  SPARSEMV: 7.42072
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 218.18
-  DDOT    : 292.278
-  WAXPBY  : 190.752
-  SPARSEMV: 217.853
+  Total   : 69520.6
+  DDOT    : 34652.1
+  WAXPBY  : 110171
+  SPARSEMV: 75517.3
 
-real	2m19.286s
-user	51m0.071s
-sys	1m32.145s
+real	0m16.726s
+user	0m13.055s
+sys	0m3.498s
 Running test_HPCCG with dimensions 275 275 275
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8118.2309
@@ -2553,49 +2553,49 @@ Iteration = 250   Residual = 3.93546e-33
 Iteration = 300   Residual = 1.60632e-40
 Iteration = 350   Residual = 5.36316e-48
 Iteration = 400   Residual = 2.37238e-55
-Iteration = 450   Residual = 6.93178e-63
-Iteration = 499   Residual = 3.66795e-70
+Iteration = 450   Residual = 6.93177e-63
+Iteration = 499   Residual = 3.65983e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 133.018 s
+Elapsed time: 9.48265 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 275
   ny: 275
   nz: 275
 Number of iterations: 499
-Final residual: 3.66795e-70
+Final residual: 3.65983e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3060.36
-  DDOT    : 150.494
-  WAXPBY  : 348.403
-  SPARSEMV: 2557.61
+  Total   : 9.48262
+  DDOT    : 1.13178
+  WAXPBY  : 0.564283
+  SPARSEMV: 7.41684
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 217.023
-  DDOT    : 275.829
-  WAXPBY  : 178.718
-  SPARSEMV: 219.108
+  Total   : 70040.7
+  DDOT    : 36677.3
+  WAXPBY  : 110345
+  SPARSEMV: 75556.8
 
-real	2m21.171s
-user	51m20.369s
-sys	1m16.542s
+real	0m16.603s
+user	0m13.003s
+sys	0m3.482s
 Running test_HPCCG with dimensions 275 275 275
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8118.2309
@@ -2607,49 +2607,49 @@ Iteration = 250   Residual = 3.93546e-33
 Iteration = 300   Residual = 1.60632e-40
 Iteration = 350   Residual = 5.36316e-48
 Iteration = 400   Residual = 2.37238e-55
-Iteration = 450   Residual = 6.93178e-63
-Iteration = 499   Residual = 3.66795e-70
+Iteration = 450   Residual = 6.93177e-63
+Iteration = 499   Residual = 3.65983e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 130.314 s
+Elapsed time: 9.37632 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 275
   ny: 275
   nz: 275
 Number of iterations: 499
-Final residual: 3.66795e-70
+Final residual: 3.65983e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3018.37
-  DDOT    : 144.439
-  WAXPBY  : 333.759
-  SPARSEMV: 2536.92
+  Total   : 9.3763
+  DDOT    : 1.01878
+  WAXPBY  : 0.565757
+  SPARSEMV: 7.42115
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 220.043
-  DDOT    : 287.392
-  WAXPBY  : 186.559
-  SPARSEMV: 220.895
+  Total   : 70834.9
+  DDOT    : 40745.4
+  WAXPBY  : 110058
+  SPARSEMV: 75513
 
-real	2m18.515s
-user	50m35.864s
-sys	1m39.747s
+real	0m16.442s
+user	0m13.056s
+sys	0m3.310s
 Running test_HPCCG with dimensions 275 275 275
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8118.2309
@@ -2661,49 +2661,49 @@ Iteration = 250   Residual = 3.93546e-33
 Iteration = 300   Residual = 1.60632e-40
 Iteration = 350   Residual = 5.36316e-48
 Iteration = 400   Residual = 2.37238e-55
-Iteration = 450   Residual = 6.93178e-63
-Iteration = 499   Residual = 3.66795e-70
+Iteration = 450   Residual = 6.93177e-63
+Iteration = 499   Residual = 3.65983e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 132.909 s
+Elapsed time: 9.51493 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 275
   ny: 275
   nz: 275
 Number of iterations: 499
-Final residual: 3.66795e-70
+Final residual: 3.65983e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3002.78
-  DDOT    : 144.233
-  WAXPBY  : 324.851
-  SPARSEMV: 2529.45
+  Total   : 9.51491
+  DDOT    : 1.15806
+  WAXPBY  : 0.562367
+  SPARSEMV: 7.42471
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 221.185
-  DDOT    : 287.801
-  WAXPBY  : 191.675
-  SPARSEMV: 221.547
+  Total   : 69803
+  DDOT    : 35844.8
+  WAXPBY  : 110721
+  SPARSEMV: 75476.6
 
-real	2m21.197s
-user	50m21.999s
-sys	1m34.869s
+real	0m16.523s
+user	0m13.031s
+sys	0m3.367s
 Running test_HPCCG with dimensions 300 300 300
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8981.35
@@ -2716,48 +2716,48 @@ Iteration = 300   Residual = 2.21002e-40
 Iteration = 350   Residual = 9.55386e-48
 Iteration = 400   Residual = 3.64528e-55
 Iteration = 450   Residual = 1.6189e-62
-Iteration = 499   Residual = 7.0714e-70
+Iteration = 499   Residual = 7.07123e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 170.381 s
+Elapsed time: 14.4566 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 300
   ny: 300
   nz: 300
 Number of iterations: 499
-Final residual: 7.0714e-70
+Final residual: 7.07123e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4006.53
-  DDOT    : 189.449
-  WAXPBY  : 468.183
-  SPARSEMV: 3345.82
+  Total   : 14.4566
+  DDOT    : 1.11359
+  WAXPBY  : 0.711709
+  SPARSEMV: 12.1701
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 215.217
-  DDOT    : 284.467
-  WAXPBY  : 172.663
-  SPARSEMV: 217.448
+  Total   : 59645.6
+  DDOT    : 48394.8
+  WAXPBY  : 113583
+  SPARSEMV: 59781
 
-real	3m0.594s
-user	67m4.815s
-sys	1m53.742s
+real	0m23.416s
+user	0m19.294s
+sys	0m3.983s
 Running test_HPCCG with dimensions 300 300 300
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8981.35
@@ -2770,48 +2770,48 @@ Iteration = 300   Residual = 2.21002e-40
 Iteration = 350   Residual = 9.55386e-48
 Iteration = 400   Residual = 3.64528e-55
 Iteration = 450   Residual = 1.6189e-62
-Iteration = 499   Residual = 7.0714e-70
+Iteration = 499   Residual = 7.07123e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 172.309 s
+Elapsed time: 14.6859 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 300
   ny: 300
   nz: 300
 Number of iterations: 499
-Final residual: 7.0714e-70
+Final residual: 7.07123e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3987.31
-  DDOT    : 189.728
-  WAXPBY  : 460.691
-  SPARSEMV: 3334.57
+  Total   : 14.6859
+  DDOT    : 1.33433
+  WAXPBY  : 0.712966
+  SPARSEMV: 12.1785
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 216.254
-  DDOT    : 284.048
-  WAXPBY  : 175.471
-  SPARSEMV: 218.182
+  Total   : 58714.4
+  DDOT    : 40388.8
+  WAXPBY  : 113383
+  SPARSEMV: 59740.1
 
-real	3m2.082s
-user	66m47.403s
-sys	1m56.046s
+real	0m23.632s
+user	0m19.383s
+sys	0m4.066s
 Running test_HPCCG with dimensions 300 300 300
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8981.35
@@ -2824,48 +2824,48 @@ Iteration = 300   Residual = 2.21002e-40
 Iteration = 350   Residual = 9.55386e-48
 Iteration = 400   Residual = 3.64528e-55
 Iteration = 450   Residual = 1.6189e-62
-Iteration = 499   Residual = 7.0714e-70
+Iteration = 499   Residual = 7.07123e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 173.713 s
+Elapsed time: 14.4645 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 300
   ny: 300
   nz: 300
 Number of iterations: 499
-Final residual: 7.0714e-70
+Final residual: 7.07123e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3870.52
-  DDOT    : 176.4
-  WAXPBY  : 428.155
-  SPARSEMV: 3262.87
+  Total   : 14.4645
+  DDOT    : 1.11694
+  WAXPBY  : 0.711828
+  SPARSEMV: 12.1742
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 222.779
-  DDOT    : 305.51
-  WAXPBY  : 188.805
-  SPARSEMV: 222.976
+  Total   : 59613.1
+  DDOT    : 48249.5
+  WAXPBY  : 113564
+  SPARSEMV: 59761
 
-real	3m4.362s
-user	64m58.601s
-sys	2m9.605s
+real	0m23.416s
+user	0m19.195s
+sys	0m4.134s
 Running test_HPCCG with dimensions 300 300 300
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8981.35
@@ -2878,48 +2878,48 @@ Iteration = 300   Residual = 2.21002e-40
 Iteration = 350   Residual = 9.55386e-48
 Iteration = 400   Residual = 3.64528e-55
 Iteration = 450   Residual = 1.6189e-62
-Iteration = 499   Residual = 7.0714e-70
+Iteration = 499   Residual = 7.07123e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 163.359 s
+Elapsed time: 14.4634 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 300
   ny: 300
   nz: 300
 Number of iterations: 499
-Final residual: 7.0714e-70
+Final residual: 7.07123e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3878.28
-  DDOT    : 175.081
-  WAXPBY  : 432.827
-  SPARSEMV: 3267.81
+  Total   : 14.4634
+  DDOT    : 1.11228
+  WAXPBY  : 0.717172
+  SPARSEMV: 12.1727
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 222.333
-  DDOT    : 307.812
-  WAXPBY  : 186.767
-  SPARSEMV: 222.639
+  Total   : 59617.5
+  DDOT    : 48451.7
+  WAXPBY  : 112718
+  SPARSEMV: 59768.3
 
-real	2m53.993s
-user	64m59.389s
-sys	2m10.320s
+real	0m23.484s
+user	0m19.432s
+sys	0m3.932s
 Running test_HPCCG with dimensions 300 300 300
-The device is called Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz
-The max work group size is 8192
-Number of compute units 64
-Global memory size 1132gb
-Local memory size 32kb
+The device is called NVIDIA A100 80GB PCIe
+The max work group size is 1024
+Number of compute units 108
+Global memory size 79gb
+Local memory size 48kb
 Mem Allocation Started
 Mem Allocation Finished
 Initial Residual = 8981.35
@@ -2932,39 +2932,39 @@ Iteration = 300   Residual = 2.21002e-40
 Iteration = 350   Residual = 9.55386e-48
 Iteration = 400   Residual = 3.64528e-55
 Iteration = 450   Residual = 1.6189e-62
-Iteration = 499   Residual = 7.0714e-70
+Iteration = 499   Residual = 7.07123e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 166.184 s
+Elapsed time: 14.7154 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
   MPI not enabled: 
   OpenMP not enabled: 
-  Number of SYCL compute units: 64
+  Number of SYCL compute units: 108
 Dimensions: 
   nx: 300
   ny: 300
   nz: 300
 Number of iterations: 499
-Final residual: 7.0714e-70
+Final residual: 7.07123e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3915.63
-  DDOT    : 178.271
-  WAXPBY  : 435.515
-  SPARSEMV: 3299.55
+  Total   : 14.7154
+  DDOT    : 1.36296
+  WAXPBY  : 0.712827
+  SPARSEMV: 12.1786
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 220.213
-  DDOT    : 302.303
-  WAXPBY  : 185.615
-  SPARSEMV: 220.497
+  Total   : 58596.6
+  DDOT    : 39540.4
+  WAXPBY  : 113405
+  SPARSEMV: 59739.4
 
-real	2m56.413s
-user	65m33.959s
-sys	2m21.720s
+real	0m23.791s
+user	0m19.398s
+sys	0m4.165s

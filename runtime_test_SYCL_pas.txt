@@ -19,7 +19,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 3.76332 s
+Elapsed time: 1.35901 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -34,24 +34,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.7633
-  DDOT    : 3.19156
-  WAXPBY  : 0.1147
-  SPARSEMV: 0.373894
+  Total   : 1.35899
+  DDOT    : 0.910538
+  WAXPBY  : 0.044688
+  SPARSEMV: 0.351866
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 1060.77
-  DDOT    : 78.1748
-  WAXPBY  : 3262.86
-  SPARSEMV: 9008.57
+  Total   : 2937.48
+  DDOT    : 274.014
+  WAXPBY  : 8374.73
+  SPARSEMV: 9572.54
 
-real	0m4.720s
-user	0m1.157s
-sys	0m1.153s
+real	0m1.750s
+user	0m0.791s
+sys	0m0.604s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -73,7 +73,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 3.58413 s
+Elapsed time: 1.36328 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -88,24 +88,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.58411
-  DDOT    : 3.069
-  WAXPBY  : 0.093949
-  SPARSEMV: 0.350314
+  Total   : 1.36326
+  DDOT    : 0.90395
+  WAXPBY  : 0.043306
+  SPARSEMV: 0.349974
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 1113.81
-  DDOT    : 81.2969
-  WAXPBY  : 3983.54
-  SPARSEMV: 9614.95
+  Total   : 2928.28
+  DDOT    : 276.011
+  WAXPBY  : 8641.99
+  SPARSEMV: 9624.29
 
-real	0m4.310s
-user	0m1.242s
-sys	0m1.054s
+real	0m1.705s
+user	0m0.761s
+sys	0m0.580s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -127,7 +127,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 3.28237 s
+Elapsed time: 1.2452 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -142,24 +142,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.28235
-  DDOT    : 2.76574
-  WAXPBY  : 0.088918
-  SPARSEMV: 0.35108
+  Total   : 1.24518
+  DDOT    : 0.804119
+  WAXPBY  : 0.042714
+  SPARSEMV: 0.349893
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 1216.2
-  DDOT    : 90.2109
-  WAXPBY  : 4208.93
-  SPARSEMV: 9593.97
+  Total   : 3205.96
+  DDOT    : 310.277
+  WAXPBY  : 8761.76
+  SPARSEMV: 9626.51
 
-real	0m3.894s
-user	0m1.096s
-sys	0m1.042s
+real	0m1.610s
+user	0m0.747s
+sys	0m0.605s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -181,7 +181,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 3.18808 s
+Elapsed time: 2.34604 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -196,24 +196,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.18806
-  DDOT    : 2.67913
-  WAXPBY  : 0.087639
-  SPARSEMV: 0.350909
+  Total   : 2.34603
+  DDOT    : 1.9054
+  WAXPBY  : 0.044377
+  SPARSEMV: 0.349083
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 1252.17
-  DDOT    : 93.1274
-  WAXPBY  : 4270.36
-  SPARSEMV: 9598.64
+  Total   : 1701.6
+  DDOT    : 130.943
+  WAXPBY  : 8433.42
+  SPARSEMV: 9648.85
 
-real	0m3.730s
-user	0m1.147s
-sys	0m0.946s
+real	0m2.697s
+user	0m1.740s
+sys	0m0.656s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -235,7 +235,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 3.50058 s
+Elapsed time: 1.46737 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -250,24 +250,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.50055
-  DDOT    : 2.98291
-  WAXPBY  : 0.090892
-  SPARSEMV: 0.352313
+  Total   : 1.46735
+  DDOT    : 1.00674
+  WAXPBY  : 0.045567
+  SPARSEMV: 0.350183
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 1140.39
-  DDOT    : 83.6431
-  WAXPBY  : 4117.52
-  SPARSEMV: 9560.39
+  Total   : 2720.55
+  DDOT    : 247.829
+  WAXPBY  : 8213.18
+  SPARSEMV: 9618.54
 
-real	0m4.144s
-user	0m1.168s
-sys	0m1.043s
+real	0m1.837s
+user	0m0.803s
+sys	0m0.583s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -289,7 +289,7 @@ Iteration = 450   Residual = 1.25841e-76
 Iteration = 499   Residual = 2.58856e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 3.44009 s
+Elapsed time: 2.37567 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -304,24 +304,24 @@ Number of iterations: 499
 Final residual: 2.58856e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.44006
-  DDOT    : 2.1888
-  WAXPBY  : 0.090015
-  SPARSEMV: 1.10169
+  Total   : 2.37565
+  DDOT    : 1.14651
+  WAXPBY  : 0.069498
+  SPARSEMV: 1.10179
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 3916.5
-  DDOT    : 384.715
-  WAXPBY  : 14032
-  SPARSEMV: 10318.5
+  Total   : 5671.28
+  DDOT    : 734.456
+  WAXPBY  : 18174.5
+  SPARSEMV: 10317.7
 
-real	0m4.233s
-user	0m1.822s
-sys	0m0.862s
+real	0m2.863s
+user	0m1.612s
+sys	0m0.591s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -343,7 +343,7 @@ Iteration = 450   Residual = 1.25841e-76
 Iteration = 499   Residual = 2.58856e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 3.22596 s
+Elapsed time: 2.35981 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -358,24 +358,24 @@ Number of iterations: 499
 Final residual: 2.58856e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.22594
-  DDOT    : 1.99351
-  WAXPBY  : 0.083104
-  SPARSEMV: 1.0859
+  Total   : 2.35979
+  DDOT    : 1.12438
+  WAXPBY  : 0.071644
+  SPARSEMV: 1.106
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 4176.46
-  DDOT    : 422.403
-  WAXPBY  : 15199
-  SPARSEMV: 10468.6
+  Total   : 5709.41
+  DDOT    : 748.91
+  WAXPBY  : 17630.1
+  SPARSEMV: 10278.3
 
-real	0m3.852s
-user	0m1.765s
-sys	0m0.814s
+real	0m2.842s
+user	0m1.617s
+sys	0m0.608s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -397,7 +397,7 @@ Iteration = 450   Residual = 1.25841e-76
 Iteration = 499   Residual = 2.58856e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 3.27482 s
+Elapsed time: 2.22548 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -412,24 +412,24 @@ Number of iterations: 499
 Final residual: 2.58856e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.27479
-  DDOT    : 2.0256
-  WAXPBY  : 0.086499
-  SPARSEMV: 1.09321
+  Total   : 2.22545
+  DDOT    : 1.00364
+  WAXPBY  : 0.071534
+  SPARSEMV: 1.09665
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 4114.15
-  DDOT    : 415.71
-  WAXPBY  : 14602.4
-  SPARSEMV: 10398.6
+  Total   : 6054.04
+  DDOT    : 839.011
+  WAXPBY  : 17657.3
+  SPARSEMV: 10366
 
-real	0m3.961s
-user	0m1.774s
-sys	0m0.853s
+real	0m2.700s
+user	0m1.595s
+sys	0m0.638s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -451,7 +451,7 @@ Iteration = 450   Residual = 1.25841e-76
 Iteration = 499   Residual = 2.58856e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 3.14891 s
+Elapsed time: 2.05991 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -466,24 +466,24 @@ Number of iterations: 499
 Final residual: 2.58856e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.14889
-  DDOT    : 1.92
-  WAXPBY  : 0.086241
-  SPARSEMV: 1.08449
+  Total   : 2.05989
+  DDOT    : 0.839671
+  WAXPBY  : 0.067128
+  SPARSEMV: 1.09786
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 4278.66
-  DDOT    : 438.575
-  WAXPBY  : 14646.1
-  SPARSEMV: 10482.2
+  Total   : 6540.63
+  DDOT    : 1002.85
+  WAXPBY  : 18816.2
+  SPARSEMV: 10354.5
 
-real	0m3.797s
-user	0m1.788s
-sys	0m0.760s
+real	0m2.506s
+user	0m1.598s
+sys	0m0.538s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -505,7 +505,7 @@ Iteration = 450   Residual = 1.25841e-76
 Iteration = 499   Residual = 2.58856e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 3.42416 s
+Elapsed time: 1.98411 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -520,24 +520,24 @@ Number of iterations: 499
 Final residual: 2.58856e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.42413
-  DDOT    : 2.18136
-  WAXPBY  : 0.090224
-  SPARSEMV: 1.09232
+  Total   : 1.98409
+  DDOT    : 0.770865
+  WAXPBY  : 0.067088
+  SPARSEMV: 1.09457
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 3934.72
-  DDOT    : 386.026
-  WAXPBY  : 13999.5
-  SPARSEMV: 10407.1
+  Total   : 6790.53
+  DDOT    : 1092.36
+  WAXPBY  : 18827.4
+  SPARSEMV: 10385.7
 
-real	0m4.227s
-user	0m1.826s
-sys	0m0.920s
+real	0m2.463s
+user	0m1.603s
+sys	0m0.522s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -559,7 +559,7 @@ Iteration = 450   Residual = 1.847e-71
 Iteration = 499   Residual = 2.62257e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 4.87012 s
+Elapsed time: 3.79525 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -574,24 +574,24 @@ Number of iterations: 499
 Final residual: 2.62257e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 4.87009
-  DDOT    : 2.19407
-  WAXPBY  : 0.123642
-  SPARSEMV: 2.48875
+  Total   : 3.79523
+  DDOT    : 1.02723
+  WAXPBY  : 0.120657
+  SPARSEMV: 2.59369
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 6557.57
-  DDOT    : 909.726
-  WAXPBY  : 24215.1
-  SPARSEMV: 10827.1
+  Total   : 8414.76
+  DDOT    : 1943.08
+  WAXPBY  : 24814.1
+  SPARSEMV: 10389
 
-real	0m5.622s
-user	0m3.351s
-sys	0m0.808s
+real	0m4.506s
+user	0m3.367s
+sys	0m0.689s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -613,7 +613,7 @@ Iteration = 450   Residual = 1.847e-71
 Iteration = 499   Residual = 2.62257e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 5.3726 s
+Elapsed time: 3.79967 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -628,24 +628,78 @@ Number of iterations: 499
 Final residual: 2.62257e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.37258
-  DDOT    : 2.69191
-  WAXPBY  : 0.129138
-  SPARSEMV: 2.49226
+  Total   : 3.79965
+  DDOT    : 1.02854
+  WAXPBY  : 0.121011
+  SPARSEMV: 2.59541
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 5944.26
-  DDOT    : 741.482
-  WAXPBY  : 23184.5
-  SPARSEMV: 10811.9
+  Total   : 8404.98
+  DDOT    : 1940.61
+  WAXPBY  : 24741.6
+  SPARSEMV: 10382.2
 
-real	0m6.224s
+real	0m4.472s
+user	0m3.372s
+sys	0m0.643s
+Running test_HPCCG with dimensions 100 100 100
+The device is called NVIDIA TITAN Xp
+The max work group size is 1024
+Number of compute units 30
+Global memory size 11gb
+Local memory size 48kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 4.97131e-30
+Iteration = 250   Residual = 2.57012e-38
+Iteration = 300   Residual = 7.57217e-47
+Iteration = 350   Residual = 3.66936e-55
+Iteration = 400   Residual = 2.78656e-63
+Iteration = 450   Residual = 1.847e-71
+Iteration = 499   Residual = 2.62257e-79
+Begun Freeing
+All Memory Free
+Elapsed time: 3.77344 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 30
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 2.62257e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.77341
+  DDOT    : 1.00021
+  WAXPBY  : 0.12185
+  SPARSEMV: 2.5954
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8463.43
+  DDOT    : 1995.57
+  WAXPBY  : 24571.2
+  SPARSEMV: 10382.2
+
+real	0m4.483s
 user	0m3.369s
-sys	0m0.963s
+sys	0m0.656s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -667,7 +721,7 @@ Iteration = 450   Residual = 1.847e-71
 Iteration = 499   Residual = 2.62257e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 5.84624 s
+Elapsed time: 4.0539 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -682,24 +736,24 @@ Number of iterations: 499
 Final residual: 2.62257e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.84622
-  DDOT    : 3.16135
-  WAXPBY  : 0.134062
-  SPARSEMV: 2.48987
+  Total   : 4.05388
+  DDOT    : 1.28553
+  WAXPBY  : 0.122542
+  SPARSEMV: 2.59399
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 5462.68
-  DDOT    : 631.377
-  WAXPBY  : 22333
-  SPARSEMV: 10822.2
+  Total   : 7877.89
+  DDOT    : 1552.67
+  WAXPBY  : 24432.4
+  SPARSEMV: 10387.9
 
-real	0m6.736s
-user	0m3.417s
-sys	0m0.962s
+real	0m4.768s
+user	0m3.364s
+sys	0m0.723s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -721,7 +775,7 @@ Iteration = 450   Residual = 1.847e-71
 Iteration = 499   Residual = 2.62257e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 5.22902 s
+Elapsed time: 3.82568 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -736,78 +790,24 @@ Number of iterations: 499
 Final residual: 2.62257e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.22899
-  DDOT    : 2.55625
-  WAXPBY  : 0.127001
-  SPARSEMV: 2.48826
+  Total   : 3.82566
+  DDOT    : 1.05317
+  WAXPBY  : 0.120875
+  SPARSEMV: 2.59563
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 6107.48
-  DDOT    : 780.832
-  WAXPBY  : 23574.6
-  SPARSEMV: 10829.2
+  Total   : 8347.85
+  DDOT    : 1895.23
+  WAXPBY  : 24769.4
+  SPARSEMV: 10381.3
 
-real	0m6.142s
-user	0m3.423s
-sys	0m0.825s
-Running test_HPCCG with dimensions 100 100 100
-The device is called NVIDIA TITAN Xp
-The max work group size is 1024
-Number of compute units 30
-Global memory size 11gb
-Local memory size 48kb
-Mem Allocation Started
-Mem Allocation Finished
-Initial Residual = 2647.234
-Iteration = 50   Residual = 0.00022656
-Iteration = 100   Residual = 1.5527e-12
-Iteration = 150   Residual = 5.74587e-21
-Iteration = 200   Residual = 4.97131e-30
-Iteration = 250   Residual = 2.57012e-38
-Iteration = 300   Residual = 7.57217e-47
-Iteration = 350   Residual = 3.66936e-55
-Iteration = 400   Residual = 2.78656e-63
-Iteration = 450   Residual = 1.847e-71
-Iteration = 499   Residual = 2.62257e-79
-Begun Freeing
-All Memory Free
-Elapsed time: 5.61933 s
-Mini-Application Name: hpccg
-Mini-Application Version: 1.0
-Parallelism: 
-  MPI not enabled: 
-  OpenMP not enabled: 
-  Number of SYCL compute units: 30
-Dimensions: 
-  nx: 100
-  ny: 100
-  nz: 100
-Number of iterations: 499
-Final residual: 2.62257e-79
-#********** Performance Summary (times in sec) ***********: 
-Time Summary: 
-  Total   : 5.61931
-  DDOT    : 2.94263
-  WAXPBY  : 0.132029
-  SPARSEMV: 2.48499
-FLOPS Summary: 
-  Total   : 3.1936e+10
-  DDOT    : 1.996e+09
-  WAXPBY  : 2.994e+09
-  SPARSEMV: 2.6946e+10
-MFLOPS Summary: 
-  Total   : 5683.26
-  DDOT    : 678.304
-  WAXPBY  : 22676.8
-  SPARSEMV: 10843.5
-
-real	0m6.460s
-user	0m3.498s
-sys	0m0.861s
+real	0m4.576s
+user	0m3.390s
+sys	0m0.645s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -829,7 +829,7 @@ Iteration = 450   Residual = 2.23189e-68
 Iteration = 499   Residual = 5.20528e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 8.21088 s
+Elapsed time: 6.70724 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -844,24 +844,24 @@ Number of iterations: 499
 Final residual: 5.20528e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.21085
-  DDOT    : 3.14593
-  WAXPBY  : 0.211726
-  SPARSEMV: 4.78537
+  Total   : 6.70721
+  DDOT    : 1.38279
+  WAXPBY  : 0.245448
+  SPARSEMV: 5.01511
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 7596.65
-  DDOT    : 1239.2
-  WAXPBY  : 27619
-  SPARSEMV: 10997.9
+  Total   : 9299.69
+  DDOT    : 2819.26
+  WAXPBY  : 23824.4
+  SPARSEMV: 10494.1
 
-real	0m9.510s
-user	0m6.085s
-sys	0m0.982s
+real	0m7.802s
+user	0m6.225s
+sys	0m0.784s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -883,7 +883,7 @@ Iteration = 450   Residual = 2.23189e-68
 Iteration = 499   Residual = 5.20528e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 7.92001 s
+Elapsed time: 6.86579 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -898,24 +898,24 @@ Number of iterations: 499
 Final residual: 5.20528e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.91998
-  DDOT    : 2.84328
-  WAXPBY  : 0.207532
-  SPARSEMV: 4.79461
+  Total   : 6.86577
+  DDOT    : 1.57347
+  WAXPBY  : 0.21543
+  SPARSEMV: 5.01268
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 7875.65
-  DDOT    : 1371.11
-  WAXPBY  : 28177.1
-  SPARSEMV: 10976.7
+  Total   : 9084.92
+  DDOT    : 2477.61
+  WAXPBY  : 27144.1
+  SPARSEMV: 10499.2
 
-real	0m9.343s
-user	0m6.118s
-sys	0m0.964s
+real	0m7.883s
+user	0m6.102s
+sys	0m0.893s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -937,7 +937,7 @@ Iteration = 450   Residual = 2.23189e-68
 Iteration = 499   Residual = 5.20528e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 8.44873 s
+Elapsed time: 6.43889 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -952,24 +952,24 @@ Number of iterations: 499
 Final residual: 5.20528e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.44871
-  DDOT    : 3.37215
-  WAXPBY  : 0.211209
-  SPARSEMV: 4.79225
+  Total   : 6.43887
+  DDOT    : 1.14528
+  WAXPBY  : 0.215377
+  SPARSEMV: 5.01393
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 7382.78
-  DDOT    : 1156.07
-  WAXPBY  : 27686.6
-  SPARSEMV: 10982.1
+  Total   : 9687.26
+  DDOT    : 3403.92
+  WAXPBY  : 27150.8
+  SPARSEMV: 10496.5
 
-real	0m9.719s
-user	0m6.089s
-sys	0m1.009s
+real	0m7.478s
+user	0m6.145s
+sys	0m0.862s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -991,7 +991,7 @@ Iteration = 450   Residual = 2.23189e-68
 Iteration = 499   Residual = 5.20528e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 7.85102 s
+Elapsed time: 6.36415 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1006,24 +1006,24 @@ Number of iterations: 499
 Final residual: 5.20528e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.85099
-  DDOT    : 2.79015
-  WAXPBY  : 0.210707
-  SPARSEMV: 4.77992
+  Total   : 6.36413
+  DDOT    : 1.07092
+  WAXPBY  : 0.214031
+  SPARSEMV: 5.01624
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 7944.86
-  DDOT    : 1397.21
-  WAXPBY  : 27752.5
-  SPARSEMV: 11010.4
+  Total   : 9801.03
+  DDOT    : 3640.28
+  WAXPBY  : 27321.5
+  SPARSEMV: 10491.7
 
-real	0m9.183s
-user	0m6.059s
-sys	0m1.014s
+real	0m7.467s
+user	0m6.092s
+sys	0m0.881s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1045,7 +1045,7 @@ Iteration = 450   Residual = 2.23189e-68
 Iteration = 499   Residual = 5.20528e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 8.04173 s
+Elapsed time: 6.71725 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1060,24 +1060,24 @@ Number of iterations: 499
 Final residual: 5.20528e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 8.04169
-  DDOT    : 2.96147
-  WAXPBY  : 0.21121
-  SPARSEMV: 4.79678
+  Total   : 6.71723
+  DDOT    : 1.42916
+  WAXPBY  : 0.21078
+  SPARSEMV: 5.00831
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 7756.45
-  DDOT    : 1316.39
-  WAXPBY  : 27686.5
-  SPARSEMV: 10971.7
+  Total   : 9285.82
+  DDOT    : 2727.78
+  WAXPBY  : 27742.9
+  SPARSEMV: 10508.3
 
-real	0m9.419s
-user	0m6.052s
-sys	0m1.044s
+real	0m7.746s
+user	0m6.169s
+sys	0m0.891s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1099,7 +1099,7 @@ Iteration = 450   Residual = 1.50957e-66
 Iteration = 499   Residual = 2.27515e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 11.1523 s
+Elapsed time: 10.3074 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1114,24 +1114,24 @@ Number of iterations: 499
 Final residual: 2.27515e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 11.1523
-  DDOT    : 2.38078
-  WAXPBY  : 0.324464
-  SPARSEMV: 8.35024
+  Total   : 10.3074
+  DDOT    : 1.17981
+  WAXPBY  : 0.344578
+  SPARSEMV: 8.69936
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 9664.72
-  DDOT    : 2829.53
-  WAXPBY  : 31142.9
-  SPARSEMV: 10891
+  Total   : 10457
+  DDOT    : 5709.82
+  WAXPBY  : 29325
+  SPARSEMV: 10454
 
-real	0m12.998s
-user	0m10.097s
-sys	0m1.200s
+real	0m11.937s
+user	0m10.493s
+sys	0m1.040s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1153,7 +1153,7 @@ Iteration = 450   Residual = 1.50957e-66
 Iteration = 499   Residual = 2.27515e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 21.4621 s
+Elapsed time: 10.3155 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1168,24 +1168,24 @@ Number of iterations: 499
 Final residual: 2.27515e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 21.4621
-  DDOT    : 12.2669
-  WAXPBY  : 0.326251
-  SPARSEMV: 8.28726
+  Total   : 10.3155
+  DDOT    : 1.16998
+  WAXPBY  : 0.345609
+  SPARSEMV: 8.70106
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 5022.06
-  DDOT    : 549.159
-  WAXPBY  : 30972.3
-  SPARSEMV: 10973.8
+  Total   : 10448.8
+  DDOT    : 5757.8
+  WAXPBY  : 29237.5
+  SPARSEMV: 10451.9
 
-real	0m23.368s
-user	0m19.968s
-sys	0m1.175s
+real	0m11.989s
+user	0m10.503s
+sys	0m1.067s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1207,7 +1207,7 @@ Iteration = 450   Residual = 1.50957e-66
 Iteration = 499   Residual = 2.27515e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 10.8314 s
+Elapsed time: 11.1318 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1222,24 +1222,24 @@ Number of iterations: 499
 Final residual: 2.27515e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 10.8313
-  DDOT    : 2.07298
-  WAXPBY  : 0.322708
-  SPARSEMV: 8.3505
+  Total   : 11.1318
+  DDOT    : 1.96786
+  WAXPBY  : 0.343358
+  SPARSEMV: 8.73372
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 9951.12
-  DDOT    : 3249.66
-  WAXPBY  : 31312.4
-  SPARSEMV: 10890.7
+  Total   : 9682.56
+  DDOT    : 3423.27
+  WAXPBY  : 29429.2
+  SPARSEMV: 10412.8
 
-real	0m12.631s
-user	0m10.129s
-sys	0m1.104s
+real	0m12.751s
+user	0m10.540s
+sys	0m1.038s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1261,7 +1261,7 @@ Iteration = 450   Residual = 1.50957e-66
 Iteration = 499   Residual = 2.27515e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 11.3252 s
+Elapsed time: 10.2541 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1276,24 +1276,24 @@ Number of iterations: 499
 Final residual: 2.27515e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 11.3251
-  DDOT    : 2.61899
-  WAXPBY  : 0.32208
-  SPARSEMV: 8.29593
+  Total   : 10.2541
+  DDOT    : 1.12876
+  WAXPBY  : 0.34233
+  SPARSEMV: 8.69889
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 9517.24
-  DDOT    : 2572.18
-  WAXPBY  : 31373.4
-  SPARSEMV: 10962.3
+  Total   : 10511.3
+  DDOT    : 5968.07
+  WAXPBY  : 29517.6
+  SPARSEMV: 10454.5
 
-real	0m14.722s
-user	0m9.934s
-sys	0m1.270s
+real	0m11.892s
+user	0m10.323s
+sys	0m1.107s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1315,7 +1315,7 @@ Iteration = 450   Residual = 1.50957e-66
 Iteration = 499   Residual = 2.27515e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 11.3158 s
+Elapsed time: 10.3878 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1330,24 +1330,24 @@ Number of iterations: 499
 Final residual: 2.27515e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 11.3157
-  DDOT    : 2.55898
-  WAXPBY  : 0.322504
-  SPARSEMV: 8.33776
+  Total   : 10.3878
+  DDOT    : 1.23903
+  WAXPBY  : 0.344233
+  SPARSEMV: 8.72179
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 9525.14
-  DDOT    : 2632.5
-  WAXPBY  : 31332.2
-  SPARSEMV: 10907.3
+  Total   : 10376
+  DDOT    : 5436.91
+  WAXPBY  : 29354.4
+  SPARSEMV: 10427.1
 
-real	0m13.360s
-user	0m10.114s
-sys	0m1.233s
+real	0m12.015s
+user	0m10.388s
+sys	0m1.031s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1369,7 +1369,7 @@ Iteration = 450   Residual = 4.93169e-65
 Iteration = 499   Residual = 1.20557e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 17.1565 s
+Elapsed time: 16.0868 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1384,24 +1384,24 @@ Number of iterations: 499
 Final residual: 1.20557e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.1564
-  DDOT    : 3.25837
-  WAXPBY  : 0.49118
-  SPARSEMV: 13.2915
+  Total   : 16.0868
+  DDOT    : 1.51178
+  WAXPBY  : 0.523493
+  SPARSEMV: 13.9394
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 9976.26
-  DDOT    : 3283.02
-  WAXPBY  : 32668.2
-  SPARSEMV: 10865.1
+  Total   : 10639.6
+  DDOT    : 7075.95
+  WAXPBY  : 30651.7
+  SPARSEMV: 10360.1
 
-real	0m19.813s
-user	0m15.873s
-sys	0m1.421s
+real	0m18.675s
+user	0m16.437s
+sys	0m1.357s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1423,7 +1423,7 @@ Iteration = 450   Residual = 4.93169e-65
 Iteration = 499   Residual = 1.20557e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 17.0836 s
+Elapsed time: 16.1039 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1438,24 +1438,24 @@ Number of iterations: 499
 Final residual: 1.20557e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.0835
-  DDOT    : 3.1584
-  WAXPBY  : 0.504937
-  SPARSEMV: 13.3081
+  Total   : 16.1038
+  DDOT    : 1.48385
+  WAXPBY  : 0.524522
+  SPARSEMV: 13.934
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 10018.8
-  DDOT    : 3386.94
-  WAXPBY  : 31778.2
-  SPARSEMV: 10851.5
+  Total   : 10628.3
+  DDOT    : 7209.15
+  WAXPBY  : 30591.6
+  SPARSEMV: 10364.2
 
-real	0m19.793s
-user	0m15.843s
-sys	0m1.488s
+real	0m19.462s
+user	0m16.571s
+sys	0m1.265s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1477,7 +1477,7 @@ Iteration = 450   Residual = 4.93169e-65
 Iteration = 499   Residual = 1.20557e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 17.0237 s
+Elapsed time: 17.0445 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1492,24 +1492,24 @@ Number of iterations: 499
 Final residual: 1.20557e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.0236
-  DDOT    : 3.17281
-  WAXPBY  : 0.499351
-  SPARSEMV: 13.2331
+  Total   : 17.0445
+  DDOT    : 1.66601
+  WAXPBY  : 0.525072
+  SPARSEMV: 13.9454
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 10054.1
-  DDOT    : 3371.56
-  WAXPBY  : 32133.6
-  SPARSEMV: 10913.1
+  Total   : 10041.8
+  DDOT    : 6420.92
+  WAXPBY  : 30559.6
+  SPARSEMV: 10355.6
 
-real	0m19.725s
-user	0m15.843s
-sys	0m1.426s
+real	0m19.439s
+user	0m16.515s
+sys	0m1.315s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1531,7 +1531,7 @@ Iteration = 450   Residual = 4.93169e-65
 Iteration = 499   Residual = 1.20557e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 20.0239 s
+Elapsed time: 16.4524 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1546,24 +1546,24 @@ Number of iterations: 499
 Final residual: 1.20557e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 20.0239
-  DDOT    : 6.16233
-  WAXPBY  : 0.497154
-  SPARSEMV: 13.2502
+  Total   : 16.4524
+  DDOT    : 1.84813
+  WAXPBY  : 0.528943
+  SPARSEMV: 13.9331
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 8547.64
-  DDOT    : 1735.92
-  WAXPBY  : 32275.7
-  SPARSEMV: 10898.9
+  Total   : 10403.2
+  DDOT    : 5788.17
+  WAXPBY  : 30335.9
+  SPARSEMV: 10364.8
 
-real	0m22.543s
-user	0m18.715s
-sys	0m1.440s
+real	0m19.660s
+user	0m16.604s
+sys	0m1.344s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1585,7 +1585,7 @@ Iteration = 450   Residual = 4.93169e-65
 Iteration = 499   Residual = 1.20557e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 17.0298 s
+Elapsed time: 16.8048 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1600,24 +1600,24 @@ Number of iterations: 499
 Final residual: 1.20557e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 17.0298
-  DDOT    : 3.17652
-  WAXPBY  : 0.499404
-  SPARSEMV: 13.2386
+  Total   : 16.8048
+  DDOT    : 1.7812
+  WAXPBY  : 0.522288
+  SPARSEMV: 13.9462
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 10050.4
-  DDOT    : 3367.62
-  WAXPBY  : 32130.2
-  SPARSEMV: 10908.5
+  Total   : 10185
+  DDOT    : 6005.67
+  WAXPBY  : 30722.5
+  SPARSEMV: 10355
 
-real	0m19.694s
-user	0m15.681s
-sys	0m1.538s
+real	0m19.307s
+user	0m16.611s
+sys	0m1.355s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1639,7 +1639,7 @@ Iteration = 450   Residual = 1.96222e-64
 Iteration = 499   Residual = 9.49389e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 24.293 s
+Elapsed time: 24.9181 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1654,24 +1654,24 @@ Number of iterations: 499
 Final residual: 9.49389e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 24.293
-  DDOT    : 3.21551
-  WAXPBY  : 0.729418
-  SPARSEMV: 20.1936
+  Total   : 24.9181
+  DDOT    : 1.86941
+  WAXPBY  : 0.767446
+  SPARSEMV: 21.0612
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 10517
-  DDOT    : 4965.93
-  WAXPBY  : 32837.1
-  SPARSEMV: 10675.1
+  Total   : 10253.1
+  DDOT    : 8541.74
+  WAXPBY  : 31210
+  SPARSEMV: 10235.3
 
-real	0m27.900s
-user	0m23.802s
-sys	0m1.721s
+real	0m28.686s
+user	0m24.770s
+sys	0m1.809s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1693,7 +1693,7 @@ Iteration = 450   Residual = 1.96222e-64
 Iteration = 499   Residual = 9.49389e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 24.1258 s
+Elapsed time: 24.0536 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1708,24 +1708,24 @@ Number of iterations: 499
 Final residual: 9.49389e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 24.1258
-  DDOT    : 3.13847
-  WAXPBY  : 0.720829
-  SPARSEMV: 20.1146
+  Total   : 24.0536
+  DDOT    : 2.07996
+  WAXPBY  : 0.765708
+  SPARSEMV: 21.0588
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 10589.8
-  DDOT    : 5087.83
-  WAXPBY  : 33228.4
-  SPARSEMV: 10717
+  Total   : 10621.6
+  DDOT    : 7677.07
+  WAXPBY  : 31280.9
+  SPARSEMV: 10236.5
 
-real	0m27.791s
-user	0m23.802s
-sys	0m1.748s
+real	0m27.608s
+user	0m24.868s
+sys	0m1.599s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1747,7 +1747,7 @@ Iteration = 450   Residual = 1.96222e-64
 Iteration = 499   Residual = 9.49389e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 24.1094 s
+Elapsed time: 25.5271 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1762,132 +1762,132 @@ Number of iterations: 499
 Final residual: 9.49389e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 24.1094
-  DDOT    : 2.94459
-  WAXPBY  : 0.724278
-  SPARSEMV: 20.2899
+  Total   : 25.5271
+  DDOT    : 1.84264
+  WAXPBY  : 0.767158
+  SPARSEMV: 21.0734
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 10597
-  DDOT    : 5422.83
-  WAXPBY  : 33070.2
-  SPARSEMV: 10624.4
+  Total   : 10008.5
+  DDOT    : 8665.83
+  WAXPBY  : 31221.7
+  SPARSEMV: 10229.4
 
-real	0m27.693s
-user	0m23.888s
-sys	0m1.711s
-Running test_HPCCG with dimensions 200 200 200
-The device is called NVIDIA TITAN Xp
-The max work group size is 1024
-Number of compute units 30
-Global memory size 11gb
-Local memory size 48kb
-Mem Allocation Started
-Mem Allocation Finished
-Initial Residual = 5647.6763
-Iteration = 50   Residual = 0.000675079
-Iteration = 100   Residual = 3.20586e-11
-Iteration = 150   Residual = 9.66311e-19
-Iteration = 200   Residual = 2.84339e-26
-Iteration = 250   Residual = 6.5212e-34
-Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06936e-49
-Iteration = 400   Residual = 6.87143e-57
-Iteration = 450   Residual = 1.96222e-64
-Iteration = 499   Residual = 9.49389e-72
-Begun Freeing
-All Memory Free
-Elapsed time: 24.2482 s
-Mini-Application Name: hpccg
-Mini-Application Version: 1.0
-Parallelism: 
-  MPI not enabled: 
-  OpenMP not enabled: 
-  Number of SYCL compute units: 30
-Dimensions: 
-  nx: 200
-  ny: 200
-  nz: 200
-Number of iterations: 499
-Final residual: 9.49389e-72
-#********** Performance Summary (times in sec) ***********: 
-Time Summary: 
-  Total   : 24.2481
-  DDOT    : 3.23903
-  WAXPBY  : 0.722637
-  SPARSEMV: 20.1333
-FLOPS Summary: 
-  Total   : 2.55488e+11
-  DDOT    : 1.5968e+10
-  WAXPBY  : 2.3952e+10
-  SPARSEMV: 2.15568e+11
-MFLOPS Summary: 
-  Total   : 10536.4
-  DDOT    : 4929.87
-  WAXPBY  : 33145.3
-  SPARSEMV: 10707
-
-real	0m27.893s
-user	0m23.615s
-sys	0m1.877s
-Running test_HPCCG with dimensions 200 200 200
-The device is called NVIDIA TITAN Xp
-The max work group size is 1024
-Number of compute units 30
-Global memory size 11gb
-Local memory size 48kb
-Mem Allocation Started
-Mem Allocation Finished
-Initial Residual = 5647.6763
-Iteration = 50   Residual = 0.000675079
-Iteration = 100   Residual = 3.20586e-11
-Iteration = 150   Residual = 9.66311e-19
-Iteration = 200   Residual = 2.84339e-26
-Iteration = 250   Residual = 6.5212e-34
-Iteration = 300   Residual = 2.10923e-41
-Iteration = 350   Residual = 4.06936e-49
-Iteration = 400   Residual = 6.87143e-57
-Iteration = 450   Residual = 1.96222e-64
-Iteration = 499   Residual = 9.49389e-72
-Begun Freeing
-All Memory Free
-Elapsed time: 24.2591 s
-Mini-Application Name: hpccg
-Mini-Application Version: 1.0
-Parallelism: 
-  MPI not enabled: 
-  OpenMP not enabled: 
-  Number of SYCL compute units: 30
-Dimensions: 
-  nx: 200
-  ny: 200
-  nz: 200
-Number of iterations: 499
-Final residual: 9.49389e-72
-#********** Performance Summary (times in sec) ***********: 
-Time Summary: 
-  Total   : 24.2591
-  DDOT    : 3.2506
-  WAXPBY  : 0.713775
-  SPARSEMV: 20.1461
-FLOPS Summary: 
-  Total   : 2.55488e+11
-  DDOT    : 1.5968e+10
-  WAXPBY  : 2.3952e+10
-  SPARSEMV: 2.15568e+11
-MFLOPS Summary: 
-  Total   : 10531.6
-  DDOT    : 4912.32
-  WAXPBY  : 33556.8
-  SPARSEMV: 10700.2
-
-real	0m27.868s
-user	0m23.718s
+real	0m29.124s
+user	0m24.691s
 sys	0m1.761s
+Running test_HPCCG with dimensions 200 200 200
+The device is called NVIDIA TITAN Xp
+The max work group size is 1024
+Number of compute units 30
+Global memory size 11gb
+Local memory size 48kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06936e-49
+Iteration = 400   Residual = 6.87143e-57
+Iteration = 450   Residual = 1.96222e-64
+Iteration = 499   Residual = 9.49389e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 24.0126 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 30
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 9.49389e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 24.0126
+  DDOT    : 2.03226
+  WAXPBY  : 0.76837
+  SPARSEMV: 21.0642
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 10639.7
+  DDOT    : 7857.26
+  WAXPBY  : 31172.5
+  SPARSEMV: 10233.8
+
+real	0m28.194s
+user	0m24.777s
+sys	0m1.697s
+Running test_HPCCG with dimensions 200 200 200
+The device is called NVIDIA TITAN Xp
+The max work group size is 1024
+Number of compute units 30
+Global memory size 11gb
+Local memory size 48kb
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10923e-41
+Iteration = 350   Residual = 4.06936e-49
+Iteration = 400   Residual = 6.87143e-57
+Iteration = 450   Residual = 1.96222e-64
+Iteration = 499   Residual = 9.49389e-72
+Begun Freeing
+All Memory Free
+Elapsed time: 24.0332 s
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 30
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 9.49389e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 24.0323
+  DDOT    : 2.06417
+  WAXPBY  : 0.771244
+  SPARSEMV: 21.0526
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 10631
+  DDOT    : 7735.79
+  WAXPBY  : 31056.3
+  SPARSEMV: 10239.5
+
+real	0m29.108s
+user	0m24.724s
+sys	0m1.813s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1909,7 +1909,7 @@ Iteration = 450   Residual = 1.16502e-63
 Iteration = 499   Residual = 3.89763e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 32.4768 s
+Elapsed time: 32.6471 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1924,24 +1924,24 @@ Number of iterations: 499
 Final residual: 3.89763e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 32.4768
-  DDOT    : 3.3544
-  WAXPBY  : 1.00979
-  SPARSEMV: 27.9173
+  Total   : 32.647
+  DDOT    : 1.75201
+  WAXPBY  : 1.0667
+  SPARSEMV: 29.6386
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 11200.9
-  DDOT    : 6777.88
-  WAXPBY  : 33773
-  SPARSEMV: 10994.3
+  Total   : 11142.5
+  DDOT    : 12976.9
+  WAXPBY  : 31971.2
+  SPARSEMV: 10355.8
 
-real	0m37.389s
-user	0m32.794s
-sys	0m2.130s
+real	0m49.026s
+user	0m34.507s
+sys	0m12.796s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -1963,7 +1963,7 @@ Iteration = 450   Residual = 1.16502e-63
 Iteration = 499   Residual = 3.89763e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 32.3042 s
+Elapsed time: 32.638 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1978,24 +1978,24 @@ Number of iterations: 499
 Final residual: 3.89763e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 32.3042
-  DDOT    : 3.1591
-  WAXPBY  : 1.01016
-  SPARSEMV: 27.9404
+  Total   : 32.638
+  DDOT    : 1.72969
+  WAXPBY  : 1.07462
+  SPARSEMV: 29.6374
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 11260.8
-  DDOT    : 7196.89
-  WAXPBY  : 33760.6
-  SPARSEMV: 10985.3
+  Total   : 11145.6
+  DDOT    : 13144.4
+  WAXPBY  : 31735.5
+  SPARSEMV: 10356.2
 
-real	0m37.110s
-user	0m32.774s
-sys	0m2.149s
+real	0m40.975s
+user	0m34.685s
+sys	0m4.484s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2017,7 +2017,7 @@ Iteration = 450   Residual = 1.16502e-63
 Iteration = 499   Residual = 3.89763e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 32.4525 s
+Elapsed time: 31.1005 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2032,24 +2032,24 @@ Number of iterations: 499
 Final residual: 3.89763e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 32.4524
-  DDOT    : 3.2803
-  WAXPBY  : 1.0109
-  SPARSEMV: 27.9626
+  Total   : 31.1005
+  DDOT    : 1.95024
+  WAXPBY  : 1.02032
+  SPARSEMV: 27.9365
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 11209.4
-  DDOT    : 6930.98
-  WAXPBY  : 33735.7
-  SPARSEMV: 10976.5
+  Total   : 11696.6
+  DDOT    : 11657.9
+  WAXPBY  : 33424.4
+  SPARSEMV: 10986.8
 
-real	0m37.360s
-user	0m32.805s
-sys	0m2.223s
+real	1m4.809s
+user	0m32.874s
+sys	0m29.237s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2071,7 +2071,7 @@ Iteration = 450   Residual = 1.16502e-63
 Iteration = 499   Residual = 3.89763e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 32.298 s
+Elapsed time: 31.552 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2086,24 +2086,24 @@ Number of iterations: 499
 Final residual: 3.89763e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 32.298
-  DDOT    : 3.13271
-  WAXPBY  : 1.00731
-  SPARSEMV: 27.9569
+  Total   : 31.5499
+  DDOT    : 2.35635
+  WAXPBY  : 1.03751
+  SPARSEMV: 27.9555
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 11263
-  DDOT    : 7257.52
-  WAXPBY  : 33856.1
-  SPARSEMV: 10978.7
+  Total   : 11530
+  DDOT    : 9648.68
+  WAXPBY  : 32870.4
+  SPARSEMV: 10979.3
 
-real	0m37.196s
-user	0m32.941s
-sys	0m2.052s
+real	1m48.261s
+user	0m33.300s
+sys	1m10.448s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2125,7 +2125,7 @@ Iteration = 450   Residual = 1.16502e-63
 Iteration = 499   Residual = 3.89763e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 31.9409 s
+Elapsed time: 31.2467 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2140,24 +2140,24 @@ Number of iterations: 499
 Final residual: 3.89763e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 31.9409
-  DDOT    : 2.79184
-  WAXPBY  : 1.00488
-  SPARSEMV: 27.948
+  Total   : 31.2456
+  DDOT    : 2.08811
+  WAXPBY  : 1.02944
+  SPARSEMV: 27.9313
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 11388.9
-  DDOT    : 8143.62
-  WAXPBY  : 33937.9
-  SPARSEMV: 10982.2
+  Total   : 11642.3
+  DDOT    : 10888.2
+  WAXPBY  : 33128.2
+  SPARSEMV: 10988.8
 
-real	0m37.628s
-user	0m32.739s
-sys	0m2.228s
+real	1m2.184s
+user	0m33.034s
+sys	0m26.811s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2179,7 +2179,7 @@ Iteration = 450   Residual = 3.0743e-63
 Iteration = 499   Residual = 1.63874e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 44.4352 s
+Elapsed time: 43.5657 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2194,24 +2194,24 @@ Number of iterations: 499
 Final residual: 1.63874e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 44.4352
-  DDOT    : 3.26325
-  WAXPBY  : 1.35835
-  SPARSEMV: 39.5587
+  Total   : 43.562
+  DDOT    : 2.3597
+  WAXPBY  : 1.38726
+  SPARSEMV: 39.4912
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 11229.8
-  DDOT    : 9557.2
-  WAXPBY  : 34439.7
-  SPARSEMV: 10643.2
+  Total   : 11454.9
+  DDOT    : 13216.7
+  WAXPBY  : 33722.1
+  SPARSEMV: 10661.4
 
-real	0m50.904s
-user	0m46.110s
-sys	0m2.565s
+real	1m15.792s
+user	0m45.941s
+sys	0m26.621s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2233,7 +2233,7 @@ Iteration = 450   Residual = 3.0743e-63
 Iteration = 499   Residual = 1.63874e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 44.1764 s
+Elapsed time: 43.4916 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2248,24 +2248,24 @@ Number of iterations: 499
 Final residual: 1.63874e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 44.1764
-  DDOT    : 3.06145
-  WAXPBY  : 1.36499
-  SPARSEMV: 39.4959
+  Total   : 43.4852
+  DDOT    : 2.28223
+  WAXPBY  : 1.407
+  SPARSEMV: 39.5254
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 11295.6
-  DDOT    : 10187.2
-  WAXPBY  : 34272.3
-  SPARSEMV: 10660.1
+  Total   : 11475.2
+  DDOT    : 13665.4
+  WAXPBY  : 33248.9
+  SPARSEMV: 10652.2
 
-real	0m51.039s
-user	0m46.056s
-sys	0m2.597s
+real	1m4.696s
+user	0m45.986s
+sys	0m15.980s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2287,7 +2287,7 @@ Iteration = 450   Residual = 3.0743e-63
 Iteration = 499   Residual = 1.63874e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 44.4879 s
+Elapsed time: 43.3087 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2302,24 +2302,24 @@ Number of iterations: 499
 Final residual: 1.63874e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 44.4879
-  DDOT    : 3.3392
-  WAXPBY  : 1.36859
-  SPARSEMV: 39.5223
+  Total   : 43.3079
+  DDOT    : 2.16746
+  WAXPBY  : 1.38825
+  SPARSEMV: 39.4866
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 11216.5
-  DDOT    : 9339.82
-  WAXPBY  : 34182.1
-  SPARSEMV: 10653
+  Total   : 11522.1
+  DDOT    : 14389
+  WAXPBY  : 33698
+  SPARSEMV: 10662.6
 
-real	0m51.769s
-user	0m45.936s
-sys	0m2.727s
+real	1m1.515s
+user	0m45.878s
+sys	0m13.586s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2341,7 +2341,7 @@ Iteration = 450   Residual = 3.0743e-63
 Iteration = 499   Residual = 1.63874e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 44.7686 s
+Elapsed time: 42.9999 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2356,24 +2356,24 @@ Number of iterations: 499
 Final residual: 1.63874e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 44.7685
-  DDOT    : 3.60991
-  WAXPBY  : 1.37347
-  SPARSEMV: 39.532
+  Total   : 42.9879
+  DDOT    : 1.82922
+  WAXPBY  : 1.39786
+  SPARSEMV: 39.4952
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 11146.2
-  DDOT    : 8639.42
-  WAXPBY  : 34060.7
-  SPARSEMV: 10650.4
+  Total   : 11607.9
+  DDOT    : 17049.6
+  WAXPBY  : 33466.4
+  SPARSEMV: 10660.3
 
-real	0m51.225s
-user	0m46.136s
-sys	0m2.581s
+real	1m12.067s
+user	0m46.092s
+sys	0m23.292s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2395,7 +2395,7 @@ Iteration = 450   Residual = 3.0743e-63
 Iteration = 499   Residual = 1.63874e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 45.491 s
+Elapsed time: 43.0351 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2410,24 +2410,24 @@ Number of iterations: 499
 Final residual: 1.63874e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 45.491
-  DDOT    : 3.50542
-  WAXPBY  : 1.36661
-  SPARSEMV: 39.5345
+  Total   : 43.032
+  DDOT    : 1.88245
+  WAXPBY  : 1.39348
+  SPARSEMV: 39.4901
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 10969.2
-  DDOT    : 8896.94
-  WAXPBY  : 34231.6
-  SPARSEMV: 10649.7
+  Total   : 11596
+  DDOT    : 16567.5
+  WAXPBY  : 33571.6
+  SPARSEMV: 10661.7
 
-real	0m51.922s
-user	0m45.953s
-sys	0m2.665s
+real	1m12.205s
+user	0m46.165s
+sys	0m23.267s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2449,7 +2449,7 @@ Iteration = 450   Residual = 6.93178e-63
 Iteration = 499   Residual = 3.67042e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 58.2321 s
+Elapsed time: 56.2179 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2464,24 +2464,24 @@ Number of iterations: 499
 Final residual: 3.67042e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 58.2321
-  DDOT    : 3.91315
-  WAXPBY  : 1.81979
-  SPARSEMV: 52.1717
+  Total   : 56.2157
+  DDOT    : 1.89057
+  WAXPBY  : 1.83238
+  SPARSEMV: 52.1481
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 11405.6
-  DDOT    : 10608
-  WAXPBY  : 34216
-  SPARSEMV: 10741.3
+  Total   : 11814.7
+  DDOT    : 21956.7
+  WAXPBY  : 33980.8
+  SPARSEMV: 10746.2
 
-real	1m37.092s
-user	1m0.496s
-sys	0m32.849s
+real	2m14.609s
+user	1m1.234s
+sys	1m9.203s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2503,7 +2503,7 @@ Iteration = 450   Residual = 6.93178e-63
 Iteration = 499   Residual = 3.67042e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 59.3063 s
+Elapsed time: 58.6 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2518,24 +2518,24 @@ Number of iterations: 499
 Final residual: 3.67042e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 59.3063
-  DDOT    : 3.99017
-  WAXPBY  : 1.81949
-  SPARSEMV: 52.2277
+  Total   : 58.5974
+  DDOT    : 4.28325
+  WAXPBY  : 1.83226
+  SPARSEMV: 52.1468
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 11199
-  DDOT    : 10403.2
-  WAXPBY  : 34221.6
-  SPARSEMV: 10729.8
+  Total   : 11334.5
+  DDOT    : 9691.37
+  WAXPBY  : 33983
+  SPARSEMV: 10746.4
 
-real	1m21.833s
-user	1m0.475s
-sys	0m16.150s
+real	2m12.151s
+user	1m2.752s
+sys	1m4.389s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2557,7 +2557,7 @@ Iteration = 450   Residual = 6.93178e-63
 Iteration = 499   Residual = 3.67042e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 61.4922 s
+Elapsed time: 56.8181 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2572,24 +2572,24 @@ Number of iterations: 499
 Final residual: 3.67042e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 58.5041
-  DDOT    : 3.77764
-  WAXPBY  : 1.80746
-  SPARSEMV: 52.5887
+  Total   : 56.8161
+  DDOT    : 2.49167
+  WAXPBY  : 1.83488
+  SPARSEMV: 52.1572
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 11352.5
-  DDOT    : 10988.5
-  WAXPBY  : 34449.4
-  SPARSEMV: 10656.1
+  Total   : 11689.8
+  DDOT    : 16659.7
+  WAXPBY  : 33934.6
+  SPARSEMV: 10744.3
 
-real	1m12.324s
-user	1m0.800s
-sys	0m5.331s
+real	1m50.255s
+user	1m0.479s
+sys	0m45.887s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2611,7 +2611,7 @@ Iteration = 450   Residual = 6.93178e-63
 Iteration = 499   Residual = 3.67042e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 58.2048 s
+Elapsed time: 56.2597 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2626,24 +2626,24 @@ Number of iterations: 499
 Final residual: 3.67042e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 58.2047
-  DDOT    : 3.9709
-  WAXPBY  : 1.80509
-  SPARSEMV: 52.1011
+  Total   : 56.2571
+  DDOT    : 1.9375
+  WAXPBY  : 1.83155
+  SPARSEMV: 52.1499
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 11410.9
-  DDOT    : 10453.7
-  WAXPBY  : 34494.5
-  SPARSEMV: 10755.9
+  Total   : 11806
+  DDOT    : 21424.8
+  WAXPBY  : 33996.3
+  SPARSEMV: 10745.8
 
-real	1m6.722s
-user	1m0.489s
-sys	0m3.540s
+real	2m31.232s
+user	1m1.263s
+sys	1m25.071s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2665,7 +2665,7 @@ Iteration = 450   Residual = 6.93178e-63
 Iteration = 499   Residual = 3.67042e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 58.145 s
+Elapsed time: 56.3448 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2680,24 +2680,24 @@ Number of iterations: 499
 Final residual: 3.67042e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 58.1449
-  DDOT    : 3.73437
-  WAXPBY  : 1.80982
-  SPARSEMV: 52.2772
+  Total   : 56.3425
+  DDOT    : 2.03154
+  WAXPBY  : 1.83456
+  SPARSEMV: 52.1434
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 11422.6
-  DDOT    : 11115.8
-  WAXPBY  : 34404.4
-  SPARSEMV: 10719.6
+  Total   : 11788.1
+  DDOT    : 20433
+  WAXPBY  : 33940.6
+  SPARSEMV: 10747.1
 
-real	1m6.429s
-user	1m0.764s
-sys	0m3.240s
+real	2m0.625s
+user	1m0.864s
+sys	0m55.733s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2719,7 +2719,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.07125e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 75.711 s
+Elapsed time: 73.2453 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2734,24 +2734,24 @@ Number of iterations: 499
 Final residual: 7.07125e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 75.71
-  DDOT    : 4.46665
-  WAXPBY  : 2.34836
-  SPARSEMV: 68.4718
+  Total   : 73.243
+  DDOT    : 2.02614
+  WAXPBY  : 2.35843
+  SPARSEMV: 68.4452
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 11389.1
-  DDOT    : 12065.4
-  WAXPBY  : 34423.2
-  SPARSEMV: 10625.4
+  Total   : 11772.8
+  DDOT    : 26598.3
+  WAXPBY  : 34276.2
+  SPARSEMV: 10629.6
 
-real	2m6.704s
-user	1m19.321s
-sys	0m42.770s
+real	3m16.462s
+user	1m19.964s
+sys	1m50.172s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2773,7 +2773,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.07125e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 75.4912 s
+Elapsed time: 73.3644 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2788,24 +2788,24 @@ Number of iterations: 499
 Final residual: 7.07125e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 75.4902
-  DDOT    : 4.19273
-  WAXPBY  : 2.3537
-  SPARSEMV: 68.5139
+  Total   : 73.362
+  DDOT    : 2.12619
+  WAXPBY  : 2.36061
+  SPARSEMV: 68.4572
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 11422.3
-  DDOT    : 12853.7
-  WAXPBY  : 34345.1
-  SPARSEMV: 10618.9
+  Total   : 11753.7
+  DDOT    : 25346.7
+  WAXPBY  : 34244.6
+  SPARSEMV: 10627.7
 
-real	1m44.293s
-user	1m19.583s
-sys	0m21.297s
+real	4m9.293s
+user	1m20.782s
+sys	2m40.431s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2827,7 +2827,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.07125e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 75.6915 s
+Elapsed time: 73.3008 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2842,24 +2842,24 @@ Number of iterations: 499
 Final residual: 7.07125e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 75.6906
-  DDOT    : 4.43393
-  WAXPBY  : 2.34959
-  SPARSEMV: 68.4958
+  Total   : 73.2988
+  DDOT    : 2.11639
+  WAXPBY  : 2.35348
+  SPARSEMV: 68.4168
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 11392.1
-  DDOT    : 12154.5
-  WAXPBY  : 34405.2
-  SPARSEMV: 10621.7
+  Total   : 11763.8
+  DDOT    : 25464.2
+  WAXPBY  : 34348.3
+  SPARSEMV: 10634
 
-real	1m39.314s
-user	1m19.309s
-sys	0m16.469s
+real	3m45.169s
+user	1m21.024s
+sys	2m17.433s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2881,7 +2881,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.07125e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 75.611 s
+Elapsed time: 73.4836 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2896,24 +2896,24 @@ Number of iterations: 499
 Final residual: 7.07125e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 75.6099
-  DDOT    : 4.40664
-  WAXPBY  : 2.344
-  SPARSEMV: 68.4423
+  Total   : 73.4816
+  DDOT    : 2.1688
+  WAXPBY  : 2.37028
+  SPARSEMV: 68.5292
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 11404.2
-  DDOT    : 12229.7
-  WAXPBY  : 34487.2
-  SPARSEMV: 10630
+  Total   : 11734.5
+  DDOT    : 24848.8
+  WAXPBY  : 34104.8
+  SPARSEMV: 10616.5
 
-real	1m35.749s
-user	1m19.293s
-sys	0m12.827s
+real	3m16.374s
+user	1m20.203s
+sys	1m49.385s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA TITAN Xp
 The max work group size is 1024
@@ -2935,7 +2935,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.07125e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 75.3821 s
+Elapsed time: 73.111 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2950,21 +2950,21 @@ Number of iterations: 499
 Final residual: 7.07125e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 75.3809
-  DDOT    : 4.12731
-  WAXPBY  : 2.34992
-  SPARSEMV: 68.4932
+  Total   : 73.1086
+  DDOT    : 1.89229
+  WAXPBY  : 2.35815
+  SPARSEMV: 68.4387
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 11438.9
-  DDOT    : 13057.4
-  WAXPBY  : 34400.3
-  SPARSEMV: 10622.1
+  Total   : 11794.4
+  DDOT    : 28479.7
+  WAXPBY  : 34280.2
+  SPARSEMV: 10630.6
 
-real	1m33.785s
-user	1m19.520s
-sys	0m11.270s
+real	3m56.092s
+user	1m20.097s
+sys	2m28.213s

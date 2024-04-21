@@ -19,7 +19,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 0.855377 s
+Elapsed time: 0.786819 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -34,24 +34,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.855362
-  DDOT    : 0.553627
-  WAXPBY  : 0.098996
-  SPARSEMV: 0.172467
+  Total   : 0.786801
+  DDOT    : 0.553753
+  WAXPBY  : 0.029935
+  SPARSEMV: 0.161126
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 4667.03
-  DDOT    : 450.664
-  WAXPBY  : 3780.46
-  SPARSEMV: 19529.8
+  Total   : 5073.71
+  DDOT    : 450.562
+  WAXPBY  : 12502.1
+  SPARSEMV: 20904.4
 
-real	0m1.617s
-user	0m0.547s
-sys	0m0.543s
+real	0m1.034s
+user	0m0.503s
+sys	0m0.479s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -73,7 +73,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 0.782399 s
+Elapsed time: 0.730237 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -88,24 +88,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.782382
-  DDOT    : 0.537168
-  WAXPBY  : 0.031324
-  SPARSEMV: 0.162064
+  Total   : 0.730221
+  DDOT    : 0.501202
+  WAXPBY  : 0.028564
+  SPARSEMV: 0.160733
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 5102.37
-  DDOT    : 464.473
-  WAXPBY  : 11947.7
-  SPARSEMV: 20783.5
+  Total   : 5466.84
+  DDOT    : 497.803
+  WAXPBY  : 13102.2
+  SPARSEMV: 20955.6
 
-real	0m1.124s
-user	0m0.580s
-sys	0m0.462s
+real	0m0.962s
+user	0m0.515s
+sys	0m0.411s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -127,7 +127,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 0.876232 s
+Elapsed time: 0.752035 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -142,24 +142,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.876216
-  DDOT    : 0.657673
-  WAXPBY  : 0.029801
-  SPARSEMV: 0.161627
+  Total   : 0.75202
+  DDOT    : 0.511931
+  WAXPBY  : 0.028509
+  SPARSEMV: 0.160875
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 4555.95
-  DDOT    : 379.368
-  WAXPBY  : 12558.3
-  SPARSEMV: 20839.6
+  Total   : 5308.37
+  DDOT    : 487.37
+  WAXPBY  : 13127.4
+  SPARSEMV: 20937.1
 
-real	0m1.222s
-user	0m0.483s
-sys	0m0.696s
+real	0m0.981s
+user	0m0.506s
+sys	0m0.426s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -181,7 +181,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 0.75951 s
+Elapsed time: 0.735249 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -196,24 +196,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.759493
-  DDOT    : 0.537892
-  WAXPBY  : 0.031
-  SPARSEMV: 0.161564
+  Total   : 0.735233
+  DDOT    : 0.504061
+  WAXPBY  : 0.028147
+  SPARSEMV: 0.160421
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 5256.14
-  DDOT    : 463.848
-  WAXPBY  : 12072.6
-  SPARSEMV: 20847.8
+  Total   : 5429.57
+  DDOT    : 494.98
+  WAXPBY  : 13296.3
+  SPARSEMV: 20996.3
 
-real	0m1.067s
-user	0m0.513s
-sys	0m0.497s
+real	0m1.044s
+user	0m0.492s
+sys	0m0.452s
 Running test_HPCCG with dimensions 50 50 50
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -235,7 +235,7 @@ Iteration = 450   Residual = 6.55192e-88
 Iteration = 499   Residual = 3.66239e-98
 Begun Freeing
 All Memory Free
-Elapsed time: 0.769317 s
+Elapsed time: 0.761464 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -250,24 +250,24 @@ Number of iterations: 499
 Final residual: 3.66239e-98
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 0.769299
-  DDOT    : 0.544918
-  WAXPBY  : 0.032103
-  SPARSEMV: 0.162276
+  Total   : 0.761446
+  DDOT    : 0.530997
+  WAXPBY  : 0.028956
+  SPARSEMV: 0.160641
 FLOPS Summary: 
   Total   : 3.992e+09
   DDOT    : 2.495e+08
   WAXPBY  : 3.7425e+08
   SPARSEMV: 3.36825e+09
 MFLOPS Summary: 
-  Total   : 5189.14
-  DDOT    : 457.867
-  WAXPBY  : 11657.8
-  SPARSEMV: 20756.3
+  Total   : 5242.66
+  DDOT    : 469.871
+  WAXPBY  : 12924.8
+  SPARSEMV: 20967.6
 
-real	0m1.053s
-user	0m0.517s
-sys	0m0.493s
+real	0m1.024s
+user	0m0.463s
+sys	0m0.503s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -289,7 +289,7 @@ Iteration = 450   Residual = 1.46229e-76
 Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 1.08597 s
+Elapsed time: 1.0454 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -304,24 +304,24 @@ Number of iterations: 499
 Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.08595
-  DDOT    : 0.566339
-  WAXPBY  : 0.051853
-  SPARSEMV: 0.434939
+  Total   : 1.04538
+  DDOT    : 0.533745
+  WAXPBY  : 0.048903
+  SPARSEMV: 0.432498
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 12406.6
-  DDOT    : 1486.85
-  WAXPBY  : 24359.1
-  SPARSEMV: 26136.6
+  Total   : 12888.1
+  DDOT    : 1577.65
+  WAXPBY  : 25828.6
+  SPARSEMV: 26284.2
 
-real	0m1.467s
-user	0m0.884s
-sys	0m0.514s
+real	0m1.359s
+user	0m0.845s
+sys	0m0.449s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -343,7 +343,7 @@ Iteration = 450   Residual = 1.46229e-76
 Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 1.09748 s
+Elapsed time: 1.17063 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -358,24 +358,24 @@ Number of iterations: 499
 Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.09746
-  DDOT    : 0.574942
-  WAXPBY  : 0.052604
-  SPARSEMV: 0.433949
+  Total   : 1.17061
+  DDOT    : 0.659585
+  WAXPBY  : 0.048319
+  SPARSEMV: 0.432404
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 12276.5
-  DDOT    : 1464.6
-  WAXPBY  : 24011.4
-  SPARSEMV: 26196.3
+  Total   : 11509.4
+  DDOT    : 1276.66
+  WAXPBY  : 26140.7
+  SPARSEMV: 26289.9
 
-real	0m1.487s
-user	0m0.883s
-sys	0m0.523s
+real	0m1.510s
+user	0m0.846s
+sys	0m0.601s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -397,7 +397,7 @@ Iteration = 450   Residual = 1.46229e-76
 Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 1.09888 s
+Elapsed time: 1.0148 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -412,24 +412,24 @@ Number of iterations: 499
 Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.09886
-  DDOT    : 0.582279
-  WAXPBY  : 0.051331
-  SPARSEMV: 0.434706
+  Total   : 1.01479
+  DDOT    : 0.505238
+  WAXPBY  : 0.048511
+  SPARSEMV: 0.431385
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 12260.8
-  DDOT    : 1446.15
-  WAXPBY  : 24606.8
-  SPARSEMV: 26150.6
+  Total   : 13276.7
+  DDOT    : 1666.67
+  WAXPBY  : 26037.3
+  SPARSEMV: 26352
 
-real	0m1.476s
-user	0m0.844s
-sys	0m0.560s
+real	0m1.357s
+user	0m0.813s
+sys	0m0.484s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -451,7 +451,7 @@ Iteration = 450   Residual = 1.46229e-76
 Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 1.07354 s
+Elapsed time: 1.01253 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -466,24 +466,24 @@ Number of iterations: 499
 Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.07352
-  DDOT    : 0.559628
-  WAXPBY  : 0.052201
-  SPARSEMV: 0.430554
+  Total   : 1.01252
+  DDOT    : 0.50312
+  WAXPBY  : 0.048281
+  SPARSEMV: 0.432372
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 12550.3
-  DDOT    : 1504.68
-  WAXPBY  : 24196.7
-  SPARSEMV: 26402.8
+  Total   : 13306.4
+  DDOT    : 1673.68
+  WAXPBY  : 26161.3
+  SPARSEMV: 26291.8
 
-real	0m1.451s
-user	0m0.921s
-sys	0m0.469s
+real	0m1.358s
+user	0m0.850s
+sys	0m0.447s
 Running test_HPCCG with dimensions 75 75 75
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -505,7 +505,7 @@ Iteration = 450   Residual = 1.46229e-76
 Iteration = 499   Residual = 4.65488e-85
 Begun Freeing
 All Memory Free
-Elapsed time: 1.26453 s
+Elapsed time: 1.00989 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -520,24 +520,24 @@ Number of iterations: 499
 Final residual: 4.65488e-85
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 1.26452
-  DDOT    : 0.744026
-  WAXPBY  : 0.05136
-  SPARSEMV: 0.434895
+  Total   : 1.00987
+  DDOT    : 0.502877
+  WAXPBY  : 0.048314
+  SPARSEMV: 0.430316
 FLOPS Summary: 
   Total   : 1.3473e+10
   DDOT    : 8.42062e+08
   WAXPBY  : 1.26309e+09
   SPARSEMV: 1.13678e+10
 MFLOPS Summary: 
-  Total   : 10654.7
-  DDOT    : 1131.76
-  WAXPBY  : 24592.9
-  SPARSEMV: 26139.3
+  Total   : 13341.3
+  DDOT    : 1674.49
+  WAXPBY  : 26143.4
+  SPARSEMV: 26417.4
 
-real	0m1.661s
-user	0m0.847s
-sys	0m0.742s
+real	0m1.354s
+user	0m0.779s
+sys	0m0.517s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -559,7 +559,7 @@ Iteration = 450   Residual = 1.75639e-71
 Iteration = 499   Residual = 4.06939e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 2.07307 s
+Elapsed time: 2.03145 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -574,24 +574,24 @@ Number of iterations: 499
 Final residual: 4.06939e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.07306
-  DDOT    : 0.672821
-  WAXPBY  : 0.0875
-  SPARSEMV: 1.28004
+  Total   : 2.03143
+  DDOT    : 0.625779
+  WAXPBY  : 0.086515
+  SPARSEMV: 1.2879
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 15405.3
-  DDOT    : 2966.61
-  WAXPBY  : 34217.1
-  SPARSEMV: 21051
+  Total   : 15720.9
+  DDOT    : 3189.62
+  WAXPBY  : 34606.7
+  SPARSEMV: 20922.4
 
-real	0m2.602s
-user	0m1.871s
-sys	0m0.689s
+real	0m2.682s
+user	0m1.881s
+sys	0m0.591s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -613,7 +613,7 @@ Iteration = 450   Residual = 1.75639e-71
 Iteration = 499   Residual = 4.06939e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 2.19757 s
+Elapsed time: 2.12148 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -628,24 +628,24 @@ Number of iterations: 499
 Final residual: 4.06939e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.19755
-  DDOT    : 0.699116
-  WAXPBY  : 0.087898
-  SPARSEMV: 1.28053
+  Total   : 2.12146
+  DDOT    : 0.711879
+  WAXPBY  : 0.086949
+  SPARSEMV: 1.28786
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 14532.5
-  DDOT    : 2855.03
-  WAXPBY  : 34062.2
-  SPARSEMV: 21042.8
+  Total   : 15053.8
+  DDOT    : 2803.85
+  WAXPBY  : 34434
+  SPARSEMV: 20923.1
 
-real	0m2.759s
-user	0m1.927s
-sys	0m0.647s
+real	0m2.693s
+user	0m1.920s
+sys	0m0.704s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -667,7 +667,7 @@ Iteration = 450   Residual = 1.75639e-71
 Iteration = 499   Residual = 4.06939e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 2.06806 s
+Elapsed time: 2.01592 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -682,24 +682,24 @@ Number of iterations: 499
 Final residual: 4.06939e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.06804
-  DDOT    : 0.669156
-  WAXPBY  : 0.088023
-  SPARSEMV: 1.27883
+  Total   : 2.0159
+  DDOT    : 0.607114
+  WAXPBY  : 0.08696
+  SPARSEMV: 1.28744
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 15442.7
-  DDOT    : 2982.86
-  WAXPBY  : 34013.8
-  SPARSEMV: 21070.8
+  Total   : 15842.1
+  DDOT    : 3287.69
+  WAXPBY  : 34429.6
+  SPARSEMV: 20930
 
-real	0m2.644s
-user	0m1.921s
-sys	0m0.638s
+real	0m2.494s
+user	0m1.929s
+sys	0m0.534s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -721,7 +721,7 @@ Iteration = 450   Residual = 1.75639e-71
 Iteration = 499   Residual = 4.06939e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 2.25536 s
+Elapsed time: 2.01515 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -736,24 +736,24 @@ Number of iterations: 499
 Final residual: 4.06939e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.25535
-  DDOT    : 0.853472
-  WAXPBY  : 0.08748
-  SPARSEMV: 1.27944
+  Total   : 2.01514
+  DDOT    : 0.607485
+  WAXPBY  : 0.087379
+  SPARSEMV: 1.28856
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 14160.1
-  DDOT    : 2338.68
-  WAXPBY  : 34225
-  SPARSEMV: 21060.7
+  Total   : 15848.1
+  DDOT    : 3285.68
+  WAXPBY  : 34264.5
+  SPARSEMV: 20911.7
 
-real	0m2.830s
-user	0m1.983s
-sys	0m0.728s
+real	0m2.700s
+user	0m1.918s
+sys	0m0.555s
 Running test_HPCCG with dimensions 100 100 100
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -775,7 +775,7 @@ Iteration = 450   Residual = 1.75639e-71
 Iteration = 499   Residual = 4.06939e-79
 Begun Freeing
 All Memory Free
-Elapsed time: 2.05978 s
+Elapsed time: 2.00122 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -790,24 +790,24 @@ Number of iterations: 499
 Final residual: 4.06939e-79
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.05976
-  DDOT    : 0.659897
-  WAXPBY  : 0.087223
-  SPARSEMV: 1.27888
+  Total   : 2.00121
+  DDOT    : 0.596301
+  WAXPBY  : 0.086959
+  SPARSEMV: 1.28715
 FLOPS Summary: 
   Total   : 3.1936e+10
   DDOT    : 1.996e+09
   WAXPBY  : 2.994e+09
   SPARSEMV: 2.6946e+10
 MFLOPS Summary: 
-  Total   : 15504.7
-  DDOT    : 3024.71
-  WAXPBY  : 34325.8
-  SPARSEMV: 21070
+  Total   : 15958.4
+  DDOT    : 3347.3
+  WAXPBY  : 34430
+  SPARSEMV: 20934.6
 
-real	0m2.746s
-user	0m1.995s
-sys	0m0.578s
+real	0m3.537s
+user	0m1.877s
+sys	0m0.592s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -829,7 +829,7 @@ Iteration = 450   Residual = 1.67478e-68
 Iteration = 499   Residual = 5.2737e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 2.72654 s
+Elapsed time: 2.78948 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -844,24 +844,24 @@ Number of iterations: 499
 Final residual: 5.2737e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.72652
-  DDOT    : 0.693648
-  WAXPBY  : 0.156406
-  SPARSEMV: 1.82828
+  Total   : 2.78946
+  DDOT    : 0.751659
+  WAXPBY  : 0.15747
+  SPARSEMV: 1.83558
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 22877.2
-  DDOT    : 5620.2
-  WAXPBY  : 37387.7
-  SPARSEMV: 28786.1
+  Total   : 22360.9
+  DDOT    : 5186.44
+  WAXPBY  : 37135
+  SPARSEMV: 28671.6
 
-real	0m3.532s
-user	0m2.794s
-sys	0m0.676s
+real	0m3.540s
+user	0m2.753s
+sys	0m0.724s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -883,7 +883,7 @@ Iteration = 450   Residual = 1.67478e-68
 Iteration = 499   Residual = 5.2737e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 2.82427 s
+Elapsed time: 2.68462 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -898,24 +898,24 @@ Number of iterations: 499
 Final residual: 5.2737e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.82425
-  DDOT    : 0.790901
-  WAXPBY  : 0.156522
-  SPARSEMV: 1.82887
+  Total   : 2.68461
+  DDOT    : 0.646518
+  WAXPBY  : 0.157739
+  SPARSEMV: 1.83569
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 22085.5
-  DDOT    : 4929.11
-  WAXPBY  : 37360
-  SPARSEMV: 28776.8
+  Total   : 23234.3
+  DDOT    : 6029.9
+  WAXPBY  : 37071.7
+  SPARSEMV: 28669.9
 
-real	0m3.616s
-user	0m2.773s
-sys	0m0.789s
+real	0m3.434s
+user	0m2.718s
+sys	0m0.662s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -937,7 +937,7 @@ Iteration = 450   Residual = 1.67478e-68
 Iteration = 499   Residual = 5.2737e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 2.78606 s
+Elapsed time: 2.69395 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -952,24 +952,24 @@ Number of iterations: 499
 Final residual: 5.2737e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.78604
-  DDOT    : 0.757157
-  WAXPBY  : 0.155761
-  SPARSEMV: 1.82513
+  Total   : 2.69393
+  DDOT    : 0.656188
+  WAXPBY  : 0.157802
+  SPARSEMV: 1.83523
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 22388.4
-  DDOT    : 5148.78
-  WAXPBY  : 37542.5
-  SPARSEMV: 28835.7
+  Total   : 23153.9
+  DDOT    : 5941.04
+  WAXPBY  : 37056.9
+  SPARSEMV: 28677
 
-real	0m3.911s
-user	0m2.771s
-sys	0m0.759s
+real	0m3.433s
+user	0m2.748s
+sys	0m0.624s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -991,7 +991,7 @@ Iteration = 450   Residual = 1.67478e-68
 Iteration = 499   Residual = 5.2737e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 2.70104 s
+Elapsed time: 2.77356 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1006,24 +1006,24 @@ Number of iterations: 499
 Final residual: 5.2737e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 2.70102
-  DDOT    : 0.669298
-  WAXPBY  : 0.156804
-  SPARSEMV: 1.82671
+  Total   : 2.77354
+  DDOT    : 0.734017
+  WAXPBY  : 0.157778
+  SPARSEMV: 1.83679
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 23093.1
-  DDOT    : 5824.67
-  WAXPBY  : 37292.8
-  SPARSEMV: 28810.7
+  Total   : 22489.3
+  DDOT    : 5311.1
+  WAXPBY  : 37062.6
+  SPARSEMV: 28652.7
 
-real	0m3.548s
-user	0m2.701s
-sys	0m0.782s
+real	0m3.508s
+user	0m2.726s
+sys	0m0.745s
 Running test_HPCCG with dimensions 125 125 125
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1045,7 +1045,7 @@ Iteration = 450   Residual = 1.67478e-68
 Iteration = 499   Residual = 5.2737e-76
 Begun Freeing
 All Memory Free
-Elapsed time: 3.00646 s
+Elapsed time: 2.66895 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1060,24 +1060,24 @@ Number of iterations: 499
 Final residual: 5.2737e-76
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 3.00645
-  DDOT    : 0.78581
-  WAXPBY  : 0.156736
-  SPARSEMV: 1.8282
+  Total   : 2.66893
+  DDOT    : 0.631846
+  WAXPBY  : 0.158075
+  SPARSEMV: 1.83435
 FLOPS Summary: 
   Total   : 6.2375e+10
   DDOT    : 3.89844e+09
   WAXPBY  : 5.84766e+09
   SPARSEMV: 5.26289e+10
 MFLOPS Summary: 
-  Total   : 20747.1
-  DDOT    : 4961.04
-  WAXPBY  : 37309
-  SPARSEMV: 28787.3
+  Total   : 23370.8
+  DDOT    : 6169.92
+  WAXPBY  : 36992.9
+  SPARSEMV: 28690.8
 
-real	0m4.187s
-user	0m2.749s
-sys	0m0.827s
+real	0m3.486s
+user	0m2.737s
+sys	0m0.651s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1099,7 +1099,7 @@ Iteration = 450   Residual = 1.39585e-66
 Iteration = 499   Residual = 2.33342e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 5.64424 s
+Elapsed time: 5.41249 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1114,24 +1114,24 @@ Number of iterations: 499
 Final residual: 2.33342e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.64422
-  DDOT    : 0.783319
-  WAXPBY  : 0.252903
-  SPARSEMV: 4.30408
+  Total   : 5.41247
+  DDOT    : 0.756261
+  WAXPBY  : 0.255018
+  SPARSEMV: 4.34019
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 19096.4
-  DDOT    : 8599.94
-  WAXPBY  : 39955
-  SPARSEMV: 21129.4
+  Total   : 19914
+  DDOT    : 8907.64
+  WAXPBY  : 39623.7
+  SPARSEMV: 20953.7
 
-real	0m7.888s
-user	0m5.629s
-sys	0m0.914s
+real	0m6.599s
+user	0m5.603s
+sys	0m0.911s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1153,7 +1153,7 @@ Iteration = 450   Residual = 1.39585e-66
 Iteration = 499   Residual = 2.33342e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 5.38192 s
+Elapsed time: 5.31591 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1168,24 +1168,24 @@ Number of iterations: 499
 Final residual: 2.33342e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.3819
-  DDOT    : 0.751992
-  WAXPBY  : 0.252908
-  SPARSEMV: 4.30878
+  Total   : 5.3159
+  DDOT    : 0.657792
+  WAXPBY  : 0.25542
+  SPARSEMV: 4.3416
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 20027.1
-  DDOT    : 8958.21
-  WAXPBY  : 39954.3
-  SPARSEMV: 21106.4
+  Total   : 20275.8
+  DDOT    : 10241.1
+  WAXPBY  : 39561.3
+  SPARSEMV: 20946.8
 
-real	0m7.254s
-user	0m5.614s
-sys	0m0.872s
+real	0m6.450s
+user	0m5.609s
+sys	0m0.795s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1207,7 +1207,7 @@ Iteration = 450   Residual = 1.39585e-66
 Iteration = 499   Residual = 2.33342e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 5.75119 s
+Elapsed time: 5.36694 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1222,24 +1222,24 @@ Number of iterations: 499
 Final residual: 2.33342e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.75117
-  DDOT    : 0.933565
-  WAXPBY  : 0.253326
-  SPARSEMV: 4.30299
+  Total   : 5.36692
+  DDOT    : 0.712568
+  WAXPBY  : 0.255364
+  SPARSEMV: 4.33813
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 18741.2
-  DDOT    : 7215.89
-  WAXPBY  : 39888.3
-  SPARSEMV: 21134.8
+  Total   : 20083
+  DDOT    : 9453.83
+  WAXPBY  : 39570
+  SPARSEMV: 20963.6
 
-real	0m7.896s
-user	0m5.614s
-sys	0m1.033s
+real	0m6.482s
+user	0m5.600s
+sys	0m0.836s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1261,7 +1261,7 @@ Iteration = 450   Residual = 1.39585e-66
 Iteration = 499   Residual = 2.33342e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 5.52715 s
+Elapsed time: 5.42707 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1276,24 +1276,24 @@ Number of iterations: 499
 Final residual: 2.33342e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.52713
-  DDOT    : 0.848377
-  WAXPBY  : 0.253238
-  SPARSEMV: 4.3016
+  Total   : 5.42706
+  DDOT    : 0.770475
+  WAXPBY  : 0.255846
+  SPARSEMV: 4.33902
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 19500.9
-  DDOT    : 7940.46
-  WAXPBY  : 39902.2
-  SPARSEMV: 21141.6
+  Total   : 19860.5
+  DDOT    : 8743.31
+  WAXPBY  : 39495.4
+  SPARSEMV: 20959.3
 
-real	0m6.775s
-user	0m5.597s
-sys	0m0.956s
+real	0m6.579s
+user	0m5.607s
+sys	0m0.901s
 Running test_HPCCG with dimensions 150 150 150
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1315,7 +1315,7 @@ Iteration = 450   Residual = 1.39585e-66
 Iteration = 499   Residual = 2.33342e-74
 Begun Freeing
 All Memory Free
-Elapsed time: 5.35506 s
+Elapsed time: 5.33911 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1330,24 +1330,24 @@ Number of iterations: 499
 Final residual: 2.33342e-74
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 5.35504
-  DDOT    : 0.729296
-  WAXPBY  : 0.252872
-  SPARSEMV: 4.3051
+  Total   : 5.33909
+  DDOT    : 0.685839
+  WAXPBY  : 0.255209
+  SPARSEMV: 4.33682
 FLOPS Summary: 
   Total   : 1.07784e+11
   DDOT    : 6.7365e+09
   WAXPBY  : 1.01048e+10
   SPARSEMV: 9.09428e+10
 MFLOPS Summary: 
-  Total   : 20127.6
-  DDOT    : 9236.99
-  WAXPBY  : 39959.9
-  SPARSEMV: 21124.4
+  Total   : 20187.7
+  DDOT    : 9822.28
+  WAXPBY  : 39594
+  SPARSEMV: 20969.9
 
-real	0m6.773s
-user	0m5.635s
-sys	0m0.833s
+real	0m6.478s
+user	0m5.588s
+sys	0m0.817s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1369,7 +1369,7 @@ Iteration = 450   Residual = 4.96885e-65
 Iteration = 499   Residual = 1.20975e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 7.68068 s
+Elapsed time: 7.53161 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1384,24 +1384,24 @@ Number of iterations: 499
 Final residual: 1.20975e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.6561
-  DDOT    : 0.863846
-  WAXPBY  : 0.391844
-  SPARSEMV: 6.30449
+  Total   : 7.53159
+  DDOT    : 0.725197
+  WAXPBY  : 0.396291
+  SPARSEMV: 6.32588
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 22355.6
-  DDOT    : 12383.4
-  WAXPBY  : 40949.9
-  SPARSEMV: 22906.5
+  Total   : 22725.2
+  DDOT    : 14750.9
+  WAXPBY  : 40490.4
+  SPARSEMV: 22829
 
-real	0m9.617s
-user	0m8.175s
-sys	0m1.140s
+real	0m9.205s
+user	0m8.160s
+sys	0m0.997s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1423,7 +1423,7 @@ Iteration = 450   Residual = 4.96885e-65
 Iteration = 499   Residual = 1.20975e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 7.65225 s
+Elapsed time: 7.57879 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1438,24 +1438,24 @@ Number of iterations: 499
 Final residual: 1.20975e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.65222
-  DDOT    : 0.844831
-  WAXPBY  : 0.3918
-  SPARSEMV: 6.30752
+  Total   : 7.57877
+  DDOT    : 0.774569
+  WAXPBY  : 0.396803
+  SPARSEMV: 6.32546
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 22367
-  DDOT    : 12662.1
-  WAXPBY  : 40954.5
-  SPARSEMV: 22895.5
+  Total   : 22583.7
+  DDOT    : 13810.7
+  WAXPBY  : 40438.1
+  SPARSEMV: 22830.6
 
-real	0m9.757s
-user	0m8.349s
-sys	0m1.056s
+real	0m9.249s
+user	0m8.134s
+sys	0m1.067s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1477,7 +1477,7 @@ Iteration = 450   Residual = 4.96885e-65
 Iteration = 499   Residual = 1.20975e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 7.58331 s
+Elapsed time: 7.61577 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1492,24 +1492,24 @@ Number of iterations: 499
 Final residual: 1.20975e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.58329
-  DDOT    : 0.793348
-  WAXPBY  : 0.390565
-  SPARSEMV: 6.30329
+  Total   : 7.61575
+  DDOT    : 0.808532
+  WAXPBY  : 0.395979
+  SPARSEMV: 6.32976
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 22570.3
-  DDOT    : 13483.8
-  WAXPBY  : 41084
-  SPARSEMV: 22910.9
+  Total   : 22474.1
+  DDOT    : 13230.5
+  WAXPBY  : 40522.3
+  SPARSEMV: 22815
 
-real	0m9.281s
-user	0m8.181s
-sys	0m1.036s
+real	0m9.282s
+user	0m8.189s
+sys	0m1.027s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1531,7 +1531,7 @@ Iteration = 450   Residual = 4.96885e-65
 Iteration = 499   Residual = 1.20975e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 7.66283 s
+Elapsed time: 7.62939 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1546,24 +1546,24 @@ Number of iterations: 499
 Final residual: 1.20975e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.66281
-  DDOT    : 0.868791
-  WAXPBY  : 0.391899
-  SPARSEMV: 6.30656
+  Total   : 7.62936
+  DDOT    : 0.823813
+  WAXPBY  : 0.395417
+  SPARSEMV: 6.32627
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 22336.1
-  DDOT    : 12312.9
-  WAXPBY  : 40944.1
-  SPARSEMV: 22899
+  Total   : 22434
+  DDOT    : 12985.1
+  WAXPBY  : 40579.9
+  SPARSEMV: 22827.6
 
-real	0m9.378s
-user	0m8.165s
-sys	0m1.139s
+real	0m9.304s
+user	0m8.120s
+sys	0m1.113s
 Running test_HPCCG with dimensions 175 175 175
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1585,7 +1585,7 @@ Iteration = 450   Residual = 4.96885e-65
 Iteration = 499   Residual = 1.20975e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 7.73805 s
+Elapsed time: 7.62665 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1600,24 +1600,24 @@ Number of iterations: 499
 Final residual: 1.20975e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 7.73803
-  DDOT    : 0.936072
-  WAXPBY  : 0.39202
-  SPARSEMV: 6.3143
+  Total   : 7.62663
+  DDOT    : 0.820972
+  WAXPBY  : 0.396124
+  SPARSEMV: 6.32604
 FLOPS Summary: 
   Total   : 1.71157e+11
   DDOT    : 1.06973e+10
   WAXPBY  : 1.6046e+10
   SPARSEMV: 1.44414e+11
 MFLOPS Summary: 
-  Total   : 22118.9
-  DDOT    : 11427.9
-  WAXPBY  : 40931.5
-  SPARSEMV: 22870.9
+  Total   : 22442
+  DDOT    : 13030.1
+  WAXPBY  : 40507.4
+  SPARSEMV: 22828.5
 
-real	0m9.533s
-user	0m8.198s
-sys	0m1.148s
+real	0m9.308s
+user	0m8.135s
+sys	0m1.093s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1639,7 +1639,7 @@ Iteration = 450   Residual = 2.00327e-64
 Iteration = 499   Residual = 9.95186e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 12.2014 s
+Elapsed time: 12.0598 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1654,24 +1654,24 @@ Number of iterations: 499
 Final residual: 9.95186e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 12.2014
-  DDOT    : 1.07761
-  WAXPBY  : 0.570192
-  SPARSEMV: 10.4222
+  Total   : 12.0598
+  DDOT    : 0.850088
+  WAXPBY  : 0.581212
+  SPARSEMV: 10.5139
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 20939.2
-  DDOT    : 14818
-  WAXPBY  : 42006.9
-  SPARSEMV: 20683.5
+  Total   : 21185.1
+  DDOT    : 18783.9
+  WAXPBY  : 41210.4
+  SPARSEMV: 20503.1
 
-real	0m14.819s
-user	0m13.081s
-sys	0m1.369s
+real	0m14.469s
+user	0m13.066s
+sys	0m1.339s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1693,7 +1693,7 @@ Iteration = 450   Residual = 2.00327e-64
 Iteration = 499   Residual = 9.95186e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 12.015 s
+Elapsed time: 12.0984 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1708,24 +1708,24 @@ Number of iterations: 499
 Final residual: 9.95186e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 12.015
-  DDOT    : 0.891397
-  WAXPBY  : 0.570799
-  SPARSEMV: 10.4211
+  Total   : 12.0983
+  DDOT    : 0.897632
+  WAXPBY  : 0.578493
+  SPARSEMV: 10.5082
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 21264.1
-  DDOT    : 17913.5
-  WAXPBY  : 41962.2
-  SPARSEMV: 20685.8
+  Total   : 21117.6
+  DDOT    : 17789
+  WAXPBY  : 41404.1
+  SPARSEMV: 20514.3
 
-real	0m14.489s
-user	0m13.008s
-sys	0m1.361s
+real	0m14.506s
+user	0m12.962s
+sys	0m1.454s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1747,7 +1747,7 @@ Iteration = 450   Residual = 2.00327e-64
 Iteration = 499   Residual = 9.95186e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 12.1013 s
+Elapsed time: 12.0763 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1762,24 +1762,24 @@ Number of iterations: 499
 Final residual: 9.95186e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 12.1013
-  DDOT    : 0.973324
-  WAXPBY  : 0.571652
-  SPARSEMV: 10.4247
+  Total   : 12.0763
+  DDOT    : 0.873314
+  WAXPBY  : 0.580026
+  SPARSEMV: 10.5094
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 21112.5
-  DDOT    : 16405.6
-  WAXPBY  : 41899.6
-  SPARSEMV: 20678.6
+  Total   : 21156.1
+  DDOT    : 18284.4
+  WAXPBY  : 41294.7
+  SPARSEMV: 20511.9
 
-real	0m14.639s
-user	0m12.977s
-sys	0m1.466s
+real	0m14.487s
+user	0m12.989s
+sys	0m1.434s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1801,7 +1801,7 @@ Iteration = 450   Residual = 2.00327e-64
 Iteration = 499   Residual = 9.95186e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 12.6128 s
+Elapsed time: 12.0751 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1816,24 +1816,24 @@ Number of iterations: 499
 Final residual: 9.95186e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 12.6127
-  DDOT    : 0.886276
-  WAXPBY  : 0.570357
-  SPARSEMV: 10.4222
+  Total   : 12.0751
+  DDOT    : 0.870311
+  WAXPBY  : 0.579869
+  SPARSEMV: 10.51
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 20256.4
-  DDOT    : 18017
-  WAXPBY  : 41994.8
-  SPARSEMV: 20683.5
+  Total   : 21158.3
+  DDOT    : 18347.5
+  WAXPBY  : 41305.9
+  SPARSEMV: 20510.7
 
-real	0m15.036s
-user	0m13.558s
-sys	0m1.408s
+real	0m14.558s
+user	0m13.185s
+sys	0m1.217s
 Running test_HPCCG with dimensions 200 200 200
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1855,7 +1855,7 @@ Iteration = 450   Residual = 2.00327e-64
 Iteration = 499   Residual = 9.95186e-72
 Begun Freeing
 All Memory Free
-Elapsed time: 12.1499 s
+Elapsed time: 12.0803 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1870,24 +1870,24 @@ Number of iterations: 499
 Final residual: 9.95186e-72
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 12.1498
-  DDOT    : 1.02504
-  WAXPBY  : 0.57061
-  SPARSEMV: 10.4217
+  Total   : 12.0803
+  DDOT    : 0.875971
+  WAXPBY  : 0.577603
+  SPARSEMV: 10.5124
 FLOPS Summary: 
   Total   : 2.55488e+11
   DDOT    : 1.5968e+10
   WAXPBY  : 2.3952e+10
   SPARSEMV: 2.15568e+11
 MFLOPS Summary: 
-  Total   : 21028.1
-  DDOT    : 15577.9
-  WAXPBY  : 41976.1
-  SPARSEMV: 20684.5
+  Total   : 21149.1
+  DDOT    : 18228.9
+  WAXPBY  : 41467.9
+  SPARSEMV: 20506.1
 
-real	0m14.596s
-user	0m12.976s
-sys	0m1.509s
+real	0m14.671s
+user	0m13.053s
+sys	0m1.359s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1909,7 +1909,7 @@ Iteration = 450   Residual = 1.09839e-63
 Iteration = 499   Residual = 3.92945e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 14.2637 s
+Elapsed time: 14.0149 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1924,24 +1924,24 @@ Number of iterations: 499
 Final residual: 3.92945e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.2637
-  DDOT    : 0.992274
-  WAXPBY  : 0.803959
-  SPARSEMV: 12.0845
+  Total   : 14.0149
+  DDOT    : 0.918839
+  WAXPBY  : 0.818168
+  SPARSEMV: 12.124
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 25503.3
-  DDOT    : 22912.7
-  WAXPBY  : 42419.5
-  SPARSEMV: 25398.9
+  Total   : 25956.1
+  DDOT    : 24743.9
+  WAXPBY  : 41682.8
+  SPARSEMV: 25316
 
-real	0m18.081s
-user	0m15.529s
-sys	0m1.748s
+real	0m17.500s
+user	0m15.537s
+sys	0m1.763s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -1963,7 +1963,7 @@ Iteration = 450   Residual = 1.09839e-63
 Iteration = 499   Residual = 3.92945e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 14.0353 s
+Elapsed time: 14.0514 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -1978,24 +1978,24 @@ Number of iterations: 499
 Final residual: 3.92945e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.0352
-  DDOT    : 0.965912
-  WAXPBY  : 0.803142
-  SPARSEMV: 12.0874
+  Total   : 14.0514
+  DDOT    : 0.952281
+  WAXPBY  : 0.817915
+  SPARSEMV: 12.1297
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 25918.4
-  DDOT    : 23538.1
-  WAXPBY  : 42462.6
-  SPARSEMV: 25392.8
+  Total   : 25888.7
+  DDOT    : 23875
+  WAXPBY  : 41695.7
+  SPARSEMV: 25304.2
 
-real	0m17.308s
-user	0m15.459s
-sys	0m1.788s
+real	0m17.455s
+user	0m15.421s
+sys	0m1.925s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2017,7 +2017,7 @@ Iteration = 450   Residual = 1.09839e-63
 Iteration = 499   Residual = 3.92945e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 14.0588 s
+Elapsed time: 14.0284 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2032,24 +2032,24 @@ Number of iterations: 499
 Final residual: 3.92945e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.0588
-  DDOT    : 0.98568
-  WAXPBY  : 0.80457
-  SPARSEMV: 12.0892
+  Total   : 14.0284
+  DDOT    : 0.934084
+  WAXPBY  : 0.815901
+  SPARSEMV: 12.1269
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 25875
-  DDOT    : 23066
-  WAXPBY  : 42387.3
-  SPARSEMV: 25388.9
+  Total   : 25931
+  DDOT    : 24340.1
+  WAXPBY  : 41798.6
+  SPARSEMV: 25310
 
-real	0m17.594s
-user	0m15.572s
-sys	0m1.786s
+real	0m17.937s
+user	0m15.483s
+sys	0m1.841s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2071,7 +2071,7 @@ Iteration = 450   Residual = 1.09839e-63
 Iteration = 499   Residual = 3.92945e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 14.216 s
+Elapsed time: 13.9933 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2086,24 +2086,24 @@ Number of iterations: 499
 Final residual: 3.92945e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.216
-  DDOT    : 1.08388
-  WAXPBY  : 0.804874
-  SPARSEMV: 12.092
+  Total   : 13.9933
+  DDOT    : 0.897031
+  WAXPBY  : 0.818209
+  SPARSEMV: 12.1253
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 25588.9
-  DDOT    : 20976.2
-  WAXPBY  : 42371.3
-  SPARSEMV: 25383
+  Total   : 25996.2
+  DDOT    : 25345.5
+  WAXPBY  : 41680.7
+  SPARSEMV: 25313.4
 
-real	0m17.833s
-user	0m15.480s
-sys	0m1.906s
+real	0m17.411s
+user	0m15.502s
+sys	0m1.741s
 Running test_HPCCG with dimensions 225 225 225
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2125,7 +2125,7 @@ Iteration = 450   Residual = 1.09839e-63
 Iteration = 499   Residual = 3.92945e-71
 Begun Freeing
 All Memory Free
-Elapsed time: 14.0421 s
+Elapsed time: 14.026 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2140,24 +2140,24 @@ Number of iterations: 499
 Final residual: 3.92945e-71
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 14.042
-  DDOT    : 0.971216
-  WAXPBY  : 0.803746
-  SPARSEMV: 12.0882
+  Total   : 14.026
+  DDOT    : 0.924339
+  WAXPBY  : 0.817841
+  SPARSEMV: 12.1306
 FLOPS Summary: 
   Total   : 3.63771e+11
   DDOT    : 2.27357e+10
   WAXPBY  : 3.41035e+10
   SPARSEMV: 3.06932e+11
 MFLOPS Summary: 
-  Total   : 25905.9
-  DDOT    : 23409.5
-  WAXPBY  : 42430.7
-  SPARSEMV: 25391
+  Total   : 25935.5
+  DDOT    : 24596.7
+  WAXPBY  : 41699.5
+  SPARSEMV: 25302.2
 
-real	0m17.503s
-user	0m15.553s
-sys	0m1.748s
+real	0m17.802s
+user	0m15.506s
+sys	0m1.858s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2179,7 +2179,7 @@ Iteration = 450   Residual = 3.0733e-63
 Iteration = 499   Residual = 1.14255e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 22.9908 s
+Elapsed time: 23.0841 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2194,24 +2194,24 @@ Number of iterations: 499
 Final residual: 1.14255e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 22.9908
-  DDOT    : 1.08011
-  WAXPBY  : 1.08993
-  SPARSEMV: 20.5825
+  Total   : 23.0841
+  DDOT    : 1.02978
+  WAXPBY  : 1.1078
+  SPARSEMV: 20.7468
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 21704.3
-  DDOT    : 28874.4
-  WAXPBY  : 42921.2
-  SPARSEMV: 20455.7
+  Total   : 21616.6
+  DDOT    : 30285.7
+  WAXPBY  : 42229
+  SPARSEMV: 20293.8
 
-real	0m27.425s
-user	0m25.153s
-sys	0m2.197s
+real	0m28.026s
+user	0m25.267s
+sys	0m2.209s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2233,7 +2233,7 @@ Iteration = 450   Residual = 3.0733e-63
 Iteration = 499   Residual = 1.14255e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 22.9719 s
+Elapsed time: 23.2055 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2248,24 +2248,24 @@ Number of iterations: 499
 Final residual: 1.14255e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 22.9719
-  DDOT    : 1.06624
-  WAXPBY  : 1.08791
-  SPARSEMV: 20.5777
+  Total   : 23.2055
+  DDOT    : 1.14987
+  WAXPBY  : 1.10997
+  SPARSEMV: 20.7476
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 21722.2
-  DDOT    : 29249.9
-  WAXPBY  : 43001
-  SPARSEMV: 20460.6
+  Total   : 21503.6
+  DDOT    : 27122.6
+  WAXPBY  : 42146.2
+  SPARSEMV: 20293.1
 
-real	0m28.302s
-user	0m25.134s
-sys	0m2.208s
+real	0m28.675s
+user	0m25.268s
+sys	0m2.277s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2287,7 +2287,7 @@ Iteration = 450   Residual = 3.0733e-63
 Iteration = 499   Residual = 1.14255e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 22.9887 s
+Elapsed time: 23.1079 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2302,24 +2302,24 @@ Number of iterations: 499
 Final residual: 1.14255e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 22.9887
-  DDOT    : 1.07699
-  WAXPBY  : 1.08884
-  SPARSEMV: 20.5839
+  Total   : 23.1078
+  DDOT    : 1.04822
+  WAXPBY  : 1.1075
+  SPARSEMV: 20.7512
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 21706.3
-  DDOT    : 28958
-  WAXPBY  : 42964.3
-  SPARSEMV: 20454.4
+  Total   : 21594.4
+  DDOT    : 29752.9
+  WAXPBY  : 42240.3
+  SPARSEMV: 20289.5
 
-real	0m29.620s
-user	0m25.248s
-sys	0m2.137s
+real	0m28.393s
+user	0m25.294s
+sys	0m2.157s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2341,7 +2341,7 @@ Iteration = 450   Residual = 3.0733e-63
 Iteration = 499   Residual = 1.14255e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 26.5695 s
+Elapsed time: 23.0884 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2356,24 +2356,24 @@ Number of iterations: 499
 Final residual: 1.14255e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0022
-  DDOT    : 1.10153
-  WAXPBY  : 1.08945
-  SPARSEMV: 20.5737
+  Total   : 23.0884
+  DDOT    : 1.03849
+  WAXPBY  : 1.10821
+  SPARSEMV: 20.7426
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 21693.5
-  DDOT    : 28313
-  WAXPBY  : 42940.4
-  SPARSEMV: 20464.6
+  Total   : 21612.6
+  DDOT    : 30031.6
+  WAXPBY  : 42213.2
+  SPARSEMV: 20297.9
 
-real	0m31.005s
-user	0m25.168s
-sys	0m2.176s
+real	0m27.777s
+user	0m25.348s
+sys	0m2.095s
 Running test_HPCCG with dimensions 250 250 250
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2395,7 +2395,7 @@ Iteration = 450   Residual = 3.0733e-63
 Iteration = 499   Residual = 1.14255e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.3596 s
+Elapsed time: 23.1018 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2410,24 +2410,24 @@ Number of iterations: 499
 Final residual: 1.14255e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.3595
-  DDOT    : 1.07089
-  WAXPBY  : 1.08997
-  SPARSEMV: 20.5753
+  Total   : 23.1017
+  DDOT    : 1.05079
+  WAXPBY  : 1.10901
+  SPARSEMV: 20.7415
 FLOPS Summary: 
   Total   : 4.99e+11
   DDOT    : 3.11875e+10
   WAXPBY  : 4.67812e+10
   SPARSEMV: 4.21031e+11
 MFLOPS Summary: 
-  Total   : 21361.7
-  DDOT    : 29122.9
-  WAXPBY  : 42919.6
-  SPARSEMV: 20463
+  Total   : 21600.1
+  DDOT    : 29680.2
+  WAXPBY  : 42182.8
+  SPARSEMV: 20299
 
-real	0m27.792s
-user	0m25.218s
-sys	0m2.129s
+real	0m28.552s
+user	0m25.308s
+sys	0m2.134s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2449,7 +2449,7 @@ Iteration = 450   Residual = 6.93177e-63
 Iteration = 499   Residual = 3.66044e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.0484 s
+Elapsed time: 23.146 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2464,24 +2464,24 @@ Number of iterations: 499
 Final residual: 3.66044e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0484
-  DDOT    : 1.16959
-  WAXPBY  : 1.44606
-  SPARSEMV: 20.1217
+  Total   : 23.146
+  DDOT    : 1.18441
+  WAXPBY  : 1.46877
+  SPARSEMV: 20.2381
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 28816.3
-  DDOT    : 35491.5
-  WAXPBY  : 43058.9
-  SPARSEMV: 27850.2
+  Total   : 28694.8
+  DDOT    : 35047.4
+  WAXPBY  : 42393.1
+  SPARSEMV: 27690
 
-real	0m32.295s
-user	0m26.013s
-sys	0m6.044s
+real	0m29.586s
+user	0m26.169s
+sys	0m2.729s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2503,7 +2503,7 @@ Iteration = 450   Residual = 6.93177e-63
 Iteration = 499   Residual = 3.66044e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.0537 s
+Elapsed time: 23.7618 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2518,24 +2518,24 @@ Number of iterations: 499
 Final residual: 3.66044e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0537
-  DDOT    : 1.18072
-  WAXPBY  : 1.4457
-  SPARSEMV: 20.1199
+  Total   : 23.7617
+  DDOT    : 1.10687
+  WAXPBY  : 1.47164
+  SPARSEMV: 20.2377
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 28809.7
-  DDOT    : 35156.9
-  WAXPBY  : 43069.7
-  SPARSEMV: 27852.6
+  Total   : 27951.2
+  DDOT    : 37502.6
+  WAXPBY  : 42310.5
+  SPARSEMV: 27690.6
 
-real	0m28.842s
-user	0m26.056s
-sys	0m2.733s
+real	0m29.579s
+user	0m26.932s
+sys	0m2.580s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2557,7 +2557,7 @@ Iteration = 450   Residual = 6.93177e-63
 Iteration = 499   Residual = 3.66044e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.0752 s
+Elapsed time: 23.0592 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2572,24 +2572,24 @@ Number of iterations: 499
 Final residual: 3.66044e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0752
-  DDOT    : 1.19937
-  WAXPBY  : 1.4422
-  SPARSEMV: 20.1265
+  Total   : 23.0592
+  DDOT    : 1.09938
+  WAXPBY  : 1.46815
+  SPARSEMV: 20.2388
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 28782.8
-  DDOT    : 34610.3
-  WAXPBY  : 43174.2
-  SPARSEMV: 27843.6
+  Total   : 28802.8
+  DDOT    : 37758.3
+  WAXPBY  : 42411
+  SPARSEMV: 27689
 
-real	0m28.807s
-user	0m26.091s
-sys	0m2.649s
+real	0m29.343s
+user	0m26.239s
+sys	0m2.647s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2611,7 +2611,7 @@ Iteration = 450   Residual = 6.93177e-63
 Iteration = 499   Residual = 3.66044e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.0496 s
+Elapsed time: 23.1837 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2626,24 +2626,24 @@ Number of iterations: 499
 Final residual: 3.66044e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0495
-  DDOT    : 1.17156
-  WAXPBY  : 1.44754
-  SPARSEMV: 20.1218
+  Total   : 23.1837
+  DDOT    : 1.21984
+  WAXPBY  : 1.46766
+  SPARSEMV: 20.242
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 28814.8
-  DDOT    : 35432
-  WAXPBY  : 43015
-  SPARSEMV: 27850
+  Total   : 28648.1
+  DDOT    : 34029.4
+  WAXPBY  : 42425.1
+  SPARSEMV: 27684.6
 
-real	0m28.808s
-user	0m26.155s
-sys	0m2.654s
+real	0m29.220s
+user	0m26.103s
+sys	0m2.807s
 Running test_HPCCG with dimensions 275 275 275
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2665,7 +2665,7 @@ Iteration = 450   Residual = 6.93177e-63
 Iteration = 499   Residual = 3.66044e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 23.0622 s
+Elapsed time: 23.0664 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2680,24 +2680,24 @@ Number of iterations: 499
 Final residual: 3.66044e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 23.0622
-  DDOT    : 1.18201
-  WAXPBY  : 1.44398
-  SPARSEMV: 20.1208
+  Total   : 23.0664
+  DDOT    : 1.10907
+  WAXPBY  : 1.46852
+  SPARSEMV: 20.2354
 FLOPS Summary: 
   Total   : 6.64169e+11
   DDOT    : 4.15106e+10
   WAXPBY  : 6.22658e+10
   SPARSEMV: 5.60393e+11
 MFLOPS Summary: 
-  Total   : 28799.1
-  DDOT    : 35118.7
-  WAXPBY  : 43120.9
-  SPARSEMV: 27851.5
+  Total   : 28793.8
+  DDOT    : 37428.4
+  WAXPBY  : 42400.5
+  SPARSEMV: 27693.7
 
-real	0m28.856s
-user	0m26.057s
-sys	0m2.709s
+real	0m28.915s
+user	0m26.168s
+sys	0m2.658s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2719,7 +2719,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.0712e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 39.2029 s
+Elapsed time: 40.2736 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2734,24 +2734,24 @@ Number of iterations: 499
 Final residual: 7.0712e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 39.2029
-  DDOT    : 1.35269
-  WAXPBY  : 1.85997
-  SPARSEMV: 35.5958
+  Total   : 40.2736
+  DDOT    : 1.32894
+  WAXPBY  : 1.89101
+  SPARSEMV: 35.8788
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 21995.1
-  DDOT    : 39840.6
-  WAXPBY  : 43462.1
-  SPARSEMV: 20439
+  Total   : 21410.3
+  DDOT    : 40552.5
+  WAXPBY  : 42748.5
+  SPARSEMV: 20277.8
 
-real	0m51.304s
-user	0m43.073s
-sys	0m7.951s
+real	0m47.938s
+user	0m43.523s
+sys	0m3.408s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2773,7 +2773,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.0712e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 39.2517 s
+Elapsed time: 39.4977 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2788,24 +2788,24 @@ Number of iterations: 499
 Final residual: 7.0712e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 39.2516
-  DDOT    : 1.34356
-  WAXPBY  : 1.86357
-  SPARSEMV: 35.6243
+  Total   : 39.4977
+  DDOT    : 1.4019
+  WAXPBY  : 1.89256
+  SPARSEMV: 35.8763
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 21967.8
-  DDOT    : 40111.4
-  WAXPBY  : 43378.1
-  SPARSEMV: 20422.6
+  Total   : 21831
+  DDOT    : 38442.2
+  WAXPBY  : 42713.6
+  SPARSEMV: 20279.2
 
-real	0m47.695s
-user	0m43.195s
-sys	0m3.439s
+real	0m47.041s
+user	0m43.528s
+sys	0m3.349s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2827,7 +2827,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.0712e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 39.2334 s
+Elapsed time: 39.6271 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2842,24 +2842,24 @@ Number of iterations: 499
 Final residual: 7.0712e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 39.2333
-  DDOT    : 1.38541
-  WAXPBY  : 1.85891
-  SPARSEMV: 35.5944
+  Total   : 39.6271
+  DDOT    : 1.38399
+  WAXPBY  : 1.89516
+  SPARSEMV: 36.0209
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 21978.1
-  DDOT    : 38899.6
-  WAXPBY  : 43486.7
-  SPARSEMV: 20439.8
+  Total   : 21759.7
+  DDOT    : 38939.5
+  WAXPBY  : 42655
+  SPARSEMV: 20197.8
 
-real	0m46.660s
-user	0m43.088s
-sys	0m3.471s
+real	0m47.139s
+user	0m43.616s
+sys	0m3.425s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2881,7 +2881,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.0712e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 39.2902 s
+Elapsed time: 39.4266 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2896,24 +2896,24 @@ Number of iterations: 499
 Final residual: 7.0712e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 39.2902
-  DDOT    : 1.44372
-  WAXPBY  : 1.86077
-  SPARSEMV: 35.5916
+  Total   : 39.4265
+  DDOT    : 1.33029
+  WAXPBY  : 1.8938
+  SPARSEMV: 35.8749
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 21946.3
-  DDOT    : 37328.6
-  WAXPBY  : 43443.3
-  SPARSEMV: 20441.4
+  Total   : 21870.4
+  DDOT    : 40511.6
+  WAXPBY  : 42685.6
+  SPARSEMV: 20280
 
-real	0m46.725s
-user	0m43.224s
-sys	0m3.409s
+real	0m46.916s
+user	0m43.605s
+sys	0m3.221s
 Running test_HPCCG with dimensions 300 300 300
 The device is called NVIDIA GeForce RTX 2080 Ti
 The max work group size is 1024
@@ -2935,7 +2935,7 @@ Iteration = 450   Residual = 1.6189e-62
 Iteration = 499   Residual = 7.0712e-70
 Begun Freeing
 All Memory Free
-Elapsed time: 39.1828 s
+Elapsed time: 39.4396 s
 Mini-Application Name: hpccg
 Mini-Application Version: 1.0
 Parallelism: 
@@ -2950,21 +2950,21 @@ Number of iterations: 499
 Final residual: 7.0712e-70
 #********** Performance Summary (times in sec) ***********: 
 Time Summary: 
-  Total   : 39.1827
-  DDOT    : 1.31991
-  WAXPBY  : 1.8626
-  SPARSEMV: 35.6051
+  Total   : 39.4396
+  DDOT    : 1.344
+  WAXPBY  : 1.89566
+  SPARSEMV: 35.8681
 FLOPS Summary: 
   Total   : 8.62272e+11
   DDOT    : 5.3892e+10
   WAXPBY  : 8.0838e+10
   SPARSEMV: 7.27542e+11
 MFLOPS Summary: 
-  Total   : 22006.4
-  DDOT    : 40830.1
-  WAXPBY  : 43400.6
-  SPARSEMV: 20433.6
+  Total   : 21863.1
+  DDOT    : 40098.2
+  WAXPBY  : 42643.8
+  SPARSEMV: 20283.8
 
-real	0m46.610s
-user	0m43.208s
-sys	0m3.360s
+real	0m47.028s
+user	0m43.432s
+sys	0m3.548s

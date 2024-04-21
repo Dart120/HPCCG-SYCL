@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu
 #SBATCH -p ug-gpu-small
 #SBATCH --qos=debug
-#SBATCH --job-name=bigggggpuplsletmehaveit
+#SBATCH --job-name=amp
 #SBATCH --gres=gpu:ampere:1
 #SBATCH --time=01:30:00
 
