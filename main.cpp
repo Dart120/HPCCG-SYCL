@@ -110,10 +110,10 @@ int main(int argc, char *argv[])
   int nx,ny,nz;
   
   #ifdef USING_SYCL
-  // Create a gpu_selector object
+ 
   sycl::gpu_selector selector;
 
-  // Create a queue using the gpu_selector
+ 
   sycl::queue q(selector);
   // Print out the name of the device that the queue will use
   std::cout << "The device is called " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
