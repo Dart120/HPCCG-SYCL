@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
   double t6 = 0.0;
   int nx,ny,nz;
   #ifdef USING_SYCL
-  // Create a gpu_selector object
+  
   sycl::gpu_selector selector;
 
   // Create a queue using the gpu_selector
@@ -184,7 +184,7 @@ int main(int argc, char *argv[])
   double t1 = mytimer();   // Initialize it (if needed)
   int niters = 0;
   double normr = 0.0;
-  int max_iter = 150;
+  int max_iter = 500;
   double tolerance = 0.0; // Set tolerance to zero to make all runs do max_iter iterations
   #ifdef USING_SYCL
   ierr = HPCCG_sycl(&q, A, b, x, max_iter, tolerance, niters, normr, times);

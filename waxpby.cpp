@@ -137,7 +137,7 @@ int waxpby_sycl_tasked(sycl::queue* q ,const int n, const double alpha, const do
 }
 int waxpby_sycl(sycl::queue* q ,const int n, const double alpha, const double * const x, const double beta, const double * const y, double * const w)
 { 
-	const size_t localSize = 512;    // Desired work-group size
+	const size_t localSize = 1024;    // Desired work-group size
     size_t globalSize = ((n + localSize - 1) / localSize) * localSize;
     const size_t numGroups = globalSize / localSize;
 	

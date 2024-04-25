@@ -79,30 +79,30 @@ using std::endl;
 #ifdef USING_SYCL
 #include <CL/sycl.hpp>
 using namespace sycl;
-template <typename T>
-void sample(sycl::queue* q,T * lst, char* c){
-  std::cout <<"New Output: "<< c << std::endl;
-  q->submit([&](handler& h) {
-    stream out(256, 1024, h);
-        h.single_task([=]() {
-          for (size_t i = 0; i < 40; i++)
-          {
-            out << lst[i] <<",";
-          }
-          out << sycl::endl;
-        });
-    }).wait();
-}
-template <typename T>
-void one(sycl::queue* q,T val, char* c){
-  std::cout <<"New Output: "<< c << std::endl;
-  q->submit([&](handler& h) {
-    stream out(256, 1024, h);
-        h.single_task([=]() {
-            out << *val <<sycl::endl;
-        });
-    }).wait();
-}
+// template <typename T>
+// void sample(sycl::queue* q,T * lst, char* c){
+//   std::cout <<"New Output: "<< c << std::endl;
+//   q->submit([&](handler& h) {
+//     stream out(256, 1024, h);
+//         h.single_task([=]() {
+//           for (size_t i = 0; i < 40; i++)
+//           {
+//             out << lst[i] <<",";
+//           }
+//           out << sycl::endl;
+//         });
+//     }).wait();
+// }
+// template <typename T>
+// void one(sycl::queue* q,T val, char* c){
+//   std::cout <<"New Output: "<< c << std::endl;
+//   q->submit([&](handler& h) {
+//     stream out(256, 1024, h);
+//         h.single_task([=]() {
+//             out << *val <<sycl::endl;
+//         });
+//     }).wait();
+// }
 
 int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
 	  double * const b_device, double * const x_device,
@@ -178,7 +178,7 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   // p is of length ncols, copy x to p for sparse MV operation
 
   TICK(); waxpby_sycl(q, nrow, 1.0, x_device, 0.0, x_device, p); q->wait(); TOCK(t2);
-  sample(q,p, "init waxpby");
+  // sample(q,p, "init waxpby");
   
   
   
@@ -190,19 +190,19 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
    
 
   TICK(); HPC_sparsemv_sycl(q,A,p, Ap, nrow);q->wait();  TOCK(t3); // 2*nnz ops
-  sample(q,Ap, "init spmv");
+  // sample(q,Ap, "init spmv");
   
   
 
 
   TICK(); waxpby_sycl(q,nrow, 1.0, b_device, -1.0, Ap, r); q->wait(); TOCK(t2);
-  sample(q,r, "init wax");
+  // sample(q,r, "init wax");
   
 
 
   
   TICK(); ddot_sycl(q,nrow, r, r, rtrans); q->wait(); TOCK(t1);
-   one(q,rtrans, "init dd");
+  //  one(q,rtrans, "init dd");
   
  
   
@@ -235,7 +235,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 	{
     
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, 0.0, r, p); q->wait(); TOCK(t2);
-    sample(q,p, "k1 wax");
+    // sample(q,p, "k1 wax");
    
     
  
@@ -257,9 +257,9 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   }).wait();
   
   
-    sample(q,r, "r into ddot"); 
+    // sample(q,r, "r into ddot"); 
 	  TICK(); ddot_sycl(q,nrow, r, r, rtrans);// 2*nrow ops
-    one(q,rtrans, "cycle ddot"); 
+    // one(q,rtrans, "cycle ddot"); 
     
     q->wait();
     TOCK(t1);
@@ -278,7 +278,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
 	  
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, *beta, p, p); 
-    sample(q,p, "cycle wax");  
+    // sample(q,p, "cycle wax");  
    
     q->wait();
     TOCK(t2);// 2*nrow ops 
@@ -286,7 +286,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     
   
 	}
- one(q,rtrans, "residual b4 sqrt");
+//  one(q,rtrans, "residual b4 sqrt");
   q->submit([&](handler& h) {
    
     h.single_task([=]() {
@@ -296,7 +296,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     
     
   }).wait();
- one(q,normr_shared, "residual");
+//  one(q,normr_shared, "residual");
   
   
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter)){
@@ -328,13 +328,13 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
    
   //    exit(0);
   TICK();HPC_sparsemv_sycl(q,A, p, Ap,nrow);q->wait();  TOCK(t3); // 2*nnz ops
-  sample(q,Ap, "cycle spmv out");
+  // sample(q,Ap, "cycle spmv out");
   
 
       
 
       TICK(); sycl::event e_ddot = ddot_sycl(q,nrow, p, Ap, alpha);q->wait();TOCK(t1); // 2*nrow ops 
-      one(q,alpha, "cycle ddot out");
+      // one(q,alpha, "cycle ddot out");
 
            
            q->submit([&](handler& h) {
@@ -357,8 +357,8 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
       
       
       q->wait();
-      sample(q,x_device, "wax task 1");
-      sample(q,r, "wax task 2");
+      // sample(q,x_device, "wax task 1");
+      // sample(q,r, "wax task 2");
       TOCK(t2);// 2*nrow ops 
      
     

@@ -1,0 +1,2970 @@
+Running test_HPCCG with dimensions 50 50 50
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 125000 rows. Global rows 0 through 124999
+Process 0 of 1 has 3375000 nonzeros.
+This many nnz: 3375000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17926e-18
+Iteration = 150   Residual = 6.97799e-29
+Iteration = 200   Residual = 3.29094e-39
+Iteration = 250   Residual = 1.02836e-48
+Iteration = 300   Residual = 9.19311e-59
+Iteration = 350   Residual = 1.76563e-68
+Iteration = 400   Residual = 2.80205e-78
+Iteration = 450   Residual = 8.17284e-88
+Iteration = 499   Residual = 1.4192e-97
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.4192e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.508078
+  DDOT    : 0.074822
+  WAXPBY  : 0.023032
+  SPARSEMV: 0.374029
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 7857.06
+  DDOT    : 3334.58
+  WAXPBY  : 16249.1
+  SPARSEMV: 9005.32
+
+real	0m0.759s
+user	0m0.661s
+sys	0m0.092s
+Running test_HPCCG with dimensions 50 50 50
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 125000 rows. Global rows 0 through 124999
+Process 0 of 1 has 3375000 nonzeros.
+This many nnz: 3375000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.17951e-18
+Iteration = 150   Residual = 8.84365e-29
+Iteration = 200   Residual = 4.70624e-39
+Iteration = 250   Residual = 1.00488e-48
+Iteration = 300   Residual = 8.624e-59
+Iteration = 350   Residual = 2.94233e-68
+Iteration = 400   Residual = 6.94536e-78
+Iteration = 450   Residual = 8.77104e-88
+Iteration = 499   Residual = 1.5616e-97
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.5616e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.496087
+  DDOT    : 0.072764
+  WAXPBY  : 0.021789
+  SPARSEMV: 0.366462
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 8046.98
+  DDOT    : 3428.89
+  WAXPBY  : 17176.1
+  SPARSEMV: 9191.27
+
+real	0m0.731s
+user	0m0.638s
+sys	0m0.088s
+Running test_HPCCG with dimensions 50 50 50
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 125000 rows. Global rows 0 through 124999
+Process 0 of 1 has 3375000 nonzeros.
+This many nnz: 3375000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.18002e-18
+Iteration = 150   Residual = 1.17402e-28
+Iteration = 200   Residual = 5.00628e-39
+Iteration = 250   Residual = 1.12122e-48
+Iteration = 300   Residual = 1.0001e-58
+Iteration = 350   Residual = 2.70962e-68
+Iteration = 400   Residual = 6.00109e-78
+Iteration = 450   Residual = 8.58368e-88
+Iteration = 499   Residual = 1.58421e-97
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.58421e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.507061
+  DDOT    : 0.07465
+  WAXPBY  : 0.022907
+  SPARSEMV: 0.372797
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 7872.82
+  DDOT    : 3342.26
+  WAXPBY  : 16337.8
+  SPARSEMV: 9035.08
+
+real	0m0.755s
+user	0m0.652s
+sys	0m0.096s
+Running test_HPCCG with dimensions 50 50 50
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 125000 rows. Global rows 0 through 124999
+Process 0 of 1 has 3375000 nonzeros.
+This many nnz: 3375000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.18009e-18
+Iteration = 150   Residual = 9.62779e-29
+Iteration = 200   Residual = 5.01379e-39
+Iteration = 250   Residual = 1.08e-48
+Iteration = 300   Residual = 9.71611e-59
+Iteration = 350   Residual = 2.93268e-68
+Iteration = 400   Residual = 8.78256e-78
+Iteration = 450   Residual = 9.93332e-88
+Iteration = 499   Residual = 2.20907e-97
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 2.20907e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.505695
+  DDOT    : 0.074624
+  WAXPBY  : 0.023025
+  SPARSEMV: 0.373066
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 7894.09
+  DDOT    : 3343.43
+  WAXPBY  : 16254.1
+  SPARSEMV: 9028.56
+
+real	0m0.738s
+user	0m0.656s
+sys	0m0.073s
+Running test_HPCCG with dimensions 50 50 50
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 125000 rows. Global rows 0 through 124999
+Process 0 of 1 has 3375000 nonzeros.
+This many nnz: 3375000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1282.0484
+Iteration = 50   Residual = 3.172e-06
+Iteration = 100   Residual = 4.1789e-18
+Iteration = 150   Residual = 9.9243e-29
+Iteration = 200   Residual = 4.881e-39
+Iteration = 250   Residual = 1.06448e-48
+Iteration = 300   Residual = 1.05177e-58
+Iteration = 350   Residual = 2.8602e-68
+Iteration = 400   Residual = 4.05103e-78
+Iteration = 450   Residual = 8.2046e-88
+Iteration = 499   Residual = 1.62615e-97
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 50
+  ny: 50
+  nz: 50
+Number of iterations: 499
+Final residual: 1.62615e-97
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 0.503905
+  DDOT    : 0.074492
+  WAXPBY  : 0.022436
+  SPARSEMV: 0.370729
+FLOPS Summary: 
+  Total   : 3.992e+09
+  DDOT    : 2.495e+08
+  WAXPBY  : 3.7425e+08
+  SPARSEMV: 3.36825e+09
+MFLOPS Summary: 
+  Total   : 7922.13
+  DDOT    : 3349.35
+  WAXPBY  : 16680.8
+  SPARSEMV: 9085.48
+
+real	0m0.749s
+user	0m0.657s
+sys	0m0.076s
+Running test_HPCCG with dimensions 75 75 75
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 421875 rows. Global rows 0 through 421874
+Process 0 of 1 has 11390625 nonzeros.
+This many nnz: 11390625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.24864e-24
+Iteration = 200   Residual = 1.39583e-32
+Iteration = 250   Residual = 6.3838e-42
+Iteration = 300   Residual = 8.20498e-51
+Iteration = 350   Residual = 5.75966e-59
+Iteration = 400   Residual = 4.34486e-68
+Iteration = 450   Residual = 1.70114e-76
+Iteration = 499   Residual = 7.41968e-85
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 7.41968e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.55918
+  DDOT    : 0.175577
+  WAXPBY  : 0.047417
+  SPARSEMV: 1.27794
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 8641.1
+  DDOT    : 4795.97
+  WAXPBY  : 26638
+  SPARSEMV: 8895.47
+
+real	0m2.144s
+user	0m2.036s
+sys	0m0.092s
+Running test_HPCCG with dimensions 75 75 75
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 421875 rows. Global rows 0 through 421874
+Process 0 of 1 has 11390625 nonzeros.
+This many nnz: 11390625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.6e-23
+Iteration = 200   Residual = 2.13293e-32
+Iteration = 250   Residual = 6.68134e-42
+Iteration = 300   Residual = 7.76166e-51
+Iteration = 350   Residual = 8.8524e-59
+Iteration = 400   Residual = 5.62127e-68
+Iteration = 450   Residual = 2.13931e-76
+Iteration = 499   Residual = 1.31099e-84
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.31099e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.56114
+  DDOT    : 0.175738
+  WAXPBY  : 0.047259
+  SPARSEMV: 1.27792
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 8630.23
+  DDOT    : 4791.58
+  WAXPBY  : 26727.1
+  SPARSEMV: 8895.62
+
+real	0m2.146s
+user	0m2.042s
+sys	0m0.092s
+Running test_HPCCG with dimensions 75 75 75
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 421875 rows. Global rows 0 through 421874
+Process 0 of 1 has 11390625 nonzeros.
+This many nnz: 11390625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.03603e-23
+Iteration = 200   Residual = 1.61767e-32
+Iteration = 250   Residual = 6.66285e-42
+Iteration = 300   Residual = 9.54922e-51
+Iteration = 350   Residual = 8.43727e-59
+Iteration = 400   Residual = 4.79799e-68
+Iteration = 450   Residual = 1.85575e-76
+Iteration = 499   Residual = 1.14808e-84
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.14808e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.55627
+  DDOT    : 0.175109
+  WAXPBY  : 0.047471
+  SPARSEMV: 1.27814
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 8657.23
+  DDOT    : 4808.79
+  WAXPBY  : 26607.7
+  SPARSEMV: 8894.02
+
+real	0m2.136s
+user	0m2.027s
+sys	0m0.092s
+Running test_HPCCG with dimensions 75 75 75
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 421875 rows. Global rows 0 through 421874
+Process 0 of 1 has 11390625 nonzeros.
+This many nnz: 11390625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 8.63062e-24
+Iteration = 200   Residual = 1.78401e-32
+Iteration = 250   Residual = 6.69609e-42
+Iteration = 300   Residual = 7.98488e-51
+Iteration = 350   Residual = 7.51165e-59
+Iteration = 400   Residual = 6.03627e-68
+Iteration = 450   Residual = 1.78393e-76
+Iteration = 499   Residual = 6.39869e-85
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 6.39869e-85
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.56497
+  DDOT    : 0.175608
+  WAXPBY  : 0.047153
+  SPARSEMV: 1.2776
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 8609.12
+  DDOT    : 4795.13
+  WAXPBY  : 26787.1
+  SPARSEMV: 8897.83
+
+real	0m2.152s
+user	0m2.036s
+sys	0m0.104s
+Running test_HPCCG with dimensions 75 75 75
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 421875 rows. Global rows 0 through 421874
+Process 0 of 1 has 11390625 nonzeros.
+This many nnz: 11390625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 1952.914
+Iteration = 50   Residual = 6.62134e-05
+Iteration = 100   Residual = 4.66671e-14
+Iteration = 150   Residual = 1.60231e-23
+Iteration = 200   Residual = 1.92515e-32
+Iteration = 250   Residual = 6.6881e-42
+Iteration = 300   Residual = 8.22863e-51
+Iteration = 350   Residual = 8.46911e-59
+Iteration = 400   Residual = 4.9425e-68
+Iteration = 450   Residual = 1.7859e-76
+Iteration = 499   Residual = 1.39371e-84
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 75
+  ny: 75
+  nz: 75
+Number of iterations: 499
+Final residual: 1.39371e-84
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 1.55952
+  DDOT    : 0.175273
+  WAXPBY  : 0.047529
+  SPARSEMV: 1.28083
+FLOPS Summary: 
+  Total   : 1.3473e+10
+  DDOT    : 8.42062e+08
+  WAXPBY  : 1.26309e+09
+  SPARSEMV: 1.13678e+10
+MFLOPS Summary: 
+  Total   : 8639.2
+  DDOT    : 4804.29
+  WAXPBY  : 26575.2
+  SPARSEMV: 8875.37
+
+real	0m2.140s
+user	0m2.031s
+sys	0m0.092s
+Running test_HPCCG with dimensions 100 100 100
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1000000 rows. Global rows 0 through 999999
+Process 0 of 1 has 27000000 nonzeros.
+This many nnz: 27000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 1.18545e-29
+Iteration = 250   Residual = 2.48764e-38
+Iteration = 300   Residual = 7.84809e-47
+Iteration = 350   Residual = 3.7985e-55
+Iteration = 400   Residual = 4.10411e-63
+Iteration = 450   Residual = 6.08562e-71
+Iteration = 499   Residual = 6.17204e-79
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 6.17204e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.62166
+  DDOT    : 0.357049
+  WAXPBY  : 0.086668
+  SPARSEMV: 3.04272
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8818.04
+  DDOT    : 5590.27
+  WAXPBY  : 34545.6
+  SPARSEMV: 8855.9
+
+real	0m4.863s
+user	0m4.719s
+sys	0m0.140s
+Running test_HPCCG with dimensions 100 100 100
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1000000 rows. Global rows 0 through 999999
+Process 0 of 1 has 27000000 nonzeros.
+This many nnz: 27000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 1.31285e-29
+Iteration = 250   Residual = 2.60802e-38
+Iteration = 300   Residual = 8.63677e-47
+Iteration = 350   Residual = 4.01441e-55
+Iteration = 400   Residual = 4.00311e-63
+Iteration = 450   Residual = 6.34721e-71
+Iteration = 499   Residual = 5.04367e-79
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 5.04367e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.57944
+  DDOT    : 0.354285
+  WAXPBY  : 0.085799
+  SPARSEMV: 3.02149
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8922.06
+  DDOT    : 5633.88
+  WAXPBY  : 34895.5
+  SPARSEMV: 8918.11
+
+real	0m4.853s
+user	0m4.678s
+sys	0m0.168s
+Running test_HPCCG with dimensions 100 100 100
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1000000 rows. Global rows 0 through 999999
+Process 0 of 1 has 27000000 nonzeros.
+This many nnz: 27000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 1.28731e-29
+Iteration = 250   Residual = 2.50941e-38
+Iteration = 300   Residual = 7.95685e-47
+Iteration = 350   Residual = 3.72613e-55
+Iteration = 400   Residual = 4.73284e-63
+Iteration = 450   Residual = 6.37726e-71
+Iteration = 499   Residual = 5.62604e-79
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 5.62604e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.58359
+  DDOT    : 0.355923
+  WAXPBY  : 0.087011
+  SPARSEMV: 3.04655
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8911.75
+  DDOT    : 5607.95
+  WAXPBY  : 34409.4
+  SPARSEMV: 8844.77
+
+real	0m4.824s
+user	0m4.677s
+sys	0m0.136s
+Running test_HPCCG with dimensions 100 100 100
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1000000 rows. Global rows 0 through 999999
+Process 0 of 1 has 27000000 nonzeros.
+This many nnz: 27000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 1.31261e-29
+Iteration = 250   Residual = 2.48319e-38
+Iteration = 300   Residual = 8.01958e-47
+Iteration = 350   Residual = 4.47689e-55
+Iteration = 400   Residual = 3.85364e-63
+Iteration = 450   Residual = 6.22407e-71
+Iteration = 499   Residual = 5.4868e-79
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 5.4868e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.58573
+  DDOT    : 0.356108
+  WAXPBY  : 0.086667
+  SPARSEMV: 3.04009
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8906.43
+  DDOT    : 5605.04
+  WAXPBY  : 34546
+  SPARSEMV: 8863.56
+
+real	0m4.828s
+user	0m4.668s
+sys	0m0.156s
+Running test_HPCCG with dimensions 100 100 100
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1000000 rows. Global rows 0 through 999999
+Process 0 of 1 has 27000000 nonzeros.
+This many nnz: 27000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 2647.234
+Iteration = 50   Residual = 0.00022656
+Iteration = 100   Residual = 1.5527e-12
+Iteration = 150   Residual = 5.74587e-21
+Iteration = 200   Residual = 1.33339e-29
+Iteration = 250   Residual = 2.53253e-38
+Iteration = 300   Residual = 7.194e-47
+Iteration = 350   Residual = 3.89279e-55
+Iteration = 400   Residual = 3.36974e-63
+Iteration = 450   Residual = 5.91467e-71
+Iteration = 499   Residual = 4.58315e-79
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 100
+  ny: 100
+  nz: 100
+Number of iterations: 499
+Final residual: 4.58315e-79
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 3.60085
+  DDOT    : 0.356143
+  WAXPBY  : 0.08663
+  SPARSEMV: 3.04753
+FLOPS Summary: 
+  Total   : 3.1936e+10
+  DDOT    : 1.996e+09
+  WAXPBY  : 2.994e+09
+  SPARSEMV: 2.6946e+10
+MFLOPS Summary: 
+  Total   : 8869.01
+  DDOT    : 5604.49
+  WAXPBY  : 34560.8
+  SPARSEMV: 8841.92
+
+real	0m4.845s
+user	0m4.688s
+sys	0m0.153s
+Running test_HPCCG with dimensions 125 125 125
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1953125 rows. Global rows 0 through 1953124
+Process 0 of 1 has 52734375 nonzeros.
+This many nnz: 52734375
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92997e-36
+Iteration = 300   Residual = 1.93368e-44
+Iteration = 350   Residual = 2.73335e-52
+Iteration = 400   Residual = 2.84676e-60
+Iteration = 450   Residual = 2.54255e-68
+Iteration = 499   Residual = 7.20611e-76
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 7.20611e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.92734
+  DDOT    : 0.665119
+  WAXPBY  : 0.149601
+  SPARSEMV: 5.95523
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 9004.17
+  DDOT    : 5861.26
+  WAXPBY  : 39088.4
+  SPARSEMV: 8837.43
+
+real	0m9.278s
+user	0m9.054s
+sys	0m0.224s
+Running test_HPCCG with dimensions 125 125 125
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1953125 rows. Global rows 0 through 1953124
+Process 0 of 1 has 52734375 nonzeros.
+This many nnz: 52734375
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89313e-28
+Iteration = 250   Residual = 3.46215e-36
+Iteration = 300   Residual = 1.92959e-44
+Iteration = 350   Residual = 1.30588e-52
+Iteration = 400   Residual = 3.24993e-60
+Iteration = 450   Residual = 1.93674e-68
+Iteration = 499   Residual = 5.20713e-76
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 5.20713e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.92105
+  DDOT    : 0.663641
+  WAXPBY  : 0.148633
+  SPARSEMV: 5.94656
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 9012.36
+  DDOT    : 5874.32
+  WAXPBY  : 39342.9
+  SPARSEMV: 8850.31
+
+real	0m9.282s
+user	0m9.066s
+sys	0m0.216s
+Running test_HPCCG with dimensions 125 125 125
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1953125 rows. Global rows 0 through 1953124
+Process 0 of 1 has 52734375 nonzeros.
+This many nnz: 52734375
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92538e-36
+Iteration = 300   Residual = 1.93218e-44
+Iteration = 350   Residual = 2.35834e-52
+Iteration = 400   Residual = 3.1822e-60
+Iteration = 450   Residual = 2.12857e-68
+Iteration = 499   Residual = 6.95208e-76
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.95208e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.94366
+  DDOT    : 0.665118
+  WAXPBY  : 0.149589
+  SPARSEMV: 5.95961
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 8983.01
+  DDOT    : 5861.27
+  WAXPBY  : 39091.5
+  SPARSEMV: 8830.93
+
+real	0m9.289s
+user	0m9.086s
+sys	0m0.204s
+Running test_HPCCG with dimensions 125 125 125
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1953125 rows. Global rows 0 through 1953124
+Process 0 of 1 has 52734375 nonzeros.
+This many nnz: 52734375
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.91725e-36
+Iteration = 300   Residual = 1.94306e-44
+Iteration = 350   Residual = 2.48596e-52
+Iteration = 400   Residual = 3.116e-60
+Iteration = 450   Residual = 2.32242e-68
+Iteration = 499   Residual = 6.64176e-76
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 6.64176e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.88241
+  DDOT    : 0.664031
+  WAXPBY  : 0.149409
+  SPARSEMV: 5.95066
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 9062.96
+  DDOT    : 5870.87
+  WAXPBY  : 39138.6
+  SPARSEMV: 8844.22
+
+real	0m9.234s
+user	0m9.021s
+sys	0m0.212s
+Running test_HPCCG with dimensions 125 125 125
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 1953125 rows. Global rows 0 through 1953124
+Process 0 of 1 has 52734375 nonzeros.
+This many nnz: 52734375
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 3364.4202
+Iteration = 50   Residual = 0.000362881
+Iteration = 100   Residual = 6.64807e-12
+Iteration = 150   Residual = 5.65993e-20
+Iteration = 200   Residual = 3.89314e-28
+Iteration = 250   Residual = 3.92142e-36
+Iteration = 300   Residual = 1.94135e-44
+Iteration = 350   Residual = 1.59143e-52
+Iteration = 400   Residual = 3.38658e-60
+Iteration = 450   Residual = 2.14378e-68
+Iteration = 499   Residual = 7.02698e-76
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 125
+  ny: 125
+  nz: 125
+Number of iterations: 499
+Final residual: 7.02698e-76
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 6.91523
+  DDOT    : 0.664034
+  WAXPBY  : 0.149388
+  SPARSEMV: 5.95373
+FLOPS Summary: 
+  Total   : 6.2375e+10
+  DDOT    : 3.89844e+09
+  WAXPBY  : 5.84766e+09
+  SPARSEMV: 5.26289e+10
+MFLOPS Summary: 
+  Total   : 9019.95
+  DDOT    : 5870.84
+  WAXPBY  : 39144.1
+  SPARSEMV: 8839.65
+
+real	0m9.260s
+user	0m9.057s
+sys	0m0.204s
+Running test_HPCCG with dimensions 150 150 150
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 3375000 rows. Global rows 0 through 3374999
+Process 0 of 1 has 91125000 nonzeros.
+This many nnz: 91125000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61125e-35
+Iteration = 300   Residual = 6.68206e-43
+Iteration = 350   Residual = 1.04792e-50
+Iteration = 400   Residual = 1.28297e-58
+Iteration = 450   Residual = 2.63389e-66
+Iteration = 499   Residual = 4.38326e-74
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 4.38326e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.8356
+  DDOT    : 1.11706
+  WAXPBY  : 0.242641
+  SPARSEMV: 10.285
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 9106.73
+  DDOT    : 6030.58
+  WAXPBY  : 41644.9
+  SPARSEMV: 8842.26
+
+real	0m15.831s
+user	0m15.471s
+sys	0m0.360s
+Running test_HPCCG with dimensions 150 150 150
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 3375000 rows. Global rows 0 through 3374999
+Process 0 of 1 has 91125000 nonzeros.
+This many nnz: 91125000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61122e-35
+Iteration = 300   Residual = 6.68112e-43
+Iteration = 350   Residual = 1.07932e-50
+Iteration = 400   Residual = 1.28216e-58
+Iteration = 450   Residual = 2.6764e-66
+Iteration = 499   Residual = 3.9481e-74
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 3.9481e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.8335
+  DDOT    : 1.11302
+  WAXPBY  : 0.242308
+  SPARSEMV: 10.289
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 9108.35
+  DDOT    : 6052.44
+  WAXPBY  : 41702.1
+  SPARSEMV: 8838.8
+
+real	0m15.829s
+user	0m15.534s
+sys	0m0.296s
+Running test_HPCCG with dimensions 150 150 150
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 3375000 rows. Global rows 0 through 3374999
+Process 0 of 1 has 91125000 nonzeros.
+This many nnz: 91125000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61123e-35
+Iteration = 300   Residual = 6.68147e-43
+Iteration = 350   Residual = 1.08499e-50
+Iteration = 400   Residual = 1.2812e-58
+Iteration = 450   Residual = 2.57324e-66
+Iteration = 499   Residual = 3.49772e-74
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 3.49772e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.8378
+  DDOT    : 1.11477
+  WAXPBY  : 0.242632
+  SPARSEMV: 10.2896
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 9105.03
+  DDOT    : 6042.97
+  WAXPBY  : 41646.4
+  SPARSEMV: 8838.28
+
+real	0m15.819s
+user	0m15.508s
+sys	0m0.312s
+Running test_HPCCG with dimensions 150 150 150
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 3375000 rows. Global rows 0 through 3374999
+Process 0 of 1 has 91125000 nonzeros.
+This many nnz: 91125000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.6112e-35
+Iteration = 300   Residual = 6.68067e-43
+Iteration = 350   Residual = 1.08553e-50
+Iteration = 400   Residual = 1.28243e-58
+Iteration = 450   Residual = 2.56873e-66
+Iteration = 499   Residual = 2.24399e-74
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 2.24399e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.8057
+  DDOT    : 1.11416
+  WAXPBY  : 0.241959
+  SPARSEMV: 10.2788
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 9129.8
+  DDOT    : 6046.24
+  WAXPBY  : 41762.2
+  SPARSEMV: 8847.58
+
+real	0m15.799s
+user	0m15.500s
+sys	0m0.300s
+Running test_HPCCG with dimensions 150 150 150
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 3375000 rows. Global rows 0 through 3374999
+Process 0 of 1 has 91125000 nonzeros.
+This many nnz: 91125000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4103.9064
+Iteration = 50   Residual = 0.00047218
+Iteration = 100   Residual = 1.17344e-11
+Iteration = 150   Residual = 2.58554e-19
+Iteration = 200   Residual = 2.85922e-27
+Iteration = 250   Residual = 3.61132e-35
+Iteration = 300   Residual = 6.68338e-43
+Iteration = 350   Residual = 1.07916e-50
+Iteration = 400   Residual = 1.28316e-58
+Iteration = 450   Residual = 2.60252e-66
+Iteration = 499   Residual = 3.25053e-74
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 150
+  ny: 150
+  nz: 150
+Number of iterations: 499
+Final residual: 3.25053e-74
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 11.8366
+  DDOT    : 1.11509
+  WAXPBY  : 0.242497
+  SPARSEMV: 10.2869
+FLOPS Summary: 
+  Total   : 1.07784e+11
+  DDOT    : 6.7365e+09
+  WAXPBY  : 1.01048e+10
+  SPARSEMV: 9.09428e+10
+MFLOPS Summary: 
+  Total   : 9105.96
+  DDOT    : 6041.19
+  WAXPBY  : 41669.6
+  SPARSEMV: 8840.64
+
+real	0m15.819s
+user	0m15.563s
+sys	0m0.256s
+Running test_HPCCG with dimensions 175 175 175
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 5359375 rows. Global rows 0 through 5359374
+Process 0 of 1 has 144703125 nonzeros.
+This many nnz: 144703125
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.56707e-42
+Iteration = 350   Residual = 9.41275e-50
+Iteration = 400   Residual = 2.56641e-57
+Iteration = 450   Residual = 5.06934e-65
+Iteration = 499   Residual = 1.16433e-72
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.16433e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 18.7886
+  DDOT    : 1.7436
+  WAXPBY  : 0.371932
+  SPARSEMV: 16.4447
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 9109.62
+  DDOT    : 6135.17
+  WAXPBY  : 43142.2
+  SPARSEMV: 8781.79
+
+real	0m25.065s
+user	0m24.597s
+sys	0m0.476s
+Running test_HPCCG with dimensions 175 175 175
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 5359375 rows. Global rows 0 through 5359374
+Process 0 of 1 has 144703125 nonzeros.
+This many nnz: 144703125
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.84908e-42
+Iteration = 350   Residual = 9.41652e-50
+Iteration = 400   Residual = 2.56902e-57
+Iteration = 450   Residual = 5.16686e-65
+Iteration = 499   Residual = 1.2073e-72
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.2073e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 18.7823
+  DDOT    : 1.74463
+  WAXPBY  : 0.372387
+  SPARSEMV: 16.4399
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 9112.66
+  DDOT    : 6131.57
+  WAXPBY  : 43089.5
+  SPARSEMV: 8784.33
+
+real	0m25.075s
+user	0m24.606s
+sys	0m0.476s
+Running test_HPCCG with dimensions 175 175 175
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 5359375 rows. Global rows 0 through 5359374
+Process 0 of 1 has 144703125 nonzeros.
+This many nnz: 144703125
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.61724e-42
+Iteration = 350   Residual = 9.41441e-50
+Iteration = 400   Residual = 2.56786e-57
+Iteration = 450   Residual = 5.09179e-65
+Iteration = 499   Residual = 1.18973e-72
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.18973e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 18.7095
+  DDOT    : 1.74641
+  WAXPBY  : 0.372676
+  SPARSEMV: 16.4373
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 9148.11
+  DDOT    : 6125.31
+  WAXPBY  : 43056.1
+  SPARSEMV: 8785.71
+
+real	0m24.995s
+user	0m24.537s
+sys	0m0.464s
+Running test_HPCCG with dimensions 175 175 175
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 5359375 rows. Global rows 0 through 5359374
+Process 0 of 1 has 144703125 nonzeros.
+This many nnz: 144703125
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.56556e-42
+Iteration = 350   Residual = 9.41125e-50
+Iteration = 400   Residual = 2.56411e-57
+Iteration = 450   Residual = 5.14903e-65
+Iteration = 499   Residual = 1.18367e-72
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.18367e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 18.7144
+  DDOT    : 1.74087
+  WAXPBY  : 0.371373
+  SPARSEMV: 16.4384
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 9145.73
+  DDOT    : 6144.8
+  WAXPBY  : 43207.1
+  SPARSEMV: 8785.15
+
+real	0m25.011s
+user	0m24.575s
+sys	0m0.440s
+Running test_HPCCG with dimensions 175 175 175
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 5359375 rows. Global rows 0 through 5359374
+Process 0 of 1 has 144703125 nonzeros.
+This many nnz: 144703125
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 4865.1591
+Iteration = 50   Residual = 0.000574979
+Iteration = 100   Residual = 1.69772e-11
+Iteration = 150   Residual = 5.96509e-19
+Iteration = 200   Residual = 1.25552e-26
+Iteration = 250   Residual = 2.66864e-34
+Iteration = 300   Residual = 4.61711e-42
+Iteration = 350   Residual = 9.4142e-50
+Iteration = 400   Residual = 2.56779e-57
+Iteration = 450   Residual = 5.16448e-65
+Iteration = 499   Residual = 1.19984e-72
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 175
+  ny: 175
+  nz: 175
+Number of iterations: 499
+Final residual: 1.19984e-72
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 18.7732
+  DDOT    : 1.7488
+  WAXPBY  : 0.373469
+  SPARSEMV: 16.4398
+FLOPS Summary: 
+  Total   : 1.71157e+11
+  DDOT    : 1.06973e+10
+  WAXPBY  : 1.6046e+10
+  SPARSEMV: 1.44414e+11
+MFLOPS Summary: 
+  Total   : 9117.11
+  DDOT    : 6116.95
+  WAXPBY  : 42964.7
+  SPARSEMV: 8784.39
+
+real	0m25.057s
+user	0m24.645s
+sys	0m0.420s
+Running test_HPCCG with dimensions 200 200 200
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 8000000 rows. Global rows 0 through 7999999
+Process 0 of 1 has 216000000 nonzeros.
+This many nnz: 216000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10924e-41
+Iteration = 350   Residual = 5.62065e-49
+Iteration = 400   Residual = 1.09662e-56
+Iteration = 450   Residual = 3.66439e-64
+Iteration = 499   Residual = 1.35592e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 1.35592e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 28.0205
+  DDOT    : 2.58241
+  WAXPBY  : 0.542487
+  SPARSEMV: 24.7165
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 9117.88
+  DDOT    : 6183.36
+  WAXPBY  : 44152.2
+  SPARSEMV: 8721.62
+
+real	0m37.361s
+user	0m36.751s
+sys	0m0.622s
+Running test_HPCCG with dimensions 200 200 200
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 8000000 rows. Global rows 0 through 7999999
+Process 0 of 1 has 216000000 nonzeros.
+This many nnz: 216000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10924e-41
+Iteration = 350   Residual = 5.61986e-49
+Iteration = 400   Residual = 1.09606e-56
+Iteration = 450   Residual = 3.66309e-64
+Iteration = 499   Residual = 1.28932e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 1.28932e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 28.0345
+  DDOT    : 2.5851
+  WAXPBY  : 0.543596
+  SPARSEMV: 24.7211
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 9113.35
+  DDOT    : 6176.95
+  WAXPBY  : 44062.1
+  SPARSEMV: 8720.01
+
+real	0m37.388s
+user	0m36.804s
+sys	0m0.593s
+Running test_HPCCG with dimensions 200 200 200
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 8000000 rows. Global rows 0 through 7999999
+Process 0 of 1 has 216000000 nonzeros.
+This many nnz: 216000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10924e-41
+Iteration = 350   Residual = 5.62505e-49
+Iteration = 400   Residual = 1.09603e-56
+Iteration = 450   Residual = 3.66299e-64
+Iteration = 499   Residual = 1.16912e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 1.16912e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 28.0428
+  DDOT    : 2.58443
+  WAXPBY  : 0.544178
+  SPARSEMV: 24.7271
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 9110.64
+  DDOT    : 6178.54
+  WAXPBY  : 44015
+  SPARSEMV: 8717.88
+
+real	0m37.391s
+user	0m36.719s
+sys	0m0.683s
+Running test_HPCCG with dimensions 200 200 200
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 8000000 rows. Global rows 0 through 7999999
+Process 0 of 1 has 216000000 nonzeros.
+This many nnz: 216000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10924e-41
+Iteration = 350   Residual = 5.43929e-49
+Iteration = 400   Residual = 1.09642e-56
+Iteration = 450   Residual = 3.66394e-64
+Iteration = 499   Residual = 1.27442e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 1.27442e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 28.0203
+  DDOT    : 2.57907
+  WAXPBY  : 0.541018
+  SPARSEMV: 24.7138
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 9117.95
+  DDOT    : 6191.38
+  WAXPBY  : 44272.1
+  SPARSEMV: 8722.58
+
+real	0m37.381s
+user	0m36.741s
+sys	0m0.652s
+Running test_HPCCG with dimensions 200 200 200
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 8000000 rows. Global rows 0 through 7999999
+Process 0 of 1 has 216000000 nonzeros.
+This many nnz: 216000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 5647.6763
+Iteration = 50   Residual = 0.000675079
+Iteration = 100   Residual = 3.20586e-11
+Iteration = 150   Residual = 9.66311e-19
+Iteration = 200   Residual = 2.84339e-26
+Iteration = 250   Residual = 6.5212e-34
+Iteration = 300   Residual = 2.10924e-41
+Iteration = 350   Residual = 5.60032e-49
+Iteration = 400   Residual = 1.09636e-56
+Iteration = 450   Residual = 3.66386e-64
+Iteration = 499   Residual = 1.35007e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 200
+  ny: 200
+  nz: 200
+Number of iterations: 499
+Final residual: 1.35007e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 28.035
+  DDOT    : 2.58991
+  WAXPBY  : 0.544816
+  SPARSEMV: 24.7133
+FLOPS Summary: 
+  Total   : 2.55488e+11
+  DDOT    : 1.5968e+10
+  WAXPBY  : 2.3952e+10
+  SPARSEMV: 2.15568e+11
+MFLOPS Summary: 
+  Total   : 9113.17
+  DDOT    : 6165.47
+  WAXPBY  : 43963.5
+  SPARSEMV: 8722.75
+
+real	0m37.385s
+user	0m36.756s
+sys	0m0.640s
+Running test_HPCCG with dimensions 225 225 225
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 11390625 rows. Global rows 0 through 11390624
+Process 0 of 1 has 307546875 nonzeros.
+This many nnz: 307546875
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47244e-48
+Iteration = 400   Residual = 4.75807e-56
+Iteration = 450   Residual = 1.17858e-63
+Iteration = 499   Residual = 6.80736e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 6.80736e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.9594
+  DDOT    : 3.66659
+  WAXPBY  : 0.764597
+  SPARSEMV: 35.3693
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 9103.52
+  DDOT    : 6200.78
+  WAXPBY  : 44603.3
+  SPARSEMV: 8677.92
+
+real	0m53.226s
+user	0m52.386s
+sys	0m0.859s
+Running test_HPCCG with dimensions 225 225 225
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 11390625 rows. Global rows 0 through 11390624
+Process 0 of 1 has 307546875 nonzeros.
+This many nnz: 307546875
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47244e-48
+Iteration = 400   Residual = 4.64654e-56
+Iteration = 450   Residual = 1.1779e-63
+Iteration = 499   Residual = 6.66118e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 6.66118e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.9328
+  DDOT    : 3.66387
+  WAXPBY  : 0.766269
+  SPARSEMV: 35.3846
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 9109.57
+  DDOT    : 6205.38
+  WAXPBY  : 44506
+  SPARSEMV: 8674.16
+
+real	0m53.198s
+user	0m52.312s
+sys	0m0.892s
+Running test_HPCCG with dimensions 225 225 225
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 11390625 rows. Global rows 0 through 11390624
+Process 0 of 1 has 307546875 nonzeros.
+This many nnz: 307546875
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47244e-48
+Iteration = 400   Residual = 4.47761e-56
+Iteration = 450   Residual = 1.17776e-63
+Iteration = 499   Residual = 6.55983e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 6.55983e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.9239
+  DDOT    : 3.65751
+  WAXPBY  : 0.765022
+  SPARSEMV: 35.3837
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 9111.62
+  DDOT    : 6216.16
+  WAXPBY  : 44578.5
+  SPARSEMV: 8674.38
+
+real	0m53.181s
+user	0m52.365s
+sys	0m0.832s
+Running test_HPCCG with dimensions 225 225 225
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 11390625 rows. Global rows 0 through 11390624
+Process 0 of 1 has 307546875 nonzeros.
+This many nnz: 307546875
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47244e-48
+Iteration = 400   Residual = 4.57339e-56
+Iteration = 450   Residual = 1.17764e-63
+Iteration = 499   Residual = 6.38098e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 6.38098e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.9961
+  DDOT    : 3.66559
+  WAXPBY  : 0.765413
+  SPARSEMV: 35.3871
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 9095.16
+  DDOT    : 6202.46
+  WAXPBY  : 44555.7
+  SPARSEMV: 8673.56
+
+real	0m53.260s
+user	0m52.438s
+sys	0m0.840s
+Running test_HPCCG with dimensions 225 225 225
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 11390625 rows. Global rows 0 through 11390624
+Process 0 of 1 has 307546875 nonzeros.
+This many nnz: 307546875
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 6450.9862
+Iteration = 50   Residual = 0.000773768
+Iteration = 100   Residual = 4.32172e-11
+Iteration = 150   Residual = 1.2603e-18
+Iteration = 200   Residual = 4.94977e-26
+Iteration = 250   Residual = 1.64292e-33
+Iteration = 300   Residual = 4.28203e-41
+Iteration = 350   Residual = 1.47244e-48
+Iteration = 400   Residual = 4.50691e-56
+Iteration = 450   Residual = 1.17752e-63
+Iteration = 499   Residual = 5.77606e-71
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 225
+  ny: 225
+  nz: 225
+Number of iterations: 499
+Final residual: 5.77606e-71
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 39.9883
+  DDOT    : 3.66071
+  WAXPBY  : 0.765047
+  SPARSEMV: 35.3781
+FLOPS Summary: 
+  Total   : 3.63771e+11
+  DDOT    : 2.27357e+10
+  WAXPBY  : 3.41035e+10
+  SPARSEMV: 3.06932e+11
+MFLOPS Summary: 
+  Total   : 9096.94
+  DDOT    : 6210.74
+  WAXPBY  : 44577
+  SPARSEMV: 8675.76
+
+real	0m53.262s
+user	0m52.372s
+sys	0m0.908s
+Running test_HPCCG with dimensions 250 250 250
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 15625000 rows. Global rows 0 through 15624999
+Process 0 of 1 has 421875000 nonzeros.
+This many nnz: 421875000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.7719e-48
+Iteration = 400   Residual = 1.01313e-55
+Iteration = 450   Residual = 3.09489e-63
+Iteration = 499   Residual = 1.66359e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.66359e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 54.7919
+  DDOT    : 5.00187
+  WAXPBY  : 1.03901
+  SPARSEMV: 48.5703
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 9107.18
+  DDOT    : 6235.16
+  WAXPBY  : 45024.9
+  SPARSEMV: 8668.5
+
+real	1m12.967s
+user	1m11.790s
+sys	0m1.201s
+Running test_HPCCG with dimensions 250 250 250
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 15625000 rows. Global rows 0 through 15624999
+Process 0 of 1 has 421875000 nonzeros.
+This many nnz: 421875000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.77191e-48
+Iteration = 400   Residual = 1.01727e-55
+Iteration = 450   Residual = 5.36146e-63
+Iteration = 499   Residual = 1.66207e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.66207e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 54.7272
+  DDOT    : 5.00902
+  WAXPBY  : 1.04175
+  SPARSEMV: 48.5588
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 9117.95
+  DDOT    : 6226.27
+  WAXPBY  : 44906.2
+  SPARSEMV: 8670.54
+
+real	1m12.897s
+user	1m11.756s
+sys	0m1.164s
+Running test_HPCCG with dimensions 250 250 250
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 15625000 rows. Global rows 0 through 15624999
+Process 0 of 1 has 421875000 nonzeros.
+This many nnz: 421875000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.77191e-48
+Iteration = 400   Residual = 1.01725e-55
+Iteration = 450   Residual = 5.36131e-63
+Iteration = 499   Residual = 1.6636e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.6636e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 54.7687
+  DDOT    : 5.00544
+  WAXPBY  : 1.04162
+  SPARSEMV: 48.564
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 9111.04
+  DDOT    : 6230.72
+  WAXPBY  : 44912
+  SPARSEMV: 8669.62
+
+real	1m12.935s
+user	1m11.837s
+sys	0m1.122s
+Running test_HPCCG with dimensions 250 250 250
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 15625000 rows. Global rows 0 through 15624999
+Process 0 of 1 has 421875000 nonzeros.
+This many nnz: 421875000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.77191e-48
+Iteration = 400   Residual = 1.0151e-55
+Iteration = 450   Residual = 5.32011e-63
+Iteration = 499   Residual = 1.66748e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.66748e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 54.8031
+  DDOT    : 5.00884
+  WAXPBY  : 1.0432
+  SPARSEMV: 48.5652
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 9105.33
+  DDOT    : 6226.5
+  WAXPBY  : 44843.9
+  SPARSEMV: 8669.41
+
+real	1m12.957s
+user	1m11.803s
+sys	0m1.180s
+Running test_HPCCG with dimensions 250 250 250
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 15625000 rows. Global rows 0 through 15624999
+Process 0 of 1 has 421875000 nonzeros.
+This many nnz: 421875000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 7274.6442
+Iteration = 50   Residual = 0.000871617
+Iteration = 100   Residual = 5.09348e-11
+Iteration = 150   Residual = 1.54084e-18
+Iteration = 200   Residual = 7.43136e-26
+Iteration = 250   Residual = 2.62282e-33
+Iteration = 300   Residual = 9.12033e-41
+Iteration = 350   Residual = 2.77191e-48
+Iteration = 400   Residual = 1.01543e-55
+Iteration = 450   Residual = 5.33152e-63
+Iteration = 499   Residual = 1.66313e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 250
+  ny: 250
+  nz: 250
+Number of iterations: 499
+Final residual: 1.66313e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 54.7897
+  DDOT    : 5.00294
+  WAXPBY  : 1.04318
+  SPARSEMV: 48.5899
+FLOPS Summary: 
+  Total   : 4.99e+11
+  DDOT    : 3.11875e+10
+  WAXPBY  : 4.67812e+10
+  SPARSEMV: 4.21031e+11
+MFLOPS Summary: 
+  Total   : 9107.54
+  DDOT    : 6233.83
+  WAXPBY  : 44844.7
+  SPARSEMV: 8665
+
+real	1m12.939s
+user	1m11.800s
+sys	0m1.165s
+Running test_HPCCG with dimensions 275 275 275
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 20796875 rows. Global rows 0 through 20796874
+Process 0 of 1 has 561515625 nonzeros.
+This many nnz: 561515625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37285e-55
+Iteration = 450   Residual = 9.1669e-63
+Iteration = 499   Residual = 6.20417e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 6.20417e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 72.9367
+  DDOT    : 6.65781
+  WAXPBY  : 1.38049
+  SPARSEMV: 64.7121
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 9106.1
+  DDOT    : 6234.86
+  WAXPBY  : 45104.1
+  SPARSEMV: 8659.78
+
+real	1m37.060s
+user	1m35.618s
+sys	0m1.477s
+Running test_HPCCG with dimensions 275 275 275
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 20796875 rows. Global rows 0 through 20796874
+Process 0 of 1 has 561515625 nonzeros.
+This many nnz: 561515625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37286e-55
+Iteration = 450   Residual = 9.17828e-63
+Iteration = 499   Residual = 6.20419e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 6.20419e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 72.9124
+  DDOT    : 6.64307
+  WAXPBY  : 1.37624
+  SPARSEMV: 64.707
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 9109.14
+  DDOT    : 6248.7
+  WAXPBY  : 45243.5
+  SPARSEMV: 8660.47
+
+real	1m37.057s
+user	1m35.616s
+sys	0m1.476s
+Running test_HPCCG with dimensions 275 275 275
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 20796875 rows. Global rows 0 through 20796874
+Process 0 of 1 has 561515625 nonzeros.
+This many nnz: 561515625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37285e-55
+Iteration = 450   Residual = 9.1687e-63
+Iteration = 499   Residual = 6.20417e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 6.20417e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 72.8959
+  DDOT    : 6.6464
+  WAXPBY  : 1.37379
+  SPARSEMV: 64.7054
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 9111.19
+  DDOT    : 6245.57
+  WAXPBY  : 45324
+  SPARSEMV: 8660.68
+
+real	1m37.046s
+user	1m35.559s
+sys	0m1.520s
+Running test_HPCCG with dimensions 275 275 275
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 20796875 rows. Global rows 0 through 20796874
+Process 0 of 1 has 561515625 nonzeros.
+This many nnz: 561515625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37283e-55
+Iteration = 450   Residual = 9.10209e-63
+Iteration = 499   Residual = 6.20411e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 6.20411e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 72.9314
+  DDOT    : 6.6595
+  WAXPBY  : 1.38029
+  SPARSEMV: 64.7049
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 9106.76
+  DDOT    : 6233.29
+  WAXPBY  : 45110.7
+  SPARSEMV: 8660.75
+
+real	1m37.083s
+user	1m35.651s
+sys	0m1.461s
+Running test_HPCCG with dimensions 275 275 275
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 20796875 rows. Global rows 0 through 20796874
+Process 0 of 1 has 561515625 nonzeros.
+This many nnz: 561515625
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8118.2309
+Iteration = 50   Residual = 0.000968923
+Iteration = 100   Residual = 5.78128e-11
+Iteration = 150   Residual = 1.81931e-18
+Iteration = 200   Residual = 9.4371e-26
+Iteration = 250   Residual = 3.93546e-33
+Iteration = 300   Residual = 1.60632e-40
+Iteration = 350   Residual = 5.36316e-48
+Iteration = 400   Residual = 2.37285e-55
+Iteration = 450   Residual = 9.1669e-63
+Iteration = 499   Residual = 6.20417e-70
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 275
+  ny: 275
+  nz: 275
+Number of iterations: 499
+Final residual: 6.20417e-70
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 72.9144
+  DDOT    : 6.65738
+  WAXPBY  : 1.37731
+  SPARSEMV: 64.6987
+FLOPS Summary: 
+  Total   : 6.64169e+11
+  DDOT    : 4.15106e+10
+  WAXPBY  : 6.22658e+10
+  SPARSEMV: 5.60393e+11
+MFLOPS Summary: 
+  Total   : 9108.88
+  DDOT    : 6235.27
+  WAXPBY  : 45208.4
+  SPARSEMV: 8661.57
+
+real	1m37.066s
+user	1m35.651s
+sys	0m1.448s
+Running test_HPCCG with dimensions 300 300 300
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000000 rows. Global rows 0 through 26999999
+Process 0 of 1 has 729000000 nonzeros.
+This many nnz: 729000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.61953e-62
+Iteration = 499   Residual = 1.14258e-69
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 1.14258e-69
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 94.6941
+  DDOT    : 8.6346
+  WAXPBY  : 1.77852
+  SPARSEMV: 84.0956
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 9105.87
+  DDOT    : 6241.4
+  WAXPBY  : 45452.3
+  SPARSEMV: 8651.37
+
+real	2m6.016s
+user	2m4.114s
+sys	0m1.948s
+Running test_HPCCG with dimensions 300 300 300
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000000 rows. Global rows 0 through 26999999
+Process 0 of 1 has 729000000 nonzeros.
+This many nnz: 729000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.61942e-62
+Iteration = 499   Residual = 1.11909e-69
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 1.11909e-69
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 94.6614
+  DDOT    : 8.6364
+  WAXPBY  : 1.78405
+  SPARSEMV: 84.0864
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 9109.02
+  DDOT    : 6240.1
+  WAXPBY  : 45311.6
+  SPARSEMV: 8652.32
+
+real	2m5.992s
+user	2m4.014s
+sys	0m1.987s
+Running test_HPCCG with dimensions 300 300 300
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000000 rows. Global rows 0 through 26999999
+Process 0 of 1 has 729000000 nonzeros.
+This many nnz: 729000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.61943e-62
+Iteration = 499   Residual = 1.1194e-69
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 1.1194e-69
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 94.6406
+  DDOT    : 8.63625
+  WAXPBY  : 1.78484
+  SPARSEMV: 84.0949
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 9111.02
+  DDOT    : 6240.21
+  WAXPBY  : 45291.4
+  SPARSEMV: 8651.44
+
+real	2m5.956s
+user	2m4.053s
+sys	0m1.948s
+Running test_HPCCG with dimensions 300 300 300
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000000 rows. Global rows 0 through 26999999
+Process 0 of 1 has 729000000 nonzeros.
+This many nnz: 729000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.61956e-62
+Iteration = 499   Residual = 1.148e-69
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 1.148e-69
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 94.6976
+  DDOT    : 8.63623
+  WAXPBY  : 1.78483
+  SPARSEMV: 84.0954
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 9105.53
+  DDOT    : 6240.22
+  WAXPBY  : 45291.8
+  SPARSEMV: 8651.39
+
+real	2m5.987s
+user	2m4.075s
+sys	0m1.960s
+Running test_HPCCG with dimensions 300 300 300
+q Running on NVIDIA GeForce RTX 2080 Ti
+Process 0 of 1 has 27000000 rows. Global rows 0 through 26999999
+Process 0 of 1 has 729000000 nonzeros.
+This many nnz: 729000000
+Mem Allocation Started
+Mem Allocation Finished
+Initial Residual = 8981.35
+Iteration = 50   Residual = 0.00106586
+Iteration = 100   Residual = 6.43483e-11
+Iteration = 150   Residual = 3.19024e-18
+Iteration = 200   Residual = 1.11446e-25
+Iteration = 250   Residual = 5.53733e-33
+Iteration = 300   Residual = 2.21002e-40
+Iteration = 350   Residual = 9.55386e-48
+Iteration = 400   Residual = 3.64528e-55
+Iteration = 450   Residual = 1.61944e-62
+Iteration = 499   Residual = 1.12363e-69
+Begun Freeing
+arrays free
+fields free
+All Memory Free
+Mini-Application Name: hpccg
+Mini-Application Version: 1.0
+Parallelism: 
+  MPI not enabled: 
+  OpenMP not enabled: 
+  Number of SYCL compute units: 68
+Dimensions: 
+  nx: 300
+  ny: 300
+  nz: 300
+Number of iterations: 499
+Final residual: 1.12363e-69
+#********** Performance Summary (times in sec) ***********: 
+Time Summary: 
+  Total   : 94.7005
+  DDOT    : 8.63195
+  WAXPBY  : 1.78696
+  SPARSEMV: 84.105
+FLOPS Summary: 
+  Total   : 8.62272e+11
+  DDOT    : 5.3892e+10
+  WAXPBY  : 8.0838e+10
+  SPARSEMV: 7.27542e+11
+MFLOPS Summary: 
+  Total   : 9105.25
+  DDOT    : 6243.32
+  WAXPBY  : 45237.8
+  SPARSEMV: 8650.4
+
+real	2m6.008s
+user	2m4.249s
+sys	0m1.805s

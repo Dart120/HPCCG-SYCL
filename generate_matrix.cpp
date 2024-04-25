@@ -163,24 +163,24 @@ void generate_matrix_sycl(sycl::queue *q,int nx, int ny, int nz, HPC_Sparse_Matr
   (A_host)->local_nnz = local_nnz;
 
 
-    for (size_t i = 0; i < local_nrow; i++)
-  {
+  //   for (size_t i = 0; i < local_nrow; i++)
+  // {
  
-			int cur_nnz = A_host->nnz_in_row[i];
-			double* cur_vals = A_host->ptr_to_vals_in_row[i];
-			int* cur_inds = A_host->ptr_to_inds_in_row[i];
+	// 		int cur_nnz = A_host->nnz_in_row[i];
+	// 		double* cur_vals = A_host->ptr_to_vals_in_row[i];
+	// 		int* cur_inds = A_host->ptr_to_inds_in_row[i];
 
-			for (size_t j = 0; j < cur_nnz; j++)
-			{
+	// 		for (size_t j = 0; j < cur_nnz; j++)
+	// 		{
     
-            std::cout << cur_vals[i]  <<",";
+  //           std::cout << cur_vals[i]  <<",";
        
           
 				 
-			}
-		std::cout << std::endl;
+	// 		}
+	// 	std::cout << std::endl;
 
-  }
+  // }
 
 
 
