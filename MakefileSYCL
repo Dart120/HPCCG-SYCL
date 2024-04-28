@@ -78,8 +78,7 @@ USE_MPI =
 #IA32 with GCC: 
 # CPP_OPT_FLAGS = -O3 -funroll-all-loops -malign-double
 # CPP_OPT_FLAGS = -O3 -ftree-vectorize -ftree-vectorizer-verbose=2
-# CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-nvidia-cuda -g -Xcuda-ptxas --verbose -Xsycl-target-backend --cuda-gpu-arch=sm_75
-CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-nvidia-cuda 
+CPP_OPT_FLAGS = -fsycl -std=c++20 -fsycl-targets=nvptx64-nvidia-cuda,spir64
 
 #
 # 4) MPI library:
@@ -131,9 +130,8 @@ CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_
 LIB_PATHS= $(SYS_LIB)
 
 TEST_CPP = main.cpp generate_matrix.cpp read_HPC_row.cpp \
-	  compute_residual.cpp mytimer.cpp dump_matlab_matrix.cpp \
+	  compute_residual.cpp mytimer.cpp  \
           HPC_sparsemv.cpp HPCCG.cpp waxpby.cpp ddot.cpp \
-          make_local_matrix.cpp exchange_externals.cpp \
           YAML_Element.cpp YAML_Doc.cpp
 
 TEST_OBJ          = $(TEST_CPP:.cpp=.o)

@@ -102,35 +102,21 @@ int HPCCG_sycl(sycl::queue *q,HPC_Sparse_Matrix * A,
   double * p = static_cast<double*>(sycl::malloc_shared(sizeof(double) * ncol, *q));
   double * Ap = static_cast<double*>(sycl::malloc_shared(sizeof(double) * nrow, *q));
   
-  // double * x_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
-  // q->memcpy(x_device, x, sizeof(double) * nrow).wait();
-  // double * b_device = static_cast<double*>(sycl::malloc_device(sizeof(double) * nrow, q));
-  // q->memcpy(b_device, b, sizeof(double) * nrow).wait();
+ 
   double** pointer_to_cur_vals_lst = A->ptr_to_vals_in_row;
 	int** pointer_to_cur_inds_lst = A->ptr_to_inds_in_row;
-  // std::cout << "Entering loop"<< std::endl;
-	// // For each row
-	// for (int i = 0; i < nrow; i++)
-	// {
-	// 	pointer_to_cur_vals_lst[i] = static_cast<double*>(sycl::malloc_shared(sizeof(double) * A->nnz_in_row[i], q));
-	// 	pointer_to_cur_inds_lst[i] = static_cast<int*>(sycl::malloc_shared(sizeof(int) * A->nnz_in_row[i], q));
-	// 	q->memcpy(pointer_to_cur_vals_lst[i], A->ptr_to_vals_in_row[i], sizeof(double) * A->nnz_in_row[i]).wait();
-	// 	q->memcpy(pointer_to_cur_inds_lst[i], A->ptr_to_inds_in_row[i], sizeof(int) * A->nnz_in_row[i]).wait();
-	// }
-  // std::cout << "Leavingloop"<< std::endl;
-	// double* pointer_to_y = malloc_device<double>(nrow, q);
+
 	int* pointer_to_cur_nnz = A->nnz_in_row;
-	// q->memcpy(pointer_to_cur_nnz, A->nnz_in_row, sizeof(int) * nrow).wait();
+
   double * rtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   double * oldrtrans = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   double * normr_shared = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
-  
-  // q->memcpy(normr_shared, &normr, sizeof(double)).wait();
+ 
   *rtrans = 0.0;
   *oldrtrans = 0.0;
   double* beta = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
   double* alpha = static_cast<double*>(sycl::malloc_shared(sizeof(double), *q));
-  std::cout << "Mem Allocation Finished"<< std::endl;
+  std::cout << "Memory Allocation Finished"<< std::endl;
   
   
 
@@ -217,17 +203,10 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
     q->wait();
     TOCK(t1);
     
-    // aux_q.submit([&](handler& h) {
-
-    // // sycl::stream out(655, 655, h);
-    // h.single_task([=]() {
-     
+ 
      *beta = *rtrans / *oldrtrans;
 
- 
-  //   });
-  // }).wait();
-  
+
 	  
 	  TICK(); waxpby_sycl(q,nrow, 1.0, r, *beta, p, p);  
    
@@ -237,16 +216,10 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   
 	}
  
-  // q->submit([&](handler& h) {
-   
-  //   h.single_task([=]() {
+
     *normr_shared = sqrt(*rtrans);
 
-  //   });
-    
-    
-  // }).wait();
-  
+
         if (rank==0 && (k%print_freq == 0 || k+1 == max_iter))
       std::cout << "Iteration = "<< k << "   Residual = "<< *normr_shared << std::endl;
   
@@ -260,7 +233,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
 
 
       TICK(); waxpby_sycl_tasked(q,nrow, 1.0, x_device, *alpha, p, x_device, e_ddot); // 2*nrow ops 
-// q->wait();
+
       waxpby_sycl_tasked(q,nrow, 1.0, r, -(*alpha), Ap, r, e_ddot);  
       
       q->wait();
@@ -283,6 +256,9 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
    sycl::free(Ap,*q);
    sycl::free(x_device,*q);
    sycl::free(b_device,*q);
+   sycl::free(rtrans,*q);
+   sycl::free(oldrtrans,*q);
+   sycl::free(normr_shared,*q);
   sycl::free(A->nnz_in_row,*q);
   sycl::free(A->ptr_to_vals_in_row,*q);
   sycl::free(A->ptr_to_inds_in_row,*q);
@@ -291,7 +267,9 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   // Allocate arrays that are of length local_nnz
   sycl::free(A->list_of_vals,*q);
   sycl::free(A->list_of_inds,*q);
-  // sycl::free(A,*q);
+  // sycl::free(A->nnz_in_row,*q);
+  // sycl::free(A->ptr_to_diags,*q);
+  
   normr = *normr_shared;
   std::cout << "All Memory Free"<< std::endl;
  

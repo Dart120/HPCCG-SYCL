@@ -89,7 +89,6 @@ using std::endl;
 #include "compute_residual.hpp"
 #include "HPCCG.hpp"
 #include "HPC_Sparse_Matrix.hpp"
-#include "dump_matlab_matrix.hpp"
 
 #include "YAML_Element.hpp"
 #include "YAML_Doc.hpp"
@@ -110,73 +109,70 @@ int main(int argc, char *argv[])
   int nx,ny,nz;
   
   #ifdef USING_SYCL
- 
-  sycl::gpu_selector selector;
 
-
-  sycl::queue q(selector);
-  // Print out the name of the device that the queue will use
-  std::cout << "The device is called " << q.get_device().get_info<sycl::info::device::name>() << std::endl;
-  std::cout << "The max work group size is " << q.get_device().get_info<sycl::info::device::max_work_group_size>() << std::endl;
-  std::cout << "Number of compute units " << q.get_device().get_info<sycl::info::device::max_compute_units>() << std::endl;
-  std::cout << "Global mem size " << q.get_device().get_info<sycl::info::device::global_mem_size>()/1e+9<<"gb" << std::endl;
-  std::cout << "Local mem size " << q.get_device().get_info<sycl::info::device::local_mem_size>()/1e+3<<"kb" << std::endl;
+  if(argc!=5) {
     
-  // sycl::device device = sycl::default_selector().select_device();
-  // sycl::queue q(device);
+      cerr << "Usage:" << endl
+	   << "Mode 1: " << argv[0] << " nx ny nz --[cpu|gpu]" << endl
+	   << "     where nx, ny and nz are the local sub-block dimensions and the flag is the device you want to use" << endl;
+    exit(1);
+  }
+  bool selector_chosen = false;
+  std::unique_ptr<sycl::device_selector> selector;
+
+
+    for (int i = 1; i < argc; ++i) {
+        if (strcmp(argv[i], "--cpu") == 0) {
+           
+            selector = std::make_unique<sycl::cpu_selector>();
+            selector_chosen = true;
+        } else if (strcmp(argv[i], "--gpu") == 0) {
+
+            selector = std::make_unique<sycl::gpu_selector>();
+            selector_chosen = true;
+        }
+    }
+
+    if (!selector_chosen) {
+        std::cerr << "Usage:" << std::endl
+                  << "Mode 1: " << argv[0] << " nx ny nz --[cpu|gpu]" << std::endl
+                  << "     where nx, ny, and nz are the local sub-block dimensions and the flag is the device you want to use" << std::endl;
+        exit(1);
+    }
+
+    // Example of using the selector
+    sycl::queue q(*selector);
+
+
+  #else
+    if(argc!=4) {
+      
+        cerr << "Usage:" << endl
+      << "Mode 1: " << argv[0] << " nx ny nz" << endl
+      << "     where nx, ny and nz are the local sub-block dimensions" << endl;
+      exit(1);
+    }
   #endif
   int size = 1; // Serial case (not using MPI)
   int rank = 0; 
 
 
 
-  if(argc != 2 && argc!=4) {
-    if (rank==0)
-      cerr << "Usage:" << endl
-	   << "Mode 1: " << argv[0] << " nx ny nz" << endl
-	   << "     where nx, ny and nz are the local sub-block dimensions, or" << endl
-	   << "Mode 2: " << argv[0] << " HPC_data_file " << endl
-	   << "     where HPC_data_file is a globally accessible file containing matrix data." << endl;
-    exit(1);
-  }
-
-  if (argc==4) 
-  {
-    
-    nx = atoi(argv[1]);
-    ny = atoi(argv[2]);
-    nz = atoi(argv[3]);
-    #ifdef USING_SYCL
-    generate_matrix_sycl(&q,nx, ny, nz, &A, &x, &b, &xexact);
-    
-    #else
-    generate_matrix(nx, ny, nz, &A, &x, &b, &xexact);
-    #endif
-    // exit(0);
-  }
-  else
-  {
-    #ifdef USING_SYCL
-    read_HPC_row_sycl(&q,argv[1], &A, &x, &b, &xexact);
-    
-    #else
-    read_HPC_row(argv[1], &A, &x, &b, &xexact);
-    #endif
-  }
+  
 
 
-  // bool dump_matrix = true;
-  // if (dump_matrix && size<=4) dump_matlab_matrix(A, rank);
+  nx = atoi(argv[1]);
+  ny = atoi(argv[2]);
+  nz = atoi(argv[3]);
+  #ifdef USING_SYCL
+  generate_matrix_sycl(&q,nx, ny, nz, &A, &x, &b, &xexact);
+  
+  #else
+  generate_matrix(nx, ny, nz, &A, &x, &b, &xexact);
+  #endif
+  
 
-#ifdef USING_MPI
 
-  // Transform matrix indices from global to local values.
-  // Define number of columns for the local matrix.
-
-  t6 = mytimer(); make_local_matrix(A);  t6 = mytimer() - t6;
-  times[6] = t6;
-
-#endif
 
   double t1 = mytimer();   // Initialize it (if needed)
   int niters = 0;
@@ -189,22 +185,9 @@ int main(int argc, char *argv[])
   #else
   ierr = HPCCG(A, b, x, max_iter, tolerance, niters, normr, times);
   #endif
-  auto end = std::chrono::high_resolution_clock::now();
-  std::chrono::duration<double> elapsed = end - start; // Default duration is in seconds
-  std::cout << "Elapsed time: " << elapsed.count() << " s\n";
 
 	if (ierr) cerr << "Error in call to CG: " << ierr << ".\n" << endl;
 
-#ifdef USING_MPI
-      double t4 = times[4];
-      double t4min = 0.0;
-      double t4max = 0.0;
-      double t4avg = 0.0;
-      MPI_Allreduce(&t4, &t4min, 1, MPI_DOUBLE, MPI_MIN, MPI_COMM_WORLD);
-      MPI_Allreduce(&t4, &t4max, 1, MPI_DOUBLE, MPI_MAX, MPI_COMM_WORLD);
-      MPI_Allreduce(&t4, &t4avg, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-      t4avg = t4avg/((double) size);
-#endif
 
 // initialize YAML doc
 
@@ -227,12 +210,9 @@ int main(int argc, char *argv[])
       YAML_Doc doc("hpccg", "1.0");
 
       doc.add("Parallelism","");
+      doc.add("Device Capability","");
 
-#ifdef USING_MPI
-          doc.get("Parallelism")->add("Number of MPI ranks",size);
-#else
-          doc.get("Parallelism")->add("MPI not enabled","");
-#endif
+
 
 #ifdef USING_OMP
           int nthreads = 1;
@@ -243,7 +223,11 @@ int main(int argc, char *argv[])
           doc.get("Parallelism")->add("OpenMP not enabled","");
 #endif
 #ifdef USING_SYCL
-         sycl::device d = selector.select_device();
+         sycl::device d = selector->select_device();
+        doc.get("Device Capability")->add("Device Name", q.get_device().get_info<sycl::info::device::name>());
+        doc.get("Device Capability")->add("Maximum Work-group Size", q.get_device().get_info<sycl::info::device::max_work_group_size>());
+        doc.get("Device Capability")->add("Global Memory Size", std::to_string(q.get_device().get_info<sycl::info::device::global_mem_size>()/1e+9) + " gb");
+        doc.get("Device Capability")->add("Local Memory Size", std::to_string(q.get_device().get_info<sycl::info::device::local_mem_size>()/1e+3) + " kb");
         doc.get("Parallelism")->add("Number of SYCL compute units",(int) d.get_info<sycl::info::device::max_compute_units>());
 #else
           doc.get("Parallelism")->add("SYCL not enabled","");
@@ -278,44 +262,19 @@ int main(int argc, char *argv[])
       doc.get("MFLOPS Summary")->add("WAXPBY  ",fnops_waxpby/times[2]/1.0E6);
       doc.get("MFLOPS Summary")->add("SPARSEMV",fnops_sparsemv/(times[3])/1.0E6);
 
-#ifdef USING_MPI
-      doc.add("DDOT Timing Variations","");
-      doc.get("DDOT Timing Variations")->add("Min DDOT MPI_Allreduce time",t4min);
-      doc.get("DDOT Timing Variations")->add("Max DDOT MPI_Allreduce time",t4max);
-      doc.get("DDOT Timing Variations")->add("Avg DDOT MPI_Allreduce time",t4avg);
-
-      double totalSparseMVTime = times[3] + times[5]+ times[6];
-      doc.add("SPARSEMV OVERHEADS","");
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV MFLOPS W OVERHEAD",fnops_sparsemv/(totalSparseMVTime)/1.0E6);
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Time", (times[5]+times[6]));
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Pct", (times[5]+times[6])/totalSparseMVTime*100.0);
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Setup Time", (times[6]));
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Setup Pct", (times[6])/totalSparseMVTime*100.0);
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Bdry Exch Time", (times[5]));
-      doc.get("SPARSEMV OVERHEADS")->add("SPARSEMV PARALLEL OVERHEAD Bdry Exch Pct", (times[5])/totalSparseMVTime*100.0);
-#endif
   
-      if (rank == 0) { // only PE 0 needs to compute and report timing results
-        std::string yaml = doc.generateYAML();
-        cout << yaml;
-       }
+   
+      std::string yaml = doc.generateYAML();
+      cout << yaml;
+ 
     }
 
-  // Compute difference between known exact solution and computed solution
-  // All processors are needed here.
-
-  double residual = 0;
-  //  if ((ierr = compute_residual(A->local_nrow, x, xexact, &residual)))
-  //  cerr << "Error in call to compute_residual: " << ierr << ".\n" << endl;
-
-  // if (rank==0)
-  //   cout << "Difference between computed and exact  = " 
-  //        << residual << ".\n" << endl;
+  #ifdef USING_SYCL
+  sycl::free(xexact,q);
+  sycl::free(A,q);
+  #endif
 
 
   // Finish up
-#ifdef USING_MPI
-  MPI_Finalize();
-#endif
   return 0 ;
 } 

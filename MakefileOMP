@@ -126,7 +126,7 @@ SYS_LIB =-lm
 #
 # 6) Specify name if executable (optional):
 
-TARGET = test_HPCCG
+TARGET = test_HPCCG_OMP
 
 ################### Derived Quantities (no modification required) ##############
 
@@ -135,9 +135,8 @@ CXXFLAGS= $(CPP_OPT_FLAGS) $(OMP_FLAGS) $(USE_OMP) $(USE_SYCL) $(USE_MPI) $(MPI_
 LIB_PATHS= $(SYS_LIB)
 
 TEST_CPP = main.cpp generate_matrix.cpp read_HPC_row.cpp \
-	  compute_residual.cpp mytimer.cpp dump_matlab_matrix.cpp \
+	  compute_residual.cpp mytimer.cpp \
           HPC_sparsemv.cpp HPCCG.cpp waxpby.cpp ddot.cpp \
-          make_local_matrix.cpp exchange_externals.cpp \
           YAML_Element.cpp YAML_Doc.cpp
 
 TEST_OBJ          = $(TEST_CPP:.cpp=.o)
