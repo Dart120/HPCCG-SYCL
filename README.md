@@ -13,4 +13,4 @@ To run with SYCL on the GPU run `./test_HPCCG nx ny nz --gpu`
 
 To run the original OpenMP version run `./test_HPCCG nx ny nz`
 
-Where `nx ny nz` is the grid size of the chimenney discretisation
+Where `nx ny nz` is the grid size of the chimenny discretisation

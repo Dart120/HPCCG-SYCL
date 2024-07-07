@@ -258,7 +258,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
    sycl::free(b_device,*q);
    sycl::free(rtrans,*q);
    sycl::free(oldrtrans,*q);
-   sycl::free(normr_shared,*q);
+   
   sycl::free(A->nnz_in_row,*q);
   sycl::free(A->ptr_to_vals_in_row,*q);
   sycl::free(A->ptr_to_inds_in_row,*q);
@@ -271,6 +271,7 @@ for(int k=1; k<max_iter && *normr_shared > tolerance; k++ )
   // sycl::free(A->ptr_to_diags,*q);
   
   normr = *normr_shared;
+  sycl::free(normr_shared,*q);
   std::cout << "All Memory Free"<< std::endl;
  
   // std::cout << "residual at end of func "<< normr << std::endl;
